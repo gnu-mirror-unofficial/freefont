@@ -29,7 +29,7 @@ p.center { text-align=center; }
 p.link { width:188px }
 
 
-li { font-size: 10pt; text-align=justify; }
+li,dt,dd { font-size: 10pt; text-align=justify; }
 
 h1 { font-size: 140%; }
 h2 { font-size: 120%; }
