@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <HTML>
-<!-- $Header: /web/freefont/freefont/index.html,v 0.1 2002/02/20 14:09:14 peterlin Exp $ -->
+<!-- $Header: /web/freefont/freefont/index.html,v 0.2 2002/02/20 14:27:29 peterlin Exp $ -->
 
 <HEAD>
 <TITLE>Free UCS Scalable Fonts</TITLE>
@@ -9,6 +9,121 @@
 <BODY>
 <H1>Free UCS Scalable Fonts</H1>
 
-<P ALIGN="CENTER">This space intentionally left blank</P>
+<BLOCKQUOTE>
+<P><EM>Summary: This project aims to privide a set of free scalable
+(PostScript Type0, TrueType, OpenType...) fonts covering the ISO
+10646/Unicode UCS (Universal Character Set).</EM></P>
+</BLOCKQUOTE>
+
+<H2>Why do we need free scalable UCS fonts?</H2>
+
+<P>An increasing number of free software users is switching from free
+X11 bitmapped fonts to proprietary Microsoft Truetype fonts, as a)
+they can be freely downloaded from <A
+HREF="http://www.microsoft.com/typography/free.htm">Microsoft
+Typography page</A>, b) they contain a more or less decent subset of
+the ISO 10646 UCS (Universal Character Set), c) they are high-quality,
+well hinted scalable Truetype fonts, and d) <A
+HREF="http://www.freetype.org/">Freetype</A>, a free high-quality
+Truetype font renderer is available and has been integrated into the
+latest release of XFree86, the free X11 server.</P>
+
+<P>Building a dependence on non-free software, even a niche one like
+fonts, is dangerous. Microsoft Truetype core fonts are not free, they
+are just costless. For now, at least. Citing the <A
+HREF="http://www.microsoft.com/typography/faq/faq8.htm">TrueType core
+fonts for the Web FAQ</A>: <EM>You may only redistribute the fonts in
+their original form (.exe or .sit.hqx) and with their original file
+name from your Web site or intranet site. You must not supply the
+fonts, or any derivative fonts based on them, in any form that adds
+value to commercial products, such as CD-ROM or disk based multimedia
+programs, application software or utilities.</EM></P>
+
+<P>Don't there exist any free high-quality scalable fonts? Yes, they
+do.  URW++, a German digital typefoundry, released their own version
+of the 35 Postscript Type 1 core fonts under GPL as their <A
+HREF="http://www.gimp.org/fonts.html">donation to the Ghostscript
+project</A>. The Wadalab Kanji comittee has produced <A
+HREF="ftp://ftp.ipl.t.u-tokyo.ac.jp/pub/Font/">Type 1 font files with
+thousands of filigree Japanese glyphs</A>. Yannis Haralambous has
+drawn beautiful glyphs for the <A
+HREF="http://omega.cse.unsw.edu.au:8080/">Omega typesetting
+system</A>. And so on. Scattered around the internet there are
+numerous other free resources for other national scripts, many of them
+aiming to be a suitable match for Latin fonts like Times or
+Helvetica.</P>
+
+
+<H2>What do we plan to achieve, and how?</H2>
+
+<P>Our aim is to collect available resources, fill in the missing pieces,
+and provide a set of free high-quality scalable (Type 1 and Truetype)
+UCS fonts, released under GPL.</P>
+
+<P>Free UCS scalable fonts will cover the following character sets</P>
+<UL>
+<LI>ISO 8859 parts 1-15 
+<LI><A HREF="http://www.evertype.com/standards/iso10646/pdf/cwa13873.pdf">CEN
+    MES-3 European Unicode Subset</A>
+<LI>IBM/Microsoft code pages 437, 850, 852, 1250, 1252 and more
+<LI><A HREF="http://partners.adobe.com/asn/developer/opentype/appendices/wgl4.html">Microsoft/Adobe Windows Glyph List 4 (WGL4)</A>
+<LI>KOI8-R and KOI8-RU
+<LI>DEC VT100 graphics symbols
+<LI>International Phonetic Alphabet
+<LI>Arabic, Hebrew, Armenian, Georgian, Ethiopian, Thai and Lao alphabets,
+  including Arabic presentation forms A/B
+<LI>Japanese Katakana and Hiragana
+<LI>mathematical symbols, including the whole TeX repertoire of symbols
+<LI>APL symbols
+  etc.
+</UL>
+
+<P>A free Postscript font editor, George Williams's <A
+HREF="http://pfaedit.sourceforge.net/">Pfaedit</A> will be used for
+creating new glyphs.</P>
+
+<P>Which font shapes should be made? As historical style terms like
+Renaissance or Baroque letterforms cannot be applied beyond
+Latin/Cyrillic/Greek scripts to any greater extent than Kufi or Nashki
+can be applied beyond Arabic script, a smaller subset of styles will
+be made: one monospaced and two proportional (one with uniform stroke
+and one with modulated) will be made at the start.</P>
+
+<P>In the beginning, however, we don't believe that Truetype hinting
+will be good enough to compete with neither the hand-crafted bitmapped
+fonts at small sizes, nor with commercial TrueType fonts. A companion
+program for modifying the TrueType font tables, <A
+HREF="http://pfaedit.sourceforge.net/TtfMod/">TtfMod</A>, is in the
+works, though. For applications like <TT>xterm</TT>, users are
+referred to the existing <A
+HREF="http://www.cl.cam.ac.uk/~mgk25/ucs-fonts.html">UCS bitmap
+fonts</A>.
+
+<H2>What do the file suffices mean?</H2>
+
+<P>The files with <TT>.sfd</TT> (Spline Font Database) are in
+PfaEdit's native format. Please use these if you plan to modify the
+font files. PfaEdit can export these to mostly any existing font file
+format.</P>
+
+<P>TrueType fonts for immediate consumption are the files with the
+<TT>.ttf</TT> (TrueType Font) suffix. You can use them directly,
+e.g. with the X font server.</P>
+
+<P>The files with <TT>.ps</TT> (PostScript) suffix are not font files
+at all - they are merely PostScript files with glyph tables, which can
+be used for overview, which glyphs are contained in which font file.</P>
+
+<P>You may have noticed the lacking of PostScript Type 1
+(<TT>.pfa</TT>/<TT>.pfb</TT>) font files. Type 1 format does not
+support large (> 256) encoding vectors, so they can not be used with
+ISO 10646 encoding. If your printer supports it, you can use Type 0
+format, though. Please use PfaEdit for conversion to Type 0.</P>
+
+<HR>
+<P>Primoz Peterlin, primoz.peterlin@biofiz.mf.uni-lj.si</P>
+
+<P>Free UCS scalable fonts: <A HREF="http://savannah.gnu.org/projects/freefont/">http://savannah.gnu.org/projects/freefont/</A></P>
+
 </BODY>
 </HTML>
