@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <HTML>
-<!-- $Id: resources.html,v 1.6 2002/02/25 13:42:17 peterlin Exp $ -->
+<!-- $Id: resources.html,v 1.7 2002/02/25 13:53:37 peterlin Exp $ -->
 
 <HEAD>
 <LINK REL="stylesheet" HREF="freefont.css">
@@ -47,7 +47,14 @@ worth checking.</P>
     Typesetting and Document Processing System</A>
     <DD>Omega is an extension of TeX developed by John Plaice and
     Yannis Haralambous. Its first release, aims primarily at improving
-    TeX's multilingual abilities.</DD>
+    TeX's multilingual abilities. In Omega all characters and pointers
+    into data-structures are 16-bit wide, instead of 8-bit, thereby
+    eliminating many of the trivial limitations of TeX. Omega also
+    allows multiple input and output character sets, and uses
+    programmable filters to translate from one encoding to another, to
+    perform contextual analysis, etc. Internally, Omega uses the
+    universal 16-bit Unicode standard character set, based on
+    ISO-10646. Omega fonts are available under GNU GPL.</DD>
 </DL>
 <H4>IPA Extensions			(0250-02AF)</H4>
 <DL>
@@ -234,7 +241,7 @@ worth checking.</P>
     <DD>See notes on <A HREF="#BasicLatin">Basic Latin</A>.
 </DL>
 <H4>CJK Symbols and Punctuation	(3000-303F)</H4>
-<H4><A NAME="Hiragana">Hiragana		(3040-309F)</A></H4>
+<H4><A NAME="Hiragana">Hiragana	(3040-309F)</A></H4>
 <DT><STRONG>Wadalab fonts</STRONG>
     <DD>Between April 1990 and March 1992, Wadalab Kanji Comittee put
     together a series of scalable font files with Japanese scripts, in
@@ -246,7 +253,9 @@ worth checking.</P>
     HREF="ftp://ftp.ipl.t.u-tokyo.ac.jp/Font/">FTP server</A> of the
     Depertment of Mathematical Engineering and Information Physics,
     Faculty of Engineering, University of Tokyo, as well as on
-    <A HREF="ftp://mirror.cs.wisc.edu/pub/mirrors/ghost/3rdparty/fonts/kanji">Ghostscript site</A>.
+    <A
+    HREF="ftp://mirror.cs.wisc.edu/pub/mirrors/ghost/3rdparty/fonts/kanji">Ghostscript 
+    site</A>.</DD>
 </DL>
 <H4>Katakana			(30A0-30FF)</H4>
 <DL>
@@ -287,8 +296,8 @@ worth checking.</P>
 <HR>
 
 <TABLE WIDTH="100%" BORDER=0>
-<TR><TD>Primoæ Peterlin, primoz.peterlin@biofiz.mf.uni-lj.si</TD>
-<TD>Last update: $Date: 2002/02/25 13:42:17 $</TD></TR>
+<TR><TD>Primo≈æ Peterlin, primoz.peterlin@biofiz.mf.uni-lj.si</TD>
+<TD ALIGN="RIGHT">Last update: $Date: 2002/02/25 13:53:37 $</TD></TR>
 </TABLE>
 
 </BODY>
