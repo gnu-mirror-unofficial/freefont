@@ -29,17 +29,18 @@ p.center { text-align=center; }
 p.link { width:188px }
 
 
+li { font-size: 10pt; text-align=justify; }
 
-h1 { font-size: 180%; }
-h2 { font-size: 150%; }
-h3 { font-size: 120%; }
+h1 { font-size: 140%; }
+h2 { font-size: 120%; }
+h3 { font-size: 110%; }
 h4 { font-size: 100%; }
 
-pre.code { font-family: freemono,andale mono,lucida,courier new,courier,monospace;
+pre.code { font-family: freemono,"andale mono",lucida,"courier new",courier,monospace;
            font-size: small;
            color: blue; }
 
-pre.code i { font-family: freemono,andale mono,lucida,courier new,courier,monospace;
+pre.code i { font-family: freemono,"andale mono",lucida,"courier new",courier,monospace;
              font-style: normal;
              font-size: small;
              color: gray; }
