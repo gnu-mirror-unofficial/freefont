@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <HTML>
-<!-- $Header: /web/freefont/freefont/index.html,v 0.4 2002/02/20 15:23:02 peterlin Exp $ -->
+<!-- $Header: /web/freefont/freefont/index.html,v 0.5 2002/02/20 19:42:00 peterlin Exp $ -->
 
 <HEAD>
 <LINK REL="stylesheet" HREF="freefont.css">
@@ -101,18 +101,33 @@ referred to the existing <A
 HREF="http://www.cl.cam.ac.uk/~mgk25/ucs-fonts.html">UCS bitmap
 fonts</A>.
 
-<H2>What do the file suffices mean?</H2>
+<H2>Downloading fonts</H2>
 
-<P>The files with <TT>.sfd</TT> (Spline Font Database) are in
-PfaEdit's native format. Please use these if you plan to modify the
+<P>Tar archives, compressed with gzip, are available on the
+Savannah download area</P>
+<UL>
+<LI><A
+HREF="http://freesoftware.fsf.org/download/freefont/">http://freesoftware.fsf.org/download/freefont/</A>
+</UL>
+
+<P>There you will find several archive files, depending on the
+format of fonts. A <TT>-source-</TT> package contains 
+font files with a <TT>.sfd</TT> (Spline Font Database) suffix.
+This is PfaEdit's native format. Please use these if you plan to modify the
 font files. PfaEdit can export these to mostly any existing font file
 format.</P>
 
-<P>TrueType fonts for immediate consumption are the files with the
+<P>TrueType fonts for immediate consumption are in the
+<TT>-ttf-</TT> tag. Font files have the
 <TT>.ttf</TT> (TrueType Font) suffix. You can use them directly,
 e.g. with the X font server.</P>
 
-<P>The files with <TT>.ps</TT> (PostScript) suffix are not font files
+<P>OpenType fonts are in the
+<TT>-otf-</TT> tag. Font files have the
+<TT>.otf</TT> (OpenType Font) suffix.</P>
+
+<P>Finally, there is a <TT>-sample-</TT> package.
+The files with <TT>.ps</TT> (PostScript) suffix are not font files
 at all - they are merely PostScript files with glyph tables, which can
 be used for overview, which glyphs are contained in which font file.</P>
 
@@ -123,7 +138,7 @@ ISO 10646 encoding. If your printer supports it, you can use Type 0
 format, though. Please use PfaEdit for conversion to Type 0.</P>
 
 <HR>
-<P>Primož Peterlin, primoz.peterlin@biofiz.mf.uni-lj.si, $Date: 2002/02/20 15:23:02 $</P>
+<P>Primož Peterlin, primoz.peterlin@biofiz.mf.uni-lj.si, $Date: 2002/02/20 19:42:00 $</P>
 
 <P>Free UCS scalable fonts: <A HREF="http://savannah.gnu.org/projects/freefont/">http://savannah.gnu.org/projects/freefont/</A></P>
 
