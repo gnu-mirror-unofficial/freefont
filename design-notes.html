@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <HTML>
-<!-- $Id: design-notes.html,v 1.7 2005/10/26 15:03:27 peterlin Exp $ -->
+<!-- $Id: design-notes.html,v 1.8 2005/10/29 19:13:08 peterlin Exp $ -->
 
 <HEAD>
 <LINK REL="stylesheet" HREF="freefont.css">
@@ -34,10 +34,19 @@ Times.</P>
 <TR><TD>ascent</TD><TD>800</TD></TR>
 <TR><TD>descent</TD><TD>200</TD></TR>
 <TR><TD>x-height</TD><TD>450</TD></TR>
-<TR><TD>cap height</TD><TD>662</TD></TR>
+<TR><TD>cap height</TD><TD>676</TD></TR>
 <TR><TD>italic angle (italic)</TD><TD>-15.5&deg;</TD></TR>
-<TR><TD>stem width</TD><TD>102</TD></TR>
+<TR><TD>stem width (capitals)</TD><TD>162, 159 (U), 155 (M)</TD></TR>
+<TR><TD>stem width (small letters)</TD><TD>139</TD></TR>
 </TABLE>
+
+<H4>Superscripts and subscripts</H4>
+
+<P>Superscript and subscript numerals (in the U+2070-U+208F range) are
+scaled 60.0% of their regular height and 64.9% of their regular width,
+while their stroke width is 94 units, or 95/145 &approx; 64.9% of its
+regular value. Baseline for superscripts is at 275 units, baseline for
+subscripts is at -200 units.</P>
 
 
 <H2>FreeSans</H2>
@@ -96,7 +105,8 @@ Helvetica.</P>
 <P>Superscript and subscript numerals (in the U+2070-U+208F range) are
 scaled 60.0% of their regular height and 64.3% of their regular width,
 while their stroke width is 95 units, or 95/140 &approx; 68% of its
-regular value.</P>
+regular value. Baseline for superscripts is at 284 units, baseline for
+subscripts is at -200 units.</P>
 
 <H2>FreeMono</H2>
 
@@ -168,7 +178,7 @@ points for symbols.</P>
 
 <TABLE WIDTH="100%" BORDER=0>
 <TR><TD>Primož Peterlin, primoz.peterlin@biofiz.mf.uni-lj.si</TD>
-<TD ALIGN="RIGHT">Last update: $Date: 2005/10/26 15:03:27 $</TD></TR>
+<TD ALIGN="RIGHT">Last update: $Date: 2005/10/29 19:13:08 $</TD></TR>
 </TABLE>
 
 </BODY>
