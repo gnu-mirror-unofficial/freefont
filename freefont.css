@@ -22,14 +22,14 @@ body.front {background-color: #ffffff;
 	  }
 
 
-p { font-size: 10pt; text-align=justify; }
+p { font-size: small; text-align=justify; }
 
 p.center { text-align=center; }
 
 p.link { width:188px }
 
 
-li,dt,dd { font-size: 10pt; text-align=justify; }
+li,dt,dd { font-size: small; text-align=justify; }
 
 h1 { font-size: 140%; }
 h2 { font-size: 120%; }
@@ -48,7 +48,7 @@ pre.code i { font-family: freemono,"andale mono",lucida,"courier new",courier,mo
 
 
 td {font-family: freesans,verdana,geneva,arial,helvetica,sans-serif;
-    font-size: 10pt;}
+    font-size: small;}
 
 a:link    {background-color: transparent;
            color: #000080;
@@ -97,13 +97,13 @@ tr.menurow {background-color: #000080;
 td.menucell {color: #ffffff;
              background-color: #000080;
              font-family: freesans,verdana,geneva,arial,helvetica,sans-serif;
-             font-size: 10pt;}
+             font-size: small;}
 
 a.menulink {color: #eeeeee;
             background-color: #000080;
             text-decoration: none;
             font-family: freesans,verdana,geneva,arial,helvetica,sans-serif;
-            font-size: 10pt;}
+            font-size: small;}
 
 a.menulink:visited {color: #eeeeee;
                     background-color: #000080;
