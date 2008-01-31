@@ -1,187 +1,187 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD html 4.01 Strict//EN"
 "http://www.w3.org/TR/REC-html40/strict.dtd">
-<HTML>
-<!-- $Id: design-notes.html,v 1.10 2008/01/31 07:26:56 Stevan_White Exp $ -->
+<html>
+<!-- $Id: design-notes.html,v 1.11 2008/01/31 07:54:00 Stevan_White Exp $ -->
 
-<HEAD>
-<link rel="stylesheet" type="text/css" href="freefont.css" />
-<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
-<TITLE>Free UCS outline fonts: Design notes</TITLE>
-</HEAD>
+<head>
+<link rel="stylesheet" type="text/css" href="freefont.css">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Free UCS outline fonts: Design notes</title>
+</head>
 
 <BODY>
-<H1>Design notes</H1>
+<h1>Design notes</h1>
 
-<H2>FreeSerif</H2>
+<h2>FreeSerif</h2>
 
-<P>FreeSerif is a proportional-width typeface with modulated stroke,
+<p>FreeSerif is a proportional-width typeface with modulated stroke,
 descending from URW++ Nimbus Roman No9, which in turn descends from
-Times.</P>
+Times.</p>
 
-<H3>Regular weight</H3>
+<h3>Regular weight</h3>
 
-<TABLE BORDER=0>
-<TR><TD>ascent</TD><TD>800</TD></TR>
-<TR><TD>descent</TD><TD>200</TD></TR>
-<TR><TD>x-height</TD><TD>450</TD></TR>
-<TR><TD>cap height</TD><TD>662</TD></TR>
-<TR><TD>italic angle (italic)</TD><TD>-15.5&deg;</TD></TR>
-<TR><TD>stem width</TD><TD>102</TD></TR>
-</TABLE>
+<table border="0">
+<tr><td>ascent</td><td>800</td></tr>
+<tr><td>descent</td><td>200</td></tr>
+<tr><td>x-height</td><td>450</td></tr>
+<tr><td>cap height</td><td>662</td></tr>
+<tr><td>italic angle (italic)</td><td>-15.5&deg;</td></tr>
+<tr><td>stem width</td><td>102</td></tr>
+</table>
 
-<H3>Bold weight</H3>
+<h3>Bold weight</h3>
 
-<TABLE BORDER=0>
-<TR><TD>ascent</TD><TD>800</TD></TR>
-<TR><TD>descent</TD><TD>200</TD></TR>
-<TR><TD>x-height</TD><TD>450</TD></TR>
-<TR><TD>cap height</TD><TD>676</TD></TR>
-<TR><TD>italic angle (italic)</TD><TD>-15.5&deg;</TD></TR>
-<TR><TD>stem width (capitals)</TD><TD>162, 159 (U), 155 (M)</TD></TR>
-<TR><TD>stem width (small letters)</TD><TD>139</TD></TR>
-</TABLE>
+<table border="0">
+<tr><td>ascent</td><td>800</td></tr>
+<tr><td>descent</td><td>200</td></tr>
+<tr><td>x-height</td><td>450</td></tr>
+<tr><td>cap height</td><td>676</td></tr>
+<tr><td>italic angle (italic)</td><td>-15.5&deg;</td></tr>
+<tr><td>stem width (capitals)</td><td>162, 159 (U), 155 (M)</td></tr>
+<tr><td>stem width (small letters)</td><td>139</td></tr>
+</table>
 
-<H4>Superscripts and subscripts</H4>
+<h4>Superscripts and subscripts</h4>
 
-<P>Superscript and subscript numerals (in the U+2070-U+208F range) are
+<p>Superscript and subscript numerals (in the U+2070-U+208F range) are
 scaled 60.0% of their regular height and 64.9% of their regular width,
-while their stroke width is 94 units, or 95/145 &approx; 64.9% of its
+while their stroke width is 94 units, or 95/145 &asymp; 64.9% of its
 regular value. Baseline for superscripts is at 275 units, baseline for
-subscripts is at -200 units.</P>
+subscripts is at -200 units.</p>
 
 
-<H2>FreeSans</H2>
+<h2>FreeSans</h2>
 
-<P>FreeSans is a proportional-width typeface with uniform stroke,
+<p>FreeSans is a proportional-width typeface with uniform stroke,
 descending from URW++ Nimbus Sans L, which in turn descends from
-Helvetica.</P>
+Helvetica.</p>
 
-<H3>Regular weight</H3>
+<h3>Regular weight</h3>
 
-<TABLE BORDER=0>
-<TR><TD>ascent</TD><TD>800</TD></TR>
-<TR><TD>descent</TD><TD>200</TD></TR>
-<TR><TD>x-height</TD><TD>450</TD></TR>
-<TR><TD>cap height</TD><TD>729</TD></TR>
-<TR><TD>italic angle (oblique)</TD><TD>-12&deg;</TD></TR>
-<TR><TD>stem width (regular; capital letters)</TD><TD>94</TD></TR>
-<TR><TD>stem width (regular; small letters)</TD><TD>84</TD></TR>
-<TR><TD>height of minus sign (centre)</TD><TD>276</TD></TR>
-</TABLE>
+<table border="0">
+<tr><td>ascent</td><td>800</td></tr>
+<tr><td>descent</td><td>200</td></tr>
+<tr><td>x-height</td><td>450</td></tr>
+<tr><td>cap height</td><td>729</td></tr>
+<tr><td>italic angle (oblique)</td><td>-12&deg;</td></tr>
+<tr><td>stem width (regular; capital letters)</td><td>94</td></tr>
+<tr><td>stem width (regular; small letters)</td><td>84</td></tr>
+<tr><td>height of minus sign (centre)</td><td>276</td></tr>
+</table>
 
-<P>Some modular widths are</P>
+<p>Some modular widths are</p>
 
-<TABLE BORDER=0>
-<TR><TD>191</TD><TD>quotesingle</TD></TR>
-<TR><TD>222</TD><TD>i, j, l</TD></TR>
-<TR><TD>278</TD><TD>space, exclam, period, slash, I, f, t</TD></TR>
-<TR><TD>333</TD><TD>parenleft, parenright, hyphen, r, dieresis, macron, acute</TD></TR>
-<TR><TD>500</TD><TD>J, c, k, s, v, x, y, z</TD></TR>
-<TR><TD>556</TD><TD>numbersign, dollar, all numerals, L, underscore, a, b, d, e, g, h, n, o, p, q, u</TD></TR>
-<TR><TD>584</TD><TD>plus, less, equal, greater, asciitilde</TD></TR>
-<TR><TD>611</TD><TD>T, Z</TD></TR>
-<TR><TD>667</TD><TD>A, B, E, K, P, S, V, X, Y</TD></TR>
-<TR><TD>722</TD><TD>C, D, H, N, R, U, w</TD></TR>
-<TR><TD>778</TD><TD>O, Q</TD></TR>
-<TR><TD>833</TD><TD>M, m</TD></TR>
-<TR><TD>889</TD><TD>percent</TD></TR>
-<TR><TD>944</TD><TD>W</TD></TR>
-</TABLE>
+<table border="0">
+<tr><td>191</td><td>quotesingle</td></tr>
+<tr><td>222</td><td>i, j, l</td></tr>
+<tr><td>278</td><td>space, exclam, period, slash, I, f, t</td></tr>
+<tr><td>333</td><td>parenleft, parenright, hyphen, r, dieresis, macron, acute</td></tr>
+<tr><td>500</td><td>J, c, k, s, v, x, y, z</td></tr>
+<tr><td>556</td><td>numbersign, dollar, all numerals, L, underscore, a, b, d, e, g, h, n, o, p, q, u</td></tr>
+<tr><td>584</td><td>plus, less, equal, greater, asciitilde</td></tr>
+<tr><td>611</td><td>T, Z</td></tr>
+<tr><td>667</td><td>A, B, E, K, P, S, V, X, Y</td></tr>
+<tr><td>722</td><td>C, D, H, N, R, U, w</td></tr>
+<tr><td>778</td><td>O, Q</td></tr>
+<tr><td>833</td><td>M, m</td></tr>
+<tr><td>889</td><td>percent</td></tr>
+<tr><td>944</td><td>W</td></tr>
+</table>
 
-<H3>Bold weight</H3>
+<h3>Bold weight</h3>
 
-<TABLE BORDER=0>
-<TR><TD>ascent</TD><TD>800</TD></TR>
-<TR><TD>descent</TD><TD>200</TD></TR>
-<TR><TD>x-height</TD><TD>450</TD></TR>
-<TR><TD>cap height</TD><TD>729</TD></TR>
-<TR><TD>italic angle (oblique)</TD><TD>-12&deg;</TD></TR>
-<TR><TD>stem width (bold; capital letters)</TD><TD>150</TD></TR>
-<TR><TD>stem width (bold; small letters)</TD><TD>140</TD></TR>
-<TR><TD>height of minus sign (centre)</TD><TD>276</TD></TR>
-</TABLE>
+<table border="0">
+<tr><td>ascent</td><td>800</td></tr>
+<tr><td>descent</td><td>200</td></tr>
+<tr><td>x-height</td><td>450</td></tr>
+<tr><td>cap height</td><td>729</td></tr>
+<tr><td>italic angle (oblique)</td><td>-12&deg;</td></tr>
+<tr><td>stem width (bold; capital letters)</td><td>150</td></tr>
+<tr><td>stem width (bold; small letters)</td><td>140</td></tr>
+<tr><td>height of minus sign (centre)</td><td>276</td></tr>
+</table>
 
-<H4>Superscripts and subscripts</H4>
+<h4>Superscripts and subscripts</h4>
 
-<P>Superscript and subscript numerals (in the U+2070-U+208F range) are
+<p>Superscript and subscript numerals (in the U+2070-U+208F range) are
 scaled 60.0% of their regular height and 64.3% of their regular width,
-while their stroke width is 95 units, or 95/140 &approx; 68% of its
+while their stroke width is 95 units, or 95/140 &asymp; 68% of its
 regular value. Baseline for superscripts is at 284 units, baseline for
-subscripts is at -200 units.</P>
+subscripts is at -200 units.</p>
 
-<H2>FreeMono</H2>
+<h2>FreeMono</h2>
 
-<P>FreeMono is a fixed-width typeface with uniform stroke, descending
-from URW++ Nimbus Mono L, which in turn descends from Courier.</P>
+<p>FreeMono is a fixed-width typeface with uniform stroke, descending
+from URW++ Nimbus Mono L, which in turn descends from Courier.</p>
 
-<H3>Regular weight</H3>
+<h3>Regular weight</h3>
 
-<TABLE BORDER=0>
-<TR><TD>ascent</TD><TD>800</TD></TR>
-<TR><TD>descent</TD><TD>200</TD></TR>
-<TR><TD>width</TD><TD>600</TD></TR>
-<TR><TD>x-height (regular)</TD><TD>417</TD></TR>
-<TR><TD>cap height (regular)</TD><TD>563</TD></TR>
-<TR><TD>italic angle (oblique)</TD><TD>-12&deg;</TD></TR>
-<TR><TD>stroke width (regular)</TD><TD>40 or 41</TD></TR>
-<TR><TD>height of minus sign (centre)</TD><TD>279-282</TD></TR>
-</TABLE>
+<table border="0">
+<tr><td>ascent</td><td>800</td></tr>
+<tr><td>descent</td><td>200</td></tr>
+<tr><td>width</td><td>600</td></tr>
+<tr><td>x-height (regular)</td><td>417</td></tr>
+<tr><td>cap height (regular)</td><td>563</td></tr>
+<tr><td>italic angle (oblique)</td><td>-12&deg;</td></tr>
+<tr><td>stroke width (regular)</td><td>40 or 41</td></tr>
+<tr><td>height of minus sign (centre)</td><td>279-282</td></tr>
+</table>
 
-<H4>Small capitals</H4>
+<h4>Small capitals</h4>
 
-<P>Small capitals (in the IPA Extensions range) are 88% width and 74%
+<p>Small capitals (in the IPA Extensions range) are 88% width and 74%
 height of their regular counterparts, while preserving the same stroke
-width (41 units).</P>
+width (41 units).</p>
 
-<H4>Superscripts and subscripts</H4>
+<h4>Superscripts and subscripts</h4>
 
-<P>Superscript and subscript numerals (in the U+2070-U+208F range) are
+<p>Superscript and subscript numerals (in the U+2070-U+208F range) are
 scaled 58% of their regular height and width, while their stroke width
-is 87% of the regular (36 units).</P>
+is 87% of the regular (36 units).</p>
 
-<H4>Symbols</H4>
+<h4>Symbols</h4>
 
-<P>While stroke width for letters varies between 40 and 41 units, it
-has been set uniformly to 40 points for symbols.</P>
+<p>While stroke width for letters varies between 40 and 41 units, it
+has been set uniformly to 40 points for symbols.</p>
 
-<H3>Bold weight</H3>
+<h3>Bold weight</h3>
 
-<TABLE BORDER=0>
-<TR><TD>ascent</TD><TD>800</TD></TR>
-<TR><TD>descent</TD><TD>200</TD></TR>
-<TR><TD>width</TD><TD>600</TD></TR>
-<TR><TD>x-height (bold)</TD><TD>437</TD></TR>
-<TR><TD>cap height (bold)</TD><TD>583</TD></TR>
-<TR><TD>italic angle (oblique)</TD><TD>-12&deg;</TD></TR>
-<TR><TD>stroke width (regular)</TD><TD>40 or 41</TD></TR>
-<TR><TD>height of minus sign (centre)</TD><TD>279-282</TD></TR>
-</TABLE>
+<table border="0">
+<tr><td>ascent</td><td>800</td></tr>
+<tr><td>descent</td><td>200</td></tr>
+<tr><td>width</td><td>600</td></tr>
+<tr><td>x-height (bold)</td><td>437</td></tr>
+<tr><td>cap height (bold)</td><td>583</td></tr>
+<tr><td>italic angle (oblique)</td><td>-12&deg;</td></tr>
+<tr><td>stroke width (regular)</td><td>40 or 41</td></tr>
+<tr><td>height of minus sign (centre)</td><td>279-282</td></tr>
+</table>
 
-<H4>Small capitals</H4>
+<h4>Small capitals</h4>
 
-<P>Small capitals (in the IPA Extensions range) are 88% width and 74%
+<p>Small capitals (in the IPA Extensions range) are 88% width and 74%
 height of their regular counterparts, while preserving the same stroke
-width (100 units).</P>
+width (100 units).</p>
 
-<H4>Superscripts and subscripts</H4>
+<h4>Superscripts and subscripts</h4>
 
-<P>Superscript and subscript numerals (in the U+2070-U+208F range) are
+<p>Superscript and subscript numerals (in the U+2070-U+208F range) are
 scaled 61% of their regular height and width, while their stroke width
-is 67% of the regular (67 units).</P>
+is 67% of the regular (67 units).</p>
 
-<H4>Symbols</H4>
+<h4>Symbols</h4>
 
-<P>While stroke width for letters is 100 units, it has been set 84
-points for symbols.</P>
+<p>While stroke width for letters is 100 units, it has been set 84
+points for symbols.</p>
 
 
 <HR>
 
-<TABLE WIDTH="100%" BORDER=0>
-<TR><TD>Primož Peterlin, primoz.peterlin@biofiz.mf.uni-lj.si<br />
+<table width="100%" border="0">
+<tr><td>Primož Peterlin, primoz.peterlin@biofiz.mf.uni-lj.si<br />
 	update by Steve White stevan.white@googlemail.com</td>
-<TD ALIGN="RIGHT">Last update: $Date: 2008/01/31 07:26:56 $</TD></TR>
-</TABLE>
+<td align="right">Last update: $Date: 2008/01/31 07:54:00 $</td></tr>
+</table>
 
-</BODY>
-</HTML>
+</body>
+</html>
