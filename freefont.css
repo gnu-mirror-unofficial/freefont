@@ -1,169 +1,50 @@
-body.z {background-color: white;
-        color: black;
-	  margin-left: 10%;
-	  margin-right: 10%;
-          padding: 0;
- 	  font-family: freesans,verdana,geneva,arial,helvetica,sans-serif;
-	  }
+body, td { font-family: freesans,verdana,geneva,arial,helvetica,sans-serif; }
 
-body {background-color: white;
-      background-repeat: no-repeat;
-      color: black;
-      padding: 0;
-      font-family: freesans,verdana,geneva,arial,helvetica,sans-serif;
-      }
+body {	background-color: white;
+	color: black;
+	padding: 0;
+}
 
+p, li, dt, dd {	text-align: justify; }
 
-body.front {background-color: white;
-      color: black;
-      margin: 0;
-      padding: 0;
-      font-family: freesans,verdana,geneva,arial,helvetica,sans-serif;
-	  }
-
-
-p { font-size: small; text-align: justify; }
-
-p.center { text-align: center; }
-
-p.link { width:188px }
-
-
-li,dt,dd { font-size: small; text-align: justify; }
-
-h1 { font-size: 140%; }
-h2 { font-size: 120%; }
-h3 { font-size: 110%; }
+h1 { font-size: 200%; }
+h2 { font-size: 140%; }
+h3 { font-size: 120%; }
 h4 { font-size: 100%; }
 
-pre.code { font-family: freemono,"andale mono",lucida,"courier new",courier,monospace;
-           font-size: small;
-           color: blue; }
+a:link, a:visited, a:active, a:hover {
+	background-color: transparent;
+	font-weight: bold;
+	text-decoration:none;
+}
 
-pre.code i { font-family: freemono,"andale mono",lucida,"courier new",courier,monospace;
-             font-style: normal;
-             font-size: small;
-             color: gray; }
+a:link    { color: #008; }
+a:visited { color: #808; }
+a:active  { color: #fe0000; }
+a:hover   { color: #1919aa; text-decoration:underline; }
 
+div.toc {
+	position: relative;	/* for IE 5 */
+	position: absolute;	/* for IE 6 (doesn't do fixed) */
+	position: fixed;	/* for good browsers */
+	float: left;		/* for position: absolute */
+	top: 0px; left: 0px;
+	/*vertical-align: top; only to inline and table-cell elements*/
+	width: 18ex;
+	height: 100%;	/* IE 6 doesn't do percent height */
+	height: 100em;
+	margin: 0;
+	padding-top: 3em;
+	border-right: #AAF solid;
+	background-color: #FEF;
+}
 
+.toc ul { padding-left: 1em; }
+.toc h2 { font-size: large; margin: 0.5ex; }
+.toc { white-space: nowrap; }
+.toc ul { margin-left: 0em; list-style: none; }
+.toc li { padding-left: 0em; list-style: none; }
 
-td {font-family: freesans,verdana,geneva,arial,helvetica,sans-serif;
-    font-size: small;}
-
-a:link    {background-color: transparent;
-           color: #008;
-           font-weight: bold;
-           text-decoration:none;}
-           
-a:visited {background-color: transparent;
-           color: #808;
-           font-weight: bold;
-           text-decoration:none;}
-           
-a:active  {background-color: transparent;
-           color: #fe0000;
-           font-weight: bold;
-           text-decoration:none;}
-           
-a:hover   {background-color: transparent;
-           color: #1919aa;
-           font-weight: bold;
-           text-decoration:underline;}
-
-a.sidebar:link    {background-color: transparent;
-                   color: #008;
-                   font-weight: normal;
-                   text-decoration:none;}
-                   
-a.sidebar:visited {background-color: transparent;
-                   color: #008;
-                   font-weight: normal;
-                   text-decoration:none;}
-                   
-a.sidebar:active  {background-color: transparent;
-                   color: #fe0000;
-                   font-weight: normal;
-                   text-decoration:none;}
-                   
-a.sidebar:hover   {background-color: transparent;
-                   color: #1919aa;
-                   font-weight: normal;
-                   text-decoration:underline;}
-
-tr.menurow {background-color: #008;
-            color: black;
-            vertical-align: middle;}
-
-td.menucell {color: white;
-             background-color: #008;
-             font-family: freesans,verdana,geneva,arial,helvetica,sans-serif;
-             font-size: small;}
-
-a.menulink {color: #eee;
-            background-color: #008;
-            text-decoration: none;
-            font-family: freesans,verdana,geneva,arial,helvetica,sans-serif;
-            font-size: small;}
-
-a.menulink:visited {color: #eee;
-                    background-color: #008;
-                    text-decoration: none;}
-
-a.menulink:hover {color: white;
-                  background-color: #008;
-                  text-decoration:none;}
-
-td.locationcell {color: black;
-                 background-color: white;
-                 font-family: freesans,verdana,geneva,arial,helvetica,sans-serif;
-                 font-size: small;
-                 font-weight:bold;}
-
-td.titlebar {color: black;
-             background-color: #c5cae2;
-             font-family: freesans,verdana,geneva,arial,helvetica,sans-serif;}
-
-h1.zsection {color: black;
-    background-color: #CCE;
-    text-align: center;
-	font-family: freesans,verdana,geneva,arial,helvetica,sans-serif;
-	font-size: 180%;
-	padding: 0.3em;
-    border: none;
-	width: 100%; }
-
-h1.section {
-    color: #06425F;
-    font-family: freesans,verdana,geneva,arial,helvetica,sans-serif;
-    font-size: 180%;
-    margin-top: 2em;
-    }
-
-h2.section {color: black;
-    background-color: #CCE;
-    text-align: center;
-	font-family: freesans,verdana,geneva,arial,helvetica,sans-serif;
-	font-size: 120%;
-	padding: 0.2em;
-    border: solid;
-	border-width: 1px;
-	width: 100%; }
-
-tt.code { color: gray; }
-em.warning { color: red; }
-
-
-p.label {  margin-left : 0.5em;
-           color       :  #056;
-           line-height : 20px;}
-
-a.label:link {color: #DDF}
-a.label:visited {color: #DDF}
-a.label:active {color: #DDF}
-a.label:hover {color: #DDF}
-
-a.index:link {  text-decoration: none; color: #666}      /* for unvisited links */
-a.index:visited { text-decoration: none; color: #666}       /* for visited links */
-a.index:active {  text-decoration: none; color: #666}           /* when link is clicked */
-a.index:hover {  text-decoration: underline; color: black}        /* when mouse is over link */
-
+div.content { padding: 0;
+	margin-left: 18ex;
+}
