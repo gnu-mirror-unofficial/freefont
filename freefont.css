@@ -1,35 +1,35 @@
-body.z {background-color: #ffffff;
-        color: #000000;
+body.z {background-color: white;
+        color: black;
 	  margin-left: 10%;
 	  margin-right: 10%;
           padding: 0;
  	  font-family: freesans,verdana,geneva,arial,helvetica,sans-serif;
 	  }
 
-body {background-color: #ffffff;
+body {background-color: white;
       background-repeat: no-repeat;
-      color: #000000;
+      color: black;
       padding: 0;
       font-family: freesans,verdana,geneva,arial,helvetica,sans-serif;
       }
 
 
-body.front {background-color: #ffffff;
-      color: #000000;
+body.front {background-color: white;
+      color: black;
       margin: 0;
       padding: 0;
       font-family: freesans,verdana,geneva,arial,helvetica,sans-serif;
 	  }
 
 
-p { font-size: small; text-align=justify; }
+p { font-size: small; text-align: justify; }
 
-p.center { text-align=center; }
+p.center { text-align: center; }
 
 p.link { width:188px }
 
 
-li,dt,dd { font-size: small; text-align=justify; }
+li,dt,dd { font-size: small; text-align: justify; }
 
 h1 { font-size: 140%; }
 h2 { font-size: 120%; }
@@ -51,12 +51,12 @@ td {font-family: freesans,verdana,geneva,arial,helvetica,sans-serif;
     font-size: small;}
 
 a:link    {background-color: transparent;
-           color: #000080;
+           color: #008;
            font-weight: bold;
            text-decoration:none;}
            
 a:visited {background-color: transparent;
-           color: #800080;
+           color: #808;
            font-weight: bold;
            text-decoration:none;}
            
@@ -71,12 +71,12 @@ a:hover   {background-color: transparent;
            text-decoration:underline;}
 
 a.sidebar:link    {background-color: transparent;
-                   color: #000080;
+                   color: #008;
                    font-weight: normal;
                    text-decoration:none;}
                    
 a.sidebar:visited {background-color: transparent;
-                   color: #000080;
+                   color: #008;
                    font-weight: normal;
                    text-decoration:none;}
                    
@@ -90,41 +90,41 @@ a.sidebar:hover   {background-color: transparent;
                    font-weight: normal;
                    text-decoration:underline;}
 
-tr.menurow {background-color: #000080;
-            color: #000000;
+tr.menurow {background-color: #008;
+            color: black;
             vertical-align: middle;}
 
-td.menucell {color: #ffffff;
-             background-color: #000080;
+td.menucell {color: white;
+             background-color: #008;
              font-family: freesans,verdana,geneva,arial,helvetica,sans-serif;
              font-size: small;}
 
-a.menulink {color: #eeeeee;
-            background-color: #000080;
+a.menulink {color: #eee;
+            background-color: #008;
             text-decoration: none;
             font-family: freesans,verdana,geneva,arial,helvetica,sans-serif;
             font-size: small;}
 
-a.menulink:visited {color: #eeeeee;
-                    background-color: #000080;
+a.menulink:visited {color: #eee;
+                    background-color: #008;
                     text-decoration: none;}
 
-a.menulink:hover {color: #ffffff;
-                  background-color: #000080;
+a.menulink:hover {color: white;
+                  background-color: #008;
                   text-decoration:none;}
 
-td.locationcell {color: #000000;
-                 background-color: #ffffff;
+td.locationcell {color: black;
+                 background-color: white;
                  font-family: freesans,verdana,geneva,arial,helvetica,sans-serif;
                  font-size: small;
                  font-weight:bold;}
 
-td.titlebar {color: #000000;
+td.titlebar {color: black;
              background-color: #c5cae2;
              font-family: freesans,verdana,geneva,arial,helvetica,sans-serif;}
 
 h1.zsection {color: black;
-    background-color: #CCCCEE;
+    background-color: #CCE;
     text-align: center;
 	font-family: freesans,verdana,geneva,arial,helvetica,sans-serif;
 	font-size: 180%;
@@ -140,7 +140,7 @@ h1.section {
     }
 
 h2.section {color: black;
-    background-color: #CCCCEE;
+    background-color: #CCE;
     text-align: center;
 	font-family: freesans,verdana,geneva,arial,helvetica,sans-serif;
 	font-size: 120%;
@@ -154,25 +154,16 @@ em.warning { color: red; }
 
 
 p.label {  margin-left : 0.5em;
-           color       :  #005060;
+           color       :  #056;
            line-height : 20px;}
 
-a.label:link {color: #FFFFFF}
-a.label:visited {color: #FFFFFF}
-a.label:active {color: #FFFFFF}
-a.label:hover {color: #FFFFFF}
+a.label:link {color: #DDF}
+a.label:visited {color: #DDF}
+a.label:active {color: #DDF}
+a.label:hover {color: #DDF}
 
-a.index:link {  text-decoration: none; color: #666666}      /* for unvisited links */
-a.index:visited { text-decoration: none; color: #666666}       /* for visited links */
-a.index:active {  text-decoration: none; color: #666666}           /* when link is clicked */
-a.index:hover {  text-decoration: underline; color: #000000}        /* when mouse is over link */
-
-h1.intro {  font-size : 24pt;
-            font-weight : bold;
-            font-family : sans-serif;
-            color :  #FFFFFF;
-            text-align: center;
-            margin-top   : 0.3em;
-            margin-left  : 1em;
-            margin-right : 1em;}
+a.index:link {  text-decoration: none; color: #666}      /* for unvisited links */
+a.index:visited { text-decoration: none; color: #666}       /* for visited links */
+a.index:active {  text-decoration: none; color: #666}           /* when link is clicked */
+a.index:hover {  text-decoration: underline; color: black}        /* when mouse is over link */
 
