@@ -1,0 +1,2095 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- $Header: /web/freefont/freefont/coverage.html,v 1.1 2008/08/22 08:03:57 Stevan_White Exp $ -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>
+Gnu FreeFont: character range support
+</title>
+<link rel="stylesheet" type="text/css" href="freefont.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<style type="text/css">
+	td, th { font-size: smaller; }
+	tr.high { color: gray }
+	td.num { text-align: right }
+	th { padding: 0.5em }
+	caption { font-size: larger; font-weight: bold; }
+</style>
+</head>
+<body>
+<div class="toc">
+	<hr />
+	<ul>
+	<li>
+	<a href="index.html">home page</a>
+	<!--
+	</li><li>
+		<a href="design-notes.html">design notes</a>
+	-->
+	</li><li>
+	        <a href="coverage.html">coverage</a>
+	</li><li>
+	        <a href="design-notes.html">design notes</a>
+	</li><li>
+	        <a href="sources/">sources</a>
+	</li>
+	</ul>
+	<hr />
+	<ul>
+	<li>
+		<a href="http://savannah.gnu.org/projects/freefont/">project
+		page</a>
+	</li>
+	</ul>
+	<hr />
+	<ul>
+	<!--
+	<li>
+		comparisons
+	</li>
+	<li>
+		goals and purpose
+		</li>
+	-->
+	<li>
+	<a href="articles/Why_Unicode_fonts.html">why Unicode fonts?</a>
+	</li>
+	<li>
+	<a href="articles/Why_Free_Fonts.html">why free fonts?</a>
+	</li>
+	</ul>
+</div>
+
+<div class="content">
+<h1>
+<small><a href="http://savannah.gnu.org/projects/freefont/">GNU FreeFont</a></small> <br/>Support for OpenType OS/2 character ranges
+</h1>
+<p>
+For historical reasons, TrueType classifies Unicode ranges according to
+an extension of the old OS/2 character ranges.  This table shows how many
+characters FontForge finds in each of the ranges for each font.
+</p>
+<table class="fontrangereport" frame="box" rules="all">
+<caption>
+OS/2 character ranges vs. FreeFont faces 
+</caption>
+<thead>
+<tr><th>OS/2 character range</th>
+<th>range<br />total</th>
+<td></td>
+<th colspan="2">Srf</th>
+<th colspan="2">Srf I</th>
+<th colspan="2">Srf B</th>
+<th colspan="2">Srf BI</th>
+<th colspan="2">Sans</th>
+<th colspan="2">Sans O</th>
+<th colspan="2">Sans B</th>
+<th colspan="2">Sans BO</th>
+<th colspan="2">Mono</th>
+<th colspan="2">Mono O</th>
+<th colspan="2">Mono B</th>
+<th colspan="2">Mono BO</th>
+</tr>
+</thead>
+<tr class="low"><td>Basic Latin</td>
+<td class="num">95</td>
+<td></td>
+<td class="num">95</td><td>&bull;</td>
+<td class="num">95</td><td>&bull;</td>
+<td class="num">95</td><td>&bull;</td>
+<td class="num">95</td><td>&bull;</td>
+<td class="num">95</td><td>&bull;</td>
+<td class="num">95</td><td>&bull;</td>
+<td class="num">95</td><td>&bull;</td>
+<td class="num">95</td><td>&bull;</td>
+<td class="num">95</td><td>&bull;</td>
+<td class="num">95</td><td>&bull;</td>
+<td class="num">95</td><td>&bull;</td>
+<td class="num">95</td><td>&bull;</td>
+</tr>
+<tr class="low"><td>Latin-1 Supplement</td>
+<td class="num">96</td>
+<td></td>
+<td class="num">96</td><td>&bull;</td>
+<td class="num">96</td><td>&bull;</td>
+<td class="num">96</td><td>&bull;</td>
+<td class="num">96</td><td>&bull;</td>
+<td class="num">96</td><td>&bull;</td>
+<td class="num">96</td><td>&bull;</td>
+<td class="num">96</td><td>&bull;</td>
+<td class="num">96</td><td>&bull;</td>
+<td class="num">96</td><td>&bull;</td>
+<td class="num">96</td><td>&bull;</td>
+<td class="num">96</td><td>&bull;</td>
+<td class="num">96</td><td>&bull;</td>
+</tr>
+<tr class="low"><td>Latin Extended-A</td>
+<td class="num">128</td>
+<td></td>
+<td class="num">128</td><td>&bull;</td>
+<td class="num">128</td><td>&bull;</td>
+<td class="num">128</td><td>&bull;</td>
+<td class="num">128</td><td>&bull;</td>
+<td class="num">128</td><td>&bull;</td>
+<td class="num">128</td><td>&bull;</td>
+<td class="num">128</td><td>&bull;</td>
+<td class="num">128</td><td>&bull;</td>
+<td class="num">128</td><td>&bull;</td>
+<td class="num">128</td><td>&bull;</td>
+<td class="num">128</td><td>&bull;</td>
+<td class="num">128</td><td>&bull;</td>
+</tr>
+<tr class="low"><td>Latin Extended-B</td>
+<td class="num">208</td>
+<td></td>
+<td class="num">208</td><td>&bull;</td>
+<td class="num">208</td><td>&bull;</td>
+<td class="num">208</td><td>&bull;</td>
+<td class="num">208</td><td>&bull;</td>
+<td class="num">174</td><td>&bull;</td>
+<td class="num">174</td><td>&bull;</td>
+<td class="num">174</td><td>&bull;</td>
+<td class="num">174</td><td>&bull;</td>
+<td class="num">177</td><td>&bull;</td>
+<td class="num">177</td><td>&bull;</td>
+<td class="num">177</td><td>&bull;</td>
+<td class="num">177</td><td>&bull;</td>
+</tr>
+<tr class="low"><td>IPA and Phoetic Extensions</td>
+<td class="num">288</td>
+<td></td>
+<td class="num">115</td><td>&bull;</td>
+<td class="num">96</td><td>&bull;</td>
+<td class="num">73</td><td>&bull;</td>
+<td class="num">28</td><td>&bull;</td>
+<td class="num">96</td><td>&bull;</td>
+<td class="num">67</td><td>&bull;</td>
+<td class="num">66</td><td>&bull;</td>
+<td class="num">64</td><td>&bull;</td>
+<td class="num">96</td><td>&bull;</td>
+<td class="num">78</td><td>&bull;</td>
+<td class="num">67</td><td>&bull;</td>
+<td class="num">67</td><td>&bull;</td>
+</tr>
+<tr class="low"><td>Spacing Modifier Letters</td>
+<td class="num">112</td>
+<td></td>
+<td class="num">80</td><td>&bull;</td>
+<td class="num">80</td><td>&bull;</td>
+<td class="num">27</td><td>&bull;</td>
+<td class="num">26</td><td>&bull;</td>
+<td class="num">80</td><td>&bull;</td>
+<td class="num">80</td><td>&bull;</td>
+<td class="num">16</td><td>&bull;</td>
+<td class="num">12</td><td>&bull;</td>
+<td class="num">80</td><td>&bull;</td>
+<td class="num">80</td><td>&bull;</td>
+<td class="num">80</td><td>&bull;</td>
+<td class="num">11</td><td>&bull;</td>
+</tr>
+<tr class="low"><td>Combining Diacritical Marks</td>
+<td class="num">112</td>
+<td></td>
+<td class="num">112</td><td>&bull;</td>
+<td class="num">112</td><td>&bull;</td>
+<td class="num">84</td><td>&bull;</td>
+<td class="num">84</td><td>&bull;</td>
+<td class="num">112</td><td>&bull;</td>
+<td class="num">17</td><td>&bull;</td>
+<td class="num">24</td><td>&bull;</td>
+<td class="num">16</td><td>&bull;</td>
+<td class="num">36</td><td>&bull;</td>
+<td class="num">24</td><td>&bull;</td>
+<td class="num">25</td><td>&bull;</td>
+<td class="num">15</td><td>&bull;</td>
+</tr>
+<tr class="low"><td>Greek and Coptic</td>
+<td class="num">134</td>
+<td></td>
+<td class="num">110</td><td>&bull;</td>
+<td class="num">110</td><td>&bull;</td>
+<td class="num">110</td><td>&bull;</td>
+<td class="num">110</td><td>&bull;</td>
+<td class="num">86</td><td>&bull;</td>
+<td class="num">86</td><td>&bull;</td>
+<td class="num">86</td><td>&bull;</td>
+<td class="num">76</td><td>&bull;</td>
+<td class="num">89</td><td>&bull;</td>
+<td class="num">89</td><td>&bull;</td>
+<td class="num">89</td><td>&bull;</td>
+<td class="num">89</td><td>&bull;</td>
+</tr>
+<tr class="low"><td>Coptic</td>
+<td class="num">128</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Cyrillic</td>
+<td class="num">420</td>
+<td></td>
+<td class="num">288</td><td>&bull;</td>
+<td class="num">220</td><td>&bull;</td>
+<td class="num">225</td><td>&bull;</td>
+<td class="num">213</td><td>&bull;</td>
+<td class="num">206</td><td>&bull;</td>
+<td class="num">193</td><td>&bull;</td>
+<td class="num">199</td><td>&bull;</td>
+<td class="num">193</td><td>&bull;</td>
+<td class="num">209</td><td>&bull;</td>
+<td class="num">203</td><td>&bull;</td>
+<td class="num">161</td><td>&bull;</td>
+<td class="num">160</td><td>&bull;</td>
+</tr>
+<tr class="low"><td>Armenian</td>
+<td class="num">86</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">86</td><td>&bull;</td>
+<td class="num">86</td><td>&bull;</td>
+<td class="num">86</td><td>&bull;</td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">86</td><td>&bull;</td>
+<td class="num">86</td><td>&bull;</td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Hebrew</td>
+<td class="num">87</td>
+<td></td>
+<td class="num">44</td><td>&bull;</td>
+<td class="num">43</td><td>&bull;</td>
+<td class="num">82</td><td>&bull;</td>
+<td class="num">32</td><td>&bull;</td>
+<td class="num">52</td><td>&bull;</td>
+<td class="num">52</td><td>&bull;</td>
+<td class="num">52</td><td>&bull;</td>
+<td class="num">52</td><td>&bull;</td>
+<td class="num">52</td><td>&bull;</td>
+<td class="num">52</td><td>&bull;</td>
+<td class="num">52</td><td>&bull;</td>
+<td class="num">52</td><td>&bull;</td>
+</tr>
+<tr class="low"><td>Vai</td>
+<td class="num">320</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Arabic (+supplement)</td>
+<td class="num">251</td>
+<td></td>
+<td class="num">67</td><td>&bull;</td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td></td>
+<td class="num">64</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Devanagari</td>
+<td class="num">112</td>
+<td></td>
+<td class="num">93</td><td>&bull;</td>
+<td class="num">2</td><td>&bull;</td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">107</td><td>&bull;</td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Bengali</td>
+<td class="num">91</td>
+<td></td>
+<td class="num">91</td><td>&bull;</td>
+<td class="num">91</td><td>&bull;</td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">91</td><td>&bull;</td>
+<td class="num">91</td><td>&bull;</td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Gurmukhi</td>
+<td class="num">79</td>
+<td></td>
+<td class="num">79</td><td>&bull;</td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">77</td><td>&bull;</td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">77</td><td>&bull;</td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Gujarati</td>
+<td class="num">83</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">79</td><td>&bull;</td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Oriya</td>
+<td class="num">84</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Tamil</td>
+<td class="num">73</td>
+<td></td>
+<td class="num">49</td><td>&bull;</td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">48</td><td>&bull;</td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Telugu</td>
+<td class="num">94</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Kannada</td>
+<td class="num">86</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Malayalam</td>
+<td class="num">95</td>
+<td></td>
+<td class="num">79</td><td>&bull;</td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Thai</td>
+<td class="num">87</td>
+<td></td>
+<td class="num">87</td><td>&bull;</td>
+<td class="num">87</td><td>&bull;</td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Lao</td>
+<td class="num">128</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Georgian (+supplement)</td>
+<td class="num">93</td>
+<td></td>
+<td class="num">76</td><td>&bull;</td>
+<td class="num">76</td><td>&bull;</td>
+<td class="num">76</td><td>&bull;</td>
+<td class="num">76</td><td>&bull;</td>
+<td class="num">71</td><td>&bull;</td>
+<td class="num">71</td><td>&bull;</td>
+<td class="num">71</td><td>&bull;</td>
+<td class="num">71</td><td>&bull;</td>
+<td class="num">38</td><td>&bull;</td>
+<td class="num">38</td><td>&bull;</td>
+<td class="num">38</td><td>&bull;</td>
+<td class="num">38</td><td>&bull;</td>
+</tr>
+<tr class="low"><td>Balinese</td>
+<td class="num">128</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Hangul Jamo</td>
+<td class="num">256</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Latin Extended (Additional,C,D)</td>
+<td class="num">304</td>
+<td></td>
+<td class="num">246</td><td>&bull;</td>
+<td class="num">246</td><td>&bull;</td>
+<td class="num">246</td><td>&bull;</td>
+<td class="num">246</td><td>&bull;</td>
+<td class="num">246</td><td>&bull;</td>
+<td class="num">246</td><td>&bull;</td>
+<td class="num">246</td><td>&bull;</td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">246</td><td>&bull;</td>
+<td class="num">246</td><td>&bull;</td>
+<td class="num">246</td><td>&bull;</td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Greek Extended</td>
+<td class="num">233</td>
+<td></td>
+<td class="num">233</td><td>&bull;</td>
+<td class="num">233</td><td>&bull;</td>
+<td class="num">233</td><td>&bull;</td>
+<td class="num">233</td><td>&bull;</td>
+<td class="num">233</td><td>&bull;</td>
+<td class="num">233</td><td>&bull;</td>
+<td class="num">233</td><td>&bull;</td>
+<td class="num">227</td><td>&bull;</td>
+<td class="num">233</td><td>&bull;</td>
+<td class="num">233</td><td>&bull;</td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>General Punctuation (+suppl)</td>
+<td class="num">225</td>
+<td></td>
+<td class="num">98</td><td>&bull;</td>
+<td class="num">97</td><td>&bull;</td>
+<td class="num">98</td><td>&bull;</td>
+<td class="num">98</td><td>&bull;</td>
+<td class="num">98</td><td>&bull;</td>
+<td class="num">97</td><td>&bull;</td>
+<td class="num">97</td><td>&bull;</td>
+<td class="num">97</td><td>&bull;</td>
+<td class="num">97</td><td>&bull;</td>
+<td class="num">71</td><td>&bull;</td>
+<td class="num">66</td><td>&bull;</td>
+<td class="num">66</td><td>&bull;</td>
+</tr>
+<tr class="low"><td>Superscripts and Subscripts</td>
+<td class="num">34</td>
+<td></td>
+<td class="num">34</td><td>&bull;</td>
+<td class="num">30</td><td>&bull;</td>
+<td class="num">22</td><td>&bull;</td>
+<td class="num">23</td><td>&bull;</td>
+<td class="num">34</td><td>&bull;</td>
+<td class="num">23</td><td>&bull;</td>
+<td class="num">34</td><td>&bull;</td>
+<td class="num">34</td><td>&bull;</td>
+<td class="num">34</td><td>&bull;</td>
+<td class="num">23</td><td>&bull;</td>
+<td class="num">28</td><td>&bull;</td>
+<td class="num">22</td><td>&bull;</td>
+</tr>
+<tr class="low"><td>Currency Symbols</td>
+<td class="num">22</td>
+<td></td>
+<td class="num">22</td><td>&bull;</td>
+<td class="num">20</td><td>&bull;</td>
+<td class="num">20</td><td>&bull;</td>
+<td class="num">20</td><td>&bull;</td>
+<td class="num">20</td><td>&bull;</td>
+<td class="num">5</td><td>&bull;</td>
+<td class="num">3</td><td>&bull;</td>
+<td class="num">3</td><td>&bull;</td>
+<td class="num">20</td><td>&bull;</td>
+<td class="num">6</td><td>&bull;</td>
+<td class="num">5</td><td>&bull;</td>
+<td class="num">3</td><td>&bull;</td>
+</tr>
+<tr class="low"><td>Combining Diacritical Marks for Symbols</td>
+<td class="num">33</td>
+<td></td>
+<td class="num">30</td><td>&bull;</td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">25</td><td>&bull;</td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">10</td><td>&bull;</td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Letterlike Symbols</td>
+<td class="num">80</td>
+<td></td>
+<td class="num">65</td><td>&bull;</td>
+<td class="num">34</td><td>&bull;</td>
+<td class="num">43</td><td>&bull;</td>
+<td class="num">34</td><td>&bull;</td>
+<td class="num">39</td><td>&bull;</td>
+<td class="num">25</td><td>&bull;</td>
+<td class="num">24</td><td>&bull;</td>
+<td class="num">24</td><td>&bull;</td>
+<td class="num">41</td><td>&bull;</td>
+<td class="num">41</td><td>&bull;</td>
+<td class="num">26</td><td>&bull;</td>
+<td class="num">26</td><td>&bull;</td>
+</tr>
+<tr class="low"><td>Number Forms</td>
+<td class="num">54</td>
+<td></td>
+<td class="num">45</td><td>&bull;</td>
+<td class="num">45</td><td>&bull;</td>
+<td class="num">45</td><td>&bull;</td>
+<td class="num">45</td><td>&bull;</td>
+<td class="num">45</td><td>&bull;</td>
+<td class="num">45</td><td>&bull;</td>
+<td class="num">45</td><td>&bull;</td>
+<td class="num">45</td><td>&bull;</td>
+<td class="num">45</td><td>&bull;</td>
+<td class="num">45</td><td>&bull;</td>
+<td class="num">32</td><td>&bull;</td>
+<td class="num">32</td><td>&bull;</td>
+</tr>
+<tr class="low"><td>Arrows (+suppl)</td>
+<td class="num">512</td>
+<td></td>
+<td class="num">85</td><td>&bull;</td>
+<td class="num">4</td><td>&bull;</td>
+<td class="num">77</td><td>&bull;</td>
+<td class="num">34</td><td>&bull;</td>
+<td class="num">30</td><td>&bull;</td>
+<td class="num">6</td><td>&bull;</td>
+<td class="num">30</td><td>&bull;</td>
+<td class="num">30</td><td>&bull;</td>
+<td class="num">79</td><td>&bull;</td>
+<td class="num">11</td><td>&bull;</td>
+<td class="num">4</td><td>&bull;</td>
+<td class="num">4</td><td>&bull;</td>
+</tr>
+<tr class="low"><td>Mathematical Operators</td>
+<td class="num">684</td>
+<td></td>
+<td class="num">272</td><td>&bull;</td>
+<td class="num">16</td><td>&bull;</td>
+<td class="num">184</td><td>&bull;</td>
+<td class="num">10</td><td>&bull;</td>
+<td class="num">121</td><td>&bull;</td>
+<td class="num">11</td><td>&bull;</td>
+<td class="num">13</td><td>&bull;</td>
+<td class="num">10</td><td>&bull;</td>
+<td class="num">174</td><td>&bull;</td>
+<td class="num">37</td><td>&bull;</td>
+<td class="num">30</td><td>&bull;</td>
+<td class="num">21</td><td>&bull;</td>
+</tr>
+<tr class="low"><td>Miscellaneous Technical</td>
+<td class="num">232</td>
+<td></td>
+<td class="num">54</td><td>&bull;</td>
+<td class="num">2</td><td>&bull;</td>
+<td class="num">10</td><td>&bull;</td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">24</td><td>&bull;</td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">58</td><td>&bull;</td>
+<td class="num">2</td><td>&bull;</td>
+<td class="num">3</td><td>&bull;</td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Control Pictures</td>
+<td class="num">39</td>
+<td></td>
+<td class="num">1</td><td>&bull;</td>
+<td class="num">1</td><td>&bull;</td>
+<td class="num">1</td><td>&bull;</td>
+<td class="num">1</td><td>&bull;</td>
+<td class="num">2</td><td>&bull;</td>
+<td class="num">1</td><td>&bull;</td>
+<td class="num">1</td><td>&bull;</td>
+<td class="num">1</td><td>&bull;</td>
+<td class="num">1</td><td>&bull;</td>
+<td class="num">1</td><td>&bull;</td>
+<td class="num">1</td><td>&bull;</td>
+<td class="num">1</td><td>&bull;</td>
+</tr>
+<tr class="low"><td>Optical Character Recognition</td>
+<td class="num">32</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Enclosed Alphanumerics</td>
+<td class="num">160</td>
+<td></td>
+<td class="num">10</td><td>&bull;</td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">10</td><td>&bull;</td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Box Drawing</td>
+<td class="num">128</td>
+<td></td>
+<td class="num">116</td><td>&bull;</td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">105</td><td>&bull;</td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">105</td><td>&bull;</td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">128</td><td>&bull;</td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">128</td><td>&bull;</td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Block Elements</td>
+<td class="num">32</td>
+<td></td>
+<td class="num">29</td><td>&bull;</td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">31</td><td>&bull;</td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">32</td><td>&bull;</td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">32</td><td>&bull;</td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">22</td><td>&bull;</td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Geometric Shapes</td>
+<td class="num">96</td>
+<td></td>
+<td class="num">93</td><td>&bull;</td>
+<td class="num">1</td><td>&bull;</td>
+<td class="num">19</td><td>&bull;</td>
+<td class="num">1</td><td>&bull;</td>
+<td class="num">13</td><td>&bull;</td>
+<td class="num">1</td><td>&bull;</td>
+<td class="num">1</td><td>&bull;</td>
+<td class="num">1</td><td>&bull;</td>
+<td class="num">96</td><td>&bull;</td>
+<td class="num">1</td><td>&bull;</td>
+<td class="num">74</td><td>&bull;</td>
+<td class="num">1</td><td>&bull;</td>
+</tr>
+<tr class="low"><td>Miscellaneous Symbols</td>
+<td class="num">194</td>
+<td></td>
+<td class="num">110</td><td>&bull;</td>
+<td class="num">7</td><td>&bull;</td>
+<td class="num">17</td><td>&bull;</td>
+<td class="num">7</td><td>&bull;</td>
+<td class="num">8</td><td>&bull;</td>
+<td class="num">1</td><td>&bull;</td>
+<td class="num">8</td><td>&bull;</td>
+<td class="num">7</td><td>&bull;</td>
+<td class="num">79</td><td>&bull;</td>
+<td class="num">7</td><td>&bull;</td>
+<td class="num">18</td><td>&bull;</td>
+<td class="num">4</td><td>&bull;</td>
+</tr>
+<tr class="low"><td>Dingbats</td>
+<td class="num">174</td>
+<td></td>
+<td class="num">174</td><td>&bull;</td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">1</td><td>&bull;</td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">1</td><td>&bull;</td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>CJK Symbols and Punctuation</td>
+<td class="num">64</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Hiragana</td>
+<td class="num">96</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Katakana</td>
+<td class="num">96</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Bopomofo</td>
+<td class="num">48</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Hangul Compatibility Jamo</td>
+<td class="num">96</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>CJK Miscellaneous</td>
+<td class="num">16</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Enclosed CJK Letters and Months</td>
+<td class="num">256</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>CJK Compatibility</td>
+<td class="num">256</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Hangul</td>
+<td class="num">2350</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Non-Plane 0</td>
+<td class="num">2048</td>
+<td></td>
+<td class="num">&nbsp;</td><td>&bull;</td>
+<td class="num">&nbsp;</td><td>&bull;</td>
+<td class="num">&nbsp;</td><td>&bull;</td>
+<td class="num">&nbsp;</td><td>&bull;</td>
+<td class="num">&nbsp;</td><td>&bull;</td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="high"><td>Phoenician</td>
+<td class="num">32</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>CJK Unified Ideographs</td>
+<td class="num">20992</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Private Use Area</td>
+<td class="num">4352</td>
+<td></td>
+<td class="num">1342</td><td></td>
+<td class="num">445</td><td></td>
+<td class="num">1</td><td></td>
+<td class="num">1</td><td></td>
+<td class="num">922</td><td>&bull;</td>
+<td class="num">466</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>CJK Compatibility Ideographs</td>
+<td class="num">512</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Alphabetic Presentation Forms</td>
+<td class="num">58</td>
+<td></td>
+<td class="num">38</td><td>&bull;</td>
+<td class="num">6</td><td>&bull;</td>
+<td class="num">44</td><td>&bull;</td>
+<td class="num">6</td><td>&bull;</td>
+<td class="num">52</td><td>&bull;</td>
+<td class="num">46</td><td>&bull;</td>
+<td class="num">46</td><td>&bull;</td>
+<td class="num">46</td><td>&bull;</td>
+<td class="num">52</td><td>&bull;</td>
+<td class="num">49</td><td>&bull;</td>
+<td class="num">3</td><td>&bull;</td>
+<td class="num">3</td><td>&bull;</td>
+</tr>
+<tr class="low"><td>Arabic Presentation Forms-A</td>
+<td class="num">595</td>
+<td></td>
+<td class="num">20</td><td>&bull;</td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Combining Half Marks</td>
+<td class="num">16</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>CJK Compatibility Forms</td>
+<td class="num">48</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Small Form Variants</td>
+<td class="num">26</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Arabic Presentation Forms-B</td>
+<td class="num">141</td>
+<td></td>
+<td class="num">132</td><td>&bull;</td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Halfwidth and Fullwidth Forms</td>
+<td class="num">240</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Specials</td>
+<td class="num">5</td>
+<td></td>
+<td class="num">1</td><td>&bull;</td>
+<td class="num">1</td><td>&bull;</td>
+<td class="num">1</td><td>&bull;</td>
+<td class="num">1</td><td>&bull;</td>
+<td class="num">1</td><td>&bull;</td>
+<td class="num">1</td><td>&bull;</td>
+<td class="num">1</td><td>&bull;</td>
+<td class="num">1</td><td>&bull;</td>
+<td class="num">1</td><td>&bull;</td>
+<td class="num">1</td><td>&bull;</td>
+<td class="num">1</td><td>&bull;</td>
+<td class="num">1</td><td>&bull;</td>
+</tr>
+<tr class="low"><td>Tibetan</td>
+<td class="num">256</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Syriac</td>
+<td class="num">77</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">71</td><td>&bull;</td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Thaana</td>
+<td class="num">50</td>
+<td></td>
+<td class="num">49</td><td>&bull;</td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Sinhala</td>
+<td class="num">128</td>
+<td></td>
+<td class="num">56</td><td>&bull;</td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Myanmar</td>
+<td class="num">160</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Ethiopic (+supplement, extended)</td>
+<td class="num">306</td>
+<td></td>
+<td class="num">174</td><td>&bull;</td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Cherokee</td>
+<td class="num">85</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Unified Canadian Aboriginal Syllabics</td>
+<td class="num">223</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Ogham</td>
+<td class="num">32</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Runic</td>
+<td class="num">82</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">81</td><td>&bull;</td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Khmer (+symbols)</td>
+<td class="num">160</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Mongolian</td>
+<td class="num">176</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Braille Patterns</td>
+<td class="num">256</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">256</td><td>&bull;</td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Yi Syllables, Radicals</td>
+<td class="num">304</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Tagalog Hanunoo Buhid Tagbanwa</td>
+<td class="num">100</td>
+<td></td>
+<td class="num">22</td><td>&bull;</td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="high"><td>Old Italic</td>
+<td class="num">33</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="high"><td>Gothic</td>
+<td class="num">27</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="high"><td>Deseret</td>
+<td class="num">80</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="high"><td>Byzantine &amp; Western Musical Symbols</td>
+<td class="num">548</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="high"><td>Mathematical Alphanumeric Symbols</td>
+<td class="num">256</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="high"><td>Private Use (plane 15,16)</td>
+<td class="num">69628</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="high"><td>Variation Selectors (+suppl)</td>
+<td class="num">256</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="high"><td>Tags</td>
+<td class="num">496</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Limbu</td>
+<td class="num">80</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Tai Le</td>
+<td class="num">35</td>
+<td></td>
+<td class="num">35</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>New Tai Lue</td>
+<td class="num">96</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Buginese</td>
+<td class="num">32</td>
+<td></td>
+<td class="num">30</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Glagolitic</td>
+<td class="num">96</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Tifinagh</td>
+<td class="num">80</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Ying Hexagram Symbols</td>
+<td class="num">64</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Syloti Nagri</td>
+<td class="num">48</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="high"><td>Linear B Syllabary etc</td>
+<td class="num">320</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="high"><td>Ancient Greek Numbers</td>
+<td class="num">80</td>
+<td></td>
+<td class="num">5</td><td></td>
+<td class="num">5</td><td></td>
+<td class="num">5</td><td></td>
+<td class="num">5</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="high"><td>Ugaritic</td>
+<td class="num">31</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">31</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="high"><td>Old Persian</td>
+<td class="num">51</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">50</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="high"><td>Shavian</td>
+<td class="num">48</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="high"><td>Osmanya</td>
+<td class="num">48</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="high"><td>Cypriot Syllabary</td>
+<td class="num">64</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="high"><td>Kharoshthi</td>
+<td class="num">96</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="high"><td>Tai Xuan Jing Symbols</td>
+<td class="num">96</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="high"><td>Cuneiform (+numbers)</td>
+<td class="num">1152</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="high"><td>Counting Rod Numerals</td>
+<td class="num">32</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Sundanese</td>
+<td class="num">64</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Lepcha</td>
+<td class="num">80</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Ol Chiki</td>
+<td class="num">48</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Saurashtra</td>
+<td class="num">96</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Kayah Li</td>
+<td class="num">48</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Reiang</td>
+<td class="num">48</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="low"><td>Cham</td>
+<td class="num">96</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="high"><td>Ancient Symbols</td>
+<td class="num">64</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="high"><td>Phaistos Disc</td>
+<td class="num">48</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="high"><td>Carian, Lycian, Lydian</td>
+<td class="num">128</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+<tr class="high"><td>Domino and Mahjong Tiles</td>
+<td class="num">160</td>
+<td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td></td>
+</tr>
+</table>
+<p>
+
+<p>
+Ranges for which (FontForge reports that) the font's OS/2 support
+bit is set are marked with a bullet.
+</p>
+<p>
+For many ranges, I took the liberty of reducing the set of 
+characters considered to the ones listed for the range in the
+current Unicode charts, so the number of characters is less than
+the width of the range.
+</p>
+<p>
+Note that there is a discrepancy in the Greek Symbols, Hebrew 
+Extended and Arabic Extended ranges, between what FontForge 
+reports here and in its Font Info window under OS/2 Character 
+Ranges. I don't know why, but these ranges are also not well
+defined in the TrueType standard.
+</p>
+<p>
+Note the 2 characters from Devanagri.  These are the danda and double-danda
+used by other Inidic scripts.
+</p>
+<p>
+The ranges <span style="color: gray">beyond Unicode 0xFFFF</span>, are shaded.
+</p>
+
+Generated by <code>ranges.py</code> on 06:03:53 PM 08/17/2008 CEST.
+</p>
+</div>
+</body>
+</html>

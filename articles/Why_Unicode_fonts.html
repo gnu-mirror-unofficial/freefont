@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- $Header: /web/freefont/freefont/articles/Why_Unicode_fonts.html,v 1.1 2008/08/22 08:03:59 Stevan_White Exp $ -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="../freefont.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>GNU FreeFont: Why Unicode fonts?</title>
+</head>
+
+<div class="toc">
+	<hr />
+	<ul>
+	<li>
+		<a href="../index.html">home page</a>
+	<!--
+	</li><li>
+		<a href="design-notes.html">design notes</a>
+	</li><li>
+		coverage
+	-->
+	</li><li>
+		<a href="../coverage.html">coverage</a>
+	</li><li>
+	        <a href="../design-notes.html">design notes</a>
+	</li><li>
+		<a href="../sources/">sources</a>
+	</li>
+	</ul>
+	<hr />
+	<ul>
+	<li>
+		<a href="http://savannah.gnu.org/projects/freefont/">project
+		page</a>
+	</li>
+	</ul>
+	<hr />
+	<ul>
+	<li>
+	<a href="Why_Unicode_fonts.html">why Unicode fonts?</a>
+	</li>
+	<li>
+	<a href="Why_Free_Fonts.html">why free fonts?</a>
+	</li>
+	</ul>
+</div>
+
+<div class="content">
+<h1><small><a href="http://savannah.gnu.org/projects/freefont/">GNU FreeFont</a></small><br />
+	Why Unicode fonts?</h1>
+
+<p>Why should we put characters from lots of different writing systems into
+a single font at all?  How good does such a font need to be?  The answers
+to these questions lead to a policy for including character ranges into
+GNU FreeFont.
+</p>
+
+<h2>inclusion of character ranges</h2>
+<p>
+What glyphs go into a font?  There are two extreme views.
+</p>
+<p>
+One is that glyphs in a font should comprise a unified design entity.
+</p>
+<p>
+This makes very good sense only within a single language script.  
+Different script systems, such as Latin, Arabic and Thai, have very
+different typesetting traditions and conventions.
+</p>
+<p>
+When mixing, say, French with Thai, what exactly does it mean that they
+should be in the same style?
+Does it require an artist, with deep knowledge of typesetting in all the
+languages involved, to achieve an ideal aesthetic harmony?
+</p>
+<p>
+The other extreme is that a font should just have a glyph for each slot
+in its stated character set.
+</p>
+<p>
+If on the other hand, text from different languages is never to be mixed,
+one has to ask, why are the glyphs in one font?  
+Why put characters from many languages (and technical symbols as well) into
+one font?  Why not put them into separate files, call the fonts by separate
+names?  
+</p>
+<p>
+Either extreme leads to an unworkable absurdity.  Somehow a balance must
+be struck.
+</p>
+<p>
+It is reasonable that mixed text from a single font should look like it
+somehow belongs together.  At the very least, glyphs from different ranges
+within one font should be of commensurate size and weight, and the level of
+decoration should be similar (e.g. serifed vs sans-serif).
+</p>
+<p>
+The utility of having such a collection is that the user can conveniently
+insert special symbols, and text from varied writing scripts, without
+having to grope for fonts that contain the desired symbols, and without
+struggling to find a good stylistic match.
+</p>
+
+<h2>beauty and resources</h2>
+<p>
+The usefulness of a font is not independent of its beauty.  A font, after
+all, is an artistic creation (whether a reader of text in the font is 
+aware of it or not).
+But if a font is really ugly people will not find it useful.
+</p>
+<p>
+In this project, we can expect that the contributors do not usually have 
+the time or skills of artisans in a professional foundary.  This is typical
+of the relationship between free and bought software.  We do the best we
+can, and for some purposes, it is pretty good.
+</p>
+
+<h2>policy regarding inclusion of character ranges</h2>
+<p>
+We are lead to this policy for FreeFont:  
+We assemble as many character ranges as we can, within our abilities,
+and subject to the criteria that they are:
+</p>
+<ul>
+	<li>useful for their primary purpose, and</li>
+	<li>look pretty good together.</li>
+<ul>
+</div>
+</body>
+</html>
+

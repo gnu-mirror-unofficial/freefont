@@ -1,13 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- $Header: /web/freefont/freefont/index.html,v 1.12 2008/08/22 08:03:58 Stevan_White Exp $ -->
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-<!-- $Header: /web/freefont/freefont/index.html,v 1.11 2008/07/11 18:13:13 Stevan_White Exp $ -->
-
 <head>
 <link rel="stylesheet" type="text/css" href="freefont.css" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Free UCS Outline Fonts</title>
+<title>GNU FreeFont</title>
+<style type="text/css">
+	div.langbox {
+		width: 10em;
+		float: right;
+		padding-left: 1ex;
+		margin-left: 1ex;
+		border-left: medium solid #AAF;
+	}
+	div.langbox h3 { font-size: medium; margin-top: 0; }
+
+	table.samples td { vertical-align: bottom; text-align: center;
+		padding-left: 0.5ex;
+		padding-right: 0.5ex;
+		font-size: 24pt; }
+	p.samples { text-align: center; }
+</style>
 </head>
 
 <body>
@@ -16,13 +31,17 @@
 	<hr />
 	<ul>
 	<li>
-	        <a href="index.html">home page</a>
+	<a href="index.html">home page</a>
+	<!--
+	</li><li>
+		<a href="design-notes.html">design notes</a>
+	-->
+	</li><li>
+	        <a href="coverage.html">coverage</a>
 	</li><li>
 	        <a href="design-notes.html">design notes</a>
 	</li><li>
-	        <a href="resources.html">resources</a>
-	</li><li>
-	        <a href="resources-script.html">resources by script</a>
+	        <a href="sources/">sources</a>
 	</li>
 	</ul>
 	<hr />
@@ -32,191 +51,124 @@
 		page</a>
 	</li>
 	</ul>
+	<!--
+	<li>
+		comparisons
+	</li>
+	<li>
+		goals and purpose
+		</li>
+	-->
+	<hr />
+	<ul>
+	<li>
+	<a href="articles/Why_Unicode_fonts.html">why Unicode fonts?</a>
+	</li>
+	<li>
+	<a href="articles/Why_Free_Fonts.html">why free fonts?</a>
+	</li>
+	</ul>
 </div>
+
 <div class="content">
-	<h1><a href="http://savannah.gnu.org/projects/freefont/">Free
-			UCS Outline Fonts</a></h1>
-
-<blockquote>
-<p><em>Summary: This project aims to provide a set of free outline
-(PostScript Type0, TrueType, OpenType...) fonts covering the ISO
-10646/Unicode UCS (Universal Character Set).</em></p>
-</blockquote>
-
-<h2>Why do we need free outline UCS fonts?</h2>
-
-<p>A large number of free software users switched from free
-X11 bitmapped fonts to proprietary Microsoft TrueType fonts, as a)
-they used to be freely downloaded from <a
-href="http://www.microsoft.com/typography/free.htm">Microsoft
-Typography page</a>, b) they contain a decent subset of
-the ISO 10646 UCS (Universal Character Set), c) they are high-quality,
-well hinted scalable TrueType fonts, and d) <a
-href="http://www.freetype.org/">FreeType</a>, a free high-quality
-TrueType font renderer is available and has been integrated into the
-latest release of XFree86, the free X11 server.</p>
-
-<p>Building a dependence on non-free software, even a niche one like
-fonts, is dangerous. Microsoft TrueType core fonts were never free,
-they were just costless. Citing the <a
-href="http://www.microsoft.com/typography/faq/faq8.htm">TrueType core
-fonts for the Web FAQ</a>: <em>You may only redistribute the fonts in
-their original form (.exe or .sit.hqx) and with their original file
-name from your Web site or intranet site. You must not supply the
-fonts, or any derivative fonts based on them, in any form that adds
-value to commercial products, such as CD-ROM or disk based multimedia
-programs, application software or utilities.</em> As of August 2002,
-however, the fonts are not anymore available from the Microsoft Web site,
-which makes the situation clearer.</p>
-
-<p>Aren't there any free high-quality outline fonts?  Yes, there are.
-The Bitstream Vera fonts were made public, and are now maintained as
-the DejaVu fonts family.
-URW++, a German digital type foundry, released their own version
-of the 35 PostScript Type 1 core fonts under GPL as their donation to the
-<a href="http://www.ghostscript.com/">Ghostscript project</a>.
-The Wadalab Kanji comittee has produced
-<a href="http://gps.tanaka.ecc.u-tokyo.ac.jp/wadalabfont/">Type 1 font files
-with thousands of filigree Japanese glyphs</a>.
-Yannis Haralambous has drawn beautiful glyphs for the <a
-	href="http://omega.enstb.org/">Omega typesetting system</a>.
-And so on. Scattered around the Internet there are numerous other free
-resources for other national scripts, many of them aiming to be a suitable
-match for Latin fonts like Times or Helvetica.</p>
-
-
-<h2>What do we plan to achieve, and how?</h2>
-
-<p>Our aim is to collect available <a
-href="resources.html">resources</a>, fill in the missing pieces, and
-provide a set of free high-quality outline (OpenType, TrueType, Type
-0) UCS fonts, released under GNU GPL.</p>
-
-<p>Free UCS outline fonts will cover the following character sets</p>
+<h1><a href="http://savannah.gnu.org/projects/freefont/">GNU FreeFont</a></h1>
+<div class="langbox">
+<h3>Writing systems</h3>
 <ul>
-	<li>ISO 8859 parts 1-15 </li>
-<li><a href="http://www.evertype.com/standards/iso10646/pdf/cwa13873.pdf">CEN
-	MES-3 European Unicode Subset</a></li>
-<li>IBM/Microsoft code pages 437, 850, 852, 1250, 1252 and more</li>
-<li><a href="http://www.microsoft.com/typography/otspec/WGL4.htm">Microsoft/Adobe Windows Glyph List 4 (WGL4)</a></li>
-<li>KOI8-R and KOI8-U</li>
-<li>DEC VT100 graphics symbols</li>
 <li>International Phonetic Alphabet</li>
-<li>Arabic, Hebrew, Armenian, Georgian, Ethiopian, Thai and Lao alphabets,
-including Arabic presentation forms A/B</li>
-<li>Japanese Katakana and Hiragana</li>
-<li>mathematical symbols, including the whole TeX repertoire of symbols</li>
-<li>APL symbols etc.</li>
+<li>Braille</li>
+
+<li>Cyrillic</li>
+<li>Greek</li>
+
+<li>Arabic</li>
+<li>Hebrew</li>
+<li>Thaana</li>
+<li>Syriac</li>
+
+<li>Ethiopian</li>
+<li>Armenian</li>
+<li>Georgian</li>
+
+<li>Devanagari</li>
+<li>Bengali</li>
+<li>Gujarati</li>
+<li>Gurmukhi</li>
+<li>Sinhala</li>
+<li>Tamil</li>
+
+<li>Malayalam</li>
+
+<li>Mongolian</li>
+<li>Tai Le</li>
+<li>Thai</li>
+
+<li>Hanunóo</li>
+<li>Buginese</li>
+
+<li>Runic</li>
+<li>Ugaritic</li>
+<li>Old Persian</li>
 </ul>
 
-<h3>Free font utilities</h3>
-
-<p>A couple of excellent font utilities has been developed lately:</p>
+<p>
+<h3>Symbol ranges</h3>
+</p>
 <ul>
-<li><p>A free outline font editor, George Williams's <a
-href="http://fontforge.sourceforge.net/">FontForge</a> will be used for
-creating new glyphs. </p></li>
-<li><p>Rogier van Dalen's <a
-href="http://home.kabelfoon.nl/~slam/fonts/">TrueType/OpenType
-utilities</a> will be used for instructing TrueType fonts and compiling
-OpenType tables.</p></li>
-</ul> 
-
-<h3>Design issues</h3>
-
-<p>Which font shapes should be made? As historical style terms like
-Renaissance or Baroque letterforms cannot be applied beyond
-Latin/Cyrillic/Greek scripts to any greater extent than Kufi or Nashki
-can be applied beyond Arabic script, a smaller subset of styles will
-be made: one monospaced - <tt>FreeMono</tt> and two proportional (one
-with uniform stroke - <tt>FreeSans</tt> - and one with modulated -
-<tt>FreeSerif</tt>) will be made at the start.</p>
-
-<p>These minimal style requirements allow the typefaces to preserve
-the same characteristic spirit regardless of the scripts, so that the
-font will be a harmonic unity. Some <a
-href="design-notes.html">design notes</a> on individual typefaces
-are available.</p>
-
-<p>In the beginning, however, we don't believe that TrueType hinting
-will be good enough to compete with neither the hand-crafted bitmapped
-fonts at small sizes, nor with commercial TrueType fonts.
-<!--
-A companion program for modifying the TrueType font tables,
-<a href="http://pfaedit.sourceforge.net/TtfMod/">TtfMod</a>,
-is in the works, though.
+<li>General punctuation</li>
+<li>Currencies</li>
+<li>Mathematics</li>
+<li>Dingbats</li>
+<li>Geometrical shapes</li>
+<li>Arrow drawing</li>
+<li>Box drawing</li>
+<li>Diacritical marks</li>
+</ul>
+</div>
+<p>
+Gnu FreeFont is a free family of scalable outline fonts, suitable for general
+use on computers and for desktop publishing.  It is Unicode-encoded for 
+compatability with all modern operating systems.
+</p>
+<p>
+The fonts are ready to use, downloadable in TrueType and OpenType formats.
+</p>
+<p class="samples">
+<img src="images/samples.png" />
+</p>
+<!-- 
+<table class="samples">
+<tr>
+	<td style="font-family: freeserif; ">Serif</td>
+	<td style="font-family: freesans; ">Sans</td>
+	<td style="font-family: freemono; ">Mono</td>
+</tr><tr>
+	<td style="font-family: freeserif; font-weight: bold;">Serif</td>
+	<td style="font-family: freesans; font-weight: bold;">Sans</td>
+	<td style="font-family: freemono; font-weight: bold;">Mono</td>
+</tr><tr>
+	<td style="font-family: freeserif; font-style: italic;">Serif</td>
+	<td style="font-family: freesans; font-style: italic;">Sans</td>
+	<td style="font-family: freemono; font-style: italic;">Mono</td>
+</tr><tr>
+	<td style="font-family: freeserif; font-weight: bold; font-style: italic;">Serif</td>
+	<td style="font-family: freesans; font-weight: bold; font-style: italic;">Sans</td>
+	<td style="font-family: freemono; font-weight: bold; font-style: italic;">Mono</td>
+</tr>
+</table>
 -->
-For applications like <tt>xterm</tt>, users are
-referred to the existing <a
-href="http://www.cl.cam.ac.uk/~mgk25/ucs-fonts.html">UCS bitmap
-fonts</a>. </p>
 
-<h2>Downloading fonts</h2>
-
-<p>Tar archives, compressed with gzip, are available on the
-Savannah download area</p>
-<ul>
-<li><a
-	href="http://ftp.gnu.org/gnu/freefont/">http://ftp.gnu.org/gnu/freefont/</a></li>
-</ul>
-
-<p>There you will find several archive files, depending on the
-format of fonts. A <tt>-source-</tt> package contains 
-font files with a <tt>.sfd</tt> (Spline Font Database) suffix.
-This is FontForge's native format. Please use these if you plan to modify the
-font files. FontForge can export these to mostly any existing font file
-format.</p>
-
-<p>TrueType fonts for immediate consumption are in the
-<tt>-ttf-</tt> tag. Font files have the
-<tt>.ttf</tt> (TrueType Font) suffix. You can use them directly,
-e.g. with the X font server.</p>
-
-<p>OpenType fonts are in the
-<tt>-otf-</tt> tag. Font files have the
-<tt>.otf</tt> (OpenType Font) suffix.</p>
-
-<p>Finally, there is a <tt>-sample-</tt> package.
-The files with <tt>.ps</tt> (PostScript) suffix are not font files
-at all - they are merely PostScript files with glyph tables, which can
-be used for overview, which glyphs are contained in which font file.</p>
-
-<p>You may have noticed the lack of PostScript Type 1
-(<tt>.pfa</tt>/<tt>.pfb</tt>) font files. Type 1 format does not
-support large (&gt; 256) encoding vectors, so they can not be used with
-ISO 10646 encoding. If your printer supports it, you can use Type 0
-format, though. Please use FontForge for conversion to Type 0.</p>
-
-<h3>Debian GNU/Linux</h3>
-
-<p>Users of <a href="http://www.debian.org/">Debian GNU/Linux</a>
-system can download a <tt>.deb</tt> package from the <a
-href="http://packages.debian.org/unstable/x11/ttf-freefont">Debian
-Web site</a>.
+<p>
+Besides a full set of characters for writing systems based on the Latin 
+alphabet, FreeFont contains large selection of characters from other
+writing systems some of which are hard to find elsewhere.
+These include the Unicode ranges for the writing systems listed here.
 </p>
-
-<h3>NetBSD pkgsrc</h3>
-
-<p>Users of the <a href="http://www.pkgsrc.org/">pkgsrc</a> package
-system or <a href="http://www.NetBSD.org/">NetBSD</a> can use
-<tt>pkgsrc/fonts/freefont-ttf</tt>.
-The package webpage is at the <a
-href="ftp://ftp.NetBSD.org/pub/NetBSD/packages/pkgsrc/fonts/freefont-ttf/README.html">NetBSD
-site</a>.
+<p>
+FreeFont also contains a large set of symbol characters, both technical and
+decorative.  We are especially pleased with the Mathematical Operators
+range, with which most of the glyphs used in LaTeX can be displayed.
 </p>
-
-<h3>FreeBSD</h3>
-
-<p>Users of <a href="http://www.freebsd.org/">FreeBSD</a> system can
-download a FreeBSD package from the <a
-href="http://www.freebsd.org/cgi/ports.cgi?query=freefont-ttf&amp;stype=name&amp;sektion=x11-fonts">FreeBSD
-ports Web site</a>.
-</p>
-
-<hr />
-<p>Primož Peterlin, primoz.peterlin@biofiz.mf.uni-lj.si, 2006/01/12<br />
-update by Steve White stevan.white@googlemail.com
-$Date: 2008/07/11 18:13:13 $</p>
 
 </div>
 
