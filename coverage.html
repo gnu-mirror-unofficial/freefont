@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<!-- $Header: /web/freefont/freefont/coverage.html,v 1.3 2008/12/26 23:11:34 Stevan_White Exp $ -->
+<!-- $Header: /web/freefont/freefont/coverage.html,v 1.4 2009/01/04 16:51:41 Stevan_White Exp $ -->
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
 <title>
@@ -69,22 +69,10 @@ an extension of the old OS/2 character ranges.  This table shows how many
 characters FontForge finds in each of the ranges for each face in the family.
 
 </p>
-<title>
-Gnu FreeFont character range support
-</title>
-<style type="text/css">
-	tr.high { color: gray }
-	td.num { text-align: right }
-	td { padding-right: 0.25ex }
-	th { padding: 0.25ex }
-	.roman { border-left: medium black solid; }
-	caption { font-size: larger; font-weight: bold; }
-</style>
-</head>
-<body>
 <h1>
 Gnu FreeFont support for OpenType OS/2 character ranges
 </h1>
+
 <table class="fontrangereport" cellspacing="0" cellpadding="0" frame="box" rules="all">
 <caption>
 OS/2 character ranges vs. FreeFont faces 
@@ -1123,8 +1111,8 @@ OS/2 character ranges vs. FreeFont faces
 <td class="num">44</td><td>&bull;</td>
 <td class="num">57</td><td>&bull;</td>
 <td class="num">57</td><td>&bull;</td>
-<td class="num">51</td><td>&bull;</td>
-<td class="num">51</td><td>&bull;</td>
+<td class="num">56</td><td>&bull;</td>
+<td class="num">56</td><td>&bull;</td>
 <td class="num">52</td><td>&bull;</td>
 <td class="num">49</td><td>&bull;</td>
 <td class="num">39</td><td>&bull;</td>
@@ -1342,9 +1330,9 @@ OS/2 character ranges vs. FreeFont faces
 <td class="num">85</td>
 <td></td>
 <td class="num">85</td><td>&bull;</td>
-<td class="num">&nbsp;</td><td></td>
-<td class="num">&nbsp;</td><td></td>
-<td class="num">&nbsp;</td><td></td>
+<td class="num">85</td><td>&bull;</td>
+<td class="num">85</td><td>&bull;</td>
+<td class="num">85</td><td>&bull;</td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
@@ -1677,7 +1665,7 @@ OS/2 character ranges vs. FreeFont faces
 <tr class="low"><td>Glagolitic</td>
 <td class="num">94</td>
 <td></td>
-<td class="num">82</td><td></td>
+<td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
@@ -2091,28 +2079,28 @@ OS/2 character ranges vs. FreeFont faces
 <td class="num">&nbsp;</td><td></td>
 </tr>
 <tr><th colspan="3">ranges total</th>
-<td class="num" colspan="2">8052&nbsp;</td>
-<td class="num" colspan="2">2821&nbsp;</td>
-<td class="num" colspan="2">2611&nbsp;</td>
-<td class="num" colspan="2">2175&nbsp;</td>
+<td class="num" colspan="2">7970&nbsp;</td>
+<td class="num" colspan="2">2906&nbsp;</td>
+<td class="num" colspan="2">2696&nbsp;</td>
+<td class="num" colspan="2">2260&nbsp;</td>
 <td class="num" colspan="2">3999&nbsp;</td>
 <td class="num" colspan="2">2712&nbsp;</td>
-<td class="num" colspan="2">2279&nbsp;</td>
-<td class="num" colspan="2">2107&nbsp;</td>
+<td class="num" colspan="2">2284&nbsp;</td>
+<td class="num" colspan="2">2112&nbsp;</td>
 <td class="num" colspan="2">3331&nbsp;</td>
 <td class="num" colspan="2">2063&nbsp;</td>
 <td class="num" colspan="2">1898&nbsp;</td>
 <td class="num" colspan="2">1387&nbsp;</td>
 </tr>
 <tr><th colspan="3">font total</th>
-<td class="num" colspan="2">8052&nbsp;</td>
-<td class="num" colspan="2">2821&nbsp;</td>
-<td class="num" colspan="2">2611&nbsp;</td>
-<td class="num" colspan="2">2175&nbsp;</td>
+<td class="num" colspan="2">7970&nbsp;</td>
+<td class="num" colspan="2">2906&nbsp;</td>
+<td class="num" colspan="2">2696&nbsp;</td>
+<td class="num" colspan="2">2260&nbsp;</td>
 <td class="num" colspan="2">3999&nbsp;</td>
 <td class="num" colspan="2">2712&nbsp;</td>
-<td class="num" colspan="2">2279&nbsp;</td>
-<td class="num" colspan="2">2107&nbsp;</td>
+<td class="num" colspan="2">2284&nbsp;</td>
+<td class="num" colspan="2">2112&nbsp;</td>
 <td class="num" colspan="2">3331&nbsp;</td>
 <td class="num" colspan="2">2063&nbsp;</td>
 <td class="num" colspan="2">1898&nbsp;</td>
@@ -2126,14 +2114,14 @@ Ranges for which (FontForge reports that) the font's OS/2 support
 bit is set are marked with a bullet.
 </p>
 <p>
+The "font total" row is the total number of glyphs in the font, whereas 
+"ranges total" is the total number of glyphs within the listed ranges.
+The numbers should be the same.
+</p>
+<p>
 For many ranges, I took the liberty of reducing the set of characters
 considered to those listed for the range in the current Unicode charts.
 The number of characters supported can thus be less than the width of the range.
-</p>
-<p>
-The "font total" row is the total number of glyphs in the font, whereas
-"ranges total" is the total number of glyphs within the listed ranges.
-The numbers should be the same.
 </p>
 <p>
 Note that there is a discrepancy in the Greek Symbols, Hebrew Extended and
@@ -2149,7 +2137,7 @@ used by other Indic scripts.
 The ranges <span style="color: gray">beyond Unicode point 0xFFFF</span>, are
 shaded.  </p>
 
-Generated by <code>ranges.py</code> on 12:16:20 PM 12/25/2008 CET.
+Generated by <code>ranges.py</code> on 05:47:21 PM 01/04/2009 CET.
 </p>
 
 </div>
