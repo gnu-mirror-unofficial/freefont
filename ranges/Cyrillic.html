@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>Cyrillic in GNU FreeFont
+</title>
+<meta name="author" content="Steve White" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Language" content="en,ru,uk,mk,sr,be,ab,tg" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<link rel="stylesheet" href="style.css" type="text/css" />
+<style type="text/css">
+	body { font-family: freeserif, monospace;
+	}
+	table.combining { padding: 0; }
+	.combining caption { padding: 0; margin: 0; font-weight: bold; }
+	.combining tr { margin: 0; padding: 0; padding-right: 1em; }
+	.combining td { margin: 0; padding: 0; padding-right: 1em; }
+</style>
+<script src="font.js"> </script>
+</head>
+<body onload="fontcontrols.reset()">
+
+<div class="controls">
+<form id="fontcontrols" action="">
+	<p>
+	<input type="button" value="Toggle Bold"
+	onclick="switchWeightOfElementsOfClass( 'fonttarget' );" />
+	<input type="button" value="Toggle Italic"
+	onclick="switchStyleOfElementsOfClass( 'fonttarget' );" />
+	<select size="1" id="faceswitch"
+	onchange="switchFamilyOfElementsOfClass( 'fonttarget', 'faceswitch' );" >
+		<option selected="selected" value="freeserif">Free Serif</option>
+		<option value="freesans">Free Sans</option>
+		<option value="freemono">Free Mono</option>
+	</select>
+	</p>
+</form>
+</div>
+
+<div class="content">
+	<h1>Cyrillic in GNU FreeFont</h1>
+<h2>Cyrillic Unicode ranges
+</h2>
+<h3>Cyrillic 0400-04FF
+</h3>
+<p class="fonttarget">
+ЀЁЂЃЄЅІЇЈЉЊЋЌЍЎЏ<br />
+АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ<br />
+абвгдежзийклмнопрстуфхцчшщъыьэюя<br />
+ѐёђѓєѕіїјљњћќѝўџ<br />
+ѠѡѢѣѤѥѦѧѨѩѪѫѬѭѮѯѰѱѲѳѴѵѶѷѸѹѺѻѼѽѾѿҀҁ҂
+</p>
+<p>
+<strong>combining marks</strong>
+<span class="fonttarget">
+	а&#x0483;
+	а&#x0484;
+	а&#x0485;
+	а&#x0486;
+	a&#x0487;
+	9&#x0488;
+	9&#x0489;
+</span>
+</p>
+<p class="fonttarget">
+ҊҋҌҍҎҏ<br />
+ҐґҒғҔҕҖҗҘҙҚқҜҝҞҟҠҡҢңҤҥҦҧҨҩҪҫҬҭҮүҰұҲҳҴҵҶҷҸҹҺһҼҽҾҿӀӁӂӃӄӅӆӇӈӉӊӋӌӍӎӏ<br />
+ӐӑӒӓӔӕӖӗӘәӚӛӜӝӞӟӠӡӢӣӤӥӦӧӨөӪӫӬӭӮӯӰӱӲӳӴӵӶӷӸӹӺӻӼӽӾӿ
+</p>
+<h3>Cyrillic Supplement 0500-0523
+</h3>
+<p class="fonttarget">
+ԀԁԂԃԄԅԆԇԈԉԊԋԌԍԎԏԐԑԒԓԔԕԖԗԘԙԚԛԜԝԞԟԠԡԢԣ
+</p>
+<h3>Cyrillic Extended A 2DE0-2DFF
+</h3>
+<p class="fonttarget">
+ж&#x2de0;ж&#x2de1;ж&#x2de2;ж&#x2de3;ж&#x2de4;ж&#x2de5;ж&#x2de6;ж&#x2de7;ж&#x2de8;ж&#x2de9;ж&#x2dea;ж&#x2deb;ж&#x2dec;ж&#x2ded;ж&#x2dee;ж&#x2def;ж&#x2df0;ж&#x2df1;ж&#x2df2;ж&#x2df3;ж&#x2df4;
+ж&#x2df6;ж&#x2df7;ж&#x2df8;ж&#x2df9;ж&#x2dfa;ж&#x2dfb;ж&#x2dfc;ж&#x2dfd;ж&#x2dfe;ж&#x2dff;
+</p>
+<h3>Cyrillic Extended B A640-A65F
+</h3>
+<p class="fonttarget">
+ꙀꙁꙂꙃꙄꙅꙆꙇꙈꙉꙊꙋꙌꙍꙎꙐꙑꙒꙓꙔꙕꙖꙗꙘꙙꙚꙛꙜꙝꙞꙟꙠꙡꙢꙣꙤꙥꙦꙧꙨꙩꙪꙫꙬꙭꙮ<br />
+</p>
+<p>
+<strong>combining marks</strong>
+	9꙯
+	9꙰
+	9꙱
+	9꙲
+</p>
+<p class="fonttarget">
+꙳<br />
+꙼꙽꙾ꙿꚀꚁꚂꚃꚄꚅꚆꚇꚈꚉꚊꚋꚌꚍꚎꚏꚐꚑꚒꚓꚔꚕꚖꚗ<br />
+</p>
+<h2>Languages using the Cyrillic alphabet
+</h2>
+<p>
+These Cyrillic letters are used to write a variety of Slavic languages,
+as well as many non-Slavic ones
+</p>
+<dl>
+<dt>Slavic</dt>
+	<dd> Russian, Ukrainian, Macedonian, Serbian, Belarusian, Rusyn, Bulgarian</dd>
+<dt>Turkic</dt>
+	<dd> Altay, Abkhasian, Azerbaijani, Bashkir, Chuvash, Kazakh, Tatar, Uzbek, Uyghur, Yakut</dd>
+<dt>Persian</dt>
+	<dd> Tajik</dd>
+<dt>Uralic</dt>
+	<dd> Kildin Sami, Mari, Khanty, Nenets, (in Supplement: Mordvin, Komi, Enets)</dd>
+<dt>Romanian in Cyrillic</dt>
+	<dd> Moldavian</dd>
+<dt>Palaeosiberian</dt>
+	<dd> (in Supplement: Chukchi, Itelmen) </dd>
+<dt>Eskimo-Aleut</dt>
+	<dd> (in Supplement: Aleut), Yupik</dd>
+</dl>
+<p>(this is just the list from the main Cyrillic range...
+and also doesn't include Church Slavonic)</p>
+
+<h2>Article 1 of the Universal Declaration of Human Rights
+</h2>
+<h3>Russian (<span lang="ru" class="fonttarget">Русский язык</span>)
+</h3>
+<p lang="ru" class="fonttarget">
+Все люди рождаются свободными и равными в своем достоинстве и правах.
+Они наделены разумом и совестью и должны поступать в отношении друг друга
+в духе братства. 
+</p>
+<h3>Ukrainian (<span lang="uk" class="fonttarget">Українська мо́ва</span>)
+</h3>
+<p lang="uk" class="fonttarget">
+Всі люди народжуються вільними і рівними у своїй гідності та правах. 
+Вони наділені розумом і совістю і повинні діяти у відношенні один до одного
+в дусі братерства. 
+</p>
+<h3>Serbian (<span lang="sr" class="fonttarget">Српски језик</span>)
+</h3>
+<p lang="sr" class="fonttarget">
+Cвa људскa бићa рaђajу сe слoбoднa и jeднaкa у дoстojaнству и прaвимa.
+Oнa су oбдaрeнa рaзумoм и свeшћу и трeбajeдни прeмa другимa дa пoступajу у
+духу брaтствa.
+</p>
+<h3>Macedonian (<span lang="mk" class="fonttarget">Македонски јазик</span>)
+</h3>
+<p lang="mk" class="fonttarget">
+Ситe чoвeчки суштeствa сe рaѓaaт слoбoдни и eднaкви пo дoстoинствo и прaвa.
+Tиe сe oбдaрeни сo рaзум и сoвeст и трeбa дa сe oднeсувaaт eдeн кoн друг
+вo дуxoт нa oпштo чoвeчкaтa припaднoст.
+</p>
+<h3>Bulgarian (<span lang="bg" class="fonttarget">Български език</span>)
+</h3>
+<p lang="bg" class="fonttarget">
+Bсички хора се раждат свободни и равни по достойнство и права. Tе са
+надарени с разум и съвест и следва да се отнасят помежду си в дух на братство.
+</p>
+<h3>Belarusian (<span lang="be" class="fonttarget">Беларуская мова</span>)
+</h3>
+<p lang="be" class="fonttarget">
+Усе людзi нараджаюцца свабоднымi i роўнымi ў сваёй годнасцi i правах.
+Яны надзелены розумам i сумленнем i павiнны ставiцца адзiн да аднаго ў
+духу брацтва. 
+</p>
+<h3>Abkhaz (<span lang="ab" class="fonttarget">Аҧсуа</span>)
+</h3>
+<p lang="ab" class="fonttarget">
+Дарбанзаалак ауаҩы дшоуп ихы дақәиҭны. Ауаа зегь зинлеи патулеи еиҟароуп.
+Урҭ ирымоуп ахшыҩи аламыси, дара дарагь аешьеи аешьеи реиҧш еизыҟазароуп.
+</p>
+<h3>Tajik (<span lang="tg" class="fonttarget">тоҷикӣ</span>)
+</h3>
+<p lang="tg" class="fonttarget">
+Бо дарназардошти ин, ки этирофи ќадру ќимат ба њамаи ањли башар хос буда,
+њуќуќи баробар ва дахлнопазири онњо асоси озодї, адолат ва сулњи умум аст;
+</p>
+<h3>Azerbaijani (<span lang="az-Cyrl" class="fonttarget">Азәрбајҹан дили</span>)
+</h3>
+<p lang="az-Cyrl" class="fonttarget">
+Бүтүн инсанлар ләјагәт вә һүгугларына ҝөрә азад вә бәрабәр доғулурлар.
+Онларын шүурлары вә виҹданлары вар вә бир-бирләринә мүнасибәтдә гардашлыг
+руһунда давранмалыдырлар.
+</p>
+<h3>Kazakh (<span lang="kk" class="fonttarget">Қазақ тілі</span>)
+</h3>
+<p lang="kk" class="fonttarget">
+Барлық адамдар тумысынан азат және қадір‐қасиеті мен кұқықтары тең болып
+дүниеге келеді. Адамдарға ақыл‐парасат, ар‐ождан берілген, сондықтан олар
+бір‐бірімен туыстық, бауырмалдық қарым‐қатынас жасаулары тиіс.
+</p>
+<h3>Kirghiz (<span lang="ky" class="fonttarget">Кыргыз тили</span>)
+</h3>
+<p lang="ky" class="fonttarget">
+Бардык адамдар өз беделинде жана укуктарында эркин жана тең укуктуу болуп
+жаралат. Алардын аң‐сезими менен абийири бар жана бири‐бирине бир туугандык
+мамилекылууга тийиш.
+</p>
+<h3>Tatar (<span lang="tat" class="fonttarget">Татар теле</span>)
+</h3>
+<p lang="tat" class="fonttarget">
+Барлык кешеләр дә азат һәм үз абруйлары һәм хокуклары ягыннан тиң булып туалар.
+Аларга акыл һәм вөҗдан бирелгән һәм бер-берсенә карата туганарча [туганнарча]
+мөнәсәбәттә булырга тиешләр.
+</p>
+<h3>Uzbek (<span lang="uzn-Cyrl" class="fonttarget">Ўзбек тили</span>)
+</h3>
+<p lang="uzn-Cyrl" class="fonttarget">
+Барча одамлар эркин, қадр‐қиммат ва ҳуқуқларда тенг бўлиб туғиладилар.
+Улар ақл ва виждон соҳибидирлар ва бир‐бирларига биродарларча муомала
+қилишлари зарур.
+</p>
+<h3>Uyghur (<span lang="uig" class="fonttarget">Уйғур тили'</span>)
+</h3>
+<p lang="uig" class="fonttarget">
+Һәммә адәм затидинла әркин, иззәт-һөрмәт вә һоқуқта баббаравәр болуп туғулған.
+Улар әқилғә вә виджданға игә һәмдә бир-биригә қериндашлиқ мунасивитигә хаш рох
+билән му’амилә қилиши керәк.
+</p>
+<h2>Outside resources</h2>
+<p>
+For examples of Old Church Slavonic, see the<br />
+<a href="http://titus.uni-frankfurt.de/texte/etcs/slav/aksl/suprasl/supra.htm">Titus Project: Codex Suprasilensis</a><br />
+<a href="http://www.schaeken.nl/lu/research/online/editions/1229/1229atxttuf.htm">1229 Treaty between Smolensk, Riga and Gotland</a>
+</p>
+</div>
+</body>
+</html>
+

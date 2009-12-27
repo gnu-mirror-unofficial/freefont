@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>
+	Georgian
+</title>
+<meta name="author" content="Steve White" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Language" content="en,ka" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<script src="font.js"></script>
+<link rel="stylesheet" href="style.css" type="text/css" />
+	<style type="text/css">
+		p, td {font-family: freeserif; }
+	</style>
+</head>
+<body onload="fontcontrols.reset()">
+<div class="controls">
+<form id="fontcontrols" action="">
+	<p>
+	<input type="button" value="Toggle Bold"
+	onclick="switchWeightOfElementsOfClass( 'fonttarget' );" />
+	<br />
+	<input type="button" value="Toggle Italic"
+	onclick="switchStyleOfElementsOfClass( 'fonttarget' );" />
+	<br />
+	<select size="1" id="faceswitch"
+	onchange="switchFamilyOfElementsOfClass( 'fonttarget', 'faceswitch' );" >
+		<option selected="selected" value="freeserif">Free Serif</option>
+		<option value="freesans">Free Sans</option>
+		<option value="freemono">Free Mono</option>
+	</select>
+	</p>
+</form>
+</div>
+<div class="content">
+<h1>
+	Georgian in Gnu FreeFont
+</h1>
+<p lang="ka" class="fonttarget">
+ქართული ენა
+</p>
+<p lang="ka" class="fonttarget">
+&#x10d0;&#x10d1;&#x10d2;&#x10d3;&#x10d4;&#x10d5;&#x10d6;&#x10d7;&#x10d8;&#x10d9;&#x10da;&#x10db;&#x10dc;&#x10dd;&#x10de;&#x10df;&#x10e0;&#x10e1;&#x10e2;&#x10e3;&#x10e4;&#x10e5;&#x10e6;&#x10e7;&#x10e8;&#x10e9;&#x10ea;&#x10eb;&#x10ec;&#x10ed;&#x10ee;&#x10ef;&#x10f0;&#x10f1;&#x10f2;&#x10f3;&#x10f4;&#x10f5;
+</p>
+<h3>
+<a href="http://ka.wikipedia.org/wiki/ადამიანის_უფლებათა_საყოველთაო_დეკლარაცია">
+	Universal Declaration of Human Rights </a>, Article 1
+</h3>
+<p lang="ka" class="fonttarget">
+ყველა ადამიანი იბადება თავისუფალი და თანასწორი თავისი ღირსებითა და უფლებებით. მათ მინიჭებული აქვთ გონება და სინდისი და ერთმანეთის მიმართ უნდა იქცეოდნენ ძმობის სულისკვეთებით.
+</p>
+</div>
+
+</body>
+</html>

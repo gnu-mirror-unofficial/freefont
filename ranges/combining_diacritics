@@ -1,0 +1,58 @@
+Combining diacriticals
+
+Looks like there are two techniques at the same time.
+One is to make zero-width character, far offset from 0.
+Other is to use "anchoring marks", whatever.
+
+According to FontForge docs on anchoring marks
+file:///home/swhite/fontforge.sourceforge.net/editexample6.html#Marks
+anchoring does not work in all apps.  Is an OpenType thing.
+
+This gives very fine control of placement of things like diacritics:
+Is controlled from GPOS 'mark' lookup
+NOTE In Serif, so far there is only an "above" mark table.  Needs also "below".
+
+So long as SansSerif is used Firefox 
+a&#x0360;b
+and gedit, this 
+a͠b
+puts a thingy over two letters
+But what do these mean for monospace?
+
+It only works because the character itself is zero width
+a͠b
+aˋc Aˋ
+à
+This approach is very crude: there is no adjustment of the horizontal
+placement of the letter according to the width of the letter it modifies.
+
+Some of these seem to be taken care of some other way.
+(or are coming from a different font?)
+
+Many are not refreshed well in gedit.
+ò ó ô õ ō o̅ ŏ ȯ ö ỏ o̊ ő ǒ o̍ o̎ ȍ
+o̐ ȏ o̒ o̓ o̔ o̕ o̖ o̗ o̘ o̙ o̚ ơ o̜ o̝ o̞ o̟
+o̠ o̡ o̢ ọ o̤ o̥ o̦ o̧ ǫ o̩ o̪ o̫ o̬ o̭ o̮ o̯
+o̰ o̱ o̲ o̳ o̴ o̵ o̶ o̷ o̸ o̹ o̺ o̻ o̼ o̽ o̾ o̿
+ò ó o͂ o̓ ö́ oͅ o͆ o͇ o͈ o͉ o͊ o͋ o͌ o͍ o͎ o͏
+o͐ o͑ o͒ o͓ o͔ o͕ o͖ o͗ o͘ o͙ o͚ o͛
+o͜a o͝a o͞a o͟a o͠a o͡a o͢a
+oͣ oͤ oͥ oͦ oͧ oͨ oͩ oͪ oͫ oͬ oͭ oͮ oͯ
+
+In FreeSans, a third method is used: mark-to-mark positioning.
+(perhaps a way to chain marks?)
+
+NOTE: different applications apply different mechanisms for finding a diacritic when one is missing.  Some (gedit) will look in other fonts of that face--the results are not always nice, and quite confusing for development.  Others (kedit) do not look in other faces.
+
+it has an abvm table, but only has a few marks in it.
+OK, it's clearer in kedit.   It just doesn't do the replacements that aren't directly represented (also, doesn't do replacements where the mark is a reference).
+
+Some of the marks don't go right over the letter, but far to the right.
+Is there a 'mark' for that?
+=======================================
+Note: A-acute is above baseline
+
+Cyrillic contains several diacritics, and I don't understand some of them.
+
+See http://diacritics.typo.cz/ (emphasis on Czech, also other slavic languages)
+

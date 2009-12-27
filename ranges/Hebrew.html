@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>
+	Hebrew in GNU FreeFont
+</title>
+<meta name="author" content="Steve White" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Language" content="en,he" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<script src="font.js"></script>
+<link rel="stylesheet" href="style.css" type="text/css" />
+<style type="text/css">
+	p, td {font-family: freeserif; }
+</style>
+</head>
+<body onload="fontcontrols.reset()">
+<div class="controls">
+<form id="fontcontrols" action="">
+	<p>
+	<input type="button" value="Toggle Bold"
+	onclick="switchWeightOfElementsOfClass( 'fonttarget' );" />
+	<br />
+	<input type="button" value="Toggle Italic"
+	onclick="switchStyleOfElementsOfClass( 'fonttarget' );" />
+	<br />
+	<select size="1" id="faceswitch"
+	onchange="switchFamilyOfElementsOfClass( 'fonttarget', 'faceswitch' );" >
+		<option selected="selected" value="freeserif">Free Serif</option>
+		<option value="freesans">Free Sans</option>
+		<option value="freemono">Free Mono</option>
+	</select>
+	</p>
+</form>
+</div>
+<div class="content">
+	<h1> Hebrew in GNU FreeFont </h1>
+
+<h2><span lang="he">אָלֶף-בֵּית עִבְרִי </span>(Hebrew Alphabet )</h2>
+<p lang="he" dir="rtl" class="fonttarget">
+	 ֑  	 ֒  	 ֓  	 ֔  	 ֕  	 ֖  	 ֗  	 ֘  	 ֙  	 ֚  	 ֛  	 ֜  	 ֝  	 ֞  	 ֟ <br />
+	 ֠  	 ֡  	 ֢  	 ֣  	 ֤  	 ֥  	 ֦  	 ֧  	 ֨  	 ֩  	 ֪  	 ֫  	 ֬  	 ֭  	 ֮  	 ֯  <br /> 
+	 ְ  	 ֱ  	 ֲ  	 ֳ  	 ִ  	 ֵ  	 ֶ  	 ַ  	 ָ  	 ֹ  	 ֺ  	 ֻ  	 ּ  	 ֽ  	 ־  	 ֿ  <br /> 
+׀  ׃  ׅ  ׆  ׇ <br />
+</p>
+<p lang="he" dir="rtl" class="fonttarget">
+ א ב ג ד ה ו ז ח ט י ך כ ל ם מ ן  <br />
+ ס ע ף פ ץ צ ק ר ש ת <br />
+ װ ױ ײ ׳ ״ 
+</p>
+<p lang="he" dir="rtl" class="fonttarget">
+ יִ ﬞ ײַ <br />
+ ﬠ ﬡ ﬢ ﬣ ﬤ ﬥ ﬦ ﬧ ﬨ ﬩ שׁ שׂ שּׁ שּׂ אַ אָ <br />
+ אּ בּ גּ דּ הּ וּ זּ   טּ יּ ךּ כּ לּ   מּ <br />
+</p>
+<h2>Sample text</h2>
+<h3>Universal Declaration of Human Rights, Article 1
+</h3>
+<p lang="he" dir="rtl" class="fonttarget">
+כל בני אדם נולדו בני חורין ושווים בערכם ובזכויותיהם. כולם חוננו בתבונה ובמצפון, לפיכך חובה עליהם לנהוג איש ברעהו ברוח של אחוה.
+</p>
+<h3>Genesis 1:1-5
+</h3>
+<p lang="he" dir="rtl" class="fonttarget"> 
+1 בְּרֵאשִׁית בָּרָא אֱלֹהִים אֵת הַשָּׁמַיִם וְאֵת הָאָרֶץ׃ 2 וְהָאָרֶץ הָיְתָה תֹהוּ וָבֹהוּ וְחֹשֶׁךְ עַל־פְּנֵי תְהֹום וְרוּחַ אֱלֹהִים מְרַחֶפֶת עַל־פְּנֵי הַמָּיִם׃ 3 וַיֹּאמֶר אֱלֹהִים יְהִי אֹור וַיְהִי־אֹור׃ 4 וַיַּרְא אֱלֹהִים אֶת־הָאֹור כִּי־טֹוב וַיַּבְדֵּל אֱלֹהִים בֵּין הָאֹור וּבֵין הַחֹשֶׁךְ׃ 5 וַיִּקְרָא אֱלֹהִים לָאֹור יֹום וְלַחֹשֶׁךְ קָרָא לָיְלָה וַיְהִי־עֶרֶב וַיְהִי־בֹקֶר יֹום אֶחָד׃ ף
+</p>
+</div>
+
+</body>
+</html>

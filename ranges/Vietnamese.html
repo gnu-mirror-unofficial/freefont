@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>Vietnamese in GNU FreeFont
+</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Language" content="en,vi" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<script src="font.js"> </script>
+<link rel="stylesheet" href="style.css" type="text/css" />
+<style type="text/css">
+	body { font-family: freeserif, monospace; }
+</style>
+</head>
+<body onload="fontcontrols.reset()">
+<div class="content">
+	<h1><span lang="vi">Quốc ngữ</span> (Vietnamese writing system)
+		in GNU FreeFont </h1>
+
+	<h2>Quốc ngữ</h2>
+<p lang="vi" class="fonttarget">
+A  Ă  Â  B  C  D  Đ  E  Ê  G  H  I  K  L  M  N  O  Ô  Ơ  P  Q  R  S  T  U  Ư  V  X  Y
+<br />
+a  ă  â  b  c  d  đ  e  ê  g  h  i  k  l  m  n  o  ô  ơ  p  q  r  s  t  u  ư  v  x  y
+</p>
+<h2>Sample text
+</h2>
+<p>
+From <span lang="vi" class="fonttarget">Truyện Kiều</span><br />
+by <span lang="vi" class="fonttarget">Nguyễn Du</span>
+</p>
+<p lang="vi" class="fonttarget">
+Trăm năm trong cõi người ta,<br />
+Chữ tài chữ mệnh khéo là ghét nhau.<br />
+Trải qua một cuộc bể dâu,<br />
+Những điều trông thấy mà đau đớn lòng.<br />
+Lạ gì bỉ sắc tư phong,<br />
+Trời xanh quen thói má hồng đánh ghen.<br />
+</p>
+
+<h3>Universal Declaration of Human Rights, Article 1</h3>
+<p lang="vi" class="fonttarget">
+Tất cả mọi người sinh ra đều được tự do và bình đẳng về nhân phẩm và quyền. Mọi con người đều được tạo hoá ban cho lý trí và lương tâm và cần phải đối xử với nhau trong tình bằng hữu.
+</p>
+
+</div><!-- content -->
+<div class="controls">
+<form id="fontcontrols" action="">
+	<p>
+	<input type="button" value="Toggle Bold"
+	onclick="switchWeightOfElementsOfClass( 'fonttarget' );" />
+	<br />
+	<input type="button" value="Toggle Italic"
+	onclick="switchStyleOfElementsOfClass( 'fonttarget' );" />
+	<br />
+	<select size="1" id="faceswitch"
+	onchange="switchFamilyOfElementsOfClass( 'fonttarget', 'faceswitch' );" >
+		<option selected="selected" value="freeserif">Free Serif</option>
+		<option value="freesans">Free Sans</option>
+		<option value="freemono">Free Mono</option>
+	</select>
+	</p>
+</form>
+</div>
+
+</body>
+</html>

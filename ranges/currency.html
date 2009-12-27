@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>Unicode currency symbol character ranges in GNU FreeFont
+</title>
+<meta name="author" content="Steve White" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Language" content="en" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<link rel="stylesheet" href="style.css" type="text/css" />
+<script src="font.js"></script>
+<style type="text/css">
+	body { font-family: freeserif, monospace;
+		/* */
+	}
+</style>
+</head>
+<body onload="fontcontrols.reset()">
+<div class="controls">
+<form id="fontcontrols" action="">
+	<p>
+	<input type="button" value="Toggle Bold"
+	onclick="switchWeightOfElementsOfClass( 'fonttarget' );" />
+	<input type="button" value="Toggle Italic"
+	onclick="switchStyleOfElementsOfClass( 'fonttarget' );" />
+	<select size="1" id="faceswitch"
+	onchange="switchFamilyOfElementsOfClass( 'fonttarget', 'faceswitch' );" >
+		<option selected="selected" value="freeserif">Free Serif</option>
+		<option value="freesans">Free Sans</option>
+		<option value="freemono">Free Mono</option>
+	</select>
+	</p>
+</form>
+</div>
+
+<div class="content">
+<h1>Unicode currency symbol character ranges in GNU FreeFont
+</h1>
+<h2>Basic Latin
+</h2>
+<p class="fonttarget">
+$
+</p>
+<h2>Latin-1
+</h2>
+<p class="fonttarget">
+&#x00a2;
+&#x00a3;
+&#x00a4;
+&#x00a5;
+</p>
+<h2>Thai 
+</h2>
+<p class="fonttarget">
+&#x0e3f;
+</p>
+
+<h2>Currency Symbols 20a0-20b5
+</h2>
+<p class="fonttarget">
+&#x20a0;
+&#x20a1;
+&#x20a2;
+&#x20a3;
+&#x20a4;
+&#x20a5;
+&#x20a6;
+&#x20a7;
+&#x20a8;
+&#x20a9;
+&#x20aa;
+&#x20ab;
+&#x20ac;
+&#x20ad;
+&#x20ae;
+&#x20af;
+&#x20b0;
+&#x20b1;
+&#x20b2;
+&#x20b3;
+&#x20b4;
+&#x20b5;
+</p>
+<h2>Arabic Presentation Forms 
+</h2>
+<p class="fonttarget">
+&#xfdfc;
+</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<title>Letterlike symbols range in GNU FreeFont</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<script src="font.js"> </script>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body onload="fontcontrols.reset()">
+<div class="controls">
+<form id="fontcontrols" action="">
+	<p>
+	<input type="button" value="Toggle Bold"
+	onclick="switchWeightOfElementsOfClass( 'fonttarget' );" />
+	<br />
+	<input type="button" value="Toggle Italic"
+	onclick="switchStyleOfElementsOfClass( 'fonttarget' );" />
+	<br />
+	<select size="1" value="freeserif" id="faceswitch"
+	onchange="switchFamilyOfElementsOfClass( 'fonttarget', 'faceswitch' );" >
+		<option selected="selected" value="freeserif">Free Serif</option>
+		<option value="freesans">Free Sans</option>
+		<option value="freemono">Free Mono</option>
+	</select>
+	</p>
+</form>
+</div>
+<div class="content">
+	<h1>Letterlike symbols range in GNU FreeFont</h1>
+<p class="fonttarget">
+&#x2100;&#x2101;&#x2102;&#x2103;&#x2104;&#x2105;&#x2106;&#x2107;&#x2108;&#x2109;&#x210a;&#x210b;&#x210c;&#x210d;&#x210e;&#x210f;<br />
+&#x2110;&#x2111;&#x2112;&#x2113;&#x2114;&#x2115;&#x2116;&#x2117;&#x2118;&#x2119;&#x211a;&#x211b;&#x211c;&#x211d;&#x211e;&#x211f;<br />
+&#x2120;&#x2121;&#x2122;&#x2123;&#x2124;&#x2125;&#x2126;&#x2127;&#x2128;&#x2129;&#x212a;&#x212b;&#x212c;&#x212d;&#x212e;&#x212f;<br />
+&#x2130;&#x2131;&#x2132;&#x2133;&#x2134;&#x2135;&#x2136;&#x2137;&#x2138;&#x2139;&#x213a;&#x213b;&#x213c;&#x213d;&#x213e;&#x213f;<br />
+&#x2140;&#x2141;&#x2142;&#x2143;&#x2144;&#x2145;&#x2146;&#x2147;&#x2148;&#x2149;&#x214a;&#x214b;&#x214c;&#x214d;&#x214e;&#x214f;
+</p>
+</div>
+</body>
+</html>

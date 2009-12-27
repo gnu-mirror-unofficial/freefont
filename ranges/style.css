@@ -1,0 +1,58 @@
+@import url(../freefont.css);
+
+body { margin: 0; 
+	padding: 0; }
+
+.non-css { display: none; }	/* for non-CSS browsers */
+div.controls {
+	position: relative;	/* for IE 5 */
+	position: absolute;	/* for IE 6 (doesn't do fixed) */
+	position: fixed;	/* for good browsers */
+	float: right;		/* for position: absolute */
+	top: 0px; right: 0px;
+	/*vertical-align: top; only to inline and table-cell elements*/
+	width: 18ex;
+	height: 100%;	/* IE 6 doesn't do percent height */
+	height: 100em;
+	margin: 0;
+	padding-top: 6em;
+	border-left: #AAF solid;
+	}
+.controls form { text-align: center }
+
+div.content { padding: 0;
+	margin-right: 18ex;
+	}
+
+div.content { /*padding-right: 6em*/ }
+div.content > div { padding-left: 0.5ex; margin-right: 1ex; }
+div.content > form { padding-left: 0.5ex; margin-right: 1ex; }
+div.content > p { padding-left: 0.5ex; margin-right: 1ex; }
+div.content > dl > dt { padding-left: 0.5ex; margin-right: 1ex; }
+div.content > dl h3 { padding-left: 0.5ex; margin-right: 1ex; }
+
+div.content > table { padding-left: 0.5ex; margin-right: 1ex; }
+div.content table { padding-left: 0.5ex; margin-top: 1em; margin-bottom: 0;
+	        color: black; background: white; }
+div.content > h3 { padding-left: 0.5ex; margin-right: 1ex; }
+div.content > h4 { padding-left: 0.5ex; margin-right: 1ex; }
+
+h1 { color: #66F; background: transparent; text-align: center; }
+h2 { padding-left: 0.5ex; color: inherit; background: #EEF; 
+/*	border-bottom: #AAF solid;*/
+	border-top: #AAF solid;
+	margin-top: 0.5em;
+}
+
+th{ text-align: left; }
+.outline { list-style-type: none; }
+
+code{ color: navy; background: transparent; }
+.codeblock{ color: navy; background: transparent;
+	margin-top: 0; margin-bottom: 0; margin-left: 5ex;
+	padding-left: 5ex; overflow: auto;
+	white-space: pre;
+	}
+.centered { text-align: center; }
+.centered table { margin: auto; }
+.centered caption { margin: auto; }

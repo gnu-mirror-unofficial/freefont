@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>Greek in GNU FreeFont
+</title>
+<meta name="author" content="Steve White" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Language" content="en,el" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<script src="font.js"></script>
+<link rel="stylesheet" href="style.css" type="text/css" />
+<style type="text/css">
+	body { font-family: freeserif, monospace;
+	/*
+	*/
+	}
+</style>
+</head>
+<body onload="fontcontrols.reset()">
+<div class="controls">
+<form id="fontcontrols" action="">
+	<p>
+	<input type="button" value="Toggle Bold"
+	onclick="switchWeightOfElementsOfClass( 'fonttarget' );" />
+	<br />
+	<input type="button" value="Toggle Italic"
+	onclick="switchStyleOfElementsOfClass( 'fonttarget' );" />
+	<br />
+	<select size="1" id="faceswitch"
+	onchange="switchFamilyOfElementsOfClass( 'fonttarget', 'faceswitch' );" >
+		<option selected="selected" value="freeserif">Free Serif</option>
+		<option value="freesans">Free Sans</option>
+		<option value="freemono">Free Mono</option>
+	</select>
+	</p>
+</form>
+</div>
+<div class="content">
+<h1>Greek in GNU FreeFont
+</h1>
+<h2>Greek and Coptic 0370-03FF
+</h2>
+<p lang="el" class="fonttarget">
+Ͱ ͱ Ͳ ͳ ʹ ͵ Ͷ ͷ <!--͸ ͹-->&nbsp;&nbsp; ͺ ͻ ͼ ͽ ; <!--Ϳ ΀ ΁ ΂ ΃--><br />
+&nbsp;&nbsp;&nbsp;&nbsp;΄ ΅ Ά · Έ Ή Ί <!--΋-->&nbsp; Ό <!--΍-->&nbsp; Ύ Ώ <br />
+ΐ Α Β Γ Δ Ε Ζ Η Θ Ι Κ Λ Μ Ν Ξ Ο Π Ρ <!--΢-->&nbsp; Σ Τ Υ Φ Χ Ψ Ω
+Ϊ Ϋ ά έ ή ί <br />
+ΰ α β γ δ ε ζ η θ ι κ λ μ ν ξ ο π ρ ς σ τ υ φ χ ψ ω
+ϊ ϋ ό ύ ώ Ϗ <br />
+ϐ ϑ ϒ ϓ ϔ ϕ ϖ ϗ Ϙ ϙ Ϛ ϛ Ϝ ϝ Ϟ ϟ<br />
+Ϡ ϡ Ϣ ϣ Ϥ ϥ Ϧ ϧ Ϩ ϩ Ϫ ϫ Ϭ ϭ Ϯ ϯ ϰ ϱ ϲ ϳ ϴ ϵ ϶ Ϸ ϸ Ϲ Ϻ ϻ ϼ Ͻ Ͼ Ͽ 
+</p>
+
+<h2>Greek Extended 1F00-1FFF
+</h2>
+<p lang="el" class="fonttarget">
+ἀ ἁ ἂ ἃ ἄ ἅ ἆ ἇ Ἀ Ἁ Ἂ Ἃ Ἄ Ἅ Ἆ Ἇ ἐ ἑ ἒ ἓ ἔ ἕ <!--἖ ἗-->&nbsp; &nbsp; Ἐ Ἑ Ἒ Ἓ Ἔ Ἕ <!--἞ ἟--> <br />
+ἠ ἡ ἢ ἣ ἤ ἥ ἦ ἧ Ἠ Ἡ Ἢ Ἣ Ἤ Ἥ Ἦ Ἧ ἰ ἱ ἲ ἳ ἴ ἵ ἶ ἷ Ἰ Ἱ Ἲ Ἳ Ἴ Ἵ Ἶ Ἷ <br />
+ὀ ὁ ὂ ὃ ὄ ὅ <!--὆ ὇-->&nbsp; &nbsp; Ὀ Ὁ Ὂ Ὃ Ὄ Ὅ <!--὎ ὏--> &nbsp; &nbsp;
+ὐ ὑ ὒ ὓ ὔ ὕ ὖ ὗ <!--὘-->&nbsp; Ὑ <!--὚-->&nbsp; Ὓ <!--὜-->&nbsp; Ὕ <!--὞-->&nbsp; Ὗ <br />
+ὠ ὡ ὢ ὣ ὤ ὥ ὦ ὧ Ὠ Ὡ Ὢ Ὣ Ὤ Ὥ Ὦ Ὧ <br />
+ὰ ά ὲ έ ὴ ή ὶ ί ὸ ό ὺ ύ ὼ ώ <!--὾ ὿-->&nbsp; &nbsp; ᾀ ᾁ ᾂ ᾃ ᾄ ᾅ ᾆ ᾇ ᾈ ᾉ ᾊ ᾋ ᾌ ᾍ ᾎ ᾏ <br />
+ᾐ ᾑ ᾒ ᾓ ᾔ ᾕ ᾖ ᾗ ᾘ ᾙ ᾚ ᾛ ᾜ ᾝ ᾞ ᾟ ᾠ ᾡ ᾢ ᾣ ᾤ ᾥ ᾦ ᾧ ᾨ ᾩ ᾪ ᾫ ᾬ ᾭ ᾮ ᾯ <br />
+ᾰ ᾱ ᾲ ᾳ ᾴ <!--᾵-->&nbsp; ᾶ ᾷ Ᾰ Ᾱ Ὰ Ά ᾼ ᾽ ι ᾿ <br />
+῀ ῁ ῂ ῃ ῄ <!--῅-->&nbsp; ῆ ῇ Ὲ Έ Ὴ Ή ῌ ῍ ῎ ῏ <br />
+ῐ ῑ ῒ ΐ <!--῔ ῕-->&nbsp; &nbsp; ῖ ῗ Ῐ Ῑ Ὶ Ί <!--῜-->&nbsp; ῝ ῞ ῟ <br />
+ῠ ῡ ῢ ΰ ῤ ῥ ῦ ῧ Ῠ Ῡ Ὺ Ύ Ῥ ῭ ΅ ` <br />
+<!--῰ ῱-->&nbsp; &nbsp; ῲ ῳ ῴ <!--῵-->&nbsp; ῶ ῷ Ὸ Ό Ὼ Ώ ῼ ´ ῾ 
+</p>
+<h2>
+from the Apology by Plato
+</h2>
+<p lang="el" class="fonttarget">
+Ὅτι μὲν ὑμεῖς, ὦ ἄνδρες Άθηναῖοι, πεπόνθατε ὑπὸ τῶν ἐμῶν κατηγόρων, οὐκ οἶδα: ἐγὼ δ' οὖν καὶ αὐτὸς ὑπ' αὐτῶν ὀλίγου ἐμαυτοῦ ἐπελαθόμην, οὕτω πιθανῶς ἔλεγον. Καίτοι ἀληθές γε ὡς ἔπος εἰπεῖν οὐδὲν εἰρήκασιν.
+</p>
+<h2>
+the Tower of Babel
+</h2>
+<p lang="el" class="fonttarget">
+1.  ΚΑΙ ἦν πᾶσα ἡ γῆ χεῖλος ἕν, καὶ φωνὴ μία πᾶσι.
+<br />
+2. καὶ ἐγένετο ἐν τῷ κινῆσαι αὐτοὺς ἀπὸ ἀνατολῶν, εὗρον πεδίον ἐν γῇ Σενναὰρ καὶ κατῴκησαν ἐκεῖ.
+<br />
+3. καὶ εἶπεν ἄνθρωπος τῷ πλησίον αὐτοῦ· δεῦτε πλινθεύσωμεν πλίνθους καὶ ὀπτήσωμεν αὐτὰς πυρί. καὶ ἐγένετο αὐτοῖς ἡ πλίνθος εἰς λίθον, καὶ ἄσφαλτος ἦν αὐτοῖς ὁ πηλός.
+<br />
+4. καὶ εἶπαν· δεῦτε οἰκοδομήσωμεν ἑαυτοῖς πόλιν καὶ πύργον, οὗ ἔσται ἡ κεφαλὴ ἕως τοῦ οὐρανοῦ, καὶ ποιήσωμεν ἑαυτοῖς ὄνομα πρὸ τοῦ διασπαρῆναι ἡμᾶς ἐπὶ προσώπου πάσης τῆς γῆς.
+<br />
+5. καὶ κατέβη Κύριος ἰδεῖν τὴν πόλιν καὶ τὸν πύργον, ὃν ᾠκοδόμησαν οἱ υἱοὶ τῶν ἀνθρώπων.
+<br />
+6. καὶ εἶπε Κύριος· ἰδοὺ γένος ἓν καὶ χεῖλος ἓν πάντων, καὶ τοῦτο ἤρξαντο ποιῆσαι, καὶ νῦν οὐκ ἐκλείψει ἀπ᾿ αὐτῶν πάντα, ὅσα ἂν ἐπιθῶνται ποιεῖν.
+<br />
+7. δεῦτε καὶ καταβάντες συγχέωμεν αὐτῶν ἐκεῖ τὴν γλῶσσαν, ἵνα μὴ ἀκούσωσιν ἕκαστος τὴν φωνὴν τοῦ πλησίον.
+<br />
+8. καὶ διέσπειρεν αὐτοὺς Κύριος ἐκεῖθεν ἐπὶ πρόσωπον πάσης τῆς γῆς, καὶ ἐπαύσαντο οἰκοδομοῦντες τὴν πόλιν καὶ τὸν πύργον.
+<br />
+9. διὰ τοῦτο ἐκλήθη τὸ ὄνομα αὐτῆς Σύγχυσις, ὅτι ἐκεῖ συνέχεε Κύριος τὰ χείλη πάσης τῆς γῆς, καὶ ἐκεῖθεν διέσπειρεν αὐτοὺς Κύριος ἐπὶ πρόσωπον πάσης τῆς γῆς.
+<br />
+</p>
+
+<h2>
+Article 1 from the Universal Declaration of Human Rights
+</h2>
+<p lang="el" class="fonttarget">
+'Ολοι οι άνθρωποι γεννιούνται ελεύθεροι και ίσοι στην αξιοπρέπεια και τα δικαιώματα. Είναι προικισμένοι με λογική και συνείδηση, και οφείλουν να συμπεριφέρονται μεταξύ τους με πνεύμα αδελφοσύνης.
+</p>
+</div> <!-- content -->
+
+</body>
+</html>

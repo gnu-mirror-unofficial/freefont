@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>
+	Thai in GNU FreeFont
+</title>
+<meta name="author" content="Steve White" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Language" content="en,th" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<script src="font.js" type="text/javascript"> </script>
+<link rel="stylesheet" href="style.css" type="text/css" />
+<style type="text/css">
+	p, td {font-family: "freeserif"; }
+
+	.mod { color: green; }
+</style>
+</head>
+<body onload="fontcontrols.reset()">
+
+<div class="controls">
+<form id="fontcontrols" action="">
+	<p>
+	<input type="button" value="Toggle Bold"
+	onclick="switchWeightOfElementsOfClass( 'fonttarget' );" />
+	<input type="button" value="Toggle Italic"
+	onclick="switchStyleOfElementsOfClass( 'fonttarget' );" />
+	</p>
+</form>
+</div>
+
+<div class="content">
+<h1>
+	อักษรไทย (Thai) in GNU FreeFont
+</h1>
+<h2>Thai script features</h2>
+<h3>high vowels and tones </h3>
+<p lang="tha" class="fonttarget">
+&#x0E47; &#x0E48; &#x0E49; &#x0E4A; &#x0E4B; &#x0E4C; &#x0E4D; &#x0E4E;
+
+</p><p lang="tha" class="fonttarget">
+<span class="mod">ร&#x0E4C; ว&#x0E49; ณ&#x0E4C; ด&#x0E49;</span>
+</p>
+<h3>replacement of lower part of <i>yo ying</i> and <i>tho than</i> by
+			low vowel</h3>
+<p lang="tha" class="fonttarget">
+&#x0E0D; <span class="mod">&#x0E0D;&#x0E38;</span> <span class="mod">&#x0E0D;&#x0E39;</span> <span class="mod">&#x0E0D;&#x0E3A;</span> <br />
+&#x0E10; <span class="mod">&#x0E10;&#x0E38;</span> <span class="mod">&#x0E10;&#x0E39;</span> <span class="mod">&#x0E10;&#x0E3A;</span>
+</p>
+<h3>replacement of <i>sara aa</i> after <i>ru</i> and <i>lu</i> </h3>
+<p class="fonttarget">
+&#x0E24; &#x0E32; <span class="mod">&#x0E24;&#x0E32;</span> should be &#x0E24;&#x0E45; <br />
+&#x0E26; &#x0E32; <span class="mod">&#x0E26;&#x0E32;</span> should be &#x0E26;&#x0E45;
+</p>
+<h3>decomposition and placement of <i>sara am</i> </h3>
+<p lang="tha" class="fonttarget">
+&#x0E01; &#x0E33; <span class="mod">&#x0E01;&#x0E33;</span> <span class="mod">&#x0E01;&#x0E48;&#x0E33;</span> <br />
+&#x0E1B; &#x0E33; <span class="mod">&#x0E1B;&#x0E33;</span> <span class="mod">&#x0E1B;&#x0E48;&#x0E33;</span> <br />
+&#x0E2c; &#x0E33; <span class="mod">&#x0E2c;&#x0E33;</span> <span class="mod">&#x0E2c;&#x0E48;&#x0E33;</span> <br />
+&#x0E2c; &#x0E33; <span class="mod">&#x0E2c;&#x0E33;</span> <span class="mod">&#x0E2c;&#x0E49;&#x0E33;</span> <br />
+</p>
+<h3>low vowels on letters with descenders</h3>
+<p lang="tha" class="fonttarget" >
+&#x0E0E; <span class="mod">&#x0E0E;&#x0E38;</span> <span class="mod">&#x0E0E;&#x0E39;</span> <span class="mod">&#x0E0E;&#x0E3A;</span><br />
+&#x0E0F; <span class="mod">&#x0E0F;&#x0E38;</span> <span class="mod">&#x0E0F;&#x0E39;</span> <span class="mod">&#x0E0F;&#x0E3A;</span>
+</p>
+<p>
+	See <a href="http://www.tug.org/TUGboat/Articles/tb21-2/tb67lemb.pdf">Thai fonts</a> by
+	Werner Lemberg, and
+	<a href="http://www.nectec.or.th/it-standards/thaistd.pdf">Standardization and Implementations of Thai Language</a>
+	by Theppitak Karoonboonyanan
+</p>
+<h2>Sample text</h2>
+<div lang="tha" class="fonttarget">
+</div>
+
+<div lang="tha" class="fonttarget">
+<p>
+1. หอบาเบลทั่วแผ่นดินโลกมีภาษาเดียวและมีสำเนียงเดียวกัน
+</p><p>
+2. และต่อมาเมื่อพวกเขาเดินทางจากทิศตะวันออกก็พบที่ราบในแผ่นดินชินาร์และพวกเขาอาศัยอยู่ที่นั่น
+</p><p>
+3. แล้วพวกเขาต่างคนต่างก็พูดกันว่า "มาเถิด ให้พวกเราทำอิฐและเผามันให้แข็ง" พวกเขาจึงมีอิฐใช้ต่างหินและมียางมะตอยใช้ต่างปูนสอ
+</p><p>
+4. เขาทั้งหลายพูดว่า "มาเถิด ให้พวกเราสร้างเมืองขึ้นเมืองหนึ่งและก่อหอให้ยอดของมันไปถึงฟ้าสวรรค์ และให้พวกเราสร้างชื่อเสียงของพวกเราไว้ เพื่อว่าพวกเราจะไม่กระจัดกระจายไปทั่วพื้นแผ่นดินโลก"
+</p><p>
+5. พระเจ้าทรงทำให้เกิดภาษาต่างๆและพระเยโฮวาห์เสด็จลงมาทอดพระเนตรเมืองและหอนั้นซึ่งบุตรทั้งหลายของมนุษย์ได้ก่อสร้างขึ้น
+</p><p>
+6. แล้วพระเยโฮวาห์ตรัสว่า "ดูเถิด คนเหล่านี้เป็นอันหนึ่งอันเดียวกัน และพวกเขาทั้งปวงมีภาษาเดียว พวกเขาเริ่มทำเช่นนี้แล้ว ประเดี๋ยวจะไม่มีอะไรหยุดยั้งพวกเขาได้ในสิ่งที่พวกเขาคิดจะทำ
+</p><p>
+7. มาเถิด ให้พวกเราลงไปและทำให้ภาษาของเขาวุ่นวายที่นั่น เพื่อไม่ให้พวกเขาพูดเข้าใจกันได้"
+</p><p>
+8. ดังนั้นพระเยโฮวาห์จึงทรงทำให้เขากระจัดกระจายจากที่นั่นไปทั่วพื้นแผ่นดิน พวกเขาก็เลิกสร้างเมืองนั้น
+</p><p>
+9. เหตุฉะนั้นจึงเรียกชื่อเมืองนั้นว่า บาเบล เพราะว่าที่นั่นพระเยโฮวาห์ทรงทำให้ภาษาของทั่วโลกวุ่นวาย และ ณ จากที่นั่นพระเยโฮวาห์ได้ทรงทำให้พวกเขากระจัดกระจายออกไปทั่วพื้นแผ่นดิน โลก
+</p>
+</div>
+<h3>Universal Declaration of Human Rights, Article 1</h3>
+<p lang="tha" class="fonttarget">
+มนุษย์ทั้งหลายเกิดมามีอิสระและเสมอภาคกันในเกียรติศักด[เกียรติศักดิ์]และสิทธิ ต่างมีเหตุผลและมโนธรรม และควรปฏิบัติต่อกันด้วยเจตนารมณ์แห่งภราดรภาพ
+</p>
+</div> <!-- content -->
+
+</body>
+</html>
