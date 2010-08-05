@@ -8,10 +8,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta http-equiv="Content-Language" content="en,vi" />
 <meta http-equiv="content-script-type" content="text/javascript" />
-<script src="font.js"> </script>
+<script src="font.js" type="text/javascript"> </script>
 <link rel="stylesheet" href="style.css" type="text/css" />
 <style type="text/css">
 	body { font-family: freeserif, monospace; }
+	.fonttarget td { font-family: inherit }
 </style>
 </head>
 <body onload="fontcontrols.reset()">
@@ -27,6 +28,42 @@
 A  Ă  Â  B  C  D  Đ  E  Ê  G  H  I  K  L  M  N  O  Ô  Ơ  P  Q  R  S  T  U  Ư  V  X  Y
 <br />
 a  ă  â  b  c  d  đ  e  ê  g  h  i  k  l  m  n  o  ô  ơ  p  q  r  s  t  u  ư  v  x  y
+</p>
+<h2>Glyph composition
+</h2>
+<div lang="vi" class="fonttarget">
+<table>
+<tr><td></td><td>Ờ       </td><td>Ớ       </td><td>Ở       </td><td>Ỡ       </td><td>Ợ
+</td><td></td><td>Ừ       </td><td>Ứ       </td><td>Ử       </td><td>Ữ       </td><td>Ự </td><td>horn pre-composed</td></tr>
+<tr><td>Ơ       </td><td>Ờ       </td><td>Ớ       </td><td>Ở       </td><td>Ỡ       </td><td>Ợ
+	</td><td>Ư       </td><td>Ừ       </td><td>Ứ       </td><td>Ử       </td><td>Ữ       </td><td>Ự  
+		</td><td> horn separate</td></tr>
+<tr><td>ơ       </td><td>ờ       </td><td>ớ       </td><td>ở       </td><td>ỡ       </td><td>ợ
+</td><td>ư       </td><td>ừ       </td><td>ứ       </td><td>ử       </td><td>ữ       </td><td>ự</td></tr>
+</table>
+</div>
+<div lang="vi" class="fonttarget">
+<table>
+<tr><td> </td><td>&#x1EC1;</td><td>&#x1EBF;</td><td>&#x1EC3;</td><td>&#x1EC5;</td><td>&#x1EC7;
+</td><td>    </td><td>Ề       </td><td>Ế       </td><td>Ể       </td><td>Ễ       </td><td>Ệ 
+</td><td>        </td><td>Ằ       </td><td>Ắ       </td><td>Ẳ       </td><td>Ẵ       </td><td>Ặ
+				</td><td>pre-composed</td></tr>
+<tr><td>ê   </td><td>ê&#x0300;</td><td>ê&#x0301;</td><td>ê&#x0309;</td><td>ê&#x0303;</td><td>ê&#x0323; 
+</td><td>Ê   </td><td>Ê&#x0300;</td><td>Ê&#x0301;</td><td>Ê&#x0309;</td><td>Ê&#x0303;</td><td>Ê&#x0323;    
+</td><td>Ă       </td><td>Ằ       </td><td>Ắ       </td><td>Ẳ       </td><td>Ẵ       </td><td>Ặ
+						</td><td>first pre-composed</td></tr>
+<tr><td>e&#x0302;</td><td>e&#x0302;&#x0300;</td><td>e&#x0302;&#x0301;</td><td>e&#x0302;&#x0309;</td><td>e&#x0302;&#x0303;</td><td>e&#x0302;&#x0323;
+</td><td>E&#x0302;       </td><td>E&#x0302;&#x0300;</td><td>E&#x0302;&#x0301;</td><td>E&#x0302;&#x0309;</td><td>E&#x0302;&#x0303;</td><td>E&#x0302;&#x0323;    
+</td><td>Ă       </td><td>Ằ       </td><td>Ắ       </td><td>Ẳ       </td><td>Ẵ       </td><td>Ặ
+				</td><td>all decomposed</td></tr>
+</table>
+</div>
+
+<h2>Other links
+</h2>
+<p>
+<a href="http://www.wazu.jp/gallery/Test_Vietnamese.html">WAZU Japan
+	Unicode Test Page for Vietnamese</a>
 </p>
 <h2>Sample text
 </h2>
