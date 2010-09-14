@@ -22,6 +22,7 @@ div.controls {
 
 div.content { padding: 0;
 	margin-right: 18ex;
+	margin-left: 0;
 	}
 
 div.content { /*padding-right: 6em*/ }
