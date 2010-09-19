@@ -8,8 +8,8 @@
 <meta name="author" content="Steve White" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta http-equiv="Content-Language" content="en,cop" />
-<meta http-equiv="Last-Modified" content="$Date: 2010/09/14 07:48:55 $" />
-<meta http-equiv="Content-Version" content="$Revision: 1.3 $" />
+<meta http-equiv="Last-Modified" content="$Date: 2010/09/19 15:00:17 $" />
+<meta http-equiv="Content-Version" content="$Revision: 1.4 $" />
 <meta http-equiv="DC.Contributor" content="$Author: Stevan_White $" />
 <meta http-equiv="content-script-type" content="text/javascript" />
 <script src="font.js"></script>
@@ -22,6 +22,17 @@
 </style>
 </head>
 <body>
+<div class="controls">
+<form id="fontcontrols" action="">
+	<p>
+	<input type="button" value="Toggle Bold"
+	onclick="switchWeightOfElementsOfClass( 'fonttarget' );" />
+	<br />
+	<input type="button" value="Toggle Italic"
+	onclick="switchStyleOfElementsOfClass( 'fonttarget' );" />
+	</p>
+</form>
+</div>
 
 <div class="content">
 <h1>
@@ -29,7 +40,7 @@
 	Coptic Script</h1>
 
 <h2>Alphabet</h2>
-<div lang="cop">
+<div lang="cop" class="fonttarget">
 <p>
 &#x2c80;
 &#x2c82;
@@ -100,6 +111,7 @@
 &#x03ed;
 &#x03ef;
 </p>
+</div>
 <p>The second line in of characters lie in the "Greek and Coptic" range
 and are derived from Demotic, rather than Greek.
 </p>
@@ -108,7 +120,7 @@ and are derived from Demotic, rather than Greek.
 Christogram, a ligature of Chi and rho.<br />
 Staurogram, Tau-rho monogram, Rho-cross; Stauros = 'cross'
 </p>
-<div lang="cop">
+<div lang="cop" class="fonttarget">
 <p>
 &#x2cb2;
 &#x2cb3;
@@ -194,22 +206,22 @@ Staurogram, Tau-rho monogram, Rho-cross; Stauros = 'cross'
 </div>
 <h2>Examples</h2>
 <table>
-<tr><td lang="cop">Ⲙⲉⲧⲣⲉⲙ̀ⲛⲭⲏⲙⲓ	</td><td>Met.Remenkīmi: the Egyptian language</td></tr>
-<tr><td lang="cop">ⲙⲛⲧⲣⲙⲛⲕⲏⲙⲉ	</td><td>(mentrmenkēmə) in the Sahidic dialect and ⲙⲉⲧⲣⲉⲙⲛ̀ⲭⲏⲙⲓ	(metremenkīmi) in Bohairic. </td></tr>
-<tr><td lang="cop">ⲙⲟⲩϯ	</td><td>mouti ('to speak'), </td></tr>
-<tr><td lang="cop">ⲙⲛⲧⲕⲩⲡⲧⲁⲓⲟⲛ	</td><td>ment kuptaion</td></tr>
-<tr><td lang="cop">ⲙⲛⲧⲁⲓⲅⲩⲡⲧⲓⲟⲛ	</td><td>ment aiguption ('Egyptian language')</td></tr>
-<tr><td lang="cop">ⲉⲙⲥⲁ	</td><td>emsaḥ.</td></tr>
-<tr><td lang="cop">ⲡⲁⲡⲛⲟⲩⲧⲉ	</td><td>papnute 'the (man) of God'</td></tr>
-<tr><td lang="cop">ⲧⲃⲁⲓⲧⲱⲩ	</td><td>'Who is in His Mountain',</td></tr>
-<tr><td lang="cop">Ϣⲙⲟⲩⲛⲉⲓⲛ	</td><td>Shmounein</td></tr>
-<tr><td lang="cop">ⲡⲉ̅ⲩ̅ⲁ̅ⲅⲅ̅ⲉⲗ̅ⲓⲟⲛ̅ ⲡⲕ̅ⲁ̅ⲧⲁ ⲑ̅ⲱ̅ⲙⲁⲥ	</td><td>'Gospel of Thomas'
+<tr><td lang="cop" class="fonttarget">Ⲙⲉⲧⲣⲉⲙ̀ⲛⲭⲏⲙⲓ	</td><td>Met.Remenkīmi: the Egyptian language</td></tr>
+<tr><td lang="cop" class="fonttarget">ⲙⲛⲧⲣⲙⲛⲕⲏⲙⲉ	</td><td>(mentrmenkēmə) in the Sahidic dialect and ⲙⲉⲧⲣⲉⲙⲛ̀ⲭⲏⲙⲓ	(metremenkīmi) in Bohairic. </td></tr>
+<tr><td lang="cop" class="fonttarget">ⲙⲟⲩϯ	</td><td>mouti ('to speak'), </td></tr>
+<tr><td lang="cop" class="fonttarget">ⲙⲛⲧⲕⲩⲡⲧⲁⲓⲟⲛ	</td><td>ment kuptaion</td></tr>
+<tr><td lang="cop" class="fonttarget">ⲙⲛⲧⲁⲓⲅⲩⲡⲧⲓⲟⲛ	</td><td>ment aiguption ('Egyptian language')</td></tr>
+<tr><td lang="cop" class="fonttarget">ⲉⲙⲥⲁ	</td><td>emsaḥ.</td></tr>
+<tr><td lang="cop" class="fonttarget">ⲡⲁⲡⲛⲟⲩⲧⲉ	</td><td>papnute 'the (man) of God'</td></tr>
+<tr><td lang="cop" class="fonttarget">ⲧⲃⲁⲓⲧⲱⲩ	</td><td>'Who is in His Mountain',</td></tr>
+<tr><td lang="cop" class="fonttarget">Ϣⲙⲟⲩⲛⲉⲓⲛ	</td><td>Shmounein</td></tr>
+<tr><td lang="cop" class="fonttarget">ⲡⲉ̅ⲩ̅ⲁ̅ⲅⲅ̅ⲉⲗ̅ⲓⲟⲛ̅ ⲡⲕ̅ⲁ̅ⲧⲁ ⲑ̅ⲱ̅ⲙⲁⲥ	</td><td>'Gospel of Thomas'
 </table>
 
 <table>
 <tr><th colspan="2">Sahidic	</th><th colspan="2"> Bohairic</th></tr>
-<tr><td>ⲧⲱⲃⲉ	</td><td>to:be </td><td>ⲧⲱⲃⲓ </td><td>to:bi</td></tr>
-<tr><td>ⲟⲩⲁϩⲉ	</td><td>waḥe </td><td>ⲟⲩⲉϩⲓ </td><td>weḥi</td></tr>
+<tr><td class="fonttarget">ⲧⲱⲃⲉ	</td><td>to:be </td><td class="fonttarget">ⲧⲱⲃⲓ </td><td>to:bi</td></tr>
+<tr><td class="fonttarget">ⲟⲩⲁϩⲉ	</td><td>waḥe </td><td class="fonttarget">ⲟⲩⲉϩⲓ </td><td>weḥi</td></tr>
 </table>
 
 <h2>Resources</h2>
@@ -243,6 +255,9 @@ Scan of
 	Gospel of Matthew in Coptic</a>
 </p>
 <p>
+<a href="http://www.sacred-texts.com/bib/wb/cop/">Coptic Bible (New Testament) online</a>
+</p>
+<p>
 Morgan library <br />
 <a href="http://utu.morganlibrary.org/medren/single_image2.cfm?page=ICA000086939&imagename=m574.002r.jpg">
 	Hermeneiai with various hymns</a><br />
@@ -263,7 +278,7 @@ Comprehensive Unicode
 </p>
 
 <h2>Lord's Prayer</h2>
-<div lang="cop">
+<div lang="cop" class="fonttarget">
 <p>
 Ϧⲉⲛ ⳿ⲫⲣⲁⲛ ⳿ⲙ⳿Ⲫⲓⲱⲧ<br />
 ⲛⲉⲙ ⳿Ⲡϣⲏⲣⲓ<br />
