@@ -95,6 +95,10 @@ switchFamilyOfElementsOfClass( cls, buttonID )
 		}
 	}
 }
+function initializeFonts( cls, contrl_id )
+{
+	switchFamilyOfElementsOfClass( cls, contrl_id )
+}
 function
 forElementsOfClassDo( cls, ftn )
 {

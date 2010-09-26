@@ -6,8 +6,8 @@
 <title>Cherokee in GNU FreeFont</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta http-equiv="Content-Language" content="en,chr" />
-<meta http-equiv="Last-Modified" content="$Date: 2010/09/14 07:48:55 $" />
-<meta http-equiv="Content-Version" content="$Revision: 1.5 $" />
+<meta http-equiv="Last-Modified" content="$Date: 2010/09/26 12:01:45 $" />
+<meta http-equiv="Content-Version" content="$Revision: 1.6 $" />
 <meta http-equiv="DC.Contributor" content="$Author: Stevan_White $" />
 <script src="font.js"></script>
 <link rel="stylesheet" href="style.css" type="text/css" />
@@ -17,14 +17,14 @@
 	body { font-family: "freeserif"; }
 </style>
 </head>
-<body onload="fontcontrols.reset()">
+<body onload="initializeFonts( 'fonttarget', 'faceswitch' )">
 <div class="controls">
 <form id="fontcontrols" action="">
 	<p>
-	<input type="button" value="Toggle Bold"
+	<input type="button" id="toggle_bold" value="Toggle Bold"
 	onclick="switchWeightOfElementsOfClass( 'fonttarget' );" />
 	<br />
-	<input type="button" value="Toggle Italic"
+	<input type="button" id="toggle_ital" value="Toggle Italic"
 	onclick="switchStyleOfElementsOfClass( 'fonttarget' );" />
 	<br />
 	<select size="1" id="faceswitch"
