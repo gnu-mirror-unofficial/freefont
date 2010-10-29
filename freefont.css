@@ -1,41 +1,41 @@
 @font-face
 {
-	font-family: "FreeSerif";
+	font-family: freeserif;
 	src: url("http://www.gnu.org/software/freefont/FreeSerif.ttf")
 		format("truetype");
-	font-weight:  400;
+	font-weight:  medium;
 	font-style:   normal;
 }
 @font-face
 {
-	font-family: "FreeSerifBold";
+	font-family: freeserifbold;
 	src: url("http://www.gnu.org/software/freefont/FreeSerifBold.ttf")
 		format("truetype");
-	font-weight:  700;
+	font-weight:  bold;
 	font-style:   normal;
 }
 @font-face
 {
-	font-family: "FreeSerifItalic";
+	font-family: freeserifitalic;
 	src: url("http://www.gnu.org/software/freefont/FreeSerifItalic.ttf")
 		format("truetype");
-	font-weight:  400;
+	font-weight:  medium;
 	font-style:   italic;
 }
 @font-face
 {
-	font-family: "FreeSans";
+	font-family: freesans;
 	src: url("http://www.gnu.org/software/freefont/FreeSans.ttf")
 		format("truetype");
-	font-weight:  400;
+	font-weight:  medium;
 	font-style:   normal;
 }
 @font-face
 {
-	font-family: "FreeSansBold";
+	font-family: freesansbold;
 	src: url("http://www.gnu.org/software/freefont/FreeSansBold.ttf")
 		format("truetype");
-	font-weight:  700;
+	font-weight:  bold;
 	font-style:   normal;
 }
 body, td { font-family: freesans, verdana, arial, sans-serif; }
