@@ -1,7 +1,7 @@
 @font-face
 {
 	font-family: freeserif;
-	src: url("http://www.gnu.org/software/freefont/tt/FreeSerif.ttf")
+	src: url("tt/FreeSerif.ttf")
 		format("truetype");
 	font-weight:  medium;
 	font-style:   normal;
@@ -9,7 +9,7 @@
 @font-face
 {
 	font-family: freeserifbold;
-	src: url("http://www.gnu.org/software/freefont/tt/FreeSerifBold.ttf")
+	src: url("tt/FreeSerifBold.ttf")
 		format("truetype");
 	font-weight:  bold;
 	font-style:   normal;
@@ -17,7 +17,7 @@
 @font-face
 {
 	font-family: freeserifitalic;
-	src: url("http://www.gnu.org/software/freefont/tt/FreeSerifItalic.ttf")
+	src: url("tt/FreeSerifItalic.ttf")
 		format("truetype");
 	font-weight:  medium;
 	font-style:   italic;
@@ -25,7 +25,7 @@
 @font-face
 {
 	font-family: freesans;
-	src: url("http://www.gnu.org/software/freefont/tt/FreeSans.ttf")
+	src: url("tt/FreeSans.ttf")
 		format("truetype");
 	font-weight:  medium;
 	font-style:   normal;
@@ -33,12 +33,12 @@
 @font-face
 {
 	font-family: freesansbold;
-	src: url("http://www.gnu.org/software/freefont/tt/FreeSansBold.ttf")
+	src: url("tt/FreeSansBold.ttf")
 		format("truetype");
 	font-weight:  bold;
 	font-style:   normal;
 }
-body, td { font-family: freesans, verdana, arial, sans-serif; }
+body, td, h1, h2, h3, h4 { font-family: freesans, verdana, arial, sans-serif; }
 
 body {	background-color: white;
 	color: black;
