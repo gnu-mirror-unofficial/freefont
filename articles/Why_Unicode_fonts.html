@@ -6,8 +6,8 @@
 <link rel="stylesheet" type="text/css" href="../freefont.css" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>GNU FreeFont: Why Unicode fonts?</title>
-<meta http-equiv="Last-Modified" content="$Date: 2010/09/14 07:48:51 $" />
-<meta http-equiv="Content-Version" content="$Revision: 1.4 $" />
+<meta http-equiv="Last-Modified" content="$Date: 2010/10/30 13:03:52 $" />
+<meta http-equiv="Content-Version" content="$Revision: 1.5 $" />
 <meta http-equiv="DC.Contributor" content="$Author: Stevan_White $" />
 </head>
 
@@ -24,6 +24,8 @@
 	        <a href="../license.html">license</a>
 	</li><li>
 		<a href="../sources/">sources</a>
+	</li><li>
+	        <a href="../ranges/">range samples</a>
 	</li>
 	</ul>
 	<hr />
@@ -53,10 +55,9 @@ a single font at all?  How good does such a font need to be?  The answers
 to these questions lead to a policy for including character ranges into
 GNU FreeFont.
 </p>
-
 <h2>inclusion of character ranges</h2>
 <p>
-What glyphs go into a font?  There are two extreme views.
+What glyphs go into a Unicode font?  There are two extreme views.
 </p>
 <p>
 One is that glyphs in a font should comprise a unified design entity.
@@ -110,22 +111,119 @@ But if a font is really ugly people will not find it useful.
 </p>
 <p>
 In this project, we can expect that the contributors do not usually have 
-the time or skills of artisans in a professional foundary.  This is typical
+the time or skills of artisans in a professional foundry.  This is typical
 of the relationship between free and bought software.  We do the best we
 can, and for some purposes, it is pretty good.
 </p>
 
 <h2>policy regarding inclusion of character ranges</h2>
 <p>
-We are lead to this policy for FreeFont:  
-We assemble as many character ranges as we can, within our abilities,
-and subject to the criteria that they are:
+We are lead to this policy for including characters in FreeFont:  
+We assemble as many freely-licensed Unicode character ranges as we can,
+subject to the criteria that they are:
 </p>
 <ul>
 	<li>useful for their primary purpose, and</li>
 	<li>look pretty good together.</li>
+</ul>
+
+<h2>following Unicode</h2>
+<p>
+There isn’t much argument against Unicode as a whole.  
+Overall a standard seemed to be needed: an imperfect standard is better
+than no standard at all, or a bunch of conflicting standards.
+</p><p>
+Some unfortunate choices were made in individual ranges of Unicode;
+these cause technical complications.  In a few places there are ongoing
+disputes.
+And for a very few characters there are outright errors in the standard.
+</p><p>
+The policy for FreeFont will be to follow as closely as makes sense 
+the Unicode standard for whatever characters are included.
+</p><p>
+In cases of outright errors, the error should be noted and reported to
+Unicode, and the font should of course do the correct thing.  Disputes
+are of course not our job to resolve, but if an option is to fall back
+to an undisputed version of the standard, that would be preferred.
+</p><p>
+The “Public Use” areas of FreeFont are being used for auxiliary glyphs
+and parts of glyphs, which are used internally by the font as glyph
+references, and replacements, such as ligatures.  The policy is that
+glyphs in these ranges are <em>not</em> intended to be accessed directly
+as characters, as to do so amounts to an amendment to the standard.
+</p><p>
+Regarding the sample glyphs published with the standard, we take them
+as a reference always to be considered, but not as archetypes of how
+the character glyphs should look.
+A character may be represented in an endless variety of styles, for 
+example, while the sample glyph can reflect only one style.  Furthermore
+the sample glyph may really not be the best form for use in FreeFont.
+</p>
+
+<h2>practical applications</h2>
+
+<p>A font spanning many Unicode ranges can be helpful in several 
+practical applications.  For instance, it can
+</p>
+
 <ul>
+	<li> provide some scripts and characters that are hard to find</li>
+	<li> ease installation of base support for many languages</li>
+	<li> facilitate documents mixing symbols and language scripts</li>
+	<li> improve appearance web pages with mixed symbols and scripts</li>
+</ul>
+
+<h2>arguments against “pan-Unicode” fonts</h2>
+<p>
+Many arguments have appeared in recent years against fonts that cover
+many ranges of Unicode (sometimes incorrectly referred to as “pan-Unicode”
+fonts). 
+</p>
+<p>
+Two main points are raised in this regard.
+One is that there is no way to match styles of one script with those of
+another, so that any collection will be an sub-optimal mixing of styles.
+The other is that modern font-rendering software will automatically locate
+a glyph for a given character among all the fonts installed on the system.
+While both of these points are true, we don’t count them as reasons not
+to assemble a font such as FreeFont.
+</p>
+<p>
+The two points are in a sense contrary.  The first states that such a
+font would inevitably produce aesthetically displeasing text, the 
+second states that the text produced by automatically mixing glyphs
+from effectively random fonts produces adequate results.
+</p>
+<p>
+While modern font-rendering software will indeed find a glyph for a given
+character (so long as that character is among the fonts installed on 
+the system) it will often find a glyph from a font that matches the
+surrounding font very poorly.  It works for some purposes, for some people, 
+but it often makes terribly ugly choices, making it useless for other purposes.
+Using a single Unicode font such as FreeFont can actually help such systems,
+by providing compatible glyphs for many ranges—while the font rendering
+system still serves to find those characters that are missing.
+</p>
+<p>
+It is very true that there is little correspondence of typographic styles
+between different language scripts.  Moreover it is very unnatural to
+impose upon one script a style that is traditional for another.
+So what is the solution to text from mixed languages?  Some kind of 
+compromise is required.
+It is possible to balance optical size and weight of characters
+of different scripts, as well as some sense of degree of decoration.
+So one can always carefully choose fonts that go well together, to achieve a
+fit that looks good.  But if this can be done with multiple fonts, it can
+also be done in one font.  (Not to say it’s <em>easy</em>.)
+</p>
+<p>
+Once again, the goal of FreeFont is to collect glyphs that look pretty
+good together.  
+</p>
+
+
 </div>
+
 </body>
 </html>
 
