@@ -17,6 +17,13 @@
 }
 @font-face
 {
+	font-family: freeserif;
+	src: url("tt/FreeSerifBoldItalic.ttf") format("truetype");
+	font-weight:  bold;
+	font-style:   italic;
+}
+@font-face
+{
 	font-family: freesans;
 	src: url("tt/FreeSans.ttf") format("truetype");
 }
@@ -25,6 +32,50 @@
 	font-family: freesans;
 	src: url("tt/FreeSansBold.ttf") format("truetype");
 	font-weight:  bold;
+}
+@font-face
+{
+	font-family: freesans;
+	src: url("tt/FreeSansBoldOblique.ttf") format("truetype");
+	font-weight:  bold;
+	font-style:   italic;
+}
+@font-face
+{
+	font-family: freesans;
+	src: url("tt/FreeSansBoldOblique.ttf") format("truetype");
+	font-weight:  bold;
+	font-style:   oblique;
+}
+@font-face
+{
+	font-family: freesans;
+	src: url("tt/FreeSansOblique.ttf") format("truetype");
+	font-style:   italic;
+}
+@font-face
+{
+	font-family: freemono;
+	src: url("tt/FreeMono.ttf") format("truetype");
+}
+@font-face
+{
+	font-family: freemono;
+	src: url("tt/FreeMonoBold.ttf") format("truetype");
+	font-weight:  bold;
+}
+@font-face
+{
+	font-family: freemono;
+	src: url("tt/FreeMonoOblique.ttf") format("truetype");
+	font-style:   italic;
+}
+@font-face
+{
+	font-family: freemono;
+	src: url("tt/FreeMonoBoldOblique.ttf") format("truetype");
+	font-weight:  bold;
+	font-style:   italic;
 }
 body, td, h1, h2, h3, h4 { font-family: freesans, verdana, arial, sans-serif; }
 
