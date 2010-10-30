@@ -3,7 +3,7 @@
 	font-family: freeserif;
 	src: url("tt/FreeSerif.ttf")
 		format("truetype");
-	font-weight:  medium;
+	font-weight:  normal;
 	font-style:   normal;
 }
 @font-face
@@ -19,7 +19,7 @@
 	font-family: freeserifitalic;
 	src: url("tt/FreeSerifItalic.ttf")
 		format("truetype");
-	font-weight:  medium;
+	font-weight:  normal;
 	font-style:   italic;
 }
 @font-face
@@ -27,7 +27,7 @@
 	font-family: freesans;
 	src: url("tt/FreeSans.ttf")
 		format("truetype");
-	font-weight:  medium;
+	font-weight:  normal;
 	font-style:   normal;
 }
 @font-face
