@@ -8,8 +8,8 @@
 <meta name="author" content="Steve White" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta http-equiv="Content-Language" content="en,el" />
-<meta http-equiv="Last-Modified" content="$Date: 2010/09/26 12:01:46 $" />
-<meta http-equiv="Content-Version" content="$Revision: 1.4 $" />
+<meta http-equiv="Last-Modified" content="$Date: 2011/06/27 08:26:00 $" />
+<meta http-equiv="Content-Version" content="$Revision: 1.5 $" />
 <meta http-equiv="DC.Contributor" content="$Author: Stevan_White $" />
 <meta http-equiv="content-script-type" content="text/javascript" />
 <script src="font.js"></script>
@@ -25,11 +25,13 @@
 <div class="controls">
 <form id="fontcontrols" action="">
 	<p>
-	<input type="button" value="Toggle Bold"
-	onclick="switchWeightOfElementsOfClass( 'fonttarget' );" />
+	<label for="toggle_bold">Bold</label>
+	<input type="checkbox" id="toggle_bold"
+	onclick="switchWeightOfElementsOfClass( 'fonttarget' );"/>
 	<br />
-	<input type="button" value="Toggle Italic"
-	onclick="switchStyleOfElementsOfClass( 'fonttarget' );" />
+	<label for="toggle_ital">Italic</label>
+	<input type="checkbox" id="toggle_ital"
+	onclick="switchStyleOfElementsOfClass( 'fonttarget' );"/>
 	<br />
 	<select size="1" id="faceswitch"
 	onchange="switchFamilyOfElementsOfClass( 'fonttarget', 'faceswitch' );" >

@@ -7,8 +7,8 @@
 </title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta http-equiv="Content-Language" content="en,la,de,fr,nl,fy,da,is,sv,fi,nb,nn,fo,it,es,pt,ro,sq,ga,gd,cy,br,lt,lv,et,hu,eu,tr,ku,po,cz,sk,hr,haw,id,jv,mi,cbt,cic,nv,iu" />
-<meta http-equiv="Last-Modified" content="$Date: 2010/09/26 12:01:47 $" />
-<meta http-equiv="Content-Version" content="$Revision: 1.8 $" />
+<meta http-equiv="Last-Modified" content="$Date: 2011/06/27 08:26:00 $" />
+<meta http-equiv="Content-Version" content="$Revision: 1.9 $" />
 <meta http-equiv="DC.Contributor" content="$Author: Stevan_White $" />
 <meta http-equiv="content-script-type" content="text/javascript" />
 <script src="font.js"> </script>
@@ -553,14 +553,17 @@ lēodum līðost         ond lofgeornost.
 <div class="controls">
 <form id="fontcontrols" action="">
 	<p>
-	<input type="button" value="Toggle Bold"
-	onclick="switchWeightOfElementsOfClass( 'fonttarget' );" />
+	<label for="toggle_bold">Bold</label>
+	<input type="checkbox" id="toggle_bold"
+	onclick="switchWeightOfElementsOfClass( 'fonttarget' );"/>
 	<br />
-	<input type="button" value="Toggle Italic"
-	onclick="switchStyleOfElementsOfClass( 'fonttarget' );" />
+	<label for="toggle_ital">Italic</label>
+	<input type="checkbox" id="toggle_ital"
+	onclick="switchStyleOfElementsOfClass( 'fonttarget' );"/>
 	<br />
-	<input type="button" value="Toggle AllCaps"
-	onclick="switchTransformOfElementsOfClass( 'fonttarget' );" />
+	<label for="toggle_allCaps">All Caps</label>
+	<input type="checkbox" id="toggle_allCaps"
+	onclick="switchTransformOfElementsOfClass( 'fonttarget' );"/>
 	<br />
 	<select size="1" id="faceswitch"
 	onchange="switchFamilyOfElementsOfClass( 'fonttarget', 'faceswitch' );" >

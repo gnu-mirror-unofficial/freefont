@@ -7,9 +7,10 @@
 </title>
 <meta name="author" content="Steve White" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta http-equiv="Last-Modified" content="$Date: 2010/09/14 07:48:55 $" />
-<meta http-equiv="Content-Version" content="$Revision: 1.4 $" />
+<meta http-equiv="Last-Modified" content="$Date: 2011/06/27 08:26:00 $" />
+<meta http-equiv="Content-Version" content="$Revision: 1.5 $" />
 <meta http-equiv="DC.Contributor" content="$Author: Stevan_White $" />
+<script src="font.js"></script>
 <link rel="stylesheet" href="style.css" type="text/css" />
 <meta http-equiv="Content-Language" content="en,si" />
 <style type="text/css">
@@ -22,7 +23,16 @@
 </style>
 
 </head>
-<body>
+<body onload="initializeFonts( 'fonttarget', 'faceswitch' )">
+<div class="controls">
+<form id="fontcontrols" action="">
+	<p>
+	<label for="toggle_bold">Bold</label>
+	<input type="checkbox" id="toggle_bold"
+	onclick="switchWeightOfElementsOfClass( 'fonttarget' );"/>
+	</p>
+</form>
+</div>
 <div class="content">
 <h1>
 	<small><a href="http://savannah.gnu.org/projects/freefont/">GNU FreeFont</a></small><br />
@@ -34,7 +44,7 @@
 <h2> Sinhala Unicode range U0D80–U0DFF </h2>
 <p lang="sin" class="fonttarget">
 </p>
-<table rules="all" lang="sin" class="Unicode" cellspacing="0">
+<table class="fonttarget" rules="all" lang="sin" class="Unicode" cellspacing="0">
 <tr>
 <td class="unused">&nbsp;</td>
 <td class="unused">&nbsp;</td>
@@ -196,7 +206,7 @@
 </table>
 
 <h2>Universal Declaration of Human Rights, Article 1</h2>
-<p lang="sin">
+<p lang="sin" class="fonttarget">
 සියලූ මනුෂ්‍යයෝ නිදහස්ව උපත ලබා ඇත. ගරුත්වයෙන් හා අයිතිවාසිකම් සමාන වෙති. 
 යුක්ති අයුක්ති පිළිබඳ හැඟීමෙන් හා හෘදය සාක්ෂියෙන් යුත් ඔවුනොවුන්වුන්ට සැළකිය යුත්තේ 
 සහෝදරත්වය පිළිබඳ හැඟීමෙනි.
@@ -206,7 +216,7 @@ From <a href="http://www.lexilogos.com/english/sinhala_dictionary.htm">LEXILOGOS
 </p>
 <h2>Ligatures and conjuncts</h2>
 
-<table lang="si" rules="groups">
+<table lang="si" rules="groups" class="fonttarget">
 <colgroup>
 <col />
 </colgroup>
@@ -278,7 +288,7 @@ From <a href="http://www.lexilogos.com/english/sinhala_dictionary.htm">LEXILOGOS
 <tr><th>&#x0dc6;</th><td>&#x0dc6;</td><td>&#x0dc6;&#x0dd9;</td><td>&#x0dc6;&#x0dd2;</td><td>&#x0dc6;&#x0ddc;</td><td>&#x0dc6;&#x0dd4;</td><td>&#x0dc6;&#x0dd0;</td><td>&#x0dc6;&#x0dcf;</td><td>&#x0dc6;&#x0dda;</td><td>&#x0dc6;&#x0dd3;</td><td>&#x0dc6;&#x0ddd;</td><td>&#x0dc6;&#x0dd6;</td><td>&#x0dc6;&#x0dd1;</td><td>&#x0dc6;&#x0ddb;</td><td>&#x0dc6;&#x0dd8;</td><td>&#x0dc6;&#x0ddf;</td><td>&#x0dc6;&#x0dde;</td><td>&#x0dc6;&#x0df2;</td><td>&#x0dc6;&#x0df3;</td><td>&#x0dc6;&#x0dca;</td></tr>
 </tbody>
 </table>
-<table lang="si" rules="groups">
+<table lang="si" rules="groups" class="fonttarget">
 <caption>
 Other ligatures, using intervening zero-width-join and al_lakuna</caption>
 <colgroup>

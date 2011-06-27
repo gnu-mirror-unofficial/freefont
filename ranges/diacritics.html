@@ -5,8 +5,8 @@
 <head>
 <title>GNU FreeFont: Unicode combining diacritics</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta http-equiv="Last-Modified" content="$Date: 2010/09/26 12:01:48 $" />
-<meta http-equiv="Content-Version" content="$Revision: 1.4 $" />
+<meta http-equiv="Last-Modified" content="$Date: 2011/06/27 08:26:00 $" />
+<meta http-equiv="Content-Version" content="$Revision: 1.5 $" />
 <meta http-equiv="DC.Contributor" content="$Author: Stevan_White $" />
 <meta http-equiv="content-script-type" content="text/javascript" />
 <script src="font.js"> </script>
@@ -21,10 +21,14 @@
 <div class="controls">
 <form id="fontcontrols" action="">
 	<p>
-	<input type="button" value="Toggle Bold"
-	onclick="switchWeightOfElementsOfClass( 'fonttarget' );" />
-	<input type="button" value="Toggle Italic"
-	onclick="switchStyleOfElementsOfClass( 'fonttarget' );" />
+	<label for="toggle_bold">Bold</label>
+	<input type="checkbox" id="toggle_bold"
+	onclick="switchWeightOfElementsOfClass( 'fonttarget' );"/>
+	<br />
+	<label for="toggle_ital">Italic</label>
+	<input type="checkbox" id="toggle_ital"
+	onclick="switchStyleOfElementsOfClass( 'fonttarget' );"/>
+	<br />
 	<select size="1" id="faceswitch"
 	onchange="switchFamilyOfElementsOfClass( 'fonttarget', 'faceswitch' );" >
 		<option selected="selected" value="freeserif">Free Serif</option>
@@ -37,7 +41,13 @@
 <div class="content">
 	<h1>
 <small><a href="http://savannah.gnu.org/projects/freefont/">GNU FreeFont</a></small><br />
-	Unicode combining diacritics</h1>
+Unicode combining diacritics</h1>
+<h2>Range  U+0300-U+036F</h2>
+<p>When one of these follows another character, it is placed on that
+character.  Automatic mark placement is specified for many characters to
+place the mark properly (but this has to be recognized by the font
+rendering software).
+</p>
 <p class="fonttarget">
 o&#x0300;
 o&#x0301;
@@ -153,119 +163,121 @@ o&#x036E;
 o&#x036F;
 
 </p>
+<p>The dot over i and j is removed for several marks.
+</p>
 <p class="fonttarget">
-I&#x0300;
-I&#x0301;
-I&#x0302;
-I&#x0303;
-I&#x0304;
-I&#x0305;
-I&#x0306;
-I&#x0307;
-I&#x0308;
-I&#x0309;
-I&#x030A;
-I&#x030B;
-I&#x030C;
-I&#x030D;
-I&#x030E;
-I&#x030F;<br />
-I&#x0310;
-I&#x0311;
-I&#x0312;
-I&#x0313;
-I&#x0314;
-I&#x0315;
-I&#x0316;
-I&#x0317;
-I&#x0318;
-I&#x0319;
-I&#x031A;
-I&#x031B;
-I&#x031C;
-I&#x031D;
-I&#x031E;
-I&#x031F;<br />
-I&#x0320;
-I&#x0321;
-I&#x0322;
-I&#x0323;
-I&#x0324;
-I&#x0325;
-I&#x0326;
-I&#x0327;
-I&#x0328;
-I&#x0329;
-I&#x032A;
-I&#x032B;
-I&#x032C;
-I&#x032D;
-I&#x032E;
-I&#x032F;<br />
-I&#x0330;
-I&#x0331;
-I&#x0332;
-I&#x0333;
-I&#x0334;
-I&#x0335;
-I&#x0336;
-I&#x0337;
-I&#x0338;
-I&#x0339;
-I&#x033A;
-I&#x033B;
-I&#x033C;
-I&#x033D;
-I&#x033E;
-I&#x033F;<br />
-I&#x0340;
-I&#x0341;
-I&#x0342;
-I&#x0343;
-I&#x0344;
-I&#x0345;
-I&#x0346;
-I&#x0347;
-I&#x0348;
-I&#x0349;
-I&#x034A;
-I&#x034B;
-I&#x034C;
-I&#x034D;
-I&#x034E;
-I&#x034F;<br />
-I&#x0350;
-I&#x0351;
-I&#x0352;
-I&#x0353;
-I&#x0354;
-I&#x0355;
-I&#x0356;
-I&#x0357;
-I&#x0358;
-I&#x0359;
-I&#x035A;
-I&#x035B;<br />
-I&#x035C;a
-I&#x035D;a
-I&#x035E;a
-I&#x035F;a
-I&#x0360;a
-I&#x0361;a
-I&#x0362;a<br />
-I&#x0363;
-I&#x0364;
-I&#x0365;
-I&#x0366;
-I&#x0367;
-I&#x0368;
-I&#x0369;
-I&#x036A;
-I&#x036B;
-I&#x036C;
-I&#x036D;
-I&#x036E;
-I&#x036F;
+i&#x0300;
+i&#x0301;
+i&#x0302;
+i&#x0303;
+i&#x0304;
+i&#x0305;
+i&#x0306;
+i&#x0307;
+i&#x0308;
+i&#x0309;
+i&#x030A;
+i&#x030B;
+i&#x030C;
+i&#x030D;
+i&#x030E;
+i&#x030F;<br />
+i&#x0310;
+i&#x0311;
+i&#x0312;
+i&#x0313;
+i&#x0314;
+i&#x0315;
+i&#x0316;
+i&#x0317;
+i&#x0318;
+i&#x0319;
+i&#x031A;
+i&#x031B;
+i&#x031C;
+i&#x031D;
+i&#x031E;
+i&#x031F;<br />
+i&#x0320;
+i&#x0321;
+i&#x0322;
+i&#x0323;
+i&#x0324;
+i&#x0325;
+i&#x0326;
+i&#x0327;
+i&#x0328;
+i&#x0329;
+i&#x032A;
+i&#x032B;
+i&#x032C;
+i&#x032D;
+i&#x032E;
+i&#x032F;<br />
+i&#x0330;
+i&#x0331;
+i&#x0332;
+i&#x0333;
+i&#x0334;
+i&#x0335;
+i&#x0336;
+i&#x0337;
+i&#x0338;
+i&#x0339;
+i&#x033A;
+i&#x033B;
+i&#x033C;
+i&#x033D;
+i&#x033E;
+i&#x033F;<br />
+i&#x0340;
+i&#x0341;
+i&#x0342;
+i&#x0343;
+i&#x0344;
+i&#x0345;
+i&#x0346;
+i&#x0347;
+i&#x0348;
+i&#x0349;
+i&#x034A;
+i&#x034B;
+i&#x034C;
+i&#x034D;
+i&#x034E;
+i&#x034F;<br />
+i&#x0350;
+i&#x0351;
+i&#x0352;
+i&#x0353;
+i&#x0354;
+i&#x0355;
+i&#x0356;
+i&#x0357;
+i&#x0358;
+i&#x0359;
+i&#x035A;
+i&#x035B;<br />
+i&#x035C;a
+i&#x035D;a
+i&#x035E;a
+i&#x035F;a
+i&#x0360;a
+i&#x0361;a
+i&#x0362;a<br />
+i&#x0363;
+i&#x0364;
+i&#x0365;
+i&#x0366;
+i&#x0367;
+i&#x0368;
+i&#x0369;
+i&#x036A;
+i&#x036B;
+i&#x036C;
+i&#x036D;
+i&#x036E;
+i&#x036F;
 
 </p>
 <p class="fonttarget">
