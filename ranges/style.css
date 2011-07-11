@@ -19,6 +19,9 @@ div.controls {
 	border-left: #AAF solid;
 	}
 .controls form { text-align: center }
+@media print {
+	div.controls { display: none; }
+}
 
 div.content { padding: 0;
 	margin-right: 18ex;
