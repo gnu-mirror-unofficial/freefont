@@ -5,8 +5,8 @@
 <head>
 <title>GNU FreeFont: Unicode combining diacritics</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta http-equiv="Last-Modified" content="$Date: 2011/06/27 08:26:00 $" />
-<meta http-equiv="Content-Version" content="$Revision: 1.5 $" />
+<meta http-equiv="Last-Modified" content="$Date: 2011/07/20 17:41:15 $" />
+<meta http-equiv="Content-Version" content="$Revision: 1.6 $" />
 <meta http-equiv="DC.Contributor" content="$Author: Stevan_White $" />
 <meta http-equiv="content-script-type" content="text/javascript" />
 <script src="font.js"> </script>
@@ -44,9 +44,12 @@
 Unicode combining diacritics</h1>
 <h2>Range  U+0300-U+036F</h2>
 <p>When one of these follows another character, it is placed on that
-character.  Automatic mark placement is specified for many characters to
-place the mark properly (but this has to be recognized by the font
-rendering software).
+character.  The font specifies automatic mark placement for many characters
+so that font rendering software can place the mark properly
+(but this specification has to be recognized by that software).
+</p>
+<p>Note that not all combinations of letters with diacritcs make sense in any
+written language.
 </p>
 <p class="fonttarget">
 o&#x0300;
@@ -163,7 +166,9 @@ o&#x036E;
 o&#x036F;
 
 </p>
-<p>The dot over i and j is removed for several marks.
+<p>The dot over i and j is removed for several marks, by a different 
+mechanism, prior to the mark being placed over the dotless version of
+the letter.
 </p>
 <p class="fonttarget">
 i&#x0300;
@@ -394,6 +399,27 @@ W&#x036D;
 W&#x036E;
 W&#x036F;
 
+</p>
+
+<p>The ogonek is applied to vowels in Polish and Lithuanian, as well as 
+in several North American languages.
+</p>
+<p class="fonttarget">
+a&#x0328;
+e&#x0328;
+i&#x0328;
+o&#x0328;
+u&#x0328;
+y&#x0328;
+A&#x0328;
+E&#x0328;
+I&#x0328;
+O&#x0328;
+U&#x0328;
+Y&#x0328;
+Å&#x0328;
+å&#x0328;
+ō&#x0328;
 </p>
 <p>See <a href="http://www.unicode.org/faq/char_combmark.html">Unicode FAQ on
 Characters and Combining Marks</a>
