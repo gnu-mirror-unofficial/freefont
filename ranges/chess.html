@@ -5,11 +5,77 @@
 <head>
 	<title>Chess Characters in GNU FreeFont</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta http-equiv="Last-Modified" content="$Date: 2011/07/20 17:33:54 $" />
-<meta http-equiv="Content-Version" content="$Revision: 1.1 $" />
+<meta http-equiv="Last-Modified" content="$Date: 2011/07/20 18:08:48 $" />
+<meta http-equiv="Content-Version" content="$Revision: 1.2 $" />
 <meta http-equiv="DC.Contributor" content="$Author: Stevan_White $" />
 <meta http-equiv="content-script-type" content="text/javascript" />
 <script src="font.js"></script>
+<script type="text/javascript">
+	/* <![CDATA[ */
+	/*
+   	Yes this little bit of Javascript too is 
+	Copyright 1999 2011 Stevan White
+	*/
+	function
+	isDOMcompliant()
+	{
+		// Some modern browsers that are not DOM 1 compliant
+		// define the getElementById function.
+		return( document.getElementById
+			&& typeof( document.getElementById ) != "undefined"
+			&& document.createElement
+			&& typeof( document.createElement ) != "undefined" );
+	}
+	/*
+	This function takes care in discrepancies between different
+	browsers’ idea of where HTML entities should reside in the 
+	document object.  It goes, roughly from most modern to oldest.
+	See http://www.dhtmlzone.com/articles/.
+	*/
+	function
+	getDocumentElementByID( id )
+	{
+		if( document.getElementById )
+			return document.getElementById( id );	// DOM
+		else if( document.all )
+			return document.all[ id ];	// old MSIE
+		else
+			return document[ id ];	// old NS
+	}
+
+	function
+	alternateTableCellBGColor( tableID )
+	{
+		var table = getDocumentElementByID( tableID );
+		if( !table )
+			return;
+		if( !table.rows )
+		{
+			alert( "alternateTableCellBGColor: Not a table!" );
+			return;
+		}
+		var rows = table.rows;
+		var nrows = rows.length;
+
+		for( var i = 0; i < nrows; i++ )
+		{
+			var row = rows.item( i );
+			var cells = row.cells;
+			var ncells = cells.length;
+			for( var j = 0; j < ncells; j++ )
+			{
+				cell = cells.item( j );
+				if( (i+j) % 2 == 1 )
+				{
+					/* See http://www.w3.org/TR/2000/REC-DOM-Level-2-Style-20001113/ecma-script-binding.html */
+					cell.style.backgroundColor = "silver";
+	//				row.style.color = "inherit"; //IE7 chokes
+				}
+			}
+		}
+	}
+	/* ]]> */
+</script>
 <link rel="stylesheet" href="style.css" type="text/css" />
 <style type="text/css">
 	body { font-family: freeserif; line-height: 1 }
@@ -17,7 +83,7 @@
 	.chess td { width: 1em; text-align: center; }
 </style>
 </head>
-<body onload="initializeFonts( 'fonttarget', 'faceswitch' )">
+<body onload="alternateTableCellBGColor( 'board' ); initializeFonts( 'fonttarget', 'faceswitch' )">
 <div class="controls">
 </div>
 <div class="content">
@@ -27,7 +93,7 @@
 <p class="fonttarget">
 </p>
 <div class="fonttarget">
-<table class="chess" rules="all" border="1" cellspacing="0" cellpadding="0">
+<table id="board" class="chess" rules="all" border="1" cellspacing="0" cellpadding="0">
 	<tr><td>&#x265C;</td><td>&#x265E;</td><td>&#x265D;</td><td>&#x265B;</td><td>&#x265A;</td><td>&#x265D;</td><td>&#x265E;</td><td>&#x265C;</td></tr>
 	<tr><td>&#x265F;</td><td>&#x265F;</td><td>&#x265F;</td><td>&#x265F;</td><td>&#x265F;</td><td>&#x265F;</td><td>&#x265F;</td><td>&#x265F;</td></tr>
 	<tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
