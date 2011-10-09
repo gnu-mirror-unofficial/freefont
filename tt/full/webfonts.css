@@ -1,0 +1,79 @@
+@font-face
+{
+	font-family: freeserif;
+	src: url("FreeSerif.ttf") format("truetype");
+}
+@font-face
+{
+	font-family: freeserif;
+	src: url("FreeSerifBold.ttf") format("truetype");
+	font-weight:  bold;
+}
+@font-face
+{
+	font-family: freeserif;
+	src: url("FreeSerifItalic.ttf") format("truetype");
+	font-style:   italic;
+}
+@font-face
+{
+	font-family: freeserif;
+	src: url("FreeSerifBoldItalic.ttf") format("truetype");
+	font-weight:  bold;
+	font-style:   italic;
+}
+@font-face
+{
+	font-family: freesans;
+	src: url("FreeSans.ttf") format("truetype");
+}
+@font-face
+{
+	font-family: freesans;
+	src: url("FreeSansBold.ttf") format("truetype");
+	font-weight:  bold;
+}
+@font-face
+{
+	font-family: freesans;
+	src: url("FreeSansBoldOblique.ttf") format("truetype");
+	font-weight:  bold;
+	font-style:   italic;
+}
+@font-face
+{
+	font-family: freesans;
+	src: url("FreeSansBoldOblique.ttf") format("truetype");
+	font-weight:  bold;
+	font-style:   oblique;
+}
+@font-face
+{
+	font-family: freesans;
+	src: url("FreeSansOblique.ttf") format("truetype");
+	font-style:   italic;
+}
+@font-face
+{
+	font-family: freemono;
+	src: url("FreeMono.ttf") format("truetype");
+}
+@font-face
+{
+	font-family: freemono;
+	src: url("FreeMonoBold.ttf") format("truetype");
+	font-weight:  bold;
+}
+@font-face
+{
+	font-family: freemono;
+	src: url("FreeMonoOblique.ttf") format("truetype");
+	font-style:   italic;
+}
+@font-face
+{
+	font-family: freemono;
+	src: url("FreeMonoBoldOblique.ttf") format("truetype");
+	font-weight:  bold;
+	font-style:   italic;
+}
