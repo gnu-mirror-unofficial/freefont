@@ -3,10 +3,10 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-	<title>Chess Characters in GNU FreeFont</title>
+	<title>Chess and Draughts (Checkers) Symbols in GNU FreeFont</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta http-equiv="Last-Modified" content="$Date: 2011/10/09 12:09:57 $" />
-<meta http-equiv="Content-Version" content="$Revision: 1.5 $" />
+<meta http-equiv="Last-Modified" content="$Date: 2011/12/16 16:01:15 $" />
+<meta http-equiv="Content-Version" content="$Revision: 1.6 $" />
 <meta http-equiv="DC.Contributor" content="$Author: Stevan_White $" />
 <meta http-equiv="content-script-type" content="text/javascript" />
 <script src="font.js" type="text/javascript"></script>
@@ -78,22 +78,24 @@
 </script>
 <style type="text/css">
 	@import url("style.css");
-	body { font-family: freeserif; line-height: 1 }
-	.chess  { border: thin black solid; }
-	.chess td { width: 1em; text-align: center; }
+	body { font-family: freeserif; line-height: normal; }
+	.checker  { border: thin black solid; }
+	.checker td { width: 1em; text-align: center; line-height: 1em; }
 </style>
 </head>
-<body onload="alternateTableCellBGColor( 'board' ); initializeFonts( 'fonttarget', 'faceswitch' )">
+<body onload="alternateTableCellBGColor( 'chessboard' ); alternateTableCellBGColor( 'draughtsboard' ); initializeFonts( 'fonttarget', 'faceswitch' )">
 <div class="controls">
 </div>
 <div class="content">
 <h1>
 <small><a href="http://savannah.gnu.org/projects/freefont/">GNU FreeFont</a></small><br />
-	Chess characters</h1>
+	Chess and Draughts (Checkers) Symbols</h1>
+<h3>Chess pieces are in Miscellaneous Symbols, 2654-265F
+</h3>
 <p class="fonttarget">
 </p>
 <div class="fonttarget">
-<table id="board" class="chess" rules="all" border="1" cellspacing="0" cellpadding="0">
+<table id="chessboard" class="checker" rules="all" border="1" cellspacing="0" cellpadding="0">
 	<tr><td>&#x265C;</td><td>&#x265E;</td><td>&#x265D;</td><td>&#x265B;</td><td>&#x265A;</td><td>&#x265D;</td><td>&#x265E;</td><td>&#x265C;</td></tr>
 	<tr><td>&#x265F;</td><td>&#x265F;</td><td>&#x265F;</td><td>&#x265F;</td><td>&#x265F;</td><td>&#x265F;</td><td>&#x265F;</td><td>&#x265F;</td></tr>
 	<tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
@@ -102,6 +104,18 @@
 	<tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
 	<tr><td>&#x2659;</td><td>&#x2659;</td><td>&#x2659;</td><td>&#x2659;</td><td>&#x2659;</td><td>&#x2659;</td><td>&#x2659;</td><td>&#x2659;</td></tr>
 	<tr><td>&#x2656;</td><td>&#x2658;</td><td>&#x2657;</td><td>&#x2655;</td><td>&#x2654;</td><td>&#x2657;</td><td>&#x2658;</td><td>&#x2656;</td></tr>
+</table>
+<h3>Checkers pieces are in Symbols, 26C0-26C3
+</h3>
+<table id="draughtsboard" class="checker" rules="all" border="1" cellspacing="0" cellpadding="0">
+	<tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+	<tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&#x26C1;</td><td>&nbsp;</td></tr>
+	<tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+	<tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&#x26C2;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+	<tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&#x26C0;</td><td>&nbsp;</td></tr>
+	<tr><td>&nbsp;</td><td>&nbsp;</td><td>&#x26C3;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+	<tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+	<tr><td>&nbsp;</td><td>&#x26C0;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
 </table>
 </div>
 </div>
