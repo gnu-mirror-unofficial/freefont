@@ -1,93 +1,93 @@
+/* IE 9- does not accept multiple URLs for the src property */
 @font-face
 {
 	font-family: freeserif;
-	src:	url("FreeSerif.woff") format("woff"),
-		url("FreeSerif.ttf") format("truetype");
+	src: url("FreeSerif.woff") format("woff");
+	src: url("FreeSerif.ttf") format("truetype");
 }
 @font-face
 {
 	font-family: freeserif;
-	src:	url("FreeSerifBold.woff") format("woff"),
-		url("FreeSerifBold.ttf") format("truetype");
+	src: url("FreeSerifBold.woff") format("woff");
+	src: url("FreeSerifBold.ttf") format("truetype");
 	font-weight:  bold;
 }
 @font-face
 {
 	font-family: freeserif;
-	src:	url("FreeSerifItalic.woff") format("woff"),
-		url("FreeSerifItalic.ttf") format("truetype");
+	src: url("FreeSerifItalic.woff") format("woff");
+	src: url("FreeSerifItalic.ttf") format("truetype");
 	font-style:   italic;
 }
 @font-face
 {
 	font-family: freeserif;
-	src:
-		url("FreeSerifBoldItalic.woff") format("woff"),
-		url("FreeSerifBoldItalic.ttf") format("truetype");
-	font-weight:  bold;
-	font-style:   italic;
-}
-@font-face
-{
-	font-family: freesans;
-	src:	url("FreeSans.woff") format("woff"),
-		url("FreeSans.ttf") format("truetype");
-}
-@font-face
-{
-	font-family: freesans;
-	src:	url("FreeSansBold.woff") format("woff"),
-		url("FreeSansBold.ttf") format("truetype");
-	font-weight:  bold;
-}
-@font-face
-{
-	font-family: freesans;
-	src:	url("FreeSansBoldOblique.woff") format("woff"),
-		url("FreeSansBoldOblique.ttf") format("truetype");
+	src: url("FreeSerifBoldItalic.woff") format("woff");
+	src: url("FreeSerifBoldItalic.ttf") format("truetype");
 	font-weight:  bold;
 	font-style:   italic;
 }
 @font-face
 {
 	font-family: freesans;
-	src:	url("FreeSansBoldOblique.woff") format("woff"),
-		url("FreeSansBoldOblique.ttf") format("truetype");
+	src: url("FreeSans.woff") format("woff");
+	src: url("FreeSans.ttf") format("truetype");
+}
+@font-face
+{
+	font-family: freesans;
+	src: url("FreeSansBold.woff") format("woff");
+	src: url("FreeSansBold.ttf") format("truetype");
+	font-weight:  bold;
+}
+@font-face
+{
+	font-family: freesans;
+	src: url("FreeSansBoldOblique.woff") format("woff");
+	src: url("FreeSansBoldOblique.ttf") format("truetype");
+	font-weight:  bold;
+	font-style:   italic;
+}
+@font-face
+{
+	font-family: freesans;
+	src: url("FreeSansBoldOblique.woff") format("woff");
+	src: url("FreeSansBoldOblique.ttf") format("truetype");
 	font-weight:  bold;
 	font-style:   oblique;
 }
 @font-face
 {
 	font-family: freesans;
-	src:	url("FreeSansOblique.woff") format("woff"),
-		url("FreeSansOblique.ttf") format("truetype");
+	src: url("FreeSansOblique.woff") format("woff");
+	src: url("FreeSansOblique.ttf") format("truetype");
 	font-style:   italic;
 }
 @font-face
 {
 	font-family: freemono;
-	src:	url("FreeMono.woff") format("woff"),
-		url("FreeMono.ttf") format("truetype");
+	src: url("FreeMono.woff") format("woff");
+	src: url("FreeMono.ttf") format("truetype");
 }
 @font-face
 {
 	font-family: freemono;
-	src:	url("FreeMonoBold.woff") format("woff"),
-		url("FreeMonoBold.ttf") format("truetype");
+	src: url("FreeMonoBold.woff") format("woff");
+	src: url("FreeMonoBold.ttf") format("truetype");
 	font-weight:  bold;
 }
 @font-face
 {
 	font-family: freemono;
-	src:	url("FreeMonoOblique.woff") format("woff"),
-		url("FreeMonoOblique.ttf") format("truetype");
+	src: url("FreeMonoOblique.woff") format("woff");
+	src: url("FreeMonoOblique.ttf") format("truetype");
 	font-style:   italic;
 }
 @font-face
 {
 	font-family: freemono;
-	src:	url("FreeMonoBoldOblique.woff") format("woff"),
-		url("FreeMonoBoldOblique.ttf") format("truetype");
+	src: url("FreeMonoBoldOblique.woff") format("woff");
+	src: url("FreeMonoBoldOblique.ttf") format("truetype");
 	font-weight:  bold;
 	font-style:   italic;
 }
