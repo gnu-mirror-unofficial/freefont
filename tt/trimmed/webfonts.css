@@ -1,8 +1,8 @@
 @font-face
 {
 	font-family: freesans;
-	src:	url("FreeSansBold.woff") format("woff");
-	src:	url("FreeSansBold.ttf") format("truetype");
+	src:	url("FreeSans.woff") format("woff");
+	src:	url("FreeSans.ttf") format("truetype");
 }
 @font-face
 {
