@@ -1,13 +1,13 @@
 @font-face
 {
 	font-family: freesans;
-	src:	url("FreeSans.woff") format("woff"),
-		url("FreeSans.ttf") format("truetype");
+	src:	url("FreeSansBold.woff") format("woff");
+	src:	url("FreeSansBold.ttf") format("truetype");
 }
 @font-face
 {
 	font-family: freesans;
-	src:	url("FreeSansBold.woff") format("woff"),
-		url("FreeSansBold.ttf") format("truetype");
+	src:	url("FreeSansBold.woff") format("woff");
+	src:	url("FreeSansBold.ttf") format("truetype");
 	font-weight:  bold;
 }
