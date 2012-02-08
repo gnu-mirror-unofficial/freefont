@@ -8,11 +8,12 @@
 </title>
 <meta name="author" content="Steve White" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta http-equiv="Last-Modified" content="$Date: 2011/10/09 01:39:19 $" />
-<meta http-equiv="Content-Version" content="$Revision: 1.8 $" />
+<meta http-equiv="Last-Modified" content="$Date: 2012/02/08 00:23:38 $" />
+<meta http-equiv="Content-Version" content="$Revision: 1.9 $" />
 <meta http-equiv="DC.Contributor" content="$Author: Stevan_White $" />
 <link rel="stylesheet" href="style.css" type="text/css" />
 <meta http-equiv="Content-Language" content="en,ml" />
+<script src="font.js" type="text/javascript"></script>
 <style type="text/css">
 	@import url("style.css");
 	p, td {font-family: "freesans"; }
@@ -20,7 +21,20 @@
 	.Unicode td { width: 4ex; }
 </style>
 </head>
-<body>
+<body onload="initializeFonts( 'fonttarget', 'faceswitch' )">
+
+<div class="controls">
+<form id="fontcontrols" action="">
+	<p>
+	<select size="1" id="faceswitch"
+	onchange="switchFamilyOfElementsOfClass( 'fonttarget', 'faceswitch' );" >
+		<option selected="selected" value="freeserif">Free Serif</option>
+		<option value="freesans">Free Sans</option>
+	</select>
+	</p>
+</form>
+</div>
+<div class="content">
 <h1>
 	<small><a href="http://savannah.gnu.org/projects/freefont/">GNU FreeFont</a></small><br />
 	മലയാളം
@@ -33,161 +47,161 @@
 <tr>
 	<td class="unused">&nbsp;</td>
 	<td class="unused">&nbsp;</td>
-	<td>ം</td>
-	<td>ഃ</td>
+	<td class="fonttarget">&nbsp;&#x0D02;</td>
+	<td class="fonttarget">&nbsp;&#x0D03;</td>
 	<td class="unused">&nbsp;</td>
-	<td>അ</td>
-	<td>ആ</td>
-	<td>ഇ</td>
-	<td>ഈ</td>
-	<td>ഉ</td>
-	<td>ഊ</td>
-	<td>ഋ</td>
-	<td>ഌ</td>
+	<td class="fonttarget">അ</td>
+	<td class="fonttarget">ആ</td>
+	<td class="fonttarget">ഇ</td>
+	<td class="fonttarget">ഈ</td>
+	<td class="fonttarget">ഉ</td>
+	<td class="fonttarget">ഊ</td>
+	<td class="fonttarget">ഋ</td>
+	<td class="fonttarget">ഌ</td>
 	<td class="unused">&nbsp;</td>
-	<td>എ</td>
-	<td>ഏ</td>
+	<td class="fonttarget">എ</td>
+	<td class="fonttarget">ഏ</td>
 </tr>
 <tr>
-	<td>ഐ</td>
+	<td class="fonttarget">ഐ</td>
 	<td class="unused">&nbsp;</td>
-	<td>ഒ</td>
-	<td>ഓ</td>
-	<td>ഔ</td>
-	<td>ക</td>
-	<td>ഖ</td>
-	<td>ഗ</td>
-	<td>ഘ</td>
-	<td>ങ</td>
-	<td>ച</td>
-	<td>ഛ</td>
-	<td>ജ</td>
-	<td>ഝ</td>
-	<td>ഞ</td>
-	<td>ട</td>
+	<td class="fonttarget">ഒ</td>
+	<td class="fonttarget">ഓ</td>
+	<td class="fonttarget">ഔ</td>
+	<td class="fonttarget">ക</td>
+	<td class="fonttarget">ഖ</td>
+	<td class="fonttarget">ഗ</td>
+	<td class="fonttarget">ഘ</td>
+	<td class="fonttarget">ങ</td>
+	<td class="fonttarget">ച</td>
+	<td class="fonttarget">ഛ</td>
+	<td class="fonttarget">ജ</td>
+	<td class="fonttarget">ഝ</td>
+	<td class="fonttarget">ഞ</td>
+	<td class="fonttarget">ട</td>
 </tr>
 <tr>
-	<td>ഠ</td>
-	<td>ഡ</td>
-	<td>ഢ</td>
-	<td>ണ</td>
-	<td>ത</td>
-	<td>ഥ</td>
-	<td>ദ</td>
-	<td>ധ</td>
-	<td>ന</td>
-	<td class="unused">&nbsp;</td>
-	<td>പ</td>
-	<td>ഫ</td>
-	<td>ബ</td>
-	<td>ഭ</td>
-	<td>മ</td>
-	<td>യ</td>
+	<td class="fonttarget">ഠ</td>
+	<td class="fonttarget">ഡ</td>
+	<td class="fonttarget">ഢ</td>
+	<td class="fonttarget">ണ</td>
+	<td class="fonttarget">ത</td>
+	<td class="fonttarget">ഥ</td>
+	<td class="fonttarget">ദ</td>
+	<td class="fonttarget">ധ</td>
+	<td class="fonttarget">ന</td>
+	<td class="fonttarget">ഩ</td>
+	<td class="fonttarget">പ</td>
+	<td class="fonttarget">ഫ</td>
+	<td class="fonttarget">ബ</td>
+	<td class="fonttarget">ഭ</td>
+	<td class="fonttarget">മ</td>
+	<td class="fonttarget">യ</td>
 </tr>
 <tr>
-	<td>ര</td>
-	<td>റ</td>
-	<td>ല</td>
-	<td>ള</td>
-	<td>ഴ</td>
-	<td>വ</td>
-	<td>ശ</td>
-	<td>ഷ</td>
-	<td>സ</td>
-	<td>ഹ</td>
+	<td class="fonttarget">ര</td>
+	<td class="fonttarget">റ</td>
+	<td class="fonttarget">ല</td>
+	<td class="fonttarget">ള</td>
+	<td class="fonttarget">ഴ</td>
+	<td class="fonttarget">വ</td>
+	<td class="fonttarget">ശ</td>
+	<td class="fonttarget">ഷ</td>
+	<td class="fonttarget">സ</td>
+	<td class="fonttarget">ഹ</td>
+	<td class="fonttarget">ഺ</td>
 	<td class="unused">&nbsp;</td>
 	<td class="unused">&nbsp;</td>
-	<td class="unused">&nbsp;</td>
-	<td>ഽ</td>
+	<td class="fonttarget">ഽ</td>
 	<td>ാ</td>
 	<td>ി</td>
 </tr>
 <tr>
-	<td>ീ</td>
-	<td>ു</td>
-	<td>ൂ</td>
-	<td>ൃ</td>
-	<td>ൄ</td>
+	<td class="fonttarget">&nbsp;&#x0D40;</td>
+	<td class="fonttarget">&nbsp;&#x0D41;</td>
+	<td class="fonttarget">&nbsp;&#x0D42;</td>
+	<td class="fonttarget">&nbsp;&#x0D43;</td>
+	<td class="fonttarget">&nbsp;&#x0D44;</td>
 	<td class="unused">&nbsp;</td>
-	<td>െ</td>
-	<td>േ</td>
-	<td>ൈ</td>
+	<td class="fonttarget">&nbsp;&#x0D46;</td>
+	<td class="fonttarget">&nbsp;&#x0D47;</td>
+	<td class="fonttarget">&nbsp;&#x0D48;</td>
 	<td class="unused">&nbsp;</td>
-	<td>ൊ</td>
-	<td>ോ</td>
-	<td>ൌ</td>
-	<td>്</td>
+	<td class="fonttarget">&nbsp;&#x0D4A;</td>
+	<td class="fonttarget">&nbsp;&#x0D4B;</td>
+	<td class="fonttarget">&nbsp;&#x0D4C;</td>
+	<td class="fonttarget">&nbsp;&#x0D4D;</td>
+	<td class="fonttarget">ൎ</td>
+	<td class="unused">&nbsp;</td>
+</tr>
+<tr>
+	<td class="unused">&nbsp;</td>
+	<td class="unused">&nbsp;</td>
+	<td class="unused">&nbsp;</td>
+	<td class="unused">&nbsp;</td>
+	<td class="unused">&nbsp;</td>
+	<td class="unused">&nbsp;</td>
+	<td class="unused">&nbsp;</td>
+	<td class="fonttarget">&nbsp;&#x0D57;</td>
+	<td class="unused">&nbsp;</td>
+	<td class="unused">&nbsp;</td>
+	<td class="unused">&nbsp;</td>
+	<td class="unused">&nbsp;</td>
+	<td class="unused">&nbsp;</td>
+	<td class="unused">&nbsp;</td>
 	<td class="unused">&nbsp;</td>
 	<td class="unused">&nbsp;</td>
 </tr>
 <tr>
+	<td class="fonttarget">ൠ</td>
+	<td class="fonttarget">ൡ</td>
+	<td class="fonttarget">&nbsp;&#x0D62;</td>
+	<td class="fonttarget">&nbsp;&#x0D63;</td>
 	<td class="unused">&nbsp;</td>
 	<td class="unused">&nbsp;</td>
-	<td class="unused">&nbsp;</td>
-	<td class="unused">&nbsp;</td>
-	<td class="unused">&nbsp;</td>
-	<td class="unused">&nbsp;</td>
-	<td class="unused">&nbsp;</td>
-	<td>ൗ</td>
-	<td class="unused">&nbsp;</td>
-	<td class="unused">&nbsp;</td>
-	<td class="unused">&nbsp;</td>
-	<td class="unused">&nbsp;</td>
-	<td class="unused">&nbsp;</td>
-	<td class="unused">&nbsp;</td>
-	<td class="unused">&nbsp;</td>
-	<td class="unused">&nbsp;</td>
-</tr>
-<tr>
-	<td>ൠ</td>
-	<td>ൡ</td>
-	<td>ൢ</td>
-	<td>ൣ</td>
-	<td class="unused">&nbsp;</td>
-	<td class="unused">&nbsp;</td>
-	<td>൦</td>
-	<td>൧</td>
+	<td class="fonttarget">൦</td>
+	<td class="fonttarget">൧</td>
 
-	<td>൨</td>
-	<td>൩</td>
-	<td>൪</td>
-	<td>൫</td>
-	<td>൬</td>
-	<td>൭</td>
-	<td>൮</td>
-	<td>൯</td>
+	<td class="fonttarget">൨</td>
+	<td class="fonttarget">൩</td>
+	<td class="fonttarget">൪</td>
+	<td class="fonttarget">൫</td>
+	<td class="fonttarget">൬</td>
+	<td class="fonttarget">൭</td>
+	<td class="fonttarget">൮</td>
+	<td class="fonttarget">൯</td>
 </tr>
 <tr>
-	<td>൰</td>
-	<td>൱</td>
-	<td>൲</td>
-	<td>൳</td>
-	<td>൴</td>
-	<td>൵</td>
+	<td class="fonttarget">൰</td>
+	<td class="fonttarget">൱</td>
+	<td class="fonttarget">൲</td>
+	<td class="fonttarget">൳</td>
+	<td class="fonttarget">൴</td>
+	<td class="fonttarget">൵</td>
 	<td class="unused">&nbsp;</td>
 	<td class="unused">&nbsp;</td>
 	<td class="unused">&nbsp;</td>
-	<td>൹</td>
-	<td>ൺ</td>
-	<td>ൻ</td>
-	<td>ർ</td>
-	<td>ൽ</td>
-	<td>ൾ</td>
-	<td>ൿ</td>
+	<td class="fonttarget">൹</td>
+	<td class="fonttarget">ൺ</td>
+	<td class="fonttarget">ൻ</td>
+	<td class="fonttarget">ർ</td>
+	<td class="fonttarget">ൽ</td>
+	<td class="fonttarget">ൾ</td>
+	<td class="fonttarget">ൿ</td>
 </tr>
 </table>
 
 <h2>samples</h2>
-<p lang="mal">
+<p lang="mal" class="fonttarget">
 </p>
-<p lang="mal">
+<p lang="mal" class="fonttarget">
 ന്യൂഡല്‍ഹി &#xD28;&#xD4D;&#xD2F;&#xD42;&#xD21;&#xD32;&#xD4D;&#x200D;&#xD39;&#xD3F;
 </p>
-<p lang="mal">
+<p lang="mal" class="fonttarget">
 ന്യൂഡല്‍ഹി: രഞ്ജി ചാമ്പ്യന്മാരായ ഡല്‍ഹിയെ 187 റണ്‍സിന് തകര്‍ത്ത് റെസ്റ്റ് ഓഫ് ഇന്ത്യ ഇറാനി ട്രോഫി നേടി. രണ്ടാം ഇന്നിങ്‌സില്‍ ജയിക്കാന്‍ 378 റണ്‍സ് എടുക്കേണ്ടിയിരുന്ന ഡല്‍ഹി ടീം 190 ന് ഓള്‍ഔട്ടായി. മൂന്നു വിക്കറ്റിന് 113 എന്ന നിലയില്‍ ഇന്ന് ബാറ്റിങ് പുനരാരംഭിച്ച ഡല്‍ഹിയെ ഹര്‍ഭജന്‍ സിങ്ങാണ് ചുരുട്ടിക്കെട്ടിയത്. ഭാജി നാലും സഹീര്‍ മൂന്നും വിക്കറ്റെടുത്തു. 91 റണ്‍സെടുത്ത ഗംഭീറാണ് ഡല്‍ഹിയുടെ . . .
 </p>
 <h3>Universal Declaration of Human Rights, Article 1</h3>
-<p lang="mal">
+<p lang="mal" class="fonttarget">
 മനുഷ്യരെല്ലാവരും തുല്യാവകാശങ്ങളോടും അന്തസ്സോടും സ്വാതന്ത്ര്യത്തോടുംകൂടി ജനിച്ചിട്ടുള്ളവരാണ്‌. അന്യോന്യം ഭ്രാതൃഭാവത്തോടെ പെരുമാറുവാനാണ്‌ മനുഷ്യന്നു വിവേകബുദ്ധിയും മനസ്സാക്ഷിയും സിദ്ധമായിരിക്കുന്നത്‌.
 </p>
 </body>
