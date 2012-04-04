@@ -1,13 +1,24 @@
+/*
+ * I am finding the only truetype working in Firefox
+ * only woff working in Explorer
+ */
+
 @font-face
 {
-	font-family: freesans;
-	src:	url("FreeSans.woff") format("woff");
-	src:	url("FreeSans.ttf") format("truetype");
+	font-family: FreeSans;
+/*
+ */
+	src:	url("FreeSans.woff") format("woff"),
+		url("FreeSans.ttf") format("truetype");
+	font-weight:  normal;
 }
 @font-face
 {
-	font-family: freesans;
-	src:	url("FreeSansBold.woff") format("woff");
-	src:	url("FreeSansBold.ttf") format("truetype");
+	font-family: FreeSans;
+	src:
+		url("FreeSansBold.woff") format("woff"),
+	url("FreeSansBold.ttf") format("truetype");
+/*
+ */
 	font-weight:  bold;
 }
