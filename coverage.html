@@ -1,74 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<html>
 <head>
 <title>
-Gnu FreeFont: character range support
+Gnu FreeFont character range support
 </title>
-<meta http-equiv="Last-Modified" content="$Date: 2011/10/09 01:28:44 $" />
-<meta http-equiv="Content-Version" content="$Revision: 1.15 $" />
-<meta http-equiv="DC.Contributor" content="$Author: Stevan_White $" />
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <style type="text/css">
-	@import url("tt/trimmed/webfonts.css");
-	@import url("freefont.css");
-	td, th { font-size: smaller; }
-	tr.high { color: gray }
+	tr.high { color: #555 }
+	tr.private { background-color: silver; }
 	td.num { text-align: right }
-	th { padding: 0.5em }
+	td { padding-right: 0.25ex }
+	th { padding: 0.25ex }
+	.roman { border-left: medium black solid; }
 	caption { font-size: larger; font-weight: bold; }
 </style>
 </head>
+
 <body>
-<div class="toc">
-	<hr />
-	<ul>
-	<li>
-		<a href="index.html">home page</a>
-	</li><li>
-	        <a href="coverage.html">coverage</a>
-	</li><li>
-	        <a href="design-notes.html">design notes</a>
-	</li><li>
-	        <a href="license.html">license</a>
-	</li><li>
-	        <a href="sources/">sources</a>
-	</li><li>
-	        <a href="ranges/">range samples</a>
-	</li>
-	</ul>
-	<hr />
-	<ul>
-	<li>
-		<a href="http://savannah.gnu.org/projects/freefont/">project
-			page<br />(downloads, news, <br />problem reports)</a>
-	</li>
-	</ul>
-	<hr />
-	<ul>
-	<!--
-	<li>
-		comparisons
-	</li>
-	<li>
-		goals and purpose
-		</li>
-	-->
-	<li>
-	<a href="articles/Why_Unicode_fonts.html">why Unicode fonts?</a>
-	</li>
-	<li>
-	<a href="articles/Why_Free_Fonts.html">why free fonts?</a>
-	</li>
-	</ul>
-</div>
-
-<div class="content">
-
 <h1>
-	<small><a href="http://savannah.gnu.org/projects/freefont/">GNU FreeFont</a></small><br />
-	support for OpenType OS/2 character ranges
+Gnu FreeFont support for OpenType OS/2 character ranges
 </h1>
 <p>
 
@@ -159,7 +108,7 @@ OS/2 character ranges vs. font faces
 <td class="num">208</td><td>&bull;</td>
 <td class="num">208</td><td>&bull;</td>
 <td class="num">208</td><td>&bull;</td>
-<td class="num">174</td><td>&bull;</td>
+<td class="num">177</td><td>&bull;</td>
 <td class="num">174</td><td>&bull;</td>
 <td class="num">174</td><td>&bull;</td>
 <td class="num">174</td><td>&bull;</td>
@@ -172,10 +121,10 @@ OS/2 character ranges vs. font faces
 <td class="num">288</td>
 <td></td>
 <td class="num">288</td><td>&bull;</td>
-<td class="num">96</td><td>&bull;</td>
-<td class="num">96</td><td>&bull;</td>
-<td class="num">82</td><td>&bull;</td>
-<td class="num">96</td><td>&bull;</td>
+<td class="num">144</td><td>&bull;</td>
+<td class="num">241</td><td>&bull;</td>
+<td class="num">143</td><td>&bull;</td>
+<td class="num">141</td><td>&bull;</td>
 <td class="num">96</td><td>&bull;</td>
 <td class="num">96</td><td>&bull;</td>
 <td class="num">96</td><td>&bull;</td>
@@ -200,37 +149,37 @@ OS/2 character ranges vs. font faces
 <td class="num">80</td><td>&bull;</td>
 <td class="num">80</td><td>&bull;</td>
 </tr>
-<tr class="low"><td>Combining Diacritical Marks</td>
-<td class="num">153</td>
+<tr class="low"><td>Combining Diacritical Marks (+suppl.)</td>
+<td class="num">155</td>
 <td></td>
-<td class="num">112</td><td>&bull;</td>
-<td class="num">112</td><td>&bull;</td>
-<td class="num">98</td><td>&bull;</td>
-<td class="num">98</td><td>&bull;</td>
+<td class="num">145</td><td>&bull;</td>
 <td class="num">112</td><td>&bull;</td>
 <td class="num">112</td><td>&bull;</td>
 <td class="num">112</td><td>&bull;</td>
 <td class="num">112</td><td>&bull;</td>
-<td class="num">88</td><td>&bull;</td>
-<td class="num">88</td><td>&bull;</td>
-<td class="num">88</td><td>&bull;</td>
-<td class="num">88</td><td>&bull;</td>
+<td class="num">112</td><td>&bull;</td>
+<td class="num">112</td><td>&bull;</td>
+<td class="num">112</td><td>&bull;</td>
+<td class="num">112</td><td>&bull;</td>
+<td class="num">112</td><td>&bull;</td>
+<td class="num">112</td><td>&bull;</td>
+<td class="num">112</td><td>&bull;</td>
 </tr>
 <tr class="low"><td>Greek and Coptic</td>
 <td class="num">134</td>
 <td></td>
-<td class="num">128</td><td>&bull;</td>
+<td class="num">134</td><td>&bull;</td>
 <td class="num">110</td><td>&bull;</td>
 <td class="num">124</td><td>&bull;</td>
-<td class="num">110</td><td>&bull;</td>
+<td class="num">109</td><td>&bull;</td>
+<td class="num">97</td><td>&bull;</td>
 <td class="num">87</td><td>&bull;</td>
 <td class="num">87</td><td>&bull;</td>
 <td class="num">87</td><td>&bull;</td>
-<td class="num">87</td><td>&bull;</td>
-<td class="num">90</td><td>&bull;</td>
-<td class="num">90</td><td>&bull;</td>
-<td class="num">90</td><td>&bull;</td>
-<td class="num">90</td><td>&bull;</td>
+<td class="num">91</td><td>&bull;</td>
+<td class="num">91</td><td>&bull;</td>
+<td class="num">91</td><td>&bull;</td>
+<td class="num">91</td><td>&bull;</td>
 </tr>
 <tr class="low"><td>Coptic</td>
 <td class="num">128</td>
@@ -248,35 +197,35 @@ OS/2 character ranges vs. font faces
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
 </tr>
-<tr class="low"><td>Cyrillic</td>
-<td class="num">402</td>
+<tr class="low"><td>Cyrillic (+suppl., +ext.-A, -B)</td>
+<td class="num">408</td>
 <td></td>
-<td class="num">402</td><td>&bull;</td>
+<td class="num">408</td><td>&bull;</td>
 <td class="num">260</td><td>&bull;</td>
+<td class="num">272</td><td>&bull;</td>
 <td class="num">260</td><td>&bull;</td>
-<td class="num">260</td><td>&bull;</td>
+<td class="num">268</td><td>&bull;</td>
 <td class="num">236</td><td>&bull;</td>
 <td class="num">236</td><td>&bull;</td>
 <td class="num">236</td><td>&bull;</td>
-<td class="num">236</td><td>&bull;</td>
-<td class="num">244</td><td>&bull;</td>
-<td class="num">244</td><td>&bull;</td>
+<td class="num">265</td><td>&bull;</td>
+<td class="num">255</td><td>&bull;</td>
 <td class="num">224</td><td>&bull;</td>
 <td class="num">224</td><td>&bull;</td>
 </tr>
 <tr class="low"><td>Armenian</td>
-<td class="num">86</td>
+<td class="num">87</td>
 <td></td>
-<td class="num">86</td><td>&bull;</td>
-<td class="num">86</td><td>&bull;</td>
-<td class="num">86</td><td>&bull;</td>
-<td class="num">86</td><td>&bull;</td>
-<td class="num">86</td><td>&bull;</td>
-<td class="num">86</td><td>&bull;</td>
-<td class="num">86</td><td>&bull;</td>
-<td class="num">86</td><td>&bull;</td>
-<td class="num">86</td><td>&bull;</td>
-<td class="num">86</td><td>&bull;</td>
+<td class="num">87</td><td>&bull;</td>
+<td class="num">87</td><td>&bull;</td>
+<td class="num">87</td><td>&bull;</td>
+<td class="num">87</td><td>&bull;</td>
+<td class="num">87</td><td>&bull;</td>
+<td class="num">87</td><td>&bull;</td>
+<td class="num">87</td><td>&bull;</td>
+<td class="num">87</td><td>&bull;</td>
+<td class="num">87</td><td>&bull;</td>
+<td class="num">87</td><td>&bull;</td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
 </tr>
@@ -287,11 +236,11 @@ OS/2 character ranges vs. font faces
 <td class="num">87</td><td>&bull;</td>
 <td class="num">87</td><td>&bull;</td>
 <td class="num">87</td><td>&bull;</td>
+<td class="num">56</td><td>&bull;</td>
 <td class="num">52</td><td>&bull;</td>
 <td class="num">52</td><td>&bull;</td>
 <td class="num">52</td><td>&bull;</td>
-<td class="num">52</td><td>&bull;</td>
-<td class="num">52</td><td>&bull;</td>
+<td class="num">56</td><td>&bull;</td>
 <td class="num">52</td><td>&bull;</td>
 <td class="num">52</td><td>&bull;</td>
 <td class="num">52</td><td>&bull;</td>
@@ -312,23 +261,23 @@ OS/2 character ranges vs. font faces
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
 </tr>
-<tr class="low"><td>Arabic (+supplement)</td>
-<td class="num">299</td>
+<tr class="low"><td>Arabic (+suppl.)</td>
+<td class="num">300</td>
 <td></td>
-<td class="num">67</td><td>&bull;</td>
+<td class="num">300</td><td>&bull;</td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">300</td><td>&bull;</td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
-<td class="num">&nbsp;</td><td></td>
-<td class="num">&nbsp;</td><td></td>
-<td class="num">&nbsp;</td><td></td>
+<td class="num">212</td><td>&bull;</td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
 </tr>
-<tr class="low"><td>NKo</td>
+<tr class="low"><td>N'Ko</td>
 <td class="num">64</td>
 <td></td>
 <td class="num">&nbsp;</td><td></td>
@@ -344,16 +293,16 @@ OS/2 character ranges vs. font faces
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
 </tr>
-<tr class="low"><td>Devanagari</td>
-<td class="num">117</td>
+<tr class="low"><td>Devanagari (+ext.)</td>
+<td class="num">155</td>
 <td></td>
-<td class="num">117</td><td>&bull;</td>
+<td class="num">155</td><td>&bull;</td>
 <td class="num">2</td><td>&bull;</td>
+<td class="num">127</td><td>&bull;</td>
 <td class="num">&nbsp;</td><td></td>
+<td class="num">127</td><td>&bull;</td>
 <td class="num">&nbsp;</td><td></td>
-<td class="num">117</td><td>&bull;</td>
-<td class="num">&nbsp;</td><td></td>
-<td class="num">&nbsp;</td><td></td>
+<td class="num">127</td><td>&bull;</td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
@@ -361,14 +310,14 @@ OS/2 character ranges vs. font faces
 <td class="num">&nbsp;</td><td></td>
 </tr>
 <tr class="low"><td>Bengali</td>
-<td class="num">91</td>
+<td class="num">92</td>
 <td></td>
-<td class="num">91</td><td>&bull;</td>
-<td class="num">91</td><td>&bull;</td>
+<td class="num">92</td><td>&bull;</td>
+<td class="num">92</td><td>&bull;</td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
-<td class="num">91</td><td>&bull;</td>
-<td class="num">91</td><td>&bull;</td>
+<td class="num">92</td><td>&bull;</td>
+<td class="num">92</td><td>&bull;</td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
@@ -381,7 +330,7 @@ OS/2 character ranges vs. font faces
 <td></td>
 <td class="num">79</td><td>&bull;</td>
 <td class="num">&nbsp;</td><td></td>
-<td class="num">&nbsp;</td><td></td>
+<td class="num">79</td><td>&bull;</td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">79</td><td>&bull;</td>
 <td class="num">&nbsp;</td><td></td>
@@ -393,13 +342,13 @@ OS/2 character ranges vs. font faces
 <td class="num">&nbsp;</td><td></td>
 </tr>
 <tr class="low"><td>Gujarati</td>
-<td class="num">83</td>
+<td class="num">84</td>
 <td></td>
+<td class="num">84</td><td>&bull;</td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
-<td class="num">83</td><td>&bull;</td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
@@ -409,9 +358,9 @@ OS/2 character ranges vs. font faces
 <td class="num">&nbsp;</td><td></td>
 </tr>
 <tr class="low"><td>Oriya</td>
-<td class="num">84</td>
+<td class="num">90</td>
 <td></td>
-<td class="num">&nbsp;</td><td></td>
+<td class="num">90</td><td>&bull;</td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
@@ -473,13 +422,13 @@ OS/2 character ranges vs. font faces
 <td class="num">&nbsp;</td><td></td>
 </tr>
 <tr class="low"><td>Malayalam</td>
-<td class="num">95</td>
+<td class="num">98</td>
 <td></td>
-<td class="num">95</td><td>&bull;</td>
+<td class="num">98</td><td>&bull;</td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
-<td class="num">&nbsp;</td><td></td>
+<td class="num">98</td><td>&bull;</td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
@@ -520,7 +469,7 @@ OS/2 character ranges vs. font faces
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
 </tr>
-<tr class="low"><td>Georgian (+supplement)</td>
+<tr class="low"><td>Georgian (+suppl.)</td>
 <td class="num">121</td>
 <td></td>
 <td class="num">83</td><td>&bull;</td>
@@ -569,16 +518,16 @@ OS/2 character ranges vs. font faces
 <td class="num">&nbsp;</td><td></td>
 </tr>
 <tr class="low"><td>Latin Extended (Additional,C,D)</td>
-<td class="num">399</td>
+<td class="num">422</td>
 <td></td>
-<td class="num">366</td><td>&bull;</td>
-<td class="num">265</td><td>&bull;</td>
-<td class="num">265</td><td>&bull;</td>
-<td class="num">265</td><td>&bull;</td>
-<td class="num">251</td><td>&bull;</td>
-<td class="num">251</td><td>&bull;</td>
-<td class="num">251</td><td>&bull;</td>
-<td class="num">251</td><td>&bull;</td>
+<td class="num">379</td><td>&bull;</td>
+<td class="num">270</td><td>&bull;</td>
+<td class="num">270</td><td>&bull;</td>
+<td class="num">267</td><td>&bull;</td>
+<td class="num">256</td><td>&bull;</td>
+<td class="num">252</td><td>&bull;</td>
+<td class="num">253</td><td>&bull;</td>
+<td class="num">252</td><td>&bull;</td>
 <td class="num">251</td><td>&bull;</td>
 <td class="num">251</td><td>&bull;</td>
 <td class="num">251</td><td>&bull;</td>
@@ -600,21 +549,21 @@ OS/2 character ranges vs. font faces
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
 </tr>
-<tr class="low"><td>General Punctuation (+suppl)</td>
-<td class="num">150</td>
+<tr class="low"><td>General Punctuation (+suppl.)</td>
+<td class="num">151</td>
 <td></td>
+<td class="num">138</td><td>&bull;</td>
 <td class="num">102</td><td>&bull;</td>
 <td class="num">102</td><td>&bull;</td>
 <td class="num">102</td><td>&bull;</td>
-<td class="num">102</td><td>&bull;</td>
-<td class="num">102</td><td>&bull;</td>
-<td class="num">102</td><td>&bull;</td>
-<td class="num">102</td><td>&bull;</td>
-<td class="num">102</td><td>&bull;</td>
-<td class="num">102</td><td>&bull;</td>
-<td class="num">102</td><td>&bull;</td>
-<td class="num">102</td><td>&bull;</td>
-<td class="num">102</td><td>&bull;</td>
+<td class="num">116</td><td>&bull;</td>
+<td class="num">115</td><td>&bull;</td>
+<td class="num">115</td><td>&bull;</td>
+<td class="num">115</td><td>&bull;</td>
+<td class="num">116</td><td>&bull;</td>
+<td class="num">115</td><td>&bull;</td>
+<td class="num">116</td><td>&bull;</td>
+<td class="num">115</td><td>&bull;</td>
 </tr>
 <tr class="low"><td>Superscripts and Subscripts</td>
 <td class="num">34</td>
@@ -633,20 +582,20 @@ OS/2 character ranges vs. font faces
 <td class="num">34</td><td>&bull;</td>
 </tr>
 <tr class="low"><td>Currency Symbols</td>
-<td class="num">25</td>
+<td class="num">26</td>
 <td></td>
+<td class="num">26</td><td>&bull;</td>
+<td class="num">25</td><td>&bull;</td>
 <td class="num">24</td><td>&bull;</td>
 <td class="num">24</td><td>&bull;</td>
+<td class="num">24</td><td>&bull;</td>
+<td class="num">24</td><td>&bull;</td>
+<td class="num">12</td><td>&bull;</td>
+<td class="num">12</td><td>&bull;</td>
 <td class="num">23</td><td>&bull;</td>
 <td class="num">23</td><td>&bull;</td>
-<td class="num">21</td><td>&bull;</td>
-<td class="num">21</td><td>&bull;</td>
-<td class="num">11</td><td>&bull;</td>
-<td class="num">11</td><td>&bull;</td>
-<td class="num">20</td><td>&bull;</td>
-<td class="num">6</td><td>&bull;</td>
-<td class="num">5</td><td>&bull;</td>
-<td class="num">3</td><td>&bull;</td>
+<td class="num">17</td><td>&bull;</td>
+<td class="num">17</td><td>&bull;</td>
 </tr>
 <tr class="low"><td>Combining Diacritical Marks for Symbols</td>
 <td class="num">33</td>
@@ -667,11 +616,11 @@ OS/2 character ranges vs. font faces
 <tr class="low"><td>Letterlike Symbols</td>
 <td class="num">80</td>
 <td></td>
-<td class="num">71</td><td>&bull;</td>
+<td class="num">77</td><td>&bull;</td>
 <td class="num">71</td><td>&bull;</td>
 <td class="num">48</td><td>&bull;</td>
 <td class="num">48</td><td>&bull;</td>
-<td class="num">68</td><td>&bull;</td>
+<td class="num">69</td><td>&bull;</td>
 <td class="num">68</td><td>&bull;</td>
 <td class="num">38</td><td>&bull;</td>
 <td class="num">38</td><td>&bull;</td>
@@ -693,69 +642,69 @@ OS/2 character ranges vs. font faces
 <td class="num">45</td><td>&bull;</td>
 <td class="num">45</td><td>&bull;</td>
 <td class="num">45</td><td>&bull;</td>
-<td class="num">32</td><td>&bull;</td>
-<td class="num">32</td><td>&bull;</td>
+<td class="num">13</td><td>&bull;</td>
+<td class="num">13</td><td>&bull;</td>
 </tr>
-<tr class="low"><td>Arrows (+suppl)</td>
-<td class="num">512</td>
+<tr class="low"><td>Arrows (+suppl.)</td>
+<td class="num">519</td>
 <td></td>
-<td class="num">177</td><td>&bull;</td>
-<td class="num">4</td><td>&bull;</td>
+<td class="num">183</td><td>&bull;</td>
+<td class="num">39</td><td>&bull;</td>
 <td class="num">77</td><td>&bull;</td>
-<td class="num">42</td><td>&bull;</td>
+<td class="num">52</td><td>&bull;</td>
+<td class="num">43</td><td>&bull;</td>
+<td class="num">43</td><td>&bull;</td>
 <td class="num">30</td><td>&bull;</td>
-<td class="num">6</td><td>&bull;</td>
 <td class="num">30</td><td>&bull;</td>
-<td class="num">30</td><td>&bull;</td>
-<td class="num">127</td><td>&bull;</td>
-<td class="num">11</td><td>&bull;</td>
-<td class="num">32</td><td>&bull;</td>
-<td class="num">5</td><td>&bull;</td>
+<td class="num">128</td><td>&bull;</td>
+<td class="num">39</td><td>&bull;</td>
+<td class="num">38</td><td>&bull;</td>
+<td class="num">38</td><td>&bull;</td>
 </tr>
 <tr class="low"><td>Mathematical Operators</td>
-<td class="num">684</td>
+<td class="num">686</td>
 <td></td>
-<td class="num">272</td><td>&bull;</td>
-<td class="num">16</td><td>&bull;</td>
-<td class="num">184</td><td>&bull;</td>
-<td class="num">10</td><td>&bull;</td>
-<td class="num">121</td><td>&bull;</td>
-<td class="num">11</td><td>&bull;</td>
-<td class="num">13</td><td>&bull;</td>
-<td class="num">10</td><td>&bull;</td>
+<td class="num">391</td><td>&bull;</td>
+<td class="num">84</td><td>&bull;</td>
+<td class="num">197</td><td>&bull;</td>
+<td class="num">77</td><td>&bull;</td>
+<td class="num">187</td><td>&bull;</td>
+<td class="num">65</td><td>&bull;</td>
+<td class="num">111</td><td>&bull;</td>
+<td class="num">52</td><td>&bull;</td>
 <td class="num">279</td><td>&bull;</td>
-<td class="num">37</td><td>&bull;</td>
-<td class="num">38</td><td>&bull;</td>
-<td class="num">30</td><td>&bull;</td>
+<td class="num">65</td><td>&bull;</td>
+<td class="num">59</td><td>&bull;</td>
+<td class="num">57</td><td>&bull;</td>
 </tr>
 <tr class="low"><td>Miscellaneous Technical</td>
 <td class="num">232</td>
 <td></td>
-<td class="num">105</td><td>&bull;</td>
-<td class="num">2</td><td>&bull;</td>
+<td class="num">113</td><td>&bull;</td>
+<td class="num">7</td><td>&bull;</td>
 <td class="num">10</td><td>&bull;</td>
-<td class="num">&nbsp;</td><td></td>
-<td class="num">24</td><td>&bull;</td>
-<td class="num">&nbsp;</td><td></td>
-<td class="num">&nbsp;</td><td></td>
-<td class="num">&nbsp;</td><td></td>
+<td class="num">5</td><td>&bull;</td>
+<td class="num">34</td><td>&bull;</td>
+<td class="num">6</td><td>&bull;</td>
+<td class="num">9</td><td>&bull;</td>
+<td class="num">5</td><td>&bull;</td>
 <td class="num">196</td><td>&bull;</td>
-<td class="num">2</td><td>&bull;</td>
+<td class="num">5</td><td>&bull;</td>
 <td class="num">3</td><td>&bull;</td>
-<td class="num">&nbsp;</td><td></td>
+<td class="num">3</td><td>&bull;</td>
 </tr>
 <tr class="low"><td>Control Pictures</td>
 <td class="num">39</td>
 <td></td>
-<td class="num">36</td><td>&bull;</td>
+<td class="num">39</td><td>&bull;</td>
 <td class="num">1</td><td>&bull;</td>
 <td class="num">1</td><td>&bull;</td>
 <td class="num">1</td><td>&bull;</td>
-<td class="num">37</td><td>&bull;</td>
+<td class="num">39</td><td>&bull;</td>
 <td class="num">1</td><td>&bull;</td>
 <td class="num">1</td><td>&bull;</td>
 <td class="num">1</td><td>&bull;</td>
-<td class="num">36</td><td>&bull;</td>
+<td class="num">39</td><td>&bull;</td>
 <td class="num">1</td><td>&bull;</td>
 <td class="num">1</td><td>&bull;</td>
 <td class="num">1</td><td>&bull;</td>
@@ -828,38 +777,38 @@ OS/2 character ranges vs. font faces
 <td class="num">96</td>
 <td></td>
 <td class="num">96</td><td>&bull;</td>
-<td class="num">3</td><td>&bull;</td>
-<td class="num">19</td><td>&bull;</td>
+<td class="num">6</td><td>&bull;</td>
+<td class="num">24</td><td>&bull;</td>
+<td class="num">6</td><td>&bull;</td>
+<td class="num">96</td><td>&bull;</td>
+<td class="num">4</td><td>&bull;</td>
+<td class="num">5</td><td>&bull;</td>
 <td class="num">4</td><td>&bull;</td>
 <td class="num">96</td><td>&bull;</td>
 <td class="num">3</td><td>&bull;</td>
+<td class="num">75</td><td>&bull;</td>
 <td class="num">3</td><td>&bull;</td>
-<td class="num">3</td><td>&bull;</td>
-<td class="num">96</td><td>&bull;</td>
-<td class="num">3</td><td>&bull;</td>
-<td class="num">74</td><td>&bull;</td>
-<td class="num">1</td><td>&bull;</td>
 </tr>
 <tr class="low"><td>Miscellaneous Symbols</td>
-<td class="num">191</td>
+<td class="num">256</td>
 <td></td>
 <td class="num">191</td><td>&bull;</td>
 <td class="num">15</td><td>&bull;</td>
 <td class="num">17</td><td>&bull;</td>
 <td class="num">15</td><td>&bull;</td>
-<td class="num">16</td><td>&bull;</td>
+<td class="num">19</td><td>&bull;</td>
 <td class="num">15</td><td>&bull;</td>
 <td class="num">16</td><td>&bull;</td>
 <td class="num">15</td><td>&bull;</td>
-<td class="num">79</td><td>&bull;</td>
+<td class="num">84</td><td>&bull;</td>
 <td class="num">15</td><td>&bull;</td>
 <td class="num">29</td><td>&bull;</td>
 <td class="num">15</td><td>&bull;</td>
 </tr>
 <tr class="low"><td>Dingbats</td>
-<td class="num">174</td>
+<td class="num">191</td>
 <td></td>
-<td class="num">174</td><td>&bull;</td>
+<td class="num">191</td><td>&bull;</td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
@@ -952,7 +901,7 @@ OS/2 character ranges vs. font faces
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
 </tr>
-<tr class="low"><td>CJK Miscellaneous</td>
+<tr class="low"><td>Kanbun</td>
 <td class="num">16</td>
 <td></td>
 <td class="num">&nbsp;</td><td></td>
@@ -1027,7 +976,7 @@ OS/2 character ranges vs. font faces
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
-<td class="num">&nbsp;</td><td></td>
+<td class="num">&nbsp;</td><td>&bull;</td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
@@ -1065,18 +1014,18 @@ OS/2 character ranges vs. font faces
 <td class="num">&nbsp;</td><td></td>
 </tr>
 <tr class="private"><td>Private Use Area</td>
-<td class="num">4352</td>
+<td class="num">6400</td>
 <td></td>
-<td class="num">1789</td><td></td>
-<td class="num">463</td><td></td>
-<td class="num">18</td><td></td>
-<td class="num">18</td><td></td>
-<td class="num">915</td><td></td>
-<td class="num">471</td><td></td>
-<td class="num">70</td><td></td>
-<td class="num">5</td><td></td>
-<td class="num">1</td><td></td>
-<td class="num">1</td><td></td>
+<td class="num">2448</td><td></td>
+<td class="num">507</td><td></td>
+<td class="num">717</td><td></td>
+<td class="num">63</td><td></td>
+<td class="num">1647</td><td></td>
+<td class="num">486</td><td></td>
+<td class="num">255</td><td></td>
+<td class="num">20</td><td></td>
+<td class="num">15</td><td></td>
+<td class="num">2</td><td></td>
 <td class="num">1</td><td></td>
 <td class="num">1</td><td></td>
 </tr>
@@ -1099,7 +1048,7 @@ OS/2 character ranges vs. font faces
 <tr class="low"><td>Alphabetic Presentation Forms</td>
 <td class="num">58</td>
 <td></td>
-<td class="num">50</td><td>&bull;</td>
+<td class="num">58</td><td>&bull;</td>
 <td class="num">50</td><td>&bull;</td>
 <td class="num">50</td><td>&bull;</td>
 <td class="num">50</td><td>&bull;</td>
@@ -1113,25 +1062,25 @@ OS/2 character ranges vs. font faces
 <td class="num">39</td><td>&bull;</td>
 </tr>
 <tr class="low"><td>Arabic Presentation Forms-A</td>
-<td class="num">595</td>
+<td class="num">611</td>
 <td></td>
-<td class="num">20</td><td>&bull;</td>
+<td class="num">169</td><td>&bull;</td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">143</td><td>&bull;</td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
-<td class="num">&nbsp;</td><td></td>
-<td class="num">&nbsp;</td><td></td>
-<td class="num">&nbsp;</td><td></td>
+<td class="num">140</td><td>&bull;</td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
 </tr>
 <tr class="low"><td>Combining Half Marks</td>
-<td class="num">16</td>
+<td class="num">7</td>
 <td></td>
-<td class="num">&nbsp;</td><td></td>
+<td class="num">7</td><td>&bull;</td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
@@ -1179,15 +1128,15 @@ OS/2 character ranges vs. font faces
 <tr class="low"><td>Arabic Presentation Forms-B</td>
 <td class="num">141</td>
 <td></td>
-<td class="num">132</td><td>&bull;</td>
+<td class="num">141</td><td>&bull;</td>
+<td class="num">&nbsp;</td><td></td>
+<td class="num">141</td><td>&bull;</td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
-<td class="num">&nbsp;</td><td></td>
-<td class="num">&nbsp;</td><td></td>
-<td class="num">&nbsp;</td><td></td>
+<td class="num">141</td><td>&bull;</td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
@@ -1211,18 +1160,18 @@ OS/2 character ranges vs. font faces
 <tr class="low"><td>Specials</td>
 <td class="num">5</td>
 <td></td>
-<td class="num">1</td><td>&bull;</td>
-<td class="num">1</td><td>&bull;</td>
-<td class="num">1</td><td>&bull;</td>
-<td class="num">1</td><td>&bull;</td>
-<td class="num">1</td><td>&bull;</td>
-<td class="num">1</td><td>&bull;</td>
-<td class="num">1</td><td>&bull;</td>
-<td class="num">1</td><td>&bull;</td>
-<td class="num">1</td><td>&bull;</td>
-<td class="num">1</td><td>&bull;</td>
-<td class="num">1</td><td>&bull;</td>
-<td class="num">1</td><td>&bull;</td>
+<td class="num">5</td><td>&bull;</td>
+<td class="num">5</td><td>&bull;</td>
+<td class="num">5</td><td>&bull;</td>
+<td class="num">5</td><td>&bull;</td>
+<td class="num">5</td><td>&bull;</td>
+<td class="num">5</td><td>&bull;</td>
+<td class="num">5</td><td>&bull;</td>
+<td class="num">5</td><td>&bull;</td>
+<td class="num">5</td><td>&bull;</td>
+<td class="num">5</td><td>&bull;</td>
+<td class="num">5</td><td>&bull;</td>
+<td class="num">5</td><td>&bull;</td>
 </tr>
 <tr class="low"><td>Tibetan</td>
 <td class="num">256</td>
@@ -1247,7 +1196,7 @@ OS/2 character ranges vs. font faces
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
-<td class="num">71</td><td>&bull;</td>
+<td class="num">77</td><td>&bull;</td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
@@ -1259,9 +1208,9 @@ OS/2 character ranges vs. font faces
 <tr class="low"><td>Thaana</td>
 <td class="num">50</td>
 <td></td>
-<td class="num">49</td><td>&bull;</td>
+<td class="num">50</td><td>&bull;</td>
 <td class="num">&nbsp;</td><td></td>
-<td class="num">&nbsp;</td><td></td>
+<td class="num">50</td><td>&bull;</td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
@@ -1277,7 +1226,7 @@ OS/2 character ranges vs. font faces
 <td></td>
 <td class="num">80</td><td>&bull;</td>
 <td class="num">&nbsp;</td><td></td>
-<td class="num">&nbsp;</td><td></td>
+<td class="num">80</td><td>&bull;</td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
@@ -1304,7 +1253,7 @@ OS/2 character ranges vs. font faces
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
 </tr>
-<tr class="low"><td>Ethiopic (+supplement, extended)</td>
+<tr class="low"><td>Ethiopic (+suppl., +ext.)</td>
 <td class="num">484</td>
 <td></td>
 <td class="num">345</td><td>&bull;</td>
@@ -1337,13 +1286,13 @@ OS/2 character ranges vs. font faces
 <td class="num">&nbsp;</td><td></td>
 </tr>
 <tr class="low"><td>Unified Canadian Aboriginal Syllabics</td>
-<td class="num">709</td>
+<td class="num">710</td>
 <td></td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
-<td class="num">709</td><td>&bull;</td>
+<td class="num">710</td><td>&bull;</td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
@@ -1369,7 +1318,7 @@ OS/2 character ranges vs. font faces
 <td class="num">&nbsp;</td><td></td>
 </tr>
 <tr class="low"><td>Runic</td>
-<td class="num">82</td>
+<td class="num">81</td>
 <td></td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
@@ -1465,7 +1414,7 @@ OS/2 character ranges vs. font faces
 <td class="num">&nbsp;</td><td></td>
 </tr>
 <tr class="high"><td>Old Italic</td>
-<td class="num">33</td>
+<td class="num">35</td>
 <td></td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
@@ -1475,7 +1424,7 @@ OS/2 character ranges vs. font faces
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
-<td class="num">&nbsp;</td><td></td>
+<td class="num">35</td><td>&bull;</td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
@@ -1560,7 +1509,7 @@ OS/2 character ranges vs. font faces
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
 </tr>
-<tr class="high"><td>Variation Selectors (+suppl)</td>
+<tr class="high"><td>Variation Selectors (+suppl.)</td>
 <td class="num">256</td>
 <td></td>
 <td class="num">&nbsp;</td><td></td>
@@ -1673,13 +1622,13 @@ OS/2 character ranges vs. font faces
 <td class="num">&nbsp;</td><td></td>
 </tr>
 <tr class="low"><td>Tifinagh</td>
-<td class="num">55</td>
+<td class="num">57</td>
 <td></td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
-<td class="num">55</td><td></td>
+<td class="num">57</td><td></td>
 <td class="num">55</td><td></td>
 <td class="num">55</td><td></td>
 <td class="num">55</td><td></td>
@@ -1688,7 +1637,7 @@ OS/2 character ranges vs. font faces
 <td class="num">&nbsp;</td><td></td>
 <td class="num">&nbsp;</td><td></td>
 </tr>
-<tr class="low"><td>Ying Hexagram Symbols</td>
+<tr class="low"><td>Yijing Hexagram Symbols</td>
 <td class="num">64</td>
 <td></td>
 <td class="num">&nbsp;</td><td></td>
@@ -2073,44 +2022,44 @@ OS/2 character ranges vs. font faces
 <td class="num">&nbsp;</td><td></td>
 </tr>
 <tr><th colspan="3">total in Unicode ranges</th>
-<td class="num" colspan="2">8995&nbsp;</td>
-<td class="num" colspan="2">3076&nbsp;</td>
-<td class="num" colspan="2">2958&nbsp;</td>
-<td class="num" colspan="2">2504&nbsp;</td>
-<td class="num" colspan="2">5289&nbsp;</td>
-<td class="num" colspan="2">2900&nbsp;</td>
-<td class="num" colspan="2">2469&nbsp;</td>
-<td class="num" colspan="2">2320&nbsp;</td>
-<td class="num" colspan="2">3555&nbsp;</td>
-<td class="num" colspan="2">2120&nbsp;</td>
-<td class="num" colspan="2">1971&nbsp;</td>
-<td class="num" colspan="2">1694&nbsp;</td>
+<td class="num" colspan="2">10537&nbsp;</td>
+<td class="num" colspan="2">3291&nbsp;</td>
+<td class="num" colspan="2">4777&nbsp;</td>
+<td class="num" colspan="2">2715&nbsp;</td>
+<td class="num" colspan="2">6272&nbsp;</td>
+<td class="num" colspan="2">3036&nbsp;</td>
+<td class="num" colspan="2">2911&nbsp;</td>
+<td class="num" colspan="2">2403&nbsp;</td>
+<td class="num" colspan="2">4178&nbsp;</td>
+<td class="num" colspan="2">2251&nbsp;</td>
+<td class="num" colspan="2">2035&nbsp;</td>
+<td class="num" colspan="2">1796&nbsp;</td>
 </tr>
 <tr><th colspan="3">total in font</th>
-<td class="num" colspan="2">8995&nbsp;</td>
-<td class="num" colspan="2">3076&nbsp;</td>
-<td class="num" colspan="2">2958&nbsp;</td>
-<td class="num" colspan="2">2504&nbsp;</td>
-<td class="num" colspan="2">5289&nbsp;</td>
-<td class="num" colspan="2">2900&nbsp;</td>
-<td class="num" colspan="2">2469&nbsp;</td>
-<td class="num" colspan="2">2320&nbsp;</td>
-<td class="num" colspan="2">3555&nbsp;</td>
-<td class="num" colspan="2">2120&nbsp;</td>
-<td class="num" colspan="2">1971&nbsp;</td>
-<td class="num" colspan="2">1694&nbsp;</td>
+<td class="num" colspan="2">10537&nbsp;</td>
+<td class="num" colspan="2">3291&nbsp;</td>
+<td class="num" colspan="2">4777&nbsp;</td>
+<td class="num" colspan="2">2715&nbsp;</td>
+<td class="num" colspan="2">6272&nbsp;</td>
+<td class="num" colspan="2">3036&nbsp;</td>
+<td class="num" colspan="2">2911&nbsp;</td>
+<td class="num" colspan="2">2403&nbsp;</td>
+<td class="num" colspan="2">4178&nbsp;</td>
+<td class="num" colspan="2">2251&nbsp;</td>
+<td class="num" colspan="2">2035&nbsp;</td>
+<td class="num" colspan="2">1796&nbsp;</td>
 </tr>
 <tr><th colspan="3">total in Private Use</th>
-<td class="num" colspan="2">1789&nbsp;</td>
-<td class="num" colspan="2">463&nbsp;</td>
-<td class="num" colspan="2">18&nbsp;</td>
-<td class="num" colspan="2">18&nbsp;</td>
-<td class="num" colspan="2">915&nbsp;</td>
-<td class="num" colspan="2">471&nbsp;</td>
-<td class="num" colspan="2">70&nbsp;</td>
-<td class="num" colspan="2">5&nbsp;</td>
-<td class="num" colspan="2">1&nbsp;</td>
-<td class="num" colspan="2">1&nbsp;</td>
+<td class="num" colspan="2">2448&nbsp;</td>
+<td class="num" colspan="2">507&nbsp;</td>
+<td class="num" colspan="2">717&nbsp;</td>
+<td class="num" colspan="2">63&nbsp;</td>
+<td class="num" colspan="2">1647&nbsp;</td>
+<td class="num" colspan="2">486&nbsp;</td>
+<td class="num" colspan="2">255&nbsp;</td>
+<td class="num" colspan="2">20&nbsp;</td>
+<td class="num" colspan="2">15&nbsp;</td>
+<td class="num" colspan="2">2&nbsp;</td>
 <td class="num" colspan="2">1&nbsp;</td>
 <td class="num" colspan="2">1&nbsp;</td>
 </tr>
@@ -2150,10 +2099,7 @@ used by other Indic scripts.
 The ranges <span style="color: #555">beyond Unicode point 0xFFFF</span>, are
 shaded.  </p>
 
-Generated by <code>range_report.py</code> on 04:56:29 PM 09/19/2010 CEST.
+Generated by <code>range_report.py</code> on 02:14:54 PM 04/29/2012 CEST.
 </p>
-</body>
-</html>
-</div>
 </body>
 </html>
