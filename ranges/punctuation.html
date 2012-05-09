@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<title>Punctuation GNU FreeFont</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Last-Modified" content="$Date: 2012/05/09 20:35:31 $" />
+<meta http-equiv="Content-Version" content="$Revision: 1.1 $" />
+<meta http-equiv="DC.Contributor" content="$Author: Stevan_White $" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<script src="font.js" type="text/javascript"></script>
+<style type="text/css">
+	@import url("style.css");
+	.measure { border: thin dotted gray; }
+</style>
+</head>
+<body onload="initializeFonts( 'fonttarget', 'faceswitch' )">
+<div class="controls">
+<form id="fontcontrols" action="">
+	<p>
+	<label for="toggle_bold">Bold</label>
+	<input type="checkbox" id="toggle_bold"
+	onclick="switchWeightOfElementsOfClass( 'fonttarget' );"/>
+	<br />
+	<label for="toggle_ital">Italic</label>
+	<input type="checkbox" id="toggle_ital"
+	onclick="switchStyleOfElementsOfClass( 'fonttarget' );"/>
+	<br />
+	<select size="1" value="freeserif" id="faceswitch"
+	onchange="switchFamilyOfElementsOfClass( 'fonttarget', 'faceswitch' );" >
+		<option selected="selected" value="freeserif">Free Serif</option>
+		<option value="freesans">Free Sans</option>
+		<option value="freemono">Free Mono</option>
+	</select>
+	</p>
+</form>
+</div>
+<div class="content">
+	<h1>
+<small><a href="http://savannah.gnu.org/projects/freefont/">GNU FreeFont</a></small><br />
+		Punctuation</h1>
+<h2>Basic Latin</h2>
+<p class="fonttarget">
+! " # $ % &amp; ' ( ) * , - . / <br />
+: ; &lt; &gt; ? <br />
+[ \ ] ^ _ <br />
+` { | } ~ 
+</p>
+<h2>Latin-1</h2>
+<p class="fonttarget">
+¡ ¦ ¨ ª « ¯ ´ · º » ¿
+</p>
+<h2>Unicode General Punctuation range 2000-206F</h2>
+<p class="fonttarget">
+&#x2000; &#x2001; &#x2002; &#x2003; &#x2004; &#x2005; &#x2006; &#x2007;
+&#x2008; &#x2009; &#x200a; &#x200b; &#x200c; &#x200d; &#x200e; &#x200f; <br />
+&#x2010; &#x2011; &#x2012; &#x2013; &#x2014; &#x2015; &#x2016; &#x2017;
+&#x2018; &#x2019; &#x201a; &#x201b; &#x201c; &#x201d; &#x201e; &#x201f; <br />
+&#x2020; &#x2021; &#x2022; &#x2023; &#x2024; &#x2025; &#x2026; &#x2027;
+&#x2028; &#x2029; &#x202a; &#x202b; &#x202c; &#x202d; &#x202e; &#x202f; <br />
+&#x2030; &#x2031; &#x2032; &#x2033; &#x2034; &#x2035; &#x2036; &#x2037;
+&#x2038; &#x2039; &#x203a; &#x203b; &#x203c; &#x203d; &#x203e; &#x203f; <br />
+&#x2040; &#x2041; &#x2042; &#x2043; &#x2044; &#x2045; &#x2046; &#x2047;
+&#x2048; &#x2049; &#x204a; &#x204b; &#x204c; &#x204d; &#x204e; &#x204f; <br />
+&#x2050; &#x2051; &#x2052; &#x2053; &#x2054; &#x2055; &#x2056; &#x2057;
+&#x2058; &#x2059; &#x205a; &#x205b; &#x205c; &#x205d; &#x205e; &#x205f; <br />
+&#x2060; &#x2061; &#x2062; &#x2063; &#x2064; &#x2065; &#x2066; &#x2067;
+&#x2068; &#x2069; &#x206a; &#x206b; &#x206c; &#x206d; &#x206e; &#x206f;
+
+</p>
+<h2>Unicode Supplemental Punctuation range 2E00-2E31</h2>
+<p class="fonttarget">
+&#x2e00; &#x2e01; &#x2e02; &#x2e03; &#x2e04; &#x2e05; &#x2e06; &#x2e07;
+&#x2e08; &#x2e09; &#x2e0a; &#x2e0b; &#x2e0c; &#x2e0d; &#x2e0e; &#x2e0f; <br />
+&#x2e10; &#x2e11; &#x2e12; &#x2e13; &#x2e14; &#x2e15; &#x2e16; &#x2e17;
+&#x2e18; &#x2e19; &#x2e1a; &#x2e1b; &#x2e1c; &#x2e1d; &#x2e1e; &#x2e1f; <br />
+&#x2e20; &#x2e21; &#x2e22; &#x2e23; &#x2e24; &#x2e25; &#x2e26; &#x2e27;
+&#x2e28; &#x2e29; &#x2e2a; &#x2e2b; &#x2e2c; &#x2e2d; &#x2e2e; &#x2e2f; <br />
+&#x2e30; &#x2e31;
+</p>
+
+<h2>Bullets</h2>
+<p class="fonttarget">
+<span class="measure">&#x2022;</span>	bullet<br />
+<span class="measure">&#x2023;</span>	triangular bullet<br />
+<span class="measure">&#x2043;</span>	hyphen bullet<br />
+<span class="measure">&#x25D8;</span>	inverse bullet<br />
+<span class="measure">&#x25E6;</span>	white bullet<br />
+<span class="measure">&#x204C;</span>	black leftwards bullet<br />
+<span class="measure">&#x204D;</span>	black rightwards bullet<br />
+<span class="measure">&#x261B;</span>	right black hand <br />
+<span class="measure">&#x261E;</span>	right white hand <br />
+<span class="measure">&#x2619;</span>	reversed rotated floral heart bullet<br />
+<span class="measure">&#x2765;</span>	rotated heavy black heart bullet<br />
+<span class="measure">&#x2767;</span>	fleuron right<br />
+<span class="measure">&#x2219;</span>	bullet operator<br />
+<!-- Thai Fongman 0E4F -->
+<!-- Japanese tainome 25C9 -->
+</p>
+<h2>Samples</h2>
+<p class="fonttarget">
+"don't", “can’t”, O’Leary, (jack-o-lantern), (f), tuf?
+</p>
+<p class="fonttarget">
+qu’est-ce que c’est? L’Hospital, «guillemet» ‹jet›
+</p>
+<p class="fonttarget">
+Wie geht’s? „Anführungszeichen“, „Wochenpost“, »Möwchen«
+</p>
+<p class="fonttarget">
+¡Muy bonita! ¿Más cervezas?
+</p>
+</div>
+</body>
+</html>
