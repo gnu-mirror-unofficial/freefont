@@ -22,6 +22,7 @@ div.controls {
 .controls form { text-align: center }
 @media print {
 	div.controls { display: none; }
+	.controls form { display: none; }
 }
 
 div.content { padding: 0;
@@ -61,3 +62,7 @@ code{ color: navy; background: transparent; }
 .centered { text-align: center; }
 .centered table { margin: auto; }
 .centered caption { margin: auto; }
+
+.Unicode td { font: inherit; }
+.Unicode td.unused { background-color: #EEE; }
+.Unicode td.nu { background-color: #EEE; }
