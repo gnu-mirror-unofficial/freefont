@@ -66,3 +66,4 @@ code{ color: navy; background: transparent; }
 .Unicode td { font: inherit; }
 .Unicode td.unused { background-color: #EEE; }
 .Unicode td.nu { background-color: #EEE; }
+.Unicode td[title="<reserved>"]{ background-color: gray; }
