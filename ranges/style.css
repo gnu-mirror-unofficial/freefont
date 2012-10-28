@@ -9,25 +9,29 @@ div.controls {
 	position: relative;	/* for IE 5 */
 	position: absolute;	/* for IE 6 (doesn't do fixed) */
 	position: fixed;	/* for good browsers */
-	float: right;		/* for position: absolute */
-	top: 0px; right: 0px;
+	float: left;		/* for position: absolute */
+	top: 0px; left: 0px;
 	/*vertical-align: top; only to inline and table-cell elements*/
-	width: 18ex;
+	width: 16ex;
 	height: 100%;	/* IE 6 doesn't do percent height */
 	height: 100em;
 	margin: 0;
+	padding: 0;
 	padding-top: 6em;
-	border-left: #AAF solid;
+	border-right: #AAF solid;
 	}
-.controls form { text-align: center }
+.controls form {
+text-align: center;
+	padding-left: 0.5ex;
+}
 @media print {
 	div.controls { display: none; }
 	.controls form { display: none; }
 }
 
 div.content { padding: 0;
-	margin-right: 18ex;
-	margin-left: 0;
+	margin-right: 0;
+	margin-left: 16ex;
 	}
 
 div.content { /*padding-right: 6em*/ }
