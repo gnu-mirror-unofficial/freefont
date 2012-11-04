@@ -41,7 +41,7 @@ div.content > p { padding-left: 0.5ex; margin-right: 1ex; }
 div.content > dl > dt { padding-left: 0.5ex; margin-right: 1ex; }
 div.content > dl h3 { padding-left: 0.5ex; margin-right: 1ex; }
 
-div.content > table { padding-left: 0.5ex; margin-right: 1ex; }
+div.content > table { padding-left: 0.5ex; margin-left: 1ex; }
 div.content table { padding-left: 0.5ex; margin-top: 1em; margin-bottom: 0;
 	        color: black; background: white; }
 div.content > h3 { padding-left: 0.5ex; margin-right: 1ex; }
