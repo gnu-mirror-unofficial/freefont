@@ -7,14 +7,15 @@
 </title>
 <meta name="author" content="Steve White" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta http-equiv="Last-Modified" content="$Date: 2012/11/04 00:43:01 $" />
-<meta http-equiv="Content-Version" content="$Revision: 1.10 $" />
+<meta http-equiv="Content-Language" content="en,ta" />
 <meta http-equiv="DC.Contributor" content="$Author: Stevan_White $" />
-<meta http-equiv="Content-Language" content="en" />
+<meta http-equiv="Last-Modified" content="$Date: 2012/11/06 00:02:49 $" />
+<meta http-equiv="Content-Version" content="$Revision: 1.11 $" />
 <script src="font.js" type="text/javascript"></script>
 <style type="text/css">
 	@import url("style.css");
 	h2, h3 { font-family: "freeserif"; }
+	p, td {font-family: "freeserif"; }
 	.Unicode td { width: 4ex; }
 </style>
 </head>
@@ -37,7 +38,7 @@
 <tr><td title="ra">&#x0bb0;</td><td title="rra">&#x0bb1;</td><td title="la">&#x0bb2;</td><td title="lla">&#x0bb3;</td><td title="llla">&#x0bb4;</td><td title="va">&#x0bb5;</td><td title="sha">&#x0bb6;</td><td title="ssa">&#x0bb7;</td><td title="sa">&#x0bb8;</td><td title="ha">&#x0bb9;</td><td class="unused">&nbsp;</td><td class="unused">&nbsp;</td><td class="unused">&nbsp;</td><td class="unused">&nbsp;</td><td title="aa">&#x0bbe;</td><td title="i">&#x0bbf;</td></tr>
 <tr><td title="ii">&#x0bc0;</td><td title="u">&#x0bc1;</td><td title="uu">&#x0bc2;</td><td class="unused">&nbsp;</td><td class="unused">&nbsp;</td><td class="unused">&nbsp;</td><td title="e">&#x0bc6;</td><td title="ee">&#x0bc7;</td><td title="ai">&#x0bc8;</td><td class="unused">&nbsp;</td><td title="o">&#x0bca;</td><td title="oo">&#x0bcb;</td><td title="au">&#x0bcc;</td><td title="virama">&#x0bcd;</td><td class="unused">&nbsp;</td><td class="unused">&nbsp;</td></tr>
 <tr><td title="om">&#x0bd0;</td><td class="unused">&nbsp;</td><td class="unused">&nbsp;</td><td class="unused">&nbsp;</td><td class="unused">&nbsp;</td><td class="unused">&nbsp;</td><td class="unused">&nbsp;</td><td title="au length mark">&#x0bd7;</td><td class="unused">&nbsp;</td><td class="unused">&nbsp;</td><td class="unused">&nbsp;</td><td class="unused">&nbsp;</td><td class="unused">&nbsp;</td><td class="unused">&nbsp;</td><td class="unused">&nbsp;</td><td class="unused">&nbsp;</td></tr>
-<tr><td class="unused">&nbsp;</td><td class="unused">&nbsp;</td><td class="unused">&nbsp;</td><td class="unused">&nbsp;</td><td title="<reserved>">&#x0be4;</td><td title="<reserved>">&#x0be5;</td><td title="zero">&#x0be6;</td><td title="one">&#x0be7;</td><td title="two">&#x0be8;</td><td title="three">&#x0be9;</td><td title="four">&#x0bea;</td><td title="five">&#x0beb;</td><td title="six">&#x0bec;</td><td title="seven">&#x0bed;</td><td title="eight">&#x0bee;</td><td title="nine">&#x0bef;</td></tr>
+<tr><td class="unused">&nbsp;</td><td class="unused">&nbsp;</td><td class="unused">&nbsp;</td><td class="unused">&nbsp;</td><td title="&lt;reserved&gt;">&#x0be4;</td><td title="&lt;reserved&gt;">&#x0be5;</td><td title="zero">&#x0be6;</td><td title="one">&#x0be7;</td><td title="two">&#x0be8;</td><td title="three">&#x0be9;</td><td title="four">&#x0bea;</td><td title="five">&#x0beb;</td><td title="six">&#x0bec;</td><td title="seven">&#x0bed;</td><td title="eight">&#x0bee;</td><td title="nine">&#x0bef;</td></tr>
 <tr><td title="ten">&#x0bf0;</td><td title="one hundred">&#x0bf1;</td><td title="one thousand">&#x0bf2;</td><td title="day sign">&#x0bf3;</td><td title="month sign">&#x0bf4;</td><td title="year sign">&#x0bf5;</td><td title="debit sign">&#x0bf6;</td><td title="credit sign">&#x0bf7;</td><td title="as above sign">&#x0bf8;</td><td title="rupee sign">&#x0bf9;</td><td title="sign">&#x0bfa;</td><td class="unused">&nbsp;</td><td class="unused">&nbsp;</td><td class="unused">&nbsp;</td><td class="unused">&nbsp;</td><td class="unused">&nbsp;</td></tr>
 </tbody>
 </table>
@@ -55,38 +56,57 @@
 </p>
 
 <h2>Tests </h2>
-<table lang="tam" rules="groups">
+<h3>consonant conjuncts</h3>
+
+<table lang="tam" rules="all" cellpadding="1">
+<tr>
+<td title="kssa">
+	<span class="fonttarget">&#x0b95;+&#x0bcd;+&#x0bb7;</span>
+</td><td>
+	<span class="fonttarget">&#x0b95;&#x0bcd;&#x0bb7;</span>
+</td>
+</tr>
+<tr><td title="shrii">
+	<span class="fonttarget">&#x0bb6;+&#x0bcd;+&#x0bb0;+&#x0bc0;</span>
+</td><td>
+	<span class="fonttarget">&#x0bb6;&#x0bcd;&#x0bb0;&#x0bc0;</span>
+</td>
+</table>
+
+
+<table lang="tam" rules="groups" cellpadding="1">
 	<caption>vowel-consonant conjuncts</caption>	
 <colgroup>
 <col />
 </colgroup>
+
 <thead class="fonttarget">
-<tr><th></th><th>ி</th><th>ீ</th><th>ு</th><th>ெ</th><th>ே</th><th>ை</th><th>ொ</th><th>ோ</th><th>ௌ</th></tr>
+<tr><th></th><th title="aa sign">ா</th><th title="i sign">ி</th><th title="ii sign">ீ</th><th title="u sign">ு</th><th title="e sign">ெ</th><th title="ee sign">ே</th><th title="ai sign">ை</th><th title="o sign">ொ</th><th title="oo sign">ோ</th><th title="au sign">ௌ</th></tr>
 </thead>
 <tbody class="fonttarget">
-<tr><th title="ka">க</th><td>கி</td><td>கீ</td><td class="bi">கு</td><td>கெ</td><td>கே</td><td>கை</td><td>கொ</td><td>கோ</td><td>கௌ</td></tr>
-<tr><th title="nga">ங</th><td>ஙி</td><td>ஙீ</td><td class="bi">ஙு</td><td>ஙெ</td><td>ஙே</td><td>ஙை</td><td>ஙொ</td><td>ஙோ</td><td>ஙௌ</td></tr>
-<tr><th title="ca">ச</th><td>சி</td><td>சீ</td><td class="bi">சு</td><td>செ</td><td>சே</td><td>சை</td><td>சொ</td><td>சோ</td><td>சௌ</td></tr>
-<tr><th title="ja">ஜ</th><td>ஜி</td><td>ஜீ</td><td>ஜு</td><td>ஜெ</td><td>ஜே</td><td>ஜை</td><td>ஜொ</td><td>ஜோ</td><td>ஜௌ</td></tr>
-<tr><th title="nya">ஞ</th><td>ஞி</td><td>ஞீ</td><td class="bi">ஞு</td><td>ஞெ</td><td>ஞே</td><td>ஞை</td><td>ஞொ</td><td>ஞோ</td><td>ஞௌ</td></tr>
-<tr><th title="tta">ட</th><td class="bi">டி</td><td class="bi">டீ</td><td class="bi">டு</td><td>டெ</td><td>டே</td><td>டை</td><td>டொ</td><td>டோ</td><td>டௌ</td></tr>
-<tr><th title="nna">ண</th><td>ணி</td><td>ணீ</td><td class="bi">ணு</td><td>ணெ</td><td>ணே</td><td>ணை</td><td>ணொ</td><td>ணோ</td><td>ணௌ</td></tr>
-<tr><th title="ta">த</th><td>தி</td><td>தீ</td><td class="bi">து</td><td>தெ</td><td>தே</td><td>தை</td><td>தொ</td><td>தோ</td><td>தௌ</td></tr>
-<tr><th title="na">ந</th><td>நி</td><td>நீ</td><td class="bi">நு</td><td>நெ</td><td>நே</td><td>நை</td><td>நொ</td><td>நோ</td><td>நௌ</td></tr>
-<tr><th title="nnna">ன</th><td>னி</td><td>னீ</td><td class="bi">னு</td><td>னெ</td><td>னே</td><td>னை</td><td>னொ</td><td>னோ</td><td>னௌ</td></tr>
-<tr><th title="pa">ப</th><td>பி</td><td>பீ</td><td class="bi">பு</td><td>பெ</td><td>பே</td><td>பை</td><td>பொ</td><td>போ</td><td>பௌ</td></tr>
-<tr><th title="ma">ம</th><td>மி</td><td>மீ</td><td class="bi">மு</td><td>மெ</td><td>மே</td><td>மை</td><td>மொ</td><td>மோ</td><td>மௌ</td></tr>
-<tr><th title="ya">ய</th><td>யி</td><td>யீ</td><td class="bi">யு</td><td>யெ</td><td>யே</td><td>யை</td><td>யொ</td><td>யோ</td><td>யௌ</td></tr>
-<tr><th title="ra">ர</th><td>ரி</td><td>ரீ</td><td class="bi">ரு</td><td>ரெ</td><td>ரே</td><td>ரை</td><td>ரொ</td><td>ரோ</td><td>ரௌ</td></tr>
-<tr><th title="rrra">ற</th><td>றி</td><td>றீ</td><td class="bi">று</td><td>றெ</td><td>றே</td><td>றை</td><td>றொ</td><td>றோ</td><td>றௌ</td></tr>
-<tr><th title="la">ல</th><td>லி</td><td>லீ</td><td class="bi">லு</td><td>லெ</td><td>லே</td><td>லை</td><td>லொ</td><td>லோ</td><td>லௌ</td></tr>
-<tr><th title="lla">ள</th><td>ளி</td><td>ளீ</td><td class="bi">ளு</td><td>ளெ</td><td>ளே</td><td>ளை</td><td>ளொ</td><td>ளோ</td><td>ளௌ</td></tr>
-<tr><th title="llla">ழ</th><td>ழி</td><td>ழீ</td><td class="bi">ழு</td><td>ழெ</td><td>ழே</td><td>ழை</td><td>ழொ</td><td>ழோ</td><td>ழௌ</td></tr>
-<tr><th title="va">வ</th><td>வி</td><td>வீ</td><td class="bi">வு</td><td>வெ</td><td>வே</td><td>வை</td><td>வொ</td><td>வோ</td><td>வௌ</td></tr>
-<tr><th title="sha">ஶ</th><td>ஶி</td><td>ஶீ</td><td>ஶு</td><td>ஶெ</td><td>ஶே</td><td>ஶை</td><td>ஶொ</td><td>ஶோ</td><td>ஶௌ</td></tr>
-<tr><th title="ssa">ஷ</th><td>ஷி</td><td>ஷீ</td><td>ஷு</td><td>ஷெ</td><td>ஷே</td><td>ஷை</td><td>ஷொ</td><td>ஷோ</td><td>ஷௌ</td></tr>
-<tr><th title="sa">ஸ</th><td>ஸி</td><td>ஸீ</td><td>ஸு</td><td>ஸெ</td><td>ஸே</td><td>ஸை</td><td>ஸொ</td><td>ஸோ</td><td>ஸௌ</td></tr>
-<tr><th title="ha">ஹ</th><td>ஹி</td><td>ஹீ</td><td>ஹு</td><td>ஹெ</td><td>ஹே</td><td>ஹை</td><td>ஹொ</td><td>ஹோ</td><td>ஹௌ</td></tr>
+<tr><th title="ka">க</th><td>கா</td><td>கி</td><td>கீ</td><td>கு</td><td>கெ</td><td>கே</td><td>கை</td><td>கொ</td><td>கோ</td><td>கௌ</td></tr>
+<tr><th title="nga">ங</th><td>ஙா</td><td>ஙி</td><td>ஙீ</td><td>ஙு</td><td>ஙெ</td><td>ஙே</td><td>ஙை</td><td>ஙொ</td><td>ஙோ</td><td>ஙௌ</td></tr>
+<tr><th title="ca">ச</th><td>சா</td><td>சி</td><td>சீ</td><td>சு</td><td>செ</td><td>சே</td><td>சை</td><td>சொ</td><td>சோ</td><td>சௌ</td></tr>
+<tr><th title="ja">ஜ</th><td>ஜா</td><td>ஜி</td><td>ஜீ</td><td>ஜு</td><td>ஜெ</td><td>ஜே</td><td>ஜை</td><td>ஜொ</td><td>ஜோ</td><td>ஜௌ</td></tr>
+<tr><th title="nya">ஞ</th><td>ஞா</td><td>ஞி</td><td>ஞீ</td><td>ஞு</td><td>ஞெ</td><td>ஞே</td><td>ஞை</td><td>ஞொ</td><td>ஞோ</td><td>ஞௌ</td></tr>
+<tr><th title="tta">ட</th><td>டா</td><td>டி</td><td>டீ</td><td>டு</td><td>டெ</td><td>டே</td><td>டை</td><td>டொ</td><td>டோ</td><td>டௌ</td></tr>
+<tr><th title="nna">ண</th><td>ணா</td><td>ணி</td><td>ணீ</td><td>ணு</td><td>ணெ</td><td>ணே</td><td>ணை</td><td>ணொ</td><td>ணோ</td><td>ணௌ</td></tr>
+<tr><th title="ta">த</th><td>தா</td><td>தி</td><td>தீ</td><td>து</td><td>தெ</td><td>தே</td><td>தை</td><td>தொ</td><td>தோ</td><td>தௌ</td></tr>
+<tr><th title="na">ந</th><td>நா</td><td>நி</td><td>நீ</td><td>நு</td><td>நெ</td><td>நே</td><td>நை</td><td>நொ</td><td>நோ</td><td>நௌ</td></tr>
+<tr><th title="nnna">ன</th><td>னா</td><td>னி</td><td>னீ</td><td>னு</td><td>னெ</td><td>னே</td><td>னை</td><td>னொ</td><td>னோ</td><td>னௌ</td></tr>
+<tr><th title="pa">ப</th><td>பா</td><td>பி</td><td>பீ</td><td>பு</td><td>பெ</td><td>பே</td><td>பை</td><td>பொ</td><td>போ</td><td>பௌ</td></tr>
+<tr><th title="ma">ம</th><td>மா</td><td>மி</td><td>மீ</td><td>மு</td><td>மெ</td><td>மே</td><td>மை</td><td>மொ</td><td>மோ</td><td>மௌ</td></tr>
+<tr><th title="ya">ய</th><td>யா</td><td>யி</td><td>யீ</td><td>யு</td><td>யெ</td><td>யே</td><td>யை</td><td>யொ</td><td>யோ</td><td>யௌ</td></tr>
+<tr><th title="ra">ர</th><td>ரா</td><td>ரி</td><td>ரீ</td><td>ரு</td><td>ரெ</td><td>ரே</td><td>ரை</td><td>ரொ</td><td>ரோ</td><td>ரௌ</td></tr>
+<tr><th title="rrra">ற</th><td>றா</td><td>றி</td><td>றீ</td><td>று</td><td>றெ</td><td>றே</td><td>றை</td><td>றொ</td><td>றோ</td><td>றௌ</td></tr>
+<tr><th title="la">ல</th><td>லா</td><td>லி</td><td>லீ</td><td>லு</td><td>லெ</td><td>லே</td><td>லை</td><td>லொ</td><td>லோ</td><td>லௌ</td></tr>
+<tr><th title="lla">ள</th><td>ளா</td><td>ளி</td><td>ளீ</td><td>ளு</td><td>ளெ</td><td>ளே</td><td>ளை</td><td>ளொ</td><td>ளோ</td><td>ளௌ</td></tr>
+<tr><th title="llla">ழ</th><td>ழா</td><td>ழி</td><td>ழீ</td><td>ழு</td><td>ழெ</td><td>ழே</td><td>ழை</td><td>ழொ</td><td>ழோ</td><td>ழௌ</td></tr>
+<tr><th title="va">வ</th><td>வா</td><td>வி</td><td>வீ</td><td>வு</td><td>வெ</td><td>வே</td><td>வை</td><td>வொ</td><td>வோ</td><td>வௌ</td></tr>
+<tr><th title="sha">ஶ</th><td>ஶா</td><td>ஶி</td><td>ஶீ</td><td>ஶு</td><td>ஶெ</td><td>ஶே</td><td>ஶை</td><td>ஶொ</td><td>ஶோ</td><td>ஶௌ</td></tr>
+<tr><th title="ssa">ஷ</th><td>ஷா</td><td>ஷி</td><td>ஷீ</td><td>ஷு</td><td>ஷெ</td><td>ஷே</td><td>ஷை</td><td>ஷொ</td><td>ஷோ</td><td>ஷௌ</td></tr>
+<tr><th title="sa">ஸ</th><td>ஸா</td><td>ஸி</td><td>ஸீ</td><td>ஸு</td><td>ஸெ</td><td>ஸே</td><td>ஸை</td><td>ஸொ</td><td>ஸோ</td><td>ஸௌ</td></tr>
+<tr><th title="ha">ஹ</th><td>ஹா</td><td>ஹி</td><td>ஹீ</td><td>ஹு</td><td>ஹெ</td><td>ஹே</td><td>ஹை</td><td>ஹொ</td><td>ஹோ</td><td>ஹௌ</td></tr>
 </tbody>
 </table>
 
@@ -104,5 +124,6 @@
 	</p>
 </form>
 </div>
+
 </body>
 </html>
