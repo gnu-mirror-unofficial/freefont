@@ -6,10 +6,10 @@
 	<title>Thaana in GNU FreeFont</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta http-equiv="Content-Language" content="en,div" />
-<meta http-equiv="Last-Modified" content="$Date: 2013/03/06 11:01:07 $" />
-<meta http-equiv="Content-Version" content="$Revision: 1.9 $" />
+<meta http-equiv="Last-Modified" content="$Date: 2013/03/13 15:32:14 $" />
+<meta http-equiv="Content-Version" content="$Revision: 1.10 $" />
 <meta http-equiv="DC.Contributor" content="$Author: Stevan_White $" />
-<meta http-equiv="Last-Modified" content="$Date: 2013/03/06 11:01:07 $" />
+<meta http-equiv="Last-Modified" content="$Date: 2013/03/13 15:32:14 $" />
 <script src="font.js" type="text/javascript"></script>
 <style type="text/css">
 	@import url("style.css");
@@ -19,7 +19,18 @@
 	.Unicode td { width: 1em; }
 </style>
 </head>
-<body>
+<body onload="initializeFonts( 'fonttarget', 'faceswitch' )">
+<div class="controls">
+<form id="fontcontrols" action="">
+	<p>
+	<label for="toggle_bold">Bold</label>
+	<input type="checkbox" id="toggle_bold"
+	onclick="switchWeightOfElementsOfClass( 'fonttarget' );"/>
+	</p>
+</form>
+</div>
+
+<div class="content">
 <h1>
 	<small><a href="http://savannah.gnu.org/projects/freefont/">GNU FreeFont</a></small><br />
 	Thaana
@@ -43,7 +54,7 @@
 <p>
 See <a href="http://unicode.org/udhr/d/udhr_div.html">UDHR in Maldivian</a>
 </p>
-<p> Sample <span lang="div">
+<p> Sample <span lang="div" class="fonttarget">
 &#x0793;&#x07AF;&#x0789;&#x07A9;&#x0780;&#x07AB;&#x0784;&#x07AE;
 &#x0787;&#x07A6;&#x0788;&#x07AD;&#x078A;&#x07A7;&#x078B;&#x07A8;
 &#x078F;&#x07A6;&#x079E;&#x07AD;&#x0791;&#x07AA;&#x0794;&#x07B0;
@@ -52,5 +63,7 @@ See <a href="http://unicode.org/udhr/d/udhr_div.html">UDHR in Maldivian</a>
 <p>
 See <a href="http://www.wazu.jp/gallery/Fonts_Thaana.html">Thaana Unicode Fonts</a>
 </p>
+</div> <!-- content -->
+
 </body>
 </html>
