@@ -24,10 +24,6 @@ div.controls {
 text-align: center;
 	padding-left: 0.5ex;
 }
-@media print {
-	div.controls { display: none; }
-	.controls form { display: none; }
-}
 
 div.content { padding: 0;
 	margin-right: 0;
@@ -71,3 +67,9 @@ code{ color: navy; background: transparent; }
 .Unicode td.unused { background-color: #EEE; }
 .Unicode td.nu { background-color: #EEE; }
 .Unicode td[title="<reserved>"]{ background-color: gray; }
+
+@media print {
+	div.controls { display: none; }
+	.controls form { display: none; }
+	div.content { margin-left: 0.5ex; }
+}
