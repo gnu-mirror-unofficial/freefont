@@ -23,6 +23,8 @@ a:visited { color: #808; }
 a:active  { color: #fe0000; }
 a:hover   { color: #1919aa; text-decoration:underline; }
 
+h1 a { font-size: smaller; }
+
 dt { font-weight: bold; color: #008; }
 
 div.toc {
