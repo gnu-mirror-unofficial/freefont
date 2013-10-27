@@ -5,8 +5,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>GNU FreeFont -- Frequently Asked Questions</title>
-<meta http-equiv="Last-Modified" content="$Date: 2013/10/27 10:13:33 $" />
-<meta http-equiv="Content-Version" content="$Revision: 1.19 $" />
+<meta http-equiv="Last-Modified" content="$Date: 2013/10/27 10:21:52 $" />
+<meta http-equiv="Content-Version" content="$Revision: 1.20 $" />
 <meta http-equiv="DC.Contributor" content="$Author: Stevan_White $" />
 <style type="text/css">
 	@import url("tt/trimmed/webfonts.css");
@@ -128,6 +128,13 @@
 		<li>other fonts made by groups and individuals,</li>
 		<li>exclusive contributions to GNU FreeFont.</li>
 	</ul>
+	<p>
+	The letters are not simply copied in.  They are typically adjusted
+	to agree with the other letters in the font,
+	and many technical adustments are made so they pass all our quality
+	tests.  Furthermore, font feature tables are often completely
+	re-written for various technical reasons.
+	</p>
 </dd>
 <dt> Why don't you support Chinese, Japanese, or Korean?</dt>
 <dd><p>
@@ -136,7 +143,7 @@ double the size of the project (both in file size and in maintenance effort),
 and we are straining as it is.</p>
 </dd>
 <dt> Why don't you assign a code point in one of Unicode's Private Use Areas
-(PUA) for my favorite non-Unicode glyph?</dt>
+(PUA) for my favorite non-Unicode letter?</dt>
 <dd><p>
 The PUA's are by definition for <em>non-standard</em> use.  For example,
 a special application might use them for some special symbols, for use 
@@ -144,8 +151,8 @@ only within that application.
 </p>
 <p>
 GNU FreeFont is for general use, based on the Unicode standard. 
-It uses font slots corresponding to the PUA for internal purposes, for glyph
-components used to make other glyphs, for glyph substitutions, etc., but
+It uses font slots corresponding to the PUA for internal purposes, for 
+components used to make other letter, for letter substitutions, etc.&mdash; but
 these are not to be directly referenced from outside the font.
 </p>
 </dd>
