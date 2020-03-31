@@ -1,0 +1,212 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<title>test of ZWNJ in Malayalam
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+	@import url("style.css");
+	@import url("ctrl.css");
+</style>
+<script>
+function setFont(selection)
+{
+	t = document.getElementById( "text" );
+	if( t && selection.value )
+	{
+		t.style.fontFamily = selection.value;
+        }
+}
+function setWeight(selection)
+{
+	t = document.getElementById( "text" );
+	if( t && selection.value )
+	{
+		t.style.fontWeight = selection.value;
+        }
+}
+function setFontFeature(selection)
+{
+	t = document.getElementById( "text" );
+	if( t && selection.value )
+	{
+		t.style.fontFeatureSettings = selection.value;
+        }
+}
+function getSelectedValue( id )
+{
+	var sel = document.getElementById( id );
+	var idx = sel.selectedIndex;
+	return sel[idx];
+}
+function init()
+{
+	setFont( getSelectedValue( "fontsel" ) );
+	setWeight( getSelectedValue( "weightsel" ) );
+	setFontFeature( getSelectedValue( "stylesetsel" ) );
+}
+</script>
+
+</head>
+<body onload="init()">
+<div id="cover" class="ctrls">
+<form id="ctrl" action="*">
+<label for="fontsel">face</label>
+<br />
+<select id="fontsel" onchange="setFont(options[selectedIndex])">
+        <option selected=selected value="">choose...</option>
+        <option>FreeSerif</option>
+        <option>FreeSans</option>
+        <option>Gayathri</option>
+        <option>AnjaliOldLipi</option>
+        <option>Rachana</option>
+        <option>Meera</option>
+        <option value="Lohit Malayalam">Lohit</option>
+        <option value="Noto Serif Malayalam">Noto Serif</option>
+        <option value="Noto Sans Malayalam">Noto Sans</option>
+        <option value="Malayalam MN">Malayalam MN</option>
+        <option>Kartika</option>
+        <option value="Samyak Malayalam new">Samyak new</option>
+</select>
+<br />
+<label for="weightsel">weight</label>
+<br />
+<select id="weightsel" onchange="setWeight(options[selectedIndex])">
+	<option selected>normal</option>
+	<option>bold</option>
+</select>
+<br />
+<label for="stylesetsel">styleset</label>
+<br />
+<select id="stylesetsel" onchange="setFontFeature(options[selectedIndex])">
+	<option selected value="normal">normal</option>
+	<option value="var(--malayalam-reformed)">reformed</option>
+</select>
+</form>
+<a id="close-icon" href="#"></a>
+</div> <!-- cover -->
+<div id="text">
+<div class="header">
+        <a id="menu-icon" href="#cover"></a>
+<h1>
+test of ZWNJ in Malayalam
+</h1>
+</div> <!-- header -->
+<p>
+ZWNJ after halant: explicit candrakala, inhibit ligatures.
+</p>
+<p>
+ZWNJ before halant: request open form conjunct: somehow like reformed.
+Specifically, before the candarakala-ra, it should produce pre-base ra.
+</p>
+<p>
+All the following should appear with the prefix ra sign, not the ra-tail
+</p>
+
+<h3>ZWNJ request prefix ra</h3>
+<p>Should display the pre-base ra, rather than the traditional tail-form ra.
+</p>
+<p lang="ml" style="font-feature-settings: normal;">
+ka ra	&#x0D15;&#x200c;&#x0D4D;&#x0D30; <br />
+ga ra	&#x0D17;&#x200c;&#x0D4D;&#x0D30; <br />
+gha ra	&#x0D18;&#x200c;&#x0D4D;&#x0D30; <br />
+cha ra	&#x0D1b;&#x200c;&#x0D4D;&#x0D30; <br />
+ja ra	&#x0D1c;&#x200c;&#x0D4D;&#x0D30; <br />
+tta ra	&#x0D1f;&#x200c;&#x0D4D;&#x0D30; <br />
+dda ra	&#x0D21;&#x200c;&#x0D4D;&#x0D30; <br />
+ddha ra	&#x0D22;&#x200c;&#x0D4D;&#x0D30; <br />
+ta ra	&#x0D24;&#x200c;&#x0D4D;&#x0D30; <br />
+da ra	&#x0D26;&#x200c;&#x0D4D;&#x0D30; <br />
+dha ra	&#x0D27;&#x200c;&#x0D4D;&#x0D30; <br />
+na ra	&#x0D28;&#x200c;&#x0D4D;&#x0D30; <br />
+pa ra	&#x0D2a;&#x200c;&#x0D4D;&#x0D30; <br />
+pha ra	&#x0D2b;&#x200c;&#x0D4D;&#x0D30; <br />
+ba ra	&#x0D2c;&#x200c;&#x0D4D;&#x0D30; <br />
+bha ra	&#x0D2d;&#x200c;&#x0D4D;&#x0D30; <br />
+ma ra	&#x0D2e;&#x200c;&#x0D4D;&#x0D30; <br />
+va ra	&#x0D35;&#x200c;&#x0D4D;&#x0D30; <br />
+sha ra	&#x0D36;&#x200c;&#x0D4D;&#x0D30; <br />
+ssa ra	&#x0D37;&#x200c;&#x0D4D;&#x0D30; <br />
+sa ra	&#x0D38;&#x200c;&#x0D4D;&#x0D30; <br />
+ha ra	&#x0D39;&#x200c;&#x0D4D;&#x0D30; <br />
+</p>
+
+<h3>ZWNJ request prefix ra, where no traditional conjunct exists</h3>
+<p lang="ml" style="font-feature-settings: var(--malayalam-reformed);">
+kha ra	&#x0D16;&#x200c;&#x0D4D;&#x0D30; <br />
+nga ra	&#x0D19;&#x200c;&#x0D4D;&#x0D30; <br />
+ca ra	&#x0D1a;&#x200c;&#x0D4D;&#x0D30; <br />
+jha ra	&#x0D1d;&#x200c;&#x0D4D;&#x0D30; <br />
+nya ra	&#x0D1e;&#x200c;&#x0D4D;&#x0D30; <br />
+ttha ra	&#x0D20;&#x200c;&#x0D4D;&#x0D30; <br />
+nna ra	&#x0D23;&#x200c;&#x0D4D;&#x0D30; <br />
+tha ra	&#x0D25;&#x200c;&#x0D4D;&#x0D30; <br />
+nnna ra	&#x0D29;&#x200c;&#x0D4D;&#x0D30; <br />
+ya ra	&#x0D2f;&#x200c;&#x0D4D;&#x0D30; <br />
+ra ra	&#x0D30;&#x200c;&#x0D4D;&#x0D30; <br />
+rra ra	&#x0D31;&#x200c;&#x0D4D;&#x0D30; <br />
+la ra	&#x0D32;&#x200c;&#x0D4D;&#x0D30; <br />
+lla ra	&#x0D33;&#x200c;&#x0D4D;&#x0D30; <br />
+llla ra	&#x0D34;&#x200c;&#x0D4D;&#x0D30; <br />
+ttta ra	&#x0D3a;&#x200c;&#x0D4D;&#x0D30; <br />
+</p>
+
+<h3>ZWNJ request prefix ra on conjunct that traditionally forms ligature</h3>
+<p>The convention is to display the candrakala, and for the prefix ra
+to come between the candrakala and the final consonant.
+But what if the conjunct forms a ligature in reformed?
+</p>
+<p lang="ml" style="font-feature-settings: normal;">
+ka ka ra	&#x0D15;&#x0D4D;&#x0D15;&#x200c;&#x0D4D;&#x0D30; <br />
+ka ta ra	&#x0D15;&#x0D4D;&#x0D24;&#x200c;&#x0D4D;&#x0D30; <br />
+ga da dha ra	&#x0D17;&#x0D4D;&#x0D26;&#x0D4D;&#x0D27;&#x200c;&#x0D4D;&#x0D30; <br />
+<!--nga ka ra	&#x0D19;&#x0D4D;&#x0D15;&#x200c;&#x0D4D;&#x0D30; <br / -->
+nna dda ra	&#x0D23;&#x0D4D;&#x0D21;&#x200c;&#x0D4D;&#x0D30; <br />
+nna tta ra	&#x0D23;&#x0D4D;&#x0D1f;&#x200c;&#x0D4D;&#x0D30; <br />
+ta ta ra	&#x0D24;&#x0D4D;&#x0D24;&#x200c;&#x0D4D;&#x0D30; <br />
+ta bha ra	&#x0D24;&#x0D4D;&#x0D2d;&#x200c;&#x0D4D;&#x0D30; <br />
+ta sa ra	&#x0D24;&#x0D4D;&#x0D38;&#x200c;&#x0D4D;&#x0D30; <br />
+da dha ra	&#x0D26;&#x0D4D;&#x0D27;&#x200c;&#x0D4D;&#x0D30; <br />
+na na ra	&#x0D28;&#x0D4D;&#x0D28;&#x200c;&#x0D4D;&#x0D30; <br />
+na ta ra	&#x0D28;&#x0D4D;&#x0D24;&#x200c;&#x0D4D;&#x0D30; <br />
+na da ra	&#x0D28;&#x0D4D;&#x0D26;&#x200c;&#x0D4D;&#x0D30; <br />
+na dha ra	&#x0D28;&#x0D4D;&#x0D27;&#x200c;&#x0D4D;&#x0D30; <br />
+na ma ra	&#x0D28;&#x0D4D;&#x0D2e;&#x200c;&#x0D4D;&#x0D30; <br />
+ma pa ra	&#x0D2e;&#x0D4D;&#x0D2a;&#x200c;&#x0D4D;&#x0D30; <br />
+rra rra ra	&#x0D31;&#x0D4D;&#x0D31;&#x200c;&#x0D4D;&#x0D30; <br />
+</p>
+
+<h3>ZWNJ request prefix ra on stacked consonant conjunct</h3>
+<p> For stacked conjuncts, there is a danger that the conjunct isn't properly
+marked, in which case the vowel would not properly bracket the final
+consonant.
+</p>
+<p lang="ml" style="font-feature-settings: normal;">
+ka tta ra	&#x0D15;&#x0D4D;&#x0D1f;&#x200c;&#x0D4D;&#x0D30; 
+		&#x0D15;&#x0D4D;&#x0D1f;&#x200c;&#x0D4D;&#x0D30;&#x0D4C;<br />
+ka sa ra	&#x0D15;&#x0D4D;&#x0D38;&#x200c;&#x0D4D;&#x0D30; 
+		&#x0D15;&#x0D4D;&#x0D38;&#x200c;&#x0D4D;&#x0D30;&#x0D4C;<br />
+ga ga ra	&#x0D17;&#x0D4D;&#x0D17;&#x200c;&#x0D4D;&#x0D30; 
+		&#x0D17;&#x0D4D;&#x0D17;&#x200c;&#x0D4D;&#x0D30;&#x0D4C;<br />
+ca cha ra	&#x0D1a;&#x0D4D;&#x0D1b;&#x200c;&#x0D4D;&#x0D30; 
+		&#x0D1a;&#x0D4D;&#x0D1b;&#x200c;&#x0D4D;&#x0D30;&#x0D4C;<br />
+pha rra rra ra	&#x0D2b;&#x0D4D;&#x0D31;&#x0D4D;&#x0D31;&#x200c;&#x0D4D;&#x0D30;
+		&#x0D2b;&#x0D4D;&#x0D31;&#x0D4D;&#x0D31;&#x200c;&#x0D4D;&#x0D30;&#x0D4C;<br />
+la ka ra	&#x0D32;&#x0D4D;&#x0D15;&#x200c;&#x0D4D;&#x0D30; 
+		&#x0D32;&#x0D4D;&#x0D15;&#x200c;&#x0D4D;&#x0D30;&#x0D4C;<br />
+ssa ka ra	&#x0D37;&#x0D4D;&#x0D15;&#x200c;&#x0D4D;&#x0D30; 
+		&#x0D37;&#x0D4D;&#x0D15;&#x200c;&#x0D4D;&#x0D30;&#x0D4C;<br />
+ssa tta ra	&#x0D37;&#x0D4D;&#x0D1f;&#x200c;&#x0D4D;&#x0D30; 
+		&#x0D37;&#x0D4D;&#x0D1f;&#x200c;&#x0D4D;&#x0D30;&#x0D4C;<br />
+sa ka ra	&#x0D38;&#x0D4D;&#x0D15;&#x200c;&#x0D4D;&#x0D30; 
+		&#x0D38;&#x0D4D;&#x0D15;&#x200c;&#x0D4D;&#x0D30;&#x0D4C;<br />
+sa ta ra	&#x0D38;&#x0D4D;&#x0D24;&#x200c;&#x0D4D;&#x0D30; 
+		&#x0D38;&#x0D4D;&#x0D24;&#x200c;&#x0D4D;&#x0D30;&#x0D4C;<br />
+sa rra rra ra	&#x0D38;&#x0D4D;&#x0D31;&#x0D4D;&#x0D31;&#x200c;&#x0D4D;&#x0D30;
+		&#x0D38;&#x0D4D;&#x0D31;&#x0D4D;&#x0D31;&#x200c;&#x0D4D;&#x0D30;&#x0D4C;<br />
+</p>
+
+</div> <!-- text -->
+</body>
+</html>

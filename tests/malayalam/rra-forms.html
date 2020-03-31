@@ -1,0 +1,139 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<title>rra forms in Malayalam
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+	@import url("style.css");
+	@import url("ctrl.css");
+	td {font-family: inherit; font-weight: inherit;
+		font-feature-settings: inherit; }
+	td { width: 4em; text-align: center; }
+	td:first-child { width: auto; text-align: left; }
+        form { position: fixed; width: 20ex; float: right;
+                text-align: right; top: 4em; right: 0.2ex; }
+	figure, figcaption { text-align: center; }
+</style>
+<script>
+function setFont(selection)
+{
+	t = document.getElementById( "text" );
+	if( t && selection.value )
+	{
+		t.style.fontFamily = selection.value;
+        }
+}
+function setWeight(selection)
+{
+	t = document.getElementById( "text" );
+	if( t && selection.value )
+	{
+		t.style.fontWeight = selection.value;
+        }
+}
+function setFontFeature(selection)
+{
+	t = document.getElementById( "text" );
+	if( t && selection.value )
+	{
+		t.style.fontFeatureSettings = selection.value;
+        }
+}
+function getSelectedValue( id )
+{
+	var sel = document.getElementById( id );
+	var idx = sel.selectedIndex;
+	return sel[idx];
+}
+function init()
+{
+	setFont( getSelectedValue( "fontsel" ) );
+	setWeight( getSelectedValue( "weightsel" ) );
+	setFontFeature( getSelectedValue( "stylesetsel" ) );
+}
+</script>
+
+</head>
+<body onload="init()">
+<div id="cover" class="ctrls">
+<form id="ctrl" action="*">
+<label for="fontsel">face</label>
+<br />
+<select id="fontsel" onchange="setFont(options[selectedIndex])">
+        <option selected=selected value="">choose...</option>
+        <option>FreeSerif</option>
+        <option>FreeSans</option>
+        <option>AnjaliOldLipi</option>
+        <option>Gayathri</option>
+        <option>Rachana</option>
+        <option>Meera</option>
+        <option value="Lohit Malayalam">Lohit</option>
+        <option value="Noto Serif Malayalam">Noto Serif</option>
+        <option value="Noto Sans Malayalam">Noto Sans</option>
+        <option value="Malayalam MN">Malayalam MN</option>
+        <option>Kartika</option>
+        <option>Karumbi</option>
+        <option>Keraleeyam</option>
+        <option value="Samyak Malayalam new">Samyak new</option>
+</select>
+<br />
+<label for="weightsel">weight</label>
+<br />
+<select id="weightsel" onchange="setWeight(options[selectedIndex])">
+	<option selected>normal</option>
+	<option>bold</option>
+</select>
+<br />
+<label for="stylesetsel">styleset</label>
+<br />
+<select id="stylesetsel" onchange="setFontFeature(options[selectedIndex])">
+	<option selected value="normal">normal</option>
+	<option value="var(--malayalam-reformed)">reformed</option>
+</select>
+</form>
+<a id="close-icon" href="#"></a>
+</div> <!-- cover -->
+
+<div id="text">
+<div class="header">
+        <a id="menu-icon" href="#cover"></a>
+<h1>rra forms in Malayalam
+</h1>
+</div> <!-- header -->
+
+<div lang="ml">
+<p>
+&#x0D2A;&#x0D3E;&#x0D31;&#x0D31;
+<br />
+&#x0D2A;&#x0D3E;&#x0D31;&#x0D4D;&#x0D31;
+<br />
+&#x0D2E;&#x0D3E;&#x0D31;&#x0D46;&#x0D31;&#x0D3E;&#x0D32;&#x0D3F;
+<br />
+&#x0D2E;&#x0D3E;&#x0D31;&#x0D4D;&#x0D31;&#x0D46;&#x0D3E;&#x0D32;&#x0D3F;
+<br />
+&#x0D2C;&#x0D3E;&#x0D31;&#x0D31;&#x0D31;&#x0D3F;
+<br />
+&#x0D2C;&#x0D3E;&#x0D31;&#x0D4D;&#x0D31;&#x0D31;&#x0D3F;
+<br />
+&#x0D38;&#x0D42;&#x0D31;&#x0D31;&#x0D31;&#x0D4D;
+<br />
+&#x0D38;&#x0D42;&#x0D31;&#x0D31;&#x0D4D;&#x0D31;&#x0D4D;
+<br />
+&#x0D1F;&#x0D46;&#x0D02;&#x0D2A;&#x0D31;&#x0D31;&#x0D3F;
+<br />
+&#x0D32;&#x0D46;&#x0D15;&#x0D4D;&#x0D1A;&#x0D31;&#x0D31;&#x0D4B;&#x0D1F;&#x0D4D;
+</p>
+
+<figure>
+<figcaption>
+Unicode Standard ch 12, Table 12-39
+</figcaption>
+<img src="images/Malayalam_rara_and_tta.png"
+alt="image of table in Standard" />
+</figure>
+
+</div> <!-- text -->
+</body>
+</html>

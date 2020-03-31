@@ -1,0 +1,231 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<title>ligated conjuncts with ra-tail in Malayalam
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+	@import url("style.css");
+	@import url("ctrl.css");
+</style>
+<script>
+function setFont(selection)
+{
+	t = document.getElementById( "text" );
+	if( t && selection.value )
+	{
+		t.style.fontFamily = selection.value;
+        }
+}
+function setWeight(selection)
+{
+	t = document.getElementById( "text" );
+	if( t && selection.value )
+	{
+		t.style.fontWeight = selection.value;
+        }
+}
+function setFontFeature(selection)
+{
+	t = document.getElementById( "text" );
+	if( t && selection.value )
+	{
+		t.style.fontFeatureSettings = selection.value;
+        }
+}
+function getSelectedValue( id )
+{
+	var sel = document.getElementById( id );
+	var idx = sel.selectedIndex;
+	return sel[idx];
+}
+function init()
+{
+	setFont( getSelectedValue( "fontsel" ) );
+	setWeight( getSelectedValue( "weightsel" ) );
+	setFontFeature( getSelectedValue( "stylesetsel" ) );
+}
+</script>
+
+</head>
+<body onload="init()">
+<div id="cover" class="ctrls">
+<form id="ctrl" action="*">
+<label for="fontsel">face</label>
+<br />
+<select id="fontsel" onchange="setFont(options[selectedIndex])">
+        <option selected=selected value="">choose...</option>
+        <option>FreeSerif</option>
+        <option>FreeSans</option>
+        <option>Gayathri</option>
+        <option>Rachana</option>
+        <option>Meera</option>
+        <option>AnjaliOldLipi</option>
+        <option value="Lohit Malayalam">Lohit</option>
+        <option value="Noto Serif Malayalam">Noto Serif</option>
+        <option value="Malayalam MN">Malayalam MN</option>
+        <option>Kartika</option>
+        <option>Karumbi</option>
+        <option>Keraleeyam</option>
+        <option>Manjari</option>
+        <option value="Samyak Malayalam new">Samyak new</option>
+</select>
+<br />
+<label for="weightsel">weight</label>
+<br />
+<select id="weightsel" onchange="setWeight(options[selectedIndex])">
+	<option selected>normal</option>
+	<option>bold</option>
+</select>
+<br />
+<label for="stylesetsel">styleset</label>
+<br />
+<select id="stylesetsel" onchange="setFontFeature(options[selectedIndex])">
+	<option selected value="normal">normal</option>
+	<option value="var(--malayalam-reformed)">reformed</option>
+</select>
+</form>
+<a id="close-icon" href="#"></a>
+</div> <!-- cover -->
+<div id="text">
+<div class="header">
+        <a id="menu-icon" href="#cover"></a>
+<h1>
+consonant ligatures with ra in Malayalam
+</h1>
+</div> <!-- header -->
+<p>
+ZWNJ after halant: explicit candrakala, inhibit ligature.<br />
+ZWJ before halant: request traditional form of conjunct. <br />
+ZWNJ before halant+ra: request open-form, prefix ra.
+</p>
+<div lang="ml">
+<h3>direct conjuncts</h3>
+<p>
+ka ka ra	&#x0D15;&#x0D4D;&#x0D15;&#x0D4D;&#x0D30;
+		&#x0D15;&#x0D4D;&#x0D15;&#x0D4D;&#x0D30;&#x0D4C;<br />
+ka ta ra	&#x0D15;&#x0D4D;&#x0D24;&#x0D4D;&#x0D30;
+		&#x0D15;&#x0D4D;&#x0D24;&#x0D4D;&#x0D30;&#x0D4C;<br />
+ga da dha ra	&#x0D17;&#x0D4D;&#x0D26;&#x0D4D;&#x0D27;&#x0D4D;&#x0D30;
+		&#x0D17;&#x0D4D;&#x0D26;&#x0D4D;&#x0D27;&#x0D4D;&#x0D30;&#x0D4C;<br />
+<!--nga ka ra	&#x0D19;&#x0D4D;&#x0D15;&#x0D4D;&#x0D30; <br / -->
+nna dda ra	&#x0D23;&#x0D4D;&#x0D21;&#x0D4D;&#x0D30; 
+		&#x0D23;&#x0D4D;&#x0D21;&#x0D4D;&#x0D30;&#x0D4C;<br />
+nna tta ra	&#x0D23;&#x0D4D;&#x0D1f;&#x0D4D;&#x0D30; 
+		&#x0D23;&#x0D4D;&#x0D1f;&#x0D4D;&#x0D30;&#x0D4C;<br />
+ta ta ra	&#x0D24;&#x0D4D;&#x0D24;&#x0D4D;&#x0D30; 
+		&#x0D24;&#x0D4D;&#x0D24;&#x0D4D;&#x0D30;&#x0D4C;<br />
+ta bha ra	&#x0D24;&#x0D4D;&#x0D2d;&#x0D4D;&#x0D30; 
+		&#x0D24;&#x0D4D;&#x0D2d;&#x0D4D;&#x0D30;&#x0D4C;<br />
+ta sa ra	&#x0D24;&#x0D4D;&#x0D38;&#x0D4D;&#x0D30; 
+		&#x0D24;&#x0D4D;&#x0D38;&#x0D4D;&#x0D30;&#x0D4C;<br />
+da dha ra	&#x0D26;&#x0D4D;&#x0D27;&#x0D4D;&#x0D30; 
+		&#x0D26;&#x0D4D;&#x0D27;&#x0D4D;&#x0D30;&#x0D4C;<br />
+na da ra	&#x0D28;&#x0D4D;&#x0D26;&#x0D4D;&#x0D30; 
+		&#x0D28;&#x0D4D;&#x0D26;&#x0D4D;&#x0D30;&#x0D4C;<br />
+na dha ra	&#x0D28;&#x0D4D;&#x0D27;&#x0D4D;&#x0D30; 
+		&#x0D28;&#x0D4D;&#x0D27;&#x0D4D;&#x0D30;&#x0D4C;<br />
+na na ra	&#x0D28;&#x0D4D;&#x0D28;&#x0D4D;&#x0D30; 
+		&#x0D28;&#x0D4D;&#x0D28;&#x0D4D;&#x0D30;&#x0D4C;<br />
+na ta ra	&#x0D28;&#x0D4D;&#x0D24;&#x0D4D;&#x0D30; 
+		&#x0D28;&#x0D4D;&#x0D24;&#x0D4D;&#x0D30;&#x0D4C;<br />
+na ma ra	&#x0D28;&#x0D4D;&#x0D2e;&#x0D4D;&#x0D30; 
+		&#x0D28;&#x0D4D;&#x0D2e;&#x0D4D;&#x0D30;&#x0D4C;<br />
+ma pa ra	&#x0D2e;&#x0D4D;&#x0D2a;&#x0D4D;&#x0D30; 
+		&#x0D2e;&#x0D4D;&#x0D2a;&#x0D4D;&#x0D30;&#x0D4C;<br />
+rra rra ra	&#x0D31;&#x0D4D;&#x0D31;&#x0D4D;&#x0D30; 
+		&#x0D31;&#x0D4D;&#x0D31;&#x0D4D;&#x0D30;&#x0D4C;<br />
+</p>
+
+<h3>ZWNJ conjuncts breaking conjuncts</h3>
+<p>The candrakala+ZWNJ within consonants explicit display of "atomic" characters, 
+and here, a ZWNJ+candrakala before the -r produces the reforemed, "open" 
+form of ra.</p>
+<p>
+ka ka ra	&#x0D15;&#x0D4D;&#x200c;&#x0D15;&#x200c;&#x0D4D;&#x0D30; <br />
+ka ta ra	&#x0D15;&#x0D4D;&#x200c;&#x0D24;&#x200c;&#x0D4D;&#x0D30; <br />
+ga da dha ra	&#x0D17;&#x0D4D;&#x200c;&#x0D26;&#x0D4D;&#x200c;&#x0D27;&#x200c;&#x0D4D;&#x0D30; <br />
+<!--nga ka ra	&#x0D19;&#x0D4D;&#x200c;&#x0D15;&#x200c;&#x0D4D;&#x0D30; <br / -->
+nna dda ra	&#x0D23;&#x0D4D;&#x200c;&#x0D21;&#x200c;&#x0D4D;&#x0D30; <br />
+nna tta ra	&#x0D23;&#x0D4D;&#x200c;&#x0D1f;&#x200c;&#x0D4D;&#x0D30; <br />
+ta ta ra	&#x0D24;&#x0D4D;&#x200c;&#x0D24;&#x200c;&#x0D4D;&#x0D30; <br />
+ta bha ra	&#x0D24;&#x0D4D;&#x200c;&#x0D2d;&#x200c;&#x0D4D;&#x0D30; <br />
+ta sa ra	&#x0D24;&#x0D4D;&#x200c;&#x0D38;&#x200c;&#x0D4D;&#x0D30; <br />
+da dha ra	&#x0D26;&#x0D4D;&#x200c;&#x0D27;&#x200c;&#x0D4D;&#x0D30; <br />
+na na ra	&#x0D28;&#x0D4D;&#x200c;&#x0D28;&#x200c;&#x0D4D;&#x0D30; <br />
+na ta ra	&#x0D28;&#x0D4D;&#x200c;&#x0D24;&#x200c;&#x0D4D;&#x0D30; <br />
+na da ra	&#x0D28;&#x0D4D;&#x200c;&#x0D26;&#x200c;&#x0D4D;&#x0D30; <br />
+na dha ra	&#x0D28;&#x0D4D;&#x200c;&#x0D27;&#x200c;&#x0D4D;&#x0D30; <br />
+na ma ra	&#x0D28;&#x0D4D;&#x200c;&#x0D2e;&#x200c;&#x0D4D;&#x0D30; <br />
+ma pa ra	&#x0D2e;&#x0D4D;&#x200c;&#x0D2a;&#x200c;&#x0D4D;&#x0D30; <br />
+rra rra ra	&#x0D31;&#x0D4D;&#x200c;&#x0D31;&#x200c;&#x0D4D;&#x0D30; <br />
+</p>
+<h3>ZWJ traditional conjuncts + traditional ra</h3>
+<p>
+The ZWJ shouldn't break traditional ligatures.
+These should be rendered with ra-tail in any font with a suitable glyph.
+</p>
+<p>
+ka ka ra	&#x0D15;&#x200d;&#x0D4D;&#x0D15;&#x200d;&#x0D4D;&#x0D30; <br />
+ka ta ra	&#x0D15;&#x200d;&#x0D4D;&#x0D24;&#x200d;&#x0D4D;&#x0D30; <br />
+ga da dha ra	&#x0D17;&#x200d;&#x0D4D;&#x0D26;&#x200d;&#x0D4D;&#x0D27;&#x200d;&#x0D4D;&#x0D30; <br />
+<!--nga ka ra	&#x0D19;&#x200d;&#x0D4D;&#x0D15;&#x200d;&#x0D4D;&#x0D30; <br /-->
+nna dda ra	&#x0D23;&#x200d;&#x0D4D;&#x0D21;&#x200d;&#x0D4D;&#x0D30; <br />
+nna tta ra	&#x0D23;&#x200d;&#x0D4D;&#x0D1f;&#x200d;&#x0D4D;&#x0D30; <br />
+ta ta ra	&#x0D24;&#x200d;&#x0D4D;&#x0D24;&#x200d;&#x0D4D;&#x0D30; <br />
+ta bha ra	&#x0D24;&#x200d;&#x0D4D;&#x0D2d;&#x200d;&#x0D4D;&#x0D30; <br />
+ta sa ra	&#x0D24;&#x200d;&#x0D4D;&#x0D38;&#x200d;&#x0D4D;&#x0D30; <br />
+da dha ra	&#x0D26;&#x200d;&#x0D4D;&#x0D27;&#x200d;&#x0D4D;&#x0D30; <br />
+na ta ra	&#x0D28;&#x200d;&#x0D4D;&#x0D24;&#x200d;&#x0D4D;&#x0D30; <br />
+na da ra	&#x0D28;&#x200d;&#x0D4D;&#x0D26;&#x200d;&#x0D4D;&#x0D30; <br />
+na dha ra	&#x0D28;&#x200d;&#x0D4D;&#x0D27;&#x200d;&#x0D4D;&#x0D30; <br />
+na na ra	&#x0D28;&#x200d;&#x0D4D;&#x0D28;&#x200d;&#x0D4D;&#x0D30; <br />
+na ma ra	&#x0D28;&#x200d;&#x0D4D;&#x0D2e;&#x200d;&#x0D4D;&#x0D30; <br />
+ma pa ra	&#x0D2e;&#x200d;&#x0D4D;&#x0D2a;&#x200d;&#x0D4D;&#x0D30; <br />
+rra rra ra	&#x0D31;&#x200d;&#x0D4D;&#x0D31;&#x200d;&#x0D4D;&#x0D30; <br />
+</p>
+<h3>ZWNJ conjuncts</h3>
+<p>
+The ZWNJ shouldn't break reformed pre-base ra.
+These should be rendered as <br />
+cons + candrakala + prefix-ra + cons
+</p>
+<p>
+ka ka ra	&#x0D15;&#x200c;&#x0D4D;&#x0D15;&#x0D4D;&#x0D30; <br />
+ka ta ra	&#x0D15;&#x200c;&#x0D4D;&#x0D24;&#x0D4D;&#x0D30; <br />
+ga da dha ra	&#x0D17;&#x200c;&#x0D4D;&#x0D26;&#x200c;&#x0D4D;&#x0D27;&#x0D4D;&#x0D30; <br />
+<!--nga ka ra	&#x0D19;&#x200c;&#x0D4D;&#x0D15;&#x0D4D;&#x0D30; <br / -->
+nna dda ra	&#x0D23;&#x200c;&#x0D4D;&#x0D21;&#x0D4D;&#x0D30; <br />
+nna tta ra	&#x0D23;&#x200c;&#x0D4D;&#x0D1f;&#x0D4D;&#x0D30; <br />
+ta ta ra	&#x0D24;&#x200c;&#x0D4D;&#x0D24;&#x0D4D;&#x0D30; <br />
+ta bha ra	&#x0D24;&#x200c;&#x0D4D;&#x0D2d;&#x0D4D;&#x0D30; <br />
+ta sa ra	&#x0D24;&#x200c;&#x0D4D;&#x0D38;&#x0D4D;&#x0D30; <br />
+da dha ra	&#x0D26;&#x200c;&#x0D4D;&#x0D27;&#x0D4D;&#x0D30; <br />
+na na ra	&#x0D28;&#x200c;&#x0D4D;&#x0D28;&#x0D4D;&#x0D30; <br />
+na ta ra	&#x0D28;&#x200c;&#x0D4D;&#x0D24;&#x0D4D;&#x0D30; <br />
+na da ra	&#x0D28;&#x200c;&#x0D4D;&#x0D26;&#x0D4D;&#x0D30; <br />
+na dha ra	&#x0D28;&#x200c;&#x0D4D;&#x0D27;&#x0D4D;&#x0D30; <br />
+na ma ra	&#x0D28;&#x200c;&#x0D4D;&#x0D2e;&#x0D4D;&#x0D30; <br />
+ma pa ra	&#x0D2e;&#x200c;&#x0D4D;&#x0D2a;&#x0D4D;&#x0D30; <br />
+rra rra ra	&#x0D31;&#x200c;&#x0D4D;&#x0D31;&#x0D4D;&#x0D30; <br />
+</p>
+</div>
+<hr />
+<p>
+nga-ka-ra <br />
+ജി​യോ​സി​ങ്ക്ര​ണൈ​സ് <br />
+സങ്ക്രാന്തിക്കുമൊക്കെയാ <br />
+സി​ങ്ക്ര​ണൈ​സ്ഡ് <br />
+</p>
+<p>
+ta-da
+only in Lohit
+ത്ദ
+<br />
+ഭ​ഗ​വ​ത്ദ​ര്‍ശ​ന​ത്തി​നാ​യി
+</p>
+
+</div> <!-- text -->
+</body>
+</html>

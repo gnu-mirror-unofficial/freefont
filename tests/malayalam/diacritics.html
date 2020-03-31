@@ -1,0 +1,234 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<title>diacritics in Malayalam
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+	@import url("style.css");
+	@import url("ctrl.css");
+	[lang=ml] { line-height: 1.2; }
+</style>
+<script>
+function setFont(selection)
+{
+	t = document.getElementById( "text" );
+	if( t && selection.value )
+	{
+		t.style.fontFamily = selection.value;
+        }
+}
+function setWeight(selection)
+{
+	t = document.getElementById( "text" );
+	if( t && selection.value )
+	{
+		t.style.fontWeight = selection.value;
+        }
+}
+function setFontFeature(selection)
+{
+	t = document.getElementById( "text" );
+	if( t && selection.value )
+	{
+		t.style.fontFeatureSettings = selection.value;
+        }
+}
+function getSelectedValue( id )
+{
+	var sel = document.getElementById( id );
+	var idx = sel.selectedIndex;
+	return sel[idx];
+}
+function init()
+{
+	setFont( getSelectedValue( "fontsel" ) );
+	setWeight( getSelectedValue( "weightsel" ) );
+	setFontFeature( getSelectedValue( "stylesetsel" ) );
+}
+</script>
+</head>
+<body onload="init()">
+<div id="cover" class="ctrls">
+<form id="ctrl" action="*">
+<label for="fontsel">face</label>
+<br />
+<select id="fontsel" onchange="setFont(options[selectedIndex])">
+        <option>FreeSerif</option>
+        <option>FreeSans</option>
+        <option value="Lohit Malayalam">Lohit</option>
+        <option value="Noto Serif Malayalam">Noto Serif</option>
+        <option>Gayathri</option>
+        <option>Rachana</option>
+        <option>Meera</option>
+        <option value="Malayalam MN">Malayalam MN</option>
+        <option>Kartika</option>
+        <option>Karumbi</option>
+        <option>Keraleeyam</option>
+        <option>AnjaliOldLipi</option>
+        <option>Dyuthi</option>
+        <option>Uroob</option>
+        <option>Manjari</option>
+        <option>Chilanka</option>
+        <option>Suruma</option>
+        <option value="Samyak Malayalam new">Samyak new</option>
+</select>
+<br />
+<label for="weightsel">weight</label>
+<br />
+<select id="weightsel" onchange="setWeight(options[selectedIndex])">
+	<option selected>normal</option>
+	<option>bold</option>
+</select>
+<br />
+<label for="stylesetsel">styleset</label>
+<br />
+<select id="stylesetsel" onchange="setFontFeature(options[selectedIndex])">
+	<option selected value="normal">normal</option>
+	<option value="var(--malayalam-reformed)">reformed</option>
+</select>
+</form>
+<a id="close-icon" href="#"></a>
+</div> <!-- cover -->
+
+<div id="text">
+<div class="header">
+        <a id="menu-icon" href="#cover"></a>
+<h1> diacritics in Malayalam </h1>
+</div> <!-- header -->
+<h2> combining anusvara </h2>
+
+<p>
+For Sanskrit.  Wikipedia mentions only that it is used on consonants.
+</p>
+<p lang="ml">
+&#x0d2e;&#x0d00; <br />
+&#x0d1e;&#x0d00; <br />
+&#x0d15;&#x0d42;&#x0d00; 
+&#x0d15;&#x0d4D;&#x0d30;&#x0d00;
+&#x0d15;&#x0d4D;&#x0d30;&#x0d41;&#x0d00; <br />
+&#x0d35;&#x0d4D;&#x0d35;&#x0d00; 
+&#x0d15;&#x0d4D;&#x0d37;&#x0d00; <br />
+&#x0d2a;&#x0d4D;&#x0d32;&#x0d00; 
+&#x0d23;&#x0d4D;&#x0d23;&#x0d00; <br />
+</p>
+<p>
+Note that the vowel must precede the anusvara, or bad things happen.
+</p>
+
+<h2> candrabindu </h2>
+<p>
+For Sanskrit.  I read in Wikipedia that candrabindu is used primarily on vowels,
+but there are various traditions in which it is also placed over consonants.
+</p>
+<p>
+One document shows it being placed over the <em>left</em> half of a bracketing
+vowel.  That would require reordering of the glyphs.
+</p>
+
+<p lang="ml">
+&#x0d06;&#x0d01; 
+&#x0d0E;&#x0d01; <br />
+&#x0d13;&#x0d01; <br />
+&#x0d2e;&#x0d4b;&#x0d01; &larr; <span lang="en">glyphs not reordered</span> 
+</p>
+<p lang="ml">
+&#x0d2e;&#x0d01; <br />
+&#x0d1e;&#x0d01; <br />
+&#x0d15;&#x0d42;&#x0d01; 
+&#x0d15;&#x0d4D;&#x0d30;&#x0d01;
+&#x0d15;&#x0d4D;&#x0d30;&#x0d41;&#x0d01; <br />
+&#x0d35;&#x0d4D;&#x0d35;&#x0d01; 
+&#x0d15;&#x0d4D;&#x0d37;&#x0d01; <br />
+&#x0d2a;&#x0d4D;&#x0d32;&#x0d01; 
+&#x0d23;&#x0d4D;&#x0d23;&#x0d01; <br />
+</p>
+
+<h2> vertical bar virama </h2>
+<p>
+I have seen a mark like this in Gundert's dictionary.
+I think I saw it only on consonants.
+The Unicode Standard mentions only use on consonants.
+</p>
+<p>
+This mark is moved to just right of the first consonant in a conjunct.
+This breaks conjunct ligature formation. 
+</p>
+<p>
+Gayathri avoids this by forcing the OT Glyph class of the glyph to be
+"Base Glyph".  But this inhibits the mark being positioned by GPOS rules. 
+It also doesn't fix the case of the mark coming after a vowel.
+</p>
+<p>
+It should not break a preceding conjunct -- but it was, until I implemented
+a dependency of the shaping rules on a "mark set".
+</p>
+<p lang="ml">
+&#x0d2e;&#x0d3b; <br />
+&#x0d1e;&#x0d3b; <br />
+&#x0d15;&#x0d42;&#x0d3b;
+&#x0d15;&#x0d3b;&#x0d42; 
+&#x0d15;&#x0d4D;&#x0d30;&#x0d3b;
+&#x0d15;&#x0d4D;&#x0d30;&#x0d3b;&#x0d41; <br />
+&#x0d35;&#x0d4D;&#x0d35;&#x0d3b; 
+&#x0d15;&#x0d4D;&#x0d37;&#x0d3b; <br />
+&#x0d2a;&#x0d4D;&#x0d32;&#x0d3b; 
+&#x0d23;&#x0d4D;&#x0d23;&#x0d3b; 
+</p>
+
+<h2> circle virama </h2>
+<p>
+When building with an older version of FontForge, thought I saw the
+mark anchor not being applied.  Suspect it was screwing up the glyph class.
+</p>
+<p lang="ml">
+&#x0d2e;&#x0d3c; <br />
+&#x0d1e;&#x0d3c; <br />
+&#x0d15;&#x0d42;&#x0d3c; 
+&#x0d15;&#x0d4D;&#x0d30;&#x0d3c;
+&#x0d15;&#x0d4D;&#x0d30;&#x0d3c;&#x0d41; <br />
+&#x0d35;&#x0d4D;&#x0d35;&#x0d3c; 
+&#x0d15;&#x0d4D;&#x0d37;&#x0d3c; <br />
+&#x0d2a;&#x0d4D;&#x0d32;&#x0d3c; 
+&#x0d23;&#x0d4D;&#x0d23;&#x0d3c;
+</p>
+
+<h2> dot reph </h2>
+<p>
+According to the Unicode Standard, this was in common use until the 1970s.
+</p>
+<p>
+This mark is applied to the consonant <em>following</em> it!
+</p>
+<p lang="ml">
+&#x0d4E;&#x0d2e; <br />
+&#x0d4E;&#x0d1e; <br />
+&#x0d4e;&#x0d15;&#x0d42; 
+&#x0d4e;&#x0d15;&#x0d4D;&#x0d30;
+&#x0d4e;&#x0d15;&#x0d4D;&#x0d30;&#x0d41; <br />
+&#x0d4E;&#x0d35;&#x0d4D;&#x0d35; 
+&#x0d4E;&#x0d15;&#x0d4D;&#x0d37; <br />
+&#x0d4E;&#x0d2a;&#x0d4D;&#x0d32; 
+&#x0d4E;&#x0d23;&#x0d4D;&#x0d23;
+</p>
+<p lang="ml">
+&#x0d09;&#x0d23;&#x0d4E;&#x0d24;&#x0d4d;&#x0d24;&#x0d3f; <br /><!-- Gundert p. 9 -->
+&#x0d4E;&#x0d24;&#x0d4d;&#x0d24;&#x0d41; <br /><!-- Gundert p. 14 -->
+&#x0d4E;&#x0d2a;&#x0d4d;&#x0d2a;&#x0d41; <br /><!-- Gundert p. 279 -->
+&#x0d15;&#x0d42;&#x0d4E;&#x0d2a;&#x0d4d;&#x0d2a;&#x0d41;&#x0d30;&#x0d02; <br /><!-- Gundert p. 286 -->
+</p>
+<p>
+From the document
+<a href="https://github.com/n8willis/opentype-shaping-documents/blob/master/opentype-shaping-malayalam.md">Malayalam shaping in OpenType</a>
+which seems to say that the reph should be re-ordered from the lead position
+to just after the chillu, so as to be positioned over the next consonant dda:
+</p>
+<p lang="ml" style="font-feature-settings: var(--malayalam-rfmd);">
+&#x0D4e;&#x0D7a;&#x0D21;&#x0D41;  &larr; (no re-ordering happens)
+</p>
+
+</div> <!-- text -->
+
+</body>
+</html>

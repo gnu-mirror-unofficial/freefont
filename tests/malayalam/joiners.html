@@ -1,0 +1,162 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<title>
+joiners in Malayalam
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+	@import url("style.css");
+	@import url("ctrl.css");
+	img { width: 12cm; max-width: 95%; }
+</style>
+<script>
+function setFont(selection)
+{
+	t = document.getElementById( "text" );
+	if( t && selection.value )
+	{
+		t.style.fontFamily = selection.value;
+        }
+}
+function setWeight(selection)
+{
+	t = document.getElementById( "text" );
+	if( t && selection.value )
+	{
+		t.style.fontWeight = selection.value;
+        }
+}
+function setFontFeature(selection)
+{
+	t = document.getElementById( "text" );
+	if( t && selection.value )
+	{
+		t.style.fontFeatureSettings = selection.value;
+        }
+}
+function getSelectedValue( id )
+{
+	var sel = document.getElementById( id );
+	var idx = sel.selectedIndex;
+	return sel[idx];
+}
+function init()
+{
+	setFont( getSelectedValue( "fontsel" ) );
+	setWeight( getSelectedValue( "weightsel" ) );
+	setFontFeature( getSelectedValue( "stylesetsel" ) );
+}
+</script>
+
+</head>
+<body onload="init()">
+
+<div id="cover" class="ctrls">
+<form id="ctrl" action="*">
+<label for="fontsel">face</label>
+<br />
+<select id="fontsel" onchange="setFont(options[selectedIndex])">
+        <option>FreeSerif</option>
+        <option>FreeSans</option>
+        <option>Gayathri</option>
+        <option>Rachana</option>
+        <option>Meera</option>
+        <option>AnjaliOldLipi</option>
+        <option value="Lohit Malayalam">Lohit</option>
+        <option value="Noto Serif Malayalam">Noto Serif</option>
+        <option value="Malayalam MN">Malayalam MN</option>
+        <option>Kartika</option>
+        <option>Karumbi</option>
+        <option>Suruma</option>
+        <option value="Samyak Malayalam new">Samyak new</option>
+</select>
+<br />
+<label for="weightsel">weight</label>
+<br />
+<select id="weightsel" onchange="setWeight(options[selectedIndex])">
+	<option selected>normal</option>
+	<option>bold</option>
+</select>
+<br />
+<label for="stylesetsel">styleset</label>
+<br />
+<select id="stylesetsel" onchange="setFontFeature(options[selectedIndex])">
+	<option selected value="normal">normal</option>
+	<option value="var(--malayalam-reformed)">reformed</option>
+</select>
+</form>
+<a id="close-icon" href="#"></a>
+</div> <!-- cover -->
+<div id="text">
+<div class="header">
+        <a id="menu-icon" href="#cover"></a>
+<h1>joiners in Malayalam
+</h1>
+</div> <!-- header -->
+
+<table>
+	<caption>joiners</caption>
+	<thead>
+	<tr><th>Unicode</th><th></th> <th>display</th><th></th>
+	</tr>
+	</thead>
+	<tbody lang="ml">
+	<tr><td>&#x0d15; + &#x0d4d; + &#x0d30;</td>
+		<td>&rarr;</td><td>&#x0d15;&#x0d4d;&#x0d30;</td>
+		<td>(default ra form)</td></tr>
+	<tr><td>&#x0d15; + &#x0d4d; + ZWNJ + &#x0d30;</td>
+		<td>&rarr;</td><td>&#x0d15;&#x0d4d;&#x200c;&#x0d30;</td>
+		<td>(break ligature)</td></tr>
+	<tr class=""><td>&#x0d15; + ZWJ + &#x0d4d; + &#x0d30;</td>
+		<td>&rarr;</td><td>&#x0d15;&#x200d;&#x0d4d;&#x0d30;</td>
+		<td>(request ligature if available)</td></tr>
+	<tr><td>&#x0d15; + ZWNJ + &#x0d4d; + &#x0d30;</td>
+		<td>&rarr;</td><td>&#x0d15;&#x200c;&#x0d4d;&#x0d30;</td>
+		<td>(request pre-base ra)</td></tr>
+	<tr><td>&#x0d2F; + &#x0d4d; + &#x0d2F;</td>
+		<td>&rarr;</td><td>&#x0d2F;&#x0d4d;&#x0d2F;</td>
+		<td>(default ligature)</td></tr>
+	<tr><td>&#x0d2F; + ZWNJ + &#x0d4d; + &#x0d2F;</td>
+		<td>&rarr;</td><td>&#x0d2F;&#x200c;&#x0d4d;&#x0d2F;</td>
+		<td>(request post-base ya)</td></tr>
+	<tr><td>&#x0d38; + &#x0d4d; + &#x0d15;</td>
+		<td>&rarr;</td><td>&#x0d38;&#x0d4d;&#x0d15;</td>
+		<td>(conjunct - traditionally stacked)</td></tr>
+	<tr><td>&#x0d38; + ZWJ + &#x0d4d; + &#x0d15;</td>
+		<td>&rarr;</td><td>&#x0d38;&#x200d;&#x0d4d;&#x0d15;</td>
+		<td>(request stacked form)</td></tr>
+	<tr><td>&#x0d24; + &#x0d4d; + &#x0d38;</td>
+		<td>&rarr;</td><td>&#x0d24;&#x0d4d;&#x0d38;</td>
+		<td>(conjunct - traditionally ligated)</td></tr>
+	<tr><td>&#x0d24; + ZWJ + &#x0d4d; + &#x0d38;</td>
+		<td>&rarr;</td><td>&#x0d24;&#x200d;&#x0d4d;&#x0d38;</td>
+		<td>(request ligated conjunct)</td></tr>
+	<tr><td>&#x0d34; + &#x0d4d; + &#x0d35;</td>
+		<td>&rarr;</td><td>&#x0d34;&#x0d4d;&#x0d35;</td>
+		<td>(conjunct - traditionally stacked)</td></tr>
+	<tr><td>&#x0d34; + ZWJ + &#x0d4d; + &#x0d35;</td>
+		<td>&rarr;</td><td>&#x0d34;&#x200d;&#x0d4d;&#x0d35;</td>
+		<td>(request stacked form)</td></tr>
+	<tr><td>&#x0d34; + ZWNJ + &#x0d4d; + &#x0d35;</td>
+		<td>&rarr;</td><td>&#x0d34;&#x200c;&#x0d4d;&#x0d35;</td>
+		<td>(request post-base form)</td></tr>
+	<tr><td>&#x0d28; + &#x0d4d; + ZWNJ</td>
+		<td>&rarr;</td><td>&#x0d28;&#x0d4d;&#x200C;</td>
+		<td>(self-standing halant)</td></tr>
+</tbody>
+</table>
+
+<p>
+<figure>
+<figcaption>
+Unicode Standard ch 12, Table 12-28
+</figcaption>
+<img src="images/Malayalam-joiners.png"
+alt="image of table in Standard" />
+</figure>
+
+</div> <!-- text -->
+</body>
+</html>

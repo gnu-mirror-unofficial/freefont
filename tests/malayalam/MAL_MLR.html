@@ -1,0 +1,154 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<title>Malayalam language tag test
+</title>
+<style>
+	/* reformed-orthography fonts on different systems */
+	.dflt { font-family: "Noto Sans Malayalam", "Lohit Malayalam",
+		kartika, "malayalam mn", monospace; }
+	/* special test fonts */
+	.ver0 { font-family: "MAL_MLR", monospace; }
+	.ver1 { font-family: "MAL_MLR1", monospace; }
+	.ver2 { font-family: "MAL_MLR2", monospace; }
+	.ver3 { font-family: "MAL_MLR3", monospace; }
+	.ver4 { font-family: "MAL_MLR4", monospace; }
+	/* request different language tags of Malayalam fonts */
+	[lang=ml] .norm { font-language-override: normal; color: black; }
+	[lang=ml] .rfmd { font-language-override: "MLR"; color: green; }
+	[lang=ml] .trad { font-language-override: "MAL"; color: navy; }
+	[lang=ml] .junk { font-language-override: "BLAH"; color: silver; }
+	th, td { text-align: center; }
+	th:first-child { text-align: left; }
+</style>
+</head>
+<body>
+<title>Malayalam language tag test
+</title>
+<p> Shows response of different Malayalam fonts to different
+"language system tags". The tags 'MAL' and 'MLR' correspond to Malayalam
+orthographies "traditional" and "reformed", respectively.
+</p>
+<p> See
+<a
+href="https://docs.microsoft.com/en-us/typography/opentype/spec/languagetags">Language system tags</a> at Microsoft Typography.
+</p>
+
+<table>
+<tr>
+<th>font </th>
+<th colspan="4">language override </th>
+</tr>
+<tr>
+<th> </th>
+<th>normal </th>
+<th>reformed </th>
+<th>traditional </th>
+<th>junk </th>
+</tr>
+<tbody lang="ml">
+<th>system default</th>
+<td>&#x0d15;&#x0d4d;&#x0d30; </td>
+<td class="rfmd"> &#x0d15;&#x0d4d;&#x0d30; </td>
+<td class="trad"> &#x0d15;&#x0d4d;&#x0d30; </td>
+<td class="junk"> &#x0d15;&#x0d4d;&#x0d30; </td>
+</tr>
+
+<tr class="dflt">
+<th> traditional </th>
+<td> &#x0d15;&#x0d4d;&#x0d30; </td>
+<td class="rfmd"> &#x0d15;&#x0d4d;&#x0d30; </td>
+<td class="trad"> &#x0d15;&#x0d4d;&#x0d30; </td>
+<td class="junk"> &#x0d15;&#x0d4d;&#x0d30; </td>
+</tr>
+
+<tr class="ver0">
+<th> MAL, MLR or dflt </th>
+<td> &#x0d15;&#x0d4d;&#x0d30; </td>
+<td class="rfmd"> &#x0d15;&#x0d4d;&#x0d30; </td>
+<td class="trad"> &#x0d15;&#x0d4d;&#x0d30; </td>
+<td class="junk"> &#x0d15;&#x0d4d;&#x0d30; </td>
+</tr>
+
+<tr class="ver1">
+<th> MAL or dflt </th>
+<td> &#x0d15;&#x0d4d;&#x0d30; </td>
+<td class="rfmd"> &#x0d15;&#x0d4d;&#x0d30; </td>
+<td class="trad"> &#x0d15;&#x0d4d;&#x0d30; </td>
+<td class="junk"> &#x0d15;&#x0d4d;&#x0d30; </td>
+</tr>
+
+<tr class="ver2">
+<th> MAL only </th>
+<td> &#x0d15;&#x0d4d;&#x0d30; </td>
+<td class="rfmd"> &#x0d15;&#x0d4d;&#x0d30; </td>
+<td class="trad"> &#x0d15;&#x0d4d;&#x0d30; </td>
+<td class="junk"> &#x0d15;&#x0d4d;&#x0d30; </td>
+</tr>
+
+<tr class="ver3">
+<th> MLR or dflt </th>
+<td> &#x0d15;&#x0d4d;&#x0d30; </td>
+<td class="rfmd"> &#x0d15;&#x0d4d;&#x0d30; </td>
+<td class="trad"> &#x0d15;&#x0d4d;&#x0d30; </td>
+<td class="junk"> &#x0d15;&#x0d4d;&#x0d30; </td>
+</tr>
+
+<tr class="ver4">
+<th> MLR only </th>
+<td> &#x0d15;&#x0d4d;&#x0d30; </td>
+<td class="rfmd"> &#x0d15;&#x0d4d;&#x0d30; </td>
+<td class="trad"> &#x0d15;&#x0d4d;&#x0d30; </td>
+<td class="junk"> &#x0d15;&#x0d4d;&#x0d30; </td>
+</tr>
+
+</tbody>
+</table>
+<p>The test fonts with different script/language settings each contain only
+a few glyphs and a couple of lookup tables.  The main glyphs in these fonts
+are marked with a cross, and two are marked with different roman numerals,
+to make certain which font is being used.
+</p>
+<p>
+The first test font, MAL_MLR is set to activate ra-tail ligature formation
+regardless of language tag.  The test font MAL_MLR1 is set to activate
+ra-tail ligature formation for the language tag 'MAL' or for any language
+tag other than 'MLR'.  The test font MAL_MLR2 is set to activate ra-tail
+formation only for language tag 'MAL'.
+</p>
+<p>
+Using the second two fonts, the ra-tail should *not* form for language tag
+'MLR', provided the system recognizes that tag at all.
+</p>
+<p>
+There are a couple of corner cases here.  One is shown here by a request for
+a "junk" language tag.  A junk tag would be unrecognized, and should fall 
+under lookups marked to be activated by 'dflt'.
+</p>
+<ul>
+<p>Expect:
+</p>
+<ul>
+<li> The "system default" shows whatever font is default on the system.
+No variation is to be expected for different languages here.
+</li>
+<li> the "traditional" font should show a prefix-form ra regardless of override
+</li>
+<li> the "MAL, MLR or dflt" test font should show a ra-tail regardless of
+language override
+</li>
+<li>
+I suppose that for "MAL or dflt", a ra-tail should be displayed only for
+"normal" or "traditional", not for "reformed".
+Not sure how the system should respond to a "junk" language.
+</li>
+<li> the "MAL only" font should show a ra-tail only for the traditional
+language: for languages "reformed" and "junk", it should show prefix-ra.
+A ra-tail forming under the "normal" language indicates that the system
+default language is "MAL".
+</li>
+<ul>
+</body>
+</html>
+

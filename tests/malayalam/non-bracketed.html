@@ -1,0 +1,212 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<title>non-bracketed conjuncts in Malayalam
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+	@import url("style.css");
+	@import url("ctrl.css");
+	th { font-size: large; text-align: left; background-color: silver; }
+</style>
+<script>
+function setFont(selection)
+{
+	t = document.getElementById( "text" );
+	if( t && selection.value )
+	{
+		t.style.fontFamily = selection.value;
+        }
+}
+function setWeight(selection)
+{
+	t = document.getElementById( "text" );
+	if( t && selection.value )
+	{
+		t.style.fontWeight = selection.value;
+        }
+}
+function setFontFeature(selection)
+{
+	t = document.getElementById( "text" );
+	if( t && selection.value )
+	{
+		t.style.fontFeatureSettings = selection.value;
+        }
+}
+function getSelectedValue( id )
+{
+	var sel = document.getElementById( id );
+	var idx = sel.selectedIndex;
+	return sel[idx];
+}
+function init()
+{
+	setFont( getSelectedValue( "fontsel" ) );
+	setWeight( getSelectedValue( "weightsel" ) );
+	setFontFeature( getSelectedValue( "stylesetsel" ) );
+}
+</script>
+
+</head>
+<body onload="init()">
+<div id="cover" class="ctrls">
+<form id="ctrl" action="*">
+<label for="fontsel">face</label>
+<br />
+<select id="fontsel" onchange="setFont(options[selectedIndex])">
+        <option selected=selected value="">choose...</option>
+        <option>FreeSerif</option>
+        <option>FreeSans</option>
+        <option value="Lohit Malayalam">Lohit</option>
+        <option value="Noto Serif Malayalam">Noto Serif</option>
+        <option value="Noto Sans Malayalam">Noto Sans</option>
+        <option>Gayathri</option>
+        <option>Rachana</option>
+        <option>Meera</option>
+        <option value="Malayalam MN">Malayalam MN</option>
+        <option>Kartika</option>
+        <option>Karumbi</option>
+        <option>AnjaliOldLipi</option>
+        <option value="Samyak Malayalam new">Samyak new</option>
+</select>
+<br />
+<label for="weightsel">weight</label>
+<br />
+<select id="weightsel" onchange="setWeight(options[selectedIndex])">
+	<option selected>normal</option>
+	<option>bold</option>
+</select>
+<br />
+<label for="stylesetsel">styleset</label>
+<br />
+<select id="stylesetsel" onchange="setFontFeature(options[selectedIndex])">
+	<option selected value="normal">normal</option>
+	<option value="var(--malayalam-reformed)">reformed</option>
+</select>
+</form>
+<a id="close-icon" href="#"></a>
+</div> <!-- cover -->
+<div id="text">
+<div class="header">
+        <a id="menu-icon" href="#cover"></a>
+<h1>
+non-bracketed conjuncts in Malayalam
+</h1>
+</div> <!-- header -->
+<p>
+In traditional orthography, most consonant conjuncts (now encoded as 
+sequences of consonants separated by candrakala) are represented by single
+graphemes, either a consonant ligature or a consonant with consonant subscripts.
+</p>
+<p>
+A following ra is rendered as a tail curling under the grapheme from the
+right side and coming up in front of the grapheme.  For subscripted consonant,
+the tail attaches to the subscript -- but there were variant forms: sometimes
+the tail curls only around the subscript, and in other fonts, the tail
+comes up in front of the main consonant.
+</p>
+<p>
+The vowels e, ee and ai are applied in front of the conjunct, although their 
+encoding follows the consonants.  The vowels o, oo, and au <em>bracket</em>
+the conjunct, with one grapheme to its left and one to its right.
+</p>
+<p>
+In reformed orthography, the tail form of ra is replaced by a prefix form.
+This mark is placed to the left of the conjunct grapheme.
+</p>
+<p>
+In some cases for which there is no ligature or subscripted form for the 
+conjunct, the consontants are rendered in plain form, separated by visible
+candrakalas.  In such cases, both the ra and the vowels are applied only
+to the <em>last consonant</em> in the conjunct.  The left part of a vowel
+coming between the last candrakala and the last vowel.
+</p>
+<p>
+In those cases, a -ra applied to the conjunct will appear just to the left
+of the last vowel, but the left side of a vowel is placed between the 
+last candrakala and the consonant.
+</p>
+
+<table>
+<thead>
+<tr>
+<td></td>
+<td>conjunct</td>
+<td>with -ra</td>
+<td>with -ra + o</td>
+</tr>
+</thead>
+<tbody>
+<tr><th colspan="4">
+ra tail in traditional, prefix-ra in reformed:</th>
+</tr>
+<tr lang="ml">
+<td>ta 	</td>
+<td>&#x0D24; </td>
+<td>&#x0D24;&#x0D4D;&#x0D30; </td>
+<td>&#x0D24;&#x0D4D;&#x0D30;&#x0D4a; </td>
+<tr lang="ml">
+<td>ka ta 	</td>
+<td>&#x0D15;&#x0D4D;&#x0D24; </td>
+<td>&#x0D15;&#x0D4D;&#x0D24;&#x0D4D;&#x0D30; </td>
+<td>&#x0D15;&#x0D4D;&#x0D24;&#x0D4D;&#x0D30;&#x0D4a; </td>
+</tr>
+<tr><th colspan="4"> completely foreign consonant sequence </th>
+</tr>
+<tr lang="ml">
+<td> dda nya	</td>
+<td>&#x0D21;&#x0D4D;&#x0D1e; </td>
+<td>&#x0D21;&#x0D4D;&#x0D1e;&#x0D4D;&#x0D30; </td>
+<td>&#x0D21;&#x0D4D;&#x0D1e;&#x0D4D;&#x0D30;&#x0D4A; </td>
+</tr>
+<!--
+<tr><th colspan="4">
+ligatures in traditional, separate in reformed
+</th></tr>
+<tr lang="ml">
+<td> dda nya	</td>
+<td>&#x0D21;&#x0D4D;&#x0D1e; </td>
+<td>&#x0D21;&#x0D4D;&#x0D1e;&#x0D4a; </td>
+</tr>
+-->
+<tr><th colspan="4">
+ra-form forced to be in-line with ZWNJ-candrakala
+</th></tr>
+<tr lang="ml">
+<td> ka	</td>
+<td>&#x0D15; </td>
+<td>&#x0D15;&#x200c;&#x0D4D;&#x0D30; </td>
+<td>&#x0D15;&#x200c;&#x0D4D;&#x0D30;&#x0D4a; </td>
+</tr>
+
+<tr><th colspan="4">
+ligature forced atomic by candrakala-ZWNJ
+</th></tr>
+<tr lang="ml">
+<td> ka ta </td>
+<td>&#x0D15;&#x0D4D;&#x200c;&#x0D24; </td>
+<td>&#x0D15;&#x0D4D;&#x200c;&#x0D24;&#x0D4D;&#x0D30; </td>
+<td>&#x0D15;&#x0D4D;&#x200c;&#x0D24;&#x0D4D;&#x0D30;&#x0D4a; </td>
+</tr>
+<!--
+<tr><th colspan="4">
+stacked in traditional, separate in reformed
+</th></tr>
+-->
+<tr><th colspan="4">
+stacked consonant forced atomic by candrakala-ZWNJ
+</th></tr>
+<tr lang="ml">
+<td> ka tta </td>
+<td>&#x0D15;&#x0D4D;&#x200c;&#x0D1f; </td>
+<td>&#x0D15;&#x0D4D;&#x200c;&#x0D1f;&#x0D4D;&#x0D30; </td>
+<td>&#x0D15;&#x0D4D;&#x200c;&#x0D1f;&#x0D4D;&#x0D30;&#x0D4a; </td>
+</tr>
+</tbody>
+</table>
+
+</div> <!-- text -->
+</body>
+</html>

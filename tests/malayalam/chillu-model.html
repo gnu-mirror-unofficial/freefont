@@ -1,0 +1,187 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<title>chillu conjuncts in Malayalam
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+	@import url("style.css");
+	@import url("ctrl.css");
+	div.center { text-align: center; }
+	table { margin: auto; }
+	td { text-align: left; }
+	td:first-child { font-size: large; line-height: 1.4; margin-bottom: 0.1em; }
+</style>
+<script>
+function setFont(selection)
+{
+	t = document.getElementById( "text" );
+	if( t && selection.value )
+	{
+		t.style.fontFamily = selection.value;
+        }
+}
+function setWeight(selection)
+{
+	t = document.getElementById( "text" );
+	if( t && selection.value )
+	{
+		t.style.fontWeight = selection.value;
+        }
+}
+function setFontFeature(selection)
+{
+	t = document.getElementById( "text" );
+	if( t && selection.value )
+	{
+		t.style.fontFeatureSettings = selection.value;
+        }
+}
+function getSelectedValue( id )
+{
+	var sel = document.getElementById( id );
+	var idx = sel.selectedIndex;
+	return sel[idx];
+}
+function init()
+{
+	setFont( getSelectedValue( "fontsel" ) );
+	setWeight( getSelectedValue( "weightsel" ) );
+	setFontFeature( getSelectedValue( "stylesetsel" ) );
+}
+</script>
+
+</head>
+<body onload="init()">
+<div id="cover" class="ctrls">
+<form id="ctrl" action="*">
+<label for="fontsel">face</label>
+<br />
+<select id="fontsel" onchange="setFont(options[selectedIndex])">
+        <option>FreeSerif</option>
+        <option>FreeSans</option>
+        <option>AnjaliOldLipi</option>
+        <option>Rachana</option>
+        <option>Gayathri</option>
+        <option>Meera</option>
+        <option value="Lohit Malayalam">Lohit</option>
+        <option value="Noto Serif Malayalam">Noto Serif</option>
+        <option value="Noto Sans Malayalam">Noto Sans</option>
+        <option>Kartika</option>
+        <option value="Malayalam MN">Malayalam MN</option>
+        <option>Dyuthi</option>
+        <option value="Samyak Malayalam new">Samyak new</option>
+</select>
+<br />
+<label for="weightsel">weight</label>
+<br />
+<select id="weightsel" onchange="setWeight(options[selectedIndex])">
+	<option selected>normal</option>
+	<option>bold</option>
+</select>
+<br />
+<label for="stylesetsel">styleset</label>
+<br />
+<select id="stylesetsel" onchange="setFontFeature(options[selectedIndex])">
+	<option selected value="normal">normal</option>
+	<option value="var(--malayalam-reformed)">reformed</option>
+</select>
+</form>
+<a id="close-icon" href="#"></a>
+</div> <!-- cover -->
+<div id="text">
+<div class="header">
+        <a id="menu-icon" href="#cover"></a>
+<h1>
+chillu conjuncts in Malayalam 
+</h1>
+</div> <!-- header -->
+<div lang="ml">
+<h3>direct conjuncts, traditional</h3>
+<p>
+Examples from
+L2/19-086R<br />
+Encoding Model for Conjuncts with Chillus <br />
+2019<br />
+19086r-conjunct-chillu-model.pdf <br />
+</p>
+<div class="center">
+<table>
+<caption>
+From Table 12-38
+</caption>
+<tbody>
+<tr><td>&#x0D7A;&#x0D4D;&#x0D28;</td><td>
+CHILLU NN, VIRAMA, NA </td><td>/ṇna/</td></tr>
+<tr><td>&#x0D7B;&#x0D4D;&#x0D31;&#x0D46;</td><td>
+CHILLU N, VIRAMA, RRA, SIGN E </td><td>/nṟe/</td></tr>
+<tr><td>&#x0D7B;&#x0D4D;&#x0D38;&#x0D4D;</td><td>
+CHILLU N, VIRAMA, SA, VIRAMA </td><td>/nsŭ/</td></tr>
+<tr><td>&#x0D7D;&#x0D4D;&#x0D2A;&#x0D41;</td><td>
+CHILLU L, VIRAMA, PA, SIGN U </td><td>/lpu/</td></tr>
+<tr><td>&#x0D7E;&#x200D;&#x0D4D;&#x0D35;&#x0D3E;</td><td>
+CHILLU LL, ZWJ, VIRAMA, VA, SIGN AA </td><td>/ḷvā/</td></tr>
+<tr><td>&#x0D7E;&#x0D4D;&#x0D2A;&#x0D4D;&#x0D2A;&#x0D3F;</td><td>
+CHILLU LL, VIRAMA, PA, VIRAMA, PA, SIGN I </td><td>/ḷppi/</td></tr>
+<tr><td>&#x0D28;&#x0D4D;&#x0D7B;</td><td>
+N, VIRAMA, CHILLU N </td><td>/nn/</td></tr>
+</tbody>
+</table>
+</div>
+<p>
+I don't know the status of this document.  I don't see anything like these
+encodings even in v.12 of the standard, although the document requests that
+it be added to v.11 of the standard.
+</p>
+<figure>
+<figcaption>
+L2/19-086R, Table 12-38
+</figcaption>
+<img src="images/chillu-conjuncts-examples.png"
+alt="image of table in in proposal" />
+</figure>
+<p>
+Attestations:
+</p>
+<p>
+(these were in a Sanskrit manuscript
+CHILLU D: DA with a chillu tail
+CHILLU NG: NGA with a chillu tail
+</p>
+<p>
+N-NA ligature with chillu tail: NA, VIRAMA, NA, VERTICAL BAR VIRAMA
+</p>
+<p>
+CHILLU LL base, ligature N-T-U subscript: CHILLU LL, VIRAMA, NA, VIRAMA, TA, SIGN U
+CHILLU NN base, NA subscript, SIGN AA: CHILLU NN, VIRAMA, NA, SIGN AA
+</p>
+<p>
+CHILLU LL base, ligature P-PA subscript, SIGN I: CHILLU LL, VIRAMA, PA, VIRAMA, PA, SIGN I
+CHILLU LL base, ligature K-KA subscript: CHILLU LL, VIRAMA, KA, VIRAMA, KA
+</p>
+<p>
+N-NA ligature with chillu tail: NA, VIRAMA, NA, VERTICAL BAR VIRAMA
+</p>
+<p>
+CHILLU LL base, ligature VA subscript, SIGN AA: CHILLU LL, ZWJ, VIRAMA, VA, SIGN AA
+CHILLU LL base, ligature T-T-U subscript: CHILLU LL, VIRAMA, TA, VIRAMA, TA, SIGN U
+</p>
+<p>
+CHILLU LL base, MA subscript, SIGN AA: CHILLU LL, VIRAMA, MA, SIGN AA
+CHILLU LL base, VA subscript, SIGN AA: CHILLU LL, ZWJ, VIRAMA, VA, SIGN AA
+</p>
+<p>
+CHILLU L base, ligature P-U subscript: CHILLU L, VIRAMA, PA, SIGN U
+</p>
+<p>
+CHILLU N base, SA subscript, explicit VIRAMA: CHILLU N, VIRAMA, SA, VIRAMA
+</p>
+<p>
+CHILLU LL base, ligature K-K-U subscript: CHILLU LL, VIRAMA, KA, VIRAMA, KA, SIGN U
+</p>
+
+
+</div> <!-- text -->
+</body>
+</html>

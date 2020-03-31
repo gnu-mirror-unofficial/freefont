@@ -1,0 +1,861 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<title>vocalic ligatures in Malayalam
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+	@import url("style.css");
+	@import url("ctrl.css");
+	td {font-family: inherit; font-weight: inherit;
+		font-feature-settings: inherit; }
+	td { width: 4em; text-align: center; }
+	td:first-child { width: auto; text-align: left; }
+</style>
+<script>
+function setFont(selection)
+{
+	t = document.getElementById( "text" );
+	if( t && selection.value )
+	{
+		t.style.fontFamily = selection.value;
+        }
+}
+function setWeight(selection)
+{
+	t = document.getElementById( "text" );
+	if( t && selection.value )
+	{
+		t.style.fontWeight = selection.value;
+        }
+}
+function setFontFeature(selection)
+{
+	t = document.getElementById( "text" );
+	if( t && selection.value )
+	{
+		t.style.fontFeatureSettings = selection.value;
+        }
+}
+function getSelectedValue( id )
+{
+	var sel = document.getElementById( id );
+	var idx = sel.selectedIndex;
+	return sel[idx];
+}
+function init()
+{
+	setFont( getSelectedValue( "fontsel" ) );
+	setWeight( getSelectedValue( "weightsel" ) );
+	setFontFeature( getSelectedValue( "stylesetsel" ) );
+}
+</script>
+
+</head>
+<body onload="init()">
+<div id="cover" class="ctrls">
+<form id="ctrl" action="*">
+<label for="fontsel">face</label>
+<br />
+<select id="fontsel" onchange="setFont(options[selectedIndex])">
+        <option selected=selected value="">choose...</option>
+        <option>FreeSerif</option>
+        <option>FreeSans</option>
+        <option>AnjaliOldLipi</option>
+        <option>Gayathri</option>
+        <option>Rachana</option>
+        <option>Meera</option>
+        <option value="RaghuMalayalam">Raghu</option>
+        <option value="Lohit Malayalam">Lohit</option>
+        <option value="Noto Serif Malayalam">Noto Serif</option>
+        <option value="Noto Sans Malayalam">Noto Sans</option>
+        <option value="Malayalam MN">Malayalam MN</option>
+        <option>Kartika</option>
+        <option>Keraleeyam</option>
+        <option value="Samyak Malayalam new">Samyak new</option>
+</select>
+<br />
+<label for="weightsel">weight</label>
+<br />
+<select id="weightsel" onchange="setWeight(options[selectedIndex])">
+	<option selected>normal</option>
+	<option>bold</option>
+</select>
+<br />
+<label for="stylesetsel">styleset</label>
+<br />
+<select id="stylesetsel" onchange="setFontFeature(options[selectedIndex])">
+	<option selected value="normal">normal</option>
+	<option value="var(--malayalam-reformed)">reformed</option>
+</select>
+</form>
+<a id="close-icon" href="#"></a>
+</div> <!-- cover -->
+
+<div id="text">
+<div class="header">
+        <a id="menu-icon" href="#cover"></a>
+<h1>vocalic ligatures in Malayalam
+</h1>
+</div> <!-- header -->
+<h3>consonants with special vocalic forms</h3>
+<p>
+The ZWJ before a vowel (or vocalic) should force a ligature if one exists,
+and the ZWJ before a vowel should inhibit a ligature.
+</p>
+<p>
+The display for the ZWJ and ZWNJ forms should not be affected by orthography.
+</p>
+<p>
+Not every consonant with an r-vocalic form has an rr-vocalic form. 
+</p>
+
+<table>
+<tbody lang="ml">
+<tr><th>	</th>
+	<th>+l voc </th>
+	<th>ZWNJ break lig. </th>
+	<th>ZWJ req. lig. </th>
+	<th>+ll voc. </th>
+	<th>ZWNJ break lig. </th>
+	<th>ZWJ req. lig. </th>
+	</tr>
+<tr><td>ka	</td>
+	<td>&#x0D15;&#x0D62; </td>
+	<td>&#x0D15;&#x200c;&#x0D62; </td>
+	<td>&#x0D15;&#x200d;&#x0D62; </td>
+	<td>&#x0D15;&#x0D63; </td>
+	<td>&#x0D15;&#x200c;&#x0D63; </td>
+	<td>&#x0D15;&#x200d;&#x0D63; </td>
+	</tr>
+</tbody>
+</table>
+
+<h3></h3>
+<table>
+<tbody lang="ml">
+<tr><th>	</th>
+	<th>+r voc </th>
+	<th>ZWNJ break lig. </th>
+	<th>ZWJ req. lig. </th>
+	<th>+rr voc. </th>
+	<th>ZWNJ break lig. </th>
+	<th>ZWJ req. lig. </th>
+	</tr>
+<tr><td>ka	</td>
+	<td>&#x0D15;&#x0D43; </td>
+	<td>&#x0D15;&#x200c;&#x0D43; </td>
+	<td>&#x0D15;&#x200d;&#x0D43; </td>
+	<td>&#x0D15;&#x0D44; </td>
+	<td>&#x0D15;&#x200c;&#x0D44; </td>
+	<td>&#x0D15;&#x200d;&#x0D44; </td>
+	</tr>
+<tr><td>kha	</td>
+	<td>&#x0D16;&#x0D43; </td>
+	<td>&#x0D16;&#x200c;&#x0D43; </td>
+	<td>&#x0D16;&#x200d;&#x0D43; </td>
+	<td>&#x0D16;&#x0D44; </td>
+	<td>&#x0D16;&#x200c;&#x0D44; </td>
+	<td>&#x0D16;&#x200d;&#x0D44; </td>
+	</tr>
+<tr><td>ga	</td>
+	<td>&#x0D17;&#x0D43; </td>
+	<td>&#x0D17;&#x200c;&#x0D43; </td>
+	<td>&#x0D17;&#x200d;&#x0D43; </td>
+	<td>&#x0D17;&#x0D44; </td>
+	<td>&#x0D17;&#x200c;&#x0D44; </td>
+	<td>&#x0D17;&#x200d;&#x0D44; </td>
+	</tr>
+<tr><td>gha	</td>
+	<td>&#x0D18;&#x0D43; </td>
+	<td>&#x0D18;&#x200c;&#x0D43; </td>
+	<td>&#x0D18;&#x200d;&#x0D43; </td>
+	<td>&#x0D18;&#x0D44; </td>
+	<td>&#x0D18;&#x200c;&#x0D44; </td>
+	<td>&#x0D18;&#x200d;&#x0D44; </td>
+	</tr>
+<tr><td>cha	</td>
+	<td>&#x0D1b;&#x0D43; </td>
+	<td>&#x0D1b;&#x200c;&#x0D43; </td>
+	<td>&#x0D1b;&#x200d;&#x0D43; </td>
+	<td>&#x0D1b;&#x0D44; </td>
+	<td>&#x0D1b;&#x200c;&#x0D44; </td>
+	<td>&#x0D1b;&#x200d;&#x0D44; </td>
+	</tr>
+<tr><td>ja	</td>
+	<td>&#x0D1c;&#x0D43; </td>
+	<td>&#x0D1c;&#x200c;&#x0D43; </td>
+	<td>&#x0D1c;&#x200d;&#x0D43; </td>
+	<td>&#x0D1c;&#x0D44; </td>
+	<td>&#x0D1c;&#x200c;&#x0D44; </td>
+	<td>&#x0D1c;&#x200d;&#x0D44; </td>
+	</tr>
+<tr><td>jha	</td>
+	<td>&#x0D1d;&#x0D43; </td>
+	<td>&#x0D1d;&#x200c;&#x0D43; </td>
+	<td>&#x0D1d;&#x200d;&#x0D43; </td>
+	<td>&#x0D1d;&#x0D44; </td>
+	<td>&#x0D1d;&#x200c;&#x0D44; </td>
+	<td>&#x0D1d;&#x200d;&#x0D44; </td>
+	</tr>
+<tr><td>tta	</td>
+	<td>&#x0D1f;&#x0D43; </td>
+	<td>&#x0D1f;&#x200c;&#x0D43; </td>
+	<td>&#x0D1f;&#x200d;&#x0D43; </td>
+	<td>&#x0D1f;&#x0D44; </td>
+	<td>&#x0D1f;&#x200c;&#x0D44; </td>
+	<td>&#x0D1f;&#x200d;&#x0D44; </td>
+	</tr>
+<tr><td>dda	</td>
+	<td>&#x0D21;&#x0D43; </td>
+	<td>&#x0D21;&#x200c;&#x0D43; </td>
+	<td>&#x0D21;&#x200d;&#x0D43; </td>
+	<td>&#x0D21;&#x0D44; </td>
+	<td>&#x0D21;&#x200c;&#x0D44; </td>
+	<td>&#x0D21;&#x200d;&#x0D44; </td>
+	</tr>
+<tr><td>ddha	</td>
+	<td>&#x0D22;&#x0D43; </td>
+	<td>&#x0D22;&#x200c;&#x0D43; </td>
+	<td>&#x0D22;&#x200d;&#x0D43; </td>
+	<td>&#x0D22;&#x0D44; </td>
+	<td>&#x0D22;&#x200c;&#x0D44; </td>
+	<td>&#x0D22;&#x200d;&#x0D44; </td>
+	</tr>
+<tr><td>ta	</td>
+	<td>&#x0D24;&#x0D43; </td>
+	<td>&#x0D24;&#x200c;&#x0D43; </td>
+	<td>&#x0D24;&#x200d;&#x0D43; </td>
+	<td>&#x0D24;&#x0D44; </td>
+	<td>&#x0D24;&#x200c;&#x0D44; </td>
+	<td>&#x0D24;&#x200d;&#x0D44; </td>
+	</tr>
+<tr><td>da	</td>
+	<td>&#x0D26;&#x0D43; </td>
+	<td>&#x0D26;&#x200c;&#x0D43; </td>
+	<td>&#x0D26;&#x200d;&#x0D43; </td>
+	<td>&#x0D26;&#x0D44; </td>
+	<td>&#x0D26;&#x200c;&#x0D44; </td>
+	<td>&#x0D26;&#x200d;&#x0D44; </td>
+	</tr>
+<tr><td>dha	</td>
+	<td>&#x0D27;&#x0D43; </td>
+	<td>&#x0D27;&#x200c;&#x0D43; </td>
+	<td>&#x0D27;&#x200d;&#x0D43; </td>
+	<td>&#x0D27;&#x0D44; </td>
+	<td>&#x0D27;&#x200c;&#x0D44; </td>
+	<td>&#x0D27;&#x200d;&#x0D44; </td>
+	</tr>
+<tr><td>na	</td>
+	<td>&#x0D28;&#x0D43; </td>
+	<td>&#x0D28;&#x200c;&#x0D43; </td>
+	<td>&#x0D28;&#x200d;&#x0D43; </td>
+	<td>&#x0D28;&#x0D44; </td>
+	<td>&#x0D28;&#x200c;&#x0D44; </td>
+	<td>&#x0D28;&#x200d;&#x0D44; </td>
+	</tr>
+<tr><td>pa	</td>
+	<td>&#x0D2a;&#x0D43; </td>
+	<td>&#x0D2a;&#x200c;&#x0D43; </td>
+	<td>&#x0D2a;&#x200d;&#x0D43; </td>
+	<td>&#x0D2a;&#x0D44; </td>
+	<td>&#x0D2a;&#x200c;&#x0D44; </td>
+	<td>&#x0D2a;&#x200d;&#x0D44; </td>
+	</tr>
+<tr><td>ba	</td>
+	<td>&#x0D2c;&#x0D43; </td>
+	<td>&#x0D2c;&#x200c;&#x0D43; </td>
+	<td>&#x0D2c;&#x200d;&#x0D43; </td>
+	<td>&#x0D2c;&#x0D44; </td>
+	<td>&#x0D2c;&#x200c;&#x0D44; </td>
+	<td>&#x0D2c;&#x200d;&#x0D44; </td>
+	</tr>
+<tr><td>bha	</td>
+	<td>&#x0D2d;&#x0D43; </td>
+	<td>&#x0D2d;&#x200c;&#x0D43; </td>
+	<td>&#x0D2d;&#x200d;&#x0D43; </td>
+	<td>&#x0D2d;&#x0D44; </td>
+	<td>&#x0D2d;&#x200c;&#x0D44; </td>
+	<td>&#x0D2d;&#x200d;&#x0D44; </td>
+	</tr>
+<tr><td>ma	</td>
+	<td>&#x0D2e;&#x0D43; </td>
+	<td>&#x0D2e;&#x200c;&#x0D43; </td>
+	<td>&#x0D2e;&#x200d;&#x0D43; </td>
+	<td>&#x0D2e;&#x0D44; </td>
+	<td>&#x0D2e;&#x200c;&#x0D44; </td>
+	<td>&#x0D2e;&#x200d;&#x0D44; </td>
+	</tr>
+<tr><td>ra	</td>
+	<td>&#x0D30;&#x0D43; </td>
+	<td>&#x0D30;&#x200c;&#x0D43; </td>
+	<td>&#x0D30;&#x200d;&#x0D43; </td>
+	<td>&#x0D30;&#x0D44; </td>
+	<td>&#x0D30;&#x200c;&#x0D44; </td>
+	<td>&#x0D30;&#x200d;&#x0D44; </td>
+</tr>
+<tr><td>la	</td>
+	<td>&#x0D32;&#x0D43; </td>
+	<td>&#x0D32;&#x200c;&#x0D43; </td>
+	<td>&#x0D32;&#x200d;&#x0D43; </td>
+	<td>&#x0D32;&#x0D44; </td>
+	<td>&#x0D32;&#x200c;&#x0D44; </td>
+	<td>&#x0D32;&#x200d;&#x0D44; </td>
+</tr>
+<tr><td>va	</td>
+	<td>&#x0D35;&#x0D43; </td>
+	<td>&#x0D35;&#x200c;&#x0D43; </td>
+	<td>&#x0D35;&#x200d;&#x0D43; </td>
+	<td>&#x0D35;&#x0D44; </td>
+	<td>&#x0D35;&#x200c;&#x0D44; </td>
+	<td>&#x0D35;&#x200d;&#x0D44; </td>
+	</tr>
+<tr><td>sha	</td>
+	<td>&#x0D36;&#x0D43; </td>
+	<td>&#x0D36;&#x200c;&#x0D43; </td>
+	<td>&#x0D36;&#x200d;&#x0D43; </td>
+	<td>&#x0D36;&#x0D44; </td>
+	<td>&#x0D36;&#x200c;&#x0D44; </td>
+	<td>&#x0D36;&#x200d;&#x0D44; </td>
+	</tr>
+<tr><td>ssa	</td>
+	<td>&#x0D37;&#x0D43; </td>
+	<td>&#x0D37;&#x200c;&#x0D43; </td>
+	<td>&#x0D37;&#x200d;&#x0D43; </td>
+	<td>&#x0D37;&#x0D44; </td>
+	<td>&#x0D37;&#x200c;&#x0D44; </td>
+	<td>&#x0D37;&#x200d;&#x0D44; </td>
+	</tr>
+<tr><td>sa	</td>
+	<td>&#x0D38;&#x0D43; </td>
+	<td>&#x0D38;&#x200c;&#x0D43; </td>
+	<td>&#x0D38;&#x200d;&#x0D43; </td>
+	<td>&#x0D38;&#x0D44; </td>
+	<td>&#x0D38;&#x200c;&#x0D44; </td>
+	<td>&#x0D38;&#x200d;&#x0D44; </td>
+	</tr>
+<tr><td>ha	</td>
+	<td>&#x0D39;&#x0D43; </td>
+	<td>&#x0D39;&#x200c;&#x0D43; </td>
+	<td>&#x0D39;&#x200d;&#x0D43; </td>
+	<td>&#x0D39;&#x0D44; </td>
+	<td>&#x0D39;&#x200c;&#x0D44; </td>
+	<td>&#x0D39;&#x200d;&#x0D44; </td>
+	</tr>
+</tbody>
+</table>
+
+<h3>clusters with special vocalic forms</h3>
+<table>
+<tbody lang="ml">
+<tr><th>	</th>
+	<th>+r voc. </th>
+	<th>ZWNJ break lig. </th>
+	<th>ZWJ req. lig. </th>
+	<th>+rr voc. </th>
+	<th>ZWNJ break lig. </th>
+	<th>ZWJ req. lig. </th>
+	</tr>
+<tr><td>gadadha	</td>
+	<td>&#x0D17;&#x0D4d;&#x0D26;&#x0D4d;&#x0D27;&#x0D43; </td>
+	<td>&#x0D17;&#x0D4d;&#x0D26;&#x0D4d;&#x0D27;&#x200c;&#x0D43; </td>
+	<td>&#x0D17;&#x0D4d;&#x0D26;&#x0D4d;&#x0D27;&#x200d;&#x0D43; </td>
+	<td>&#x0D17;&#x0D4d;&#x0D26;&#x0D4d;&#x0D27;&#x0D44; </td>
+	<td>&#x0D17;&#x0D4d;&#x0D26;&#x0D4d;&#x0D27;&#x200c;&#x0D44; </td>
+	<td>&#x0D17;&#x0D4d;&#x0D26;&#x0D4d;&#x0D27;&#x200d;&#x0D44; </td>
+	</tr>
+<tr><td>tasatha	</td>
+	<td>&#x0D24;&#x0D4d;&#x0D38;&#x0D4d;&#x0D25;&#x0D43; </td>
+	<td>&#x0D24;&#x0D4d;&#x0D38;&#x0D4d;&#x0D25;&#x200c;&#x0D43; </td>
+	<td>&#x0D24;&#x0D4d;&#x0D38;&#x0D4d;&#x0D25;&#x200d;&#x0D43; </td>
+	<td>&#x0D24;&#x0D4d;&#x0D38;&#x0D4d;&#x0D25;&#x0D44; </td>
+	<td>&#x0D24;&#x0D4d;&#x0D38;&#x0D4d;&#x0D25;&#x200c;&#x0D44; </td>
+	<td>&#x0D24;&#x0D4d;&#x0D38;&#x0D4d;&#x0D25;&#x200d;&#x0D44; </td>
+	</tr>
+<tr><td>kaka	</td>
+	<td>&#x0D15;&#x0D4d;&#x0D15;&#x0D43; </td>
+	<td>&#x0D15;&#x0D4d;&#x0D15;&#x200c;&#x0D43; </td>
+	<td>&#x0D15;&#x200d;&#x0D4d;&#x0D15;&#x200d;&#x0D43; </td>
+	<td>&#x0D15;&#x0D4d;&#x0D15;&#x0D44; </td>
+	<td>&#x0D15;&#x0D4d;&#x0D15;&#x200c;&#x0D44; </td>
+	<td>&#x0D15;&#x200d;&#x0D4d;&#x0D15;&#x200d;&#x0D44; </td>
+	</tr>
+<tr><td>kassa	</td>
+	<td>&#x0D15;&#x0D4d;&#x0D37;&#x0D43; </td>
+	<td>&#x0D15;&#x0D4d;&#x0D37;&#x200c;&#x0D43; </td>
+	<td>&#x0D15;&#x200d;&#x0D4d;&#x0D37;&#x200d;&#x0D43; </td>
+	<td>&#x0D15;&#x0D4d;&#x0D37;&#x0D44; </td>
+	<td>&#x0D15;&#x0D4d;&#x0D37;&#x200c;&#x0D44; </td>
+	<td>&#x0D15;&#x200d;&#x0D4d;&#x0D37;&#x200d;&#x0D44; </td>
+	</tr>
+<tr><td>kata	</td>
+	<td>&#x0D15;&#x0D4d;&#x0D24;&#x0D43; </td>
+	<td>&#x0D15;&#x0D4d;&#x0D24;&#x200c;&#x0D43; </td>
+	<td>&#x0D15;&#x200d;&#x0D4d;&#x0D24;&#x200d;&#x0D43; </td>
+	<td>&#x0D15;&#x0D4d;&#x0D24;&#x0D44; </td>
+	<td>&#x0D15;&#x0D4d;&#x0D24;&#x200c;&#x0D44; </td>
+	<td>&#x0D15;&#x200d;&#x0D4d;&#x0D24;&#x200d;&#x0D44; </td>
+	</tr>
+<tr><td>gagha	</td>
+	<td>&#x0D17;&#x0D4d;&#x0D18;&#x0D43; </td>
+	<td>&#x0D17;&#x0D4d;&#x0D18;&#x200c;&#x0D43; </td>
+	<td>&#x0D17;&#x200d;&#x0D4d;&#x0D18;&#x200d;&#x0D43; </td>
+	<td>&#x0D17;&#x0D4d;&#x0D18;&#x0D44; </td>
+	<td>&#x0D17;&#x0D4d;&#x0D18;&#x200c;&#x0D44; </td>
+	<td>&#x0D17;&#x200d;&#x0D4d;&#x0D18;&#x200d;&#x0D44; </td>
+	</tr>
+<tr><td>gada	</td>
+	<td>&#x0D17;&#x0D4d;&#x0D26;&#x0D43; </td>
+	<td>&#x0D17;&#x0D4d;&#x0D26;&#x200c;&#x0D43; </td>
+	<td>&#x0D17;&#x200d;&#x0D4d;&#x0D26;&#x200d;&#x0D43; </td>
+	<td>&#x0D17;&#x0D4d;&#x0D26;&#x0D44; </td>
+	<td>&#x0D17;&#x0D4d;&#x0D26;&#x200c;&#x0D44; </td>
+	<td>&#x0D17;&#x200d;&#x0D4d;&#x0D26;&#x200d;&#x0D44; </td>
+	</tr>
+<tr><td>ngaka	</td>
+	<td>&#x0D19;&#x0D4d;&#x0D15;&#x0D43; </td>
+	<td>&#x0D19;&#x0D4d;&#x0D15;&#x200c;&#x0D43; </td>
+	<td>&#x0D19;&#x200d;&#x0D4d;&#x0D15;&#x200d;&#x0D43; </td>
+	<td>&#x0D19;&#x0D4d;&#x0D15;&#x0D44; </td>
+	<td>&#x0D19;&#x0D4d;&#x0D15;&#x200c;&#x0D44; </td>
+	<td>&#x0D19;&#x200d;&#x0D4d;&#x0D15;&#x200d;&#x0D44; </td>
+	</tr>
+<tr><td>jaja	</td>
+	<td>&#x0D1c;&#x0D4d;&#x0D1c;&#x0D43; </td>
+	<td>&#x0D1c;&#x0D4d;&#x0D1c;&#x200c;&#x0D43; </td>
+	<td>&#x0D1c;&#x200d;&#x0D4d;&#x0D1c;&#x200d;&#x0D43; </td>
+	<td>&#x0D1c;&#x0D4d;&#x0D1c;&#x0D44; </td>
+	<td>&#x0D1c;&#x0D4d;&#x0D1c;&#x200c;&#x0D44; </td>
+	<td>&#x0D1c;&#x200d;&#x0D4d;&#x0D1c;&#x200d;&#x0D44; </td>
+	</tr>
+<tr><td>nyaca	</td>
+	<td>&#x0D1e;&#x0D4d;&#x0D1a;&#x0D43; </td>
+	<td>&#x0D1e;&#x0D4d;&#x0D1a;&#x200c;&#x0D43; </td>
+	<td>&#x0D1e;&#x200d;&#x0D4d;&#x0D1a;&#x200d;&#x0D43; </td>
+	<td>&#x0D1e;&#x0D4d;&#x0D1a;&#x0D44; </td>
+	<td>&#x0D1e;&#x0D4d;&#x0D1a;&#x200c;&#x0D44; </td>
+	<td>&#x0D1e;&#x200d;&#x0D4d;&#x0D1a;&#x200d;&#x0D44; </td>
+	</tr>
+<tr><td>nyacha	</td>
+	<td>&#x0D1e;&#x0D4d;&#x0D1b;&#x0D43; </td>
+	<td>&#x0D1e;&#x0D4d;&#x0D1b;&#x200c;&#x0D43; </td>
+	<td>&#x0D1e;&#x200d;&#x0D4d;&#x0D1b;&#x200d;&#x0D43; </td>
+	<td>&#x0D1e;&#x0D4d;&#x0D1b;&#x0D44; </td>
+	<td>&#x0D1e;&#x0D4d;&#x0D1b;&#x200c;&#x0D44; </td>
+	<td>&#x0D1e;&#x200d;&#x0D4d;&#x0D1b;&#x200d;&#x0D44; </td>
+	</tr>
+<tr><td>nnadda	</td>
+	<td>&#x0D23;&#x0D4d;&#x0D21;&#x0D43; </td>
+	<td>&#x0D23;&#x0D4d;&#x0D21;&#x200c;&#x0D43; </td>
+	<td>&#x0D23;&#x200d;&#x0D4d;&#x0D21;&#x200d;&#x0D43; </td>
+	<td>&#x0D23;&#x0D4d;&#x0D21;&#x0D44; </td>
+	<td>&#x0D23;&#x0D4d;&#x0D21;&#x200c;&#x0D44; </td>
+	<td>&#x0D23;&#x200d;&#x0D4d;&#x0D21;&#x200d;&#x0D44; </td>
+	</tr>
+<tr><td>nnaddha	</td>
+	<td>&#x0D23;&#x0D4d;&#x0D22;&#x0D43; </td>
+	<td>&#x0D23;&#x0D4d;&#x0D22;&#x200c;&#x0D43; </td>
+	<td>&#x0D23;&#x200d;&#x0D4d;&#x0D22;&#x200d;&#x0D43; </td>
+	<td>&#x0D23;&#x0D4d;&#x0D22;&#x0D44; </td>
+	<td>&#x0D23;&#x0D4d;&#x0D22;&#x200c;&#x0D44; </td>
+	<td>&#x0D23;&#x200d;&#x0D4d;&#x0D22;&#x200d;&#x0D44; </td>
+	</tr>
+<tr><td>tata	</td>
+	<td>&#x0D24;&#x0D4d;&#x0D24;&#x0D43; </td>
+	<td>&#x0D24;&#x0D4d;&#x0D24;&#x200c;&#x0D43; </td>
+	<td>&#x0D24;&#x200d;&#x0D4d;&#x0D24;&#x200d;&#x0D43; </td>
+	<td>&#x0D24;&#x0D4d;&#x0D24;&#x0D44; </td>
+	<td>&#x0D24;&#x0D4d;&#x0D24;&#x200c;&#x0D44; </td>
+	<td>&#x0D24;&#x200d;&#x0D4d;&#x0D24;&#x200d;&#x0D44; </td>
+	</tr>
+<tr><td>tatha	</td>
+	<td>&#x0D24;&#x0D4d;&#x0D25;&#x0D43; </td>
+	<td>&#x0D24;&#x0D4d;&#x0D25;&#x200c;&#x0D43; </td>
+	<td>&#x0D24;&#x200d;&#x0D4d;&#x0D25;&#x200d;&#x0D43; </td>
+	<td>&#x0D24;&#x0D4d;&#x0D25;&#x0D44; </td>
+	<td>&#x0D24;&#x0D4d;&#x0D25;&#x200c;&#x0D44; </td>
+	<td>&#x0D24;&#x200d;&#x0D4d;&#x0D25;&#x200d;&#x0D44; </td>
+	</tr>
+<tr><td>tabha	</td>
+	<td>&#x0D24;&#x0D4d;&#x0D2d;&#x0D43; </td>
+	<td>&#x0D24;&#x0D4d;&#x0D2d;&#x200c;&#x0D43; </td>
+	<td>&#x0D24;&#x200d;&#x0D4d;&#x0D2d;&#x200d;&#x0D43; </td>
+	<td>&#x0D24;&#x0D4d;&#x0D2d;&#x0D44; </td>
+	<td>&#x0D24;&#x0D4d;&#x0D2d;&#x200c;&#x0D44; </td>
+	<td>&#x0D24;&#x200d;&#x0D4d;&#x0D2d;&#x200d;&#x0D44; </td>
+	</tr>
+<tr><td>tama	</td>
+	<td>&#x0D24;&#x0D4d;&#x0D2e;&#x0D43; </td>
+	<td>&#x0D24;&#x0D4d;&#x0D2e;&#x200c;&#x0D43; </td>
+	<td>&#x0D24;&#x200d;&#x0D4d;&#x0D2e;&#x200d;&#x0D43; </td>
+	<td>&#x0D24;&#x0D4d;&#x0D2e;&#x0D44; </td>
+	<td>&#x0D24;&#x0D4d;&#x0D2e;&#x200c;&#x0D44; </td>
+	<td>&#x0D24;&#x200d;&#x0D4d;&#x0D2e;&#x200d;&#x0D44; </td>
+	</tr>
+<tr><td>tasa	</td>
+	<td>&#x0D24;&#x0D4d;&#x0D38;&#x0D43; </td>
+	<td>&#x0D24;&#x0D4d;&#x0D38;&#x200c;&#x0D43; </td>
+	<td>&#x0D24;&#x200d;&#x0D4d;&#x0D38;&#x200d;&#x0D43; </td>
+	<td>&#x0D24;&#x0D4d;&#x0D38;&#x0D44; </td>
+	<td>&#x0D24;&#x0D4d;&#x0D38;&#x200c;&#x0D44; </td>
+	<td>&#x0D24;&#x200d;&#x0D4d;&#x0D38;&#x200d;&#x0D44; </td>
+	</tr>
+<tr><td>dada	</td>
+	<td>&#x0D26;&#x0d4d;&#x0D26;&#x0D43; </td>
+	<td>&#x0D26;&#x0d4d;&#x0D26;&#x200c;&#x0D43; </td>
+	<td>&#x0D26;&#x200d;&#x0d4d;&#x0D26;&#x200d;&#x0D43; </td>
+	<td>&#x0D26;&#x0d4d;&#x0D26;&#x0D44; </td>
+	<td>&#x0D26;&#x0d4d;&#x0D26;&#x200c;&#x0D44; </td>
+	<td>&#x0D26;&#x200d;&#x0d4d;&#x0D26;&#x200d;&#x0D44; </td>
+	</tr>
+<tr><td>dadha	</td>
+	<td>&#x0D26;&#x0d4d;&#x0D27;&#x0D43; </td>
+	<td>&#x0D26;&#x0d4d;&#x0D27;&#x200c;&#x0D43; </td>
+	<td>&#x0D26;&#x200d;&#x0d4d;&#x0D27;&#x200d;&#x0D43; </td>
+	<td>&#x0D26;&#x0d4d;&#x0D27;&#x0D44; </td>
+	<td>&#x0D26;&#x0d4d;&#x0D27;&#x200c;&#x0D44; </td>
+	<td>&#x0D26;&#x200d;&#x0d4d;&#x0D27;&#x200d;&#x0D44; </td>
+	</tr>
+<tr><td>nata	</td>
+	<td>&#x0D28;&#x0D4d;&#x0D24;&#x0D43; </td>
+	<td>&#x0D28;&#x0D4d;&#x0D24;&#x200c;&#x0D43; </td>
+	<td>&#x0D28;&#x200d;&#x0D4d;&#x0D24;&#x200d;&#x0D43; </td>
+	<td>&#x0D28;&#x0D4d;&#x0D24;&#x0D44; </td>
+	<td>&#x0D28;&#x0D4d;&#x0D24;&#x200c;&#x0D44; </td>
+	<td>&#x0D28;&#x200d;&#x0D4d;&#x0D24;&#x200d;&#x0D44; </td>
+	</tr>
+<tr><td>natha	</td>
+	<td>&#x0D28;&#x0D4d;&#x0D25;&#x0D43; </td>
+	<td>&#x0D28;&#x0D4d;&#x0D25;&#x200c;&#x0D43; </td>
+	<td>&#x0D28;&#x200d;&#x0D4d;&#x0D25;&#x200d;&#x0D43; </td>
+	<td>&#x0D28;&#x0D4d;&#x0D25;&#x0D44; </td>
+	<td>&#x0D28;&#x0D4d;&#x0D25;&#x200c;&#x0D44; </td>
+	<td>&#x0D28;&#x200d;&#x0D4d;&#x0D25;&#x200d;&#x0D44; </td>
+	</tr>
+<tr><td>nada	</td>
+	<td>&#x0D28;&#x0D4d;&#x0D26;&#x0D43; </td>
+	<td>&#x0D28;&#x0D4d;&#x0D26;&#x200c;&#x0D43; </td>
+	<td>&#x0D28;&#x200d;&#x0D4d;&#x0D26;&#x200d;&#x0D43; </td>
+	<td>&#x0D28;&#x0D4d;&#x0D26;&#x0D44; </td>
+	<td>&#x0D28;&#x0D4d;&#x0D26;&#x200c;&#x0D44; </td>
+	<td>&#x0D28;&#x200d;&#x0D4d;&#x0D26;&#x200d;&#x0D44; </td>
+	</tr>
+<tr><td>nadha	</td>
+	<td>&#x0D28;&#x0D4d;&#x0D27;&#x0D43; </td>
+	<td>&#x0D28;&#x0D4d;&#x0D27;&#x200c;&#x0D43; </td>
+	<td>&#x0D28;&#x200d;&#x0D4d;&#x0D27;&#x200d;&#x0D43; </td>
+	<td>&#x0D28;&#x0D4d;&#x0D27;&#x0D44; </td>
+	<td>&#x0D28;&#x0D4d;&#x0D27;&#x200c;&#x0D44; </td>
+	<td>&#x0D28;&#x200d;&#x0D4d;&#x0D27;&#x200d;&#x0D44; </td>
+	</tr>
+<tr><td>nana	</td>
+	<td>&#x0D28;&#x0D4d;&#x0D28;&#x0D43; </td>
+	<td>&#x0D28;&#x0D4d;&#x0D28;&#x200c;&#x0D43; </td>
+	<td>&#x0D28;&#x200d;&#x0D4d;&#x0D28;&#x200d;&#x0D43; </td>
+	<td>&#x0D28;&#x0D4d;&#x0D28;&#x0D44; </td>
+	<td>&#x0D28;&#x0D4d;&#x0D28;&#x200c;&#x0D44; </td>
+	<td>&#x0D28;&#x200d;&#x0D4d;&#x0D28;&#x200d;&#x0D44; </td>
+	</tr>
+<tr><td>nama	</td>
+	<td>&#x0D28;&#x0D4d;&#x0D2e;&#x0D43; </td>
+	<td>&#x0D28;&#x0D4d;&#x0D2e;&#x200c;&#x0D43; </td>
+	<td>&#x0D28;&#x200d;&#x0D4d;&#x0D2e;&#x200d;&#x0D43; </td>
+	<td>&#x0D28;&#x0D4d;&#x0D2e;&#x0D44; </td>
+	<td>&#x0D28;&#x0D4d;&#x0D2e;&#x200c;&#x0D44; </td>
+	<td>&#x0D28;&#x200d;&#x0D4d;&#x0D2e;&#x200d;&#x0D44; </td>
+	</tr>
+<tr><td>mama	</td>
+	<td>&#x0D2e;&#x0D4d;&#x0D2e;&#x0D43; </td>
+	<td>&#x0D2e;&#x0D4d;&#x0D2e;&#x200c;&#x0D43; </td>
+	<td>&#x0D2e;&#x200d;&#x0D4d;&#x0D2e;&#x200d;&#x0D43; </td>
+	<td>&#x0D2e;&#x0D4d;&#x0D2e;&#x0D44; </td>
+	<td>&#x0D2e;&#x0D4d;&#x0D2e;&#x200c;&#x0D44; </td>
+	<td>&#x0D2e;&#x200d;&#x0D4d;&#x0D2e;&#x200d;&#x0D44; </td>
+	</tr>
+<tr><td>mapa	</td>
+	<td>&#x0D2e;&#x0D4d;&#x0D2a;&#x0D43; </td>
+	<td>&#x0D2e;&#x0D4d;&#x0D2a;&#x200c;&#x0D43; </td>
+	<td>&#x0D2e;&#x200d;&#x0D4d;&#x0D2a;&#x200d;&#x0D43; </td>
+	<td>&#x0D2e;&#x0D4d;&#x0D2a;&#x0D44; </td>
+	<td>&#x0D2e;&#x0D4d;&#x0D2a;&#x200c;&#x0D44; </td>
+	<td>&#x0D2e;&#x200d;&#x0D4d;&#x0D2a;&#x200d;&#x0D44; </td>
+	</tr>
+<tr><td>shaca	</td>
+	<td>&#x0D36;&#x0D4d;&#x0D1a;&#x0D43; </td>
+	<td>&#x0D36;&#x0D4d;&#x0D1a;&#x200c;&#x0D43; </td>
+	<td>&#x0D36;&#x200d;&#x0D4d;&#x0D1a;&#x200d;&#x0D43; </td>
+	<td>&#x0D36;&#x0D4d;&#x0D1a;&#x0D44; </td>
+	<td>&#x0D36;&#x0D4d;&#x0D1a;&#x200c;&#x0D44; </td>
+	<td>&#x0D36;&#x200d;&#x0D4d;&#x0D1a;&#x200d;&#x0D44; </td>
+	</tr>
+<tr><td>shacha	</td>
+	<td>&#x0D36;&#x0D4d;&#x0D1b;&#x0D43; </td>
+	<td>&#x0D36;&#x0D4d;&#x0D1b;&#x200c;&#x0D43; </td>
+	<td>&#x0D36;&#x200d;&#x0D4d;&#x0D1b;&#x200d;&#x0D43; </td>
+	<td>&#x0D36;&#x0D4d;&#x0D1b;&#x0D44; </td>
+	<td>&#x0D36;&#x0D4d;&#x0D1b;&#x200c;&#x0D44; </td>
+	<td>&#x0D36;&#x200d;&#x0D4d;&#x0D1b;&#x200d;&#x0D44; </td>
+	</tr>
+<tr><td>satha	</td>
+	<td>&#x0D38;&#x0D4d;&#x0D25;&#x0D43; </td>
+	<td>&#x0D38;&#x0D4d;&#x0D25;&#x200c;&#x0D43; </td>
+	<td>&#x0D38;&#x200d;&#x0D4d;&#x0D25;&#x200d;&#x0D43; </td>
+	<td>&#x0D38;&#x0D4d;&#x0D25;&#x0D44; </td>
+	<td>&#x0D38;&#x0D4d;&#x0D25;&#x200c;&#x0D44; </td>
+	<td>&#x0D38;&#x200d;&#x0D4d;&#x0D25;&#x200d;&#x0D44; </td>
+	</tr>
+<tr><td>hama	</td>
+	<td>&#x0D39;&#x0D4d;&#x0D2e;&#x0D43; </td>
+	<td>&#x0D39;&#x0D4d;&#x0D2e;&#x200c;&#x0D43; </td>
+	<td>&#x0D39;&#x200d;&#x0D4d;&#x0D2e;&#x200d;&#x0D43; </td>
+	<td>&#x0D39;&#x0D4d;&#x0D2e;&#x0D44; </td>
+	<td>&#x0D39;&#x0D4d;&#x0D2e;&#x200c;&#x0D44; </td>
+	<td>&#x0D39;&#x200d;&#x0D4d;&#x0D2e;&#x200d;&#x0D44; </td>
+	</tr>
+</tbody>
+</table>
+
+<h3>consonants with no special vocalic form</h3>
+<table>
+<tbody lang="ml">
+<tr><th>	</th>
+	<th> +r voc </th>
+	<th>break lig </th>
+	<th>req. lig. </th>
+	<th> +rr voc. </th>
+	<th>break lig </th>
+	<th>req. lig. </th>
+</tr>
+<tr><td>nga	</td>
+	<td>&#x0D19;&#x0D43; </td>
+	<td>&#x0D19;&#x200c;&#x0D43; </td>
+	<td>&#x0D19;&#x200d;&#x0D43; </td>
+	<td>&#x0D19;&#x0D44; </td>
+	<td>&#x0D19;&#x200c;&#x0D44; </td>
+	<td>&#x0D19;&#x200d;&#x0D44; </td>
+</tr>
+<tr><td>ca	</td>
+	<td>&#x0D1a;&#x0D43; </td>
+	<td>&#x0D1a;&#x200c;&#x0D43; </td>
+	<td>&#x0D1a;&#x200d;&#x0D43; </td>
+	<td>&#x0D1a;&#x0D44; </td>
+	<td>&#x0D1a;&#x200c;&#x0D44; </td>
+	<td>&#x0D1a;&#x200d;&#x0D44; </td>
+</tr>
+<tr><td>nya	</td>
+	<td>&#x0D1e;&#x0D43; </td>
+	<td>&#x0D1e;&#x200c;&#x0D43; </td>
+	<td>&#x0D1e;&#x200d;&#x0D43; </td>
+	<td>&#x0D1e;&#x0D44; </td>
+	<td>&#x0D1e;&#x200c;&#x0D44; </td>
+	<td>&#x0D1e;&#x200d;&#x0D44; </td>
+</tr>
+<tr><td>ttha	</td>
+	<td>&#x0D20;&#x0D43; </td>
+	<td>&#x0D20;&#x200c;&#x0D43; </td>
+	<td>&#x0D20;&#x200d;&#x0D43; </td>
+	<td>&#x0D20;&#x0D44; </td>
+	<td>&#x0D20;&#x200c;&#x0D44; </td>
+	<td>&#x0D20;&#x200d;&#x0D44; </td>
+</tr>
+<tr><td>nna	</td>
+	<td>&#x0D23;&#x0D43; </td>
+	<td>&#x0D23;&#x200c;&#x0D43; </td>
+	<td>&#x0D23;&#x200d;&#x0D43; </td>
+	<td>&#x0D23;&#x0D44; </td>
+	<td>&#x0D23;&#x200c;&#x0D44; </td>
+	<td>&#x0D23;&#x200d;&#x0D44; </td>
+	</tr>
+<tr><td>tha	</td>
+	<td>&#x0D25;&#x0D43; </td>
+	<td>&#x0D25;&#x200c;&#x0D43; </td>
+	<td>&#x0D25;&#x200d;&#x0D43; </td>
+	<td>&#x0D25;&#x0D44; </td>
+	<td>&#x0D25;&#x200c;&#x0D44; </td>
+	<td>&#x0D25;&#x200d;&#x0D44; </td>
+	</tr>
+<tr><td>nnna	</td>
+	<td>&#x0D29;&#x0D43; </td>
+	<td>&#x0D29;&#x200c;&#x0D43; </td>
+	<td>&#x0D29;&#x200d;&#x0D43; </td>
+	<td>&#x0D29;&#x0D44; </td>
+	<td>&#x0D29;&#x200c;&#x0D44; </td>
+	<td>&#x0D29;&#x200d;&#x0D44; </td>
+</tr>
+<tr><td>pha	</td>
+	<td>&#x0D2b;&#x0D43; </td>
+	<td>&#x0D2b;&#x200c;&#x0D43; </td>
+	<td>&#x0D2b;&#x200d;&#x0D43; </td>
+	<td>&#x0D2b;&#x0D44; </td>
+	<td>&#x0D2b;&#x200c;&#x0D44; </td>
+	<td>&#x0D2b;&#x200d;&#x0D44; </td>
+	</tr>
+<tr><td>rra	</td>
+	<td>&#x0D31;&#x0D43; </td>
+	<td>&#x0D31;&#x200c;&#x0D43; </td>
+	<td>&#x0D31;&#x200d;&#x0D43; </td>
+	<td>&#x0D31;&#x0D44; </td>
+	<td>&#x0D31;&#x200c;&#x0D44; </td>
+	<td>&#x0D31;&#x200d;&#x0D44; </td>
+</tr>
+<tr><td>lla	</td>
+	<td>&#x0D33;&#x0D43; </td>
+	<td>&#x0D33;&#x200c;&#x0D43; </td>
+	<td>&#x0D33;&#x200d;&#x0D43; </td>
+	<td>&#x0D33;&#x0D44; </td>
+	<td>&#x0D33;&#x200c;&#x0D44; </td>
+	<td>&#x0D33;&#x200d;&#x0D44; </td>
+</tr>
+<tr><td>llla	</td>
+	<td>&#x0D34;&#x0D43; </td>
+	<td>&#x0D34;&#x200c;&#x0D43; </td>
+	<td>&#x0D34;&#x200d;&#x0D43; </td>
+	<td>&#x0D34;&#x0D44; </td>
+	<td>&#x0D34;&#x200c;&#x0D44; </td>
+	<td>&#x0D34;&#x200d;&#x0D44; </td>
+</tr>
+<tr><td>ttta	</td>
+	<td>&#x0D3a;&#x0D43; </td>
+	<td>&#x0D3a;&#x200c;&#x0D43; </td>
+	<td>&#x0D3a;&#x200d;&#x0D43; </td>
+	<td>&#x0D3a;&#x0D44; </td>
+	<td>&#x0D3a;&#x200c;&#x0D44; </td>
+	<td>&#x0D3a;&#x200d;&#x0D44; </td>
+</tr>
+</tbody>
+</table>
+
+<h3>subscripted consonants with vocalic form</h3>
+<p>
+This list is only exhaustive of subscript consonants that take vocalic 
+forms, not of stacked conjuncts.
+</p>
+<table>
+<tbody lang="ml">
+<tr><th>	</th>
+	<th> +r voc </th>
+	<th>break lig </th>
+	<th>req. lig. </th>
+	<th> +rr voc. </th>
+	<th>break lig </th>
+	<th>req. lig. </th>
+</tr>
+<tr><td>yatata	</td>
+	<td>&#x0D2f;&#x0D4D;&#x0D24;&#x0D4D;&#x0D24;&#x0D43; </td>
+	<td>&#x0D2f;&#x0D4D;&#x0D24;&#x0D4D;&#x0D24;&#x200c;&#x0D43; </td>
+	<td>&#x0D2f;&#x0D4D;&#x0D24;&#x0D4D;&#x0D24;&#x200d;&#x0D43; </td>
+	<td>&#x0D2f;&#x0D4D;&#x0D24;&#x0D4D;&#x0D24;&#x0D44; </td>
+	<td>&#x0D2f;&#x0D4D;&#x0D24;&#x0D4D;&#x0D24;&#x200c;&#x0D44; </td>
+	<td>&#x0D2f;&#x0D4D;&#x0D24;&#x0D4D;&#x0D24;&#x200d;&#x0D44; </td>
+</tr>
+<tr><td>lakaka	</td>
+	<td>&#x0D32;&#x0D4D;&#x0D15;&#x0D4D;&#x0D15;&#x0D43; </td>
+	<td>&#x0D32;&#x0D4D;&#x0D15;&#x0D4D;&#x0D15;&#x200c;&#x0D43; </td>
+	<td>&#x0D32;&#x0D4D;&#x0D15;&#x0D4D;&#x0D15;&#x200d;&#x0D43; </td>
+	<td>&#x0D32;&#x0D4D;&#x0D15;&#x0D4D;&#x0D15;&#x0D44; </td>
+	<td>&#x0D32;&#x0D4D;&#x0D15;&#x0D4D;&#x0D15;&#x200c;&#x0D44; </td>
+	<td>&#x0D32;&#x0D4D;&#x0D15;&#x0D4D;&#x0D15;&#x200d;&#x0D44; </td>
+</tr>
+<tr><td>katta	</td>
+	<td>&#x0D15;&#x0D4D;&#x0D1f;&#x0D43; </td>
+	<td>&#x0D15;&#x0D4D;&#x0D1f;&#x200c;&#x0D43; </td>
+	<td>&#x0D15;&#x0D4D;&#x0D1f;&#x200d;&#x0D43; </td>
+	<td>&#x0D15;&#x0D4D;&#x0D1f;&#x0D44; </td>
+	<td>&#x0D15;&#x0D4D;&#x0D1f;&#x200c;&#x0D44; </td>
+	<td>&#x0D15;&#x0D4D;&#x0D1f;&#x200d;&#x0D44; </td>
+</tr>
+<tr><td>kama	</td>
+	<td>&#x0D15;&#x0D4D;&#x0D2e;&#x0D43; </td>
+	<td>&#x0D15;&#x0D4D;&#x0D2e;&#x200c;&#x0D43; </td>
+	<td>&#x0D15;&#x0D4D;&#x0D2e;&#x200d;&#x0D43; </td>
+	<td>&#x0D15;&#x0D4D;&#x0D2e;&#x0D44; </td>
+	<td>&#x0D15;&#x0D4D;&#x0D2e;&#x200c;&#x0D44; </td>
+	<td>&#x0D15;&#x0D4D;&#x0D2e;&#x200d;&#x0D44; </td>
+</tr>
+<tr><td>gaga	</td>
+	<td>&#x0D17;&#x0D4D;&#x0D17;&#x0D43; </td>
+	<td>&#x0D17;&#x0D4D;&#x0D17;&#x200c;&#x0D43; </td>
+	<td>&#x0D17;&#x0D4D;&#x0D17;&#x200d;&#x0D43; </td>
+	<td>&#x0D17;&#x0D4D;&#x0D17;&#x0D44; </td>
+	<td>&#x0D17;&#x0D4D;&#x0D17;&#x200c;&#x0D44; </td>
+	<td>&#x0D17;&#x0D4D;&#x0D17;&#x200d;&#x0D44; </td>
+</tr>
+<tr><td>cacha	</td>
+	<td>&#x0D1a;&#x0D4D;&#x0D1b;&#x0D43; </td>
+	<td>&#x0D1a;&#x0D4D;&#x0D1b;&#x200c;&#x0D43; </td>
+	<td>&#x0D1a;&#x0D4D;&#x0D1b;&#x200d;&#x0D43; </td>
+	<td>&#x0D1a;&#x0D4D;&#x0D1b;&#x0D44; </td>
+	<td>&#x0D1a;&#x0D4D;&#x0D1b;&#x200c;&#x0D44; </td>
+	<td>&#x0D1a;&#x0D4D;&#x0D1b;&#x200d;&#x0D44; </td>
+</tr>
+<tr><td>nnada	</td>
+	<td>&#x0D23;&#x0D4d;&#x0D26;&#x0D43; </td>
+	<td>&#x0D23;&#x0D4d;&#x0D26;&#x200c;&#x0D43; </td>
+	<td>&#x0D23;&#x0D4d;&#x0D26;&#x200d;&#x0D43; </td>
+	<td>&#x0D23;&#x0D4d;&#x0D26;&#x0D44; </td>
+	<td>&#x0D23;&#x0D4d;&#x0D26;&#x200c;&#x0D44; </td>
+	<td>&#x0D23;&#x0D4d;&#x0D26;&#x200d;&#x0D44; </td>
+	</tr>
+<tr><td>papa	</td>
+	<td>&#x0D2a;&#x0D4d;&#x0D2a;&#x0D43; </td>
+	<td>&#x0D2a;&#x0D4d;&#x0D2a;&#x200c;&#x0D43; </td>
+	<td>&#x0D2a;&#x0D4d;&#x0D2a;&#x200d;&#x0D43; </td>
+	<td>&#x0D2a;&#x0D4d;&#x0D2a;&#x0D44; </td>
+	<td>&#x0D2a;&#x0D4d;&#x0D2a;&#x200c;&#x0D44; </td>
+	<td>&#x0D2a;&#x0D4d;&#x0D2a;&#x200d;&#x0D44; </td>
+	</tr>
+<tr><td>phasa	</td>
+	<td>&#x0D2b;&#x0D4d;&#x0D38;&#x0D43; </td>
+	<td>&#x0D2b;&#x0D4d;&#x0D38;&#x200c;&#x0D43; </td>
+	<td>&#x0D2b;&#x0D4d;&#x0D38;&#x200d;&#x0D43; </td>
+	<td>&#x0D2b;&#x0D4d;&#x0D38;&#x0D44; </td>
+	<td>&#x0D2b;&#x0D4d;&#x0D38;&#x200c;&#x0D44; </td>
+	<td>&#x0D2b;&#x0D4d;&#x0D38;&#x200d;&#x0D44; </td>
+	</tr>
+<tr><td>baja	</td>
+	<td>&#x0D2c;&#x0D4D;&#x0D1c;&#x0D43; </td>
+	<td>&#x0D2c;&#x0D4D;&#x0D1c;&#x200c;&#x0D43; </td>
+	<td>&#x0D2c;&#x0D4D;&#x0D1c;&#x200d;&#x0D43; </td>
+	<td>&#x0D2c;&#x0D4D;&#x0D1c;&#x0D44; </td>
+	<td>&#x0D2c;&#x0D4D;&#x0D1c;&#x200c;&#x0D44; </td>
+	<td>&#x0D2c;&#x0D4D;&#x0D1c;&#x200d;&#x0D44; </td>
+</tr>
+<tr><td>badha	</td>
+	<td>&#x0D2c;&#x0D4D;&#x0D27;&#x0D43; </td>
+	<td>&#x0D2c;&#x0D4D;&#x0D27;&#x200c;&#x0D43; </td>
+	<td>&#x0D2c;&#x0D4D;&#x0D27;&#x200d;&#x0D43; </td>
+	<td>&#x0D2c;&#x0D4D;&#x0D27;&#x0D44; </td>
+	<td>&#x0D2c;&#x0D4D;&#x0D27;&#x200c;&#x0D44; </td>
+	<td>&#x0D2c;&#x0D4D;&#x0D27;&#x200d;&#x0D44; </td>
+</tr>
+<tr><td>ssaka	</td>
+	<td>&#x0D37;&#x0D4D;&#x0D15;&#x0D43; </td>
+	<td>&#x0D37;&#x0D4D;&#x0D15;&#x200c;&#x0D43; </td>
+	<td>&#x0D37;&#x0D4D;&#x0D15;&#x200d;&#x0D43; </td>
+	<td>&#x0D37;&#x0D4D;&#x0D15;&#x0D44; </td>
+	<td>&#x0D37;&#x0D4D;&#x0D15;&#x200c;&#x0D44; </td>
+	<td>&#x0D37;&#x0D4D;&#x0D15;&#x200d;&#x0D44; </td>
+</tr>
+<tr><td>shasha	</td>
+	<td>&#x0D36;&#x0D4D;&#x0D36;&#x0D43; </td>
+	<td>&#x0D36;&#x0D4D;&#x0D36;&#x200c;&#x0D43; </td>
+	<td>&#x0D36;&#x0D4D;&#x0D36;&#x200d;&#x0D43; </td>
+	<td>&#x0D36;&#x0D4D;&#x0D36;&#x0D44; </td>
+	<td>&#x0D36;&#x0D4D;&#x0D36;&#x200c;&#x0D44; </td>
+	<td>&#x0D36;&#x0D4D;&#x0D36;&#x200d;&#x0D44; </td>
+</tr>
+<tr><td>sata	</td>
+	<td>&#x0D38;&#x0D4D;&#x0D24;&#x0D43; </td>
+	<td>&#x0D38;&#x0D4D;&#x0D24;&#x200c;&#x0D43; </td>
+	<td>&#x0D38;&#x0D4D;&#x0D24;&#x200d;&#x0D43; </td>
+	<td>&#x0D38;&#x0D4D;&#x0D24;&#x0D44; </td>
+	<td>&#x0D38;&#x0D4D;&#x0D24;&#x200c;&#x0D44; </td>
+	<td>&#x0D38;&#x0D4D;&#x0D24;&#x200d;&#x0D44; </td>
+</tr>
+</tbody>
+</table>
+
+</div> <!-- text -->
+</body>
+</html>

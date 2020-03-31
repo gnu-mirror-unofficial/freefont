@@ -1,0 +1,44 @@
+/* ------------------- handheld screens ---------------------- */
+@media handheld, screen and (max-width: 480px) {
+	/*
+	http://blog.teamtreehouse.com/create-an-absolute-basic-mobile-css-responsive-navigation-menu
+	*/
+	div.header {
+	}
+	.ctrls { 
+		top: 50px;
+		position: fixed; right: 0; 
+		visibility: hidden;
+	}
+	.ctrls:target { 
+		visibility: visible;
+		z-index: 0;
+	}
+	.ctrls form {
+	}
+	#menu-icon, #close-icon {
+		display: block;
+		background: gray; /* for those that don't do gradients */
+		background: linear-gradient( to bottom, white 50%, black 50% ); 
+		background-size: 30px 10px;
+		background-repeat: repeat-y;
+		height: 35px; width: 35px;
+		padding-right: 5px;
+		position: fixed;
+	}
+	#menu-icon {
+		top: 0; right: 0;
+		z-index: -1;
+	}
+	#close-icon {
+		top: 0; right: 0;
+	}
+}
+/* ------------------- full-width screens ---------------------- */
+@media screen and (min-width: 481px) {
+	div#cover {
+		background-color: #AAF;  background-size: cover;
+		width: 22ex;
+	}
+	#menu-icon, #close-icon { display: none; }
+}

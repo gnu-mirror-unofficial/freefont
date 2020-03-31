@@ -1,0 +1,129 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<title>ZWNJ tests in Malayalam
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+	@import url("style.css");
+	@import url("ctrl.css");
+	
+	td {font-family: inherit; font-weight: inherit;
+		font-feature-settings: inherit; }
+	td { width: 4em; text-align: center; }
+	td:first-child { width: auto; text-align: left; }
+</style>
+<script>
+function setFont(selection)
+{
+	t = document.getElementById( "text" );
+	if( t && selection.value )
+	{
+		t.style.fontFamily = selection.value;
+        }
+}
+function setWeight(selection)
+{
+	t = document.getElementById( "text" );
+	if( t && selection.value )
+	{
+		t.style.fontWeight = selection.value;
+        }
+}
+function setFontFeature(selection)
+{
+	t = document.getElementById( "text" );
+	if( t && selection.value )
+	{
+		t.style.fontFeatureSettings = selection.value;
+        }
+}
+function getSelectedValue( id )
+{
+	var sel = document.getElementById( id );
+	var idx = sel.selectedIndex;
+	return sel[idx];
+}
+function init()
+{
+	setFont( getSelectedValue( "fontsel" ) );
+	setWeight( getSelectedValue( "weightsel" ) );
+	setFontFeature( getSelectedValue( "stylesetsel" ) );
+}
+</script>
+
+</head>
+<body onload="init()">
+<div id="cover" class="ctrls">
+<form id="ctrl" action="*">
+<label for="fontsel">face</label>
+<br />
+<select id="fontsel" onchange="setFont(options[selectedIndex])">
+        <option selected=selected value="">choose...</option>
+        <option>FreeSerif</option>
+        <option>FreeSans</option>
+        <option>AnjaliOldLipi</option>
+        <option>Gayathri</option>
+        <option>Rachana</option>
+        <option>Meera</option>
+        <option value="Lohit Malayalam">Lohit</option>
+        <option value="Noto Serif Malayalam">Noto Serif</option>
+        <option value="Noto Sans Malayalam">Noto Sans</option>
+        <option value="Malayalam MN">Malayalam MN</option>
+        <option>Kartika</option>
+        <option>Karumbi</option>
+        <option>Keraleeyam</option>
+        <option value="Samyak Malayalam new">Samyak new</option>
+</select>
+<br />
+<label for="weightsel">weight</label>
+<br />
+<select id="weightsel" onchange="setWeight(options[selectedIndex])">
+	<option selected>normal</option>
+	<option>bold</option>
+</select>
+<br />
+<label for="stylesetsel">styleset</label>
+<br />
+<select id="stylesetsel" onchange="setFontFeature(options[selectedIndex])">
+	<option selected value="normal">normal</option>
+	<option value="var(--malayalam-reformed)">reformed</option>
+</select>
+</form>
+<a id="close-icon" href="#"></a>
+</div> <!-- cover -->
+
+<div id="text">
+<div class="header">
+        <a id="menu-icon" href="#cover"></a>
+
+<h1>
+candrakkala examples
+</h1>
+</div> <!-- header -->
+
+<h3>candrakkala examples</h3>
+<p>
+Table 12-37 from Unicode Standard ch 12.
+</p>
+<div lang="ml">
+<p class="reformed">
+&#x0D2A;&#x0D3E;&#x0D32;&#x0D41;&#x0D4D;
+0D2A, 0D3E, 0D32, 0D41, 0D4D
+(&#x0D2A; &nbsp;&#x0D3E; &#x0D32; &nbsp;&#x0D41; ^)
+<br />
+&#x0D0E;&#x0D4D;&#x0D28;&#x0D4D;&#x0D28;&#x0D3E;
+0D0E, 0D4D, 0D28, 0D4D, 0D28, 0D3E
+(&#x0D0E; ^ &#x0D28; ^ &#x0D28; &nbsp;&#x0D3E;)
+<br />
+&#x0D10;&#x0D36;&#x0D40;&#x0D32;&#x0D4D;&#x0D02;
+0D10, 0D36, 0D40, 0D32, 0D4D, 0D02
+(&#x0D10; &#x0D36; ^ &#x0D32; ^ &nbsp;&#x0D02;)
+</p>
+</div>
+
+
+</div> <!-- content -->
+</body>
+</html>

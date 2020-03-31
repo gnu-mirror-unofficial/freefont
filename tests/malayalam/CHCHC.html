@@ -1,0 +1,188 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<title>3-consonant combos in Malayalam
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+	@import url("style.css");
+	@import url("ctrl.css");
+	img { width: 12cm; max-width: 95%; }
+	figure, figcaption { text-align: center; }
+</style>
+<script>
+function setFont(selection)
+{
+	t = document.getElementById( "text" );
+	if( t && selection.value )
+	{
+		t.style.fontFamily = selection.value;
+        }
+}
+function setWeight(selection)
+{
+	t = document.getElementById( "text" );
+	if( t && selection.value )
+	{
+		t.style.fontWeight = selection.value;
+        }
+}
+function setFontFeature(selection)
+{
+	t = document.getElementById( "text" );
+	if( t && selection.value )
+	{
+		t.style.fontFeatureSettings = selection.value;
+        }
+}
+function getSelectedValue( id )
+{
+	var sel = document.getElementById( id );
+	var idx = sel.selectedIndex;
+	return sel[idx];
+}
+function init()
+{
+	setFont( getSelectedValue( "fontsel" ) );
+	setWeight( getSelectedValue( "weightsel" ) );
+	setFontFeature( getSelectedValue( "stylesetsel" ) );
+}
+</script>
+
+</head>
+<body onload="init()">
+<div id="cover" class="ctrls">
+<form id="ctrl" action="*">
+<label for="fontsel">face</label>
+<br />
+<select id="fontsel" onchange="setFont(options[selectedIndex])">
+        <option>FreeSerif</option>
+        <option>FreeSans</option>
+        <option>Gayathri</option>
+        <option>Rachana</option>
+        <option>Meera</option>
+        <option>AnjaliOldLipi</option>
+        <option value="Lohit Malayalam">Lohit</option>
+        <option value="Noto Serif Malayalam">Noto Serif</option>
+        <option>Kartika</option>
+        <option value="Malayalam MN">Malayalam MN</option>
+        <option>Manjari</option>
+        <option value="Samyak Malayalam new">Samyak new</option>
+</select>
+<br />
+<label for="weightsel">weight</label>
+<br />
+<select id="weightsel" onchange="setWeight(options[selectedIndex])">
+	<option selected>normal</option>
+	<option>bold</option>
+</select>
+<br />
+<label for="stylesetsel">styleset</label>
+<br />
+<select id="stylesetsel" onchange="setFontFeature(options[selectedIndex])">
+	<option selected value="normal">normal</option>
+	<option value="var(--malayalam-reformed)">reformed</option>
+</select>
+</form>
+<a id="close-icon" href="#"></a>
+</div> <!-- cover -->
+<div id="text">
+<div class="header">
+        <a id="menu-icon" href="#cover"></a>
+<h1>3-consonant combos in Malayalam
+</h1>
+</div> <!-- header -->
+<p>See TDIL grammar, sect. 6.3.3.2
+</p>
+<h3>direct conjuncts</h3>
+<p lang="ml">
+<!-- these reflect the sequences in the image, which appear often
+to conflate rra and ra
+ssa tta rra &#x0D37;&#x0D4D;&#x0D1F;&#x0D4D;&#x0D31; <br />
+sa ta rra &#x0D38;&#x0D4D;&#x0D24;&#x0D4D;&#x0D31; <br />
+da dha ya &#x0D26;&#x0D4D;&#x0D27;&#x0D4D;&#x0D2F; <br />
+na ta ya &#x0D28;&#x0D4D;&#x0D24;&#x0D4D;&#x0D2F; <br />
+na dha ya &#x0D28;&#x0D4D;&#x0D27;&#x0D4D;&#x0D2F; <br />
+ka ta ya &#x0D15;&#x0D4D;&#x0D24;&#x0D4D;&#x0D2F; <br />
+nna dda ra &#x0D23;&#x0D4D;&#x0D21;&#x0D4D;&#x0D30; <br />
+na dha ra &#x0D28;&#x0D4D;&#x0D27;&#x0D4D;&#x0D30; <br />
+ta rra ya &#x0D24;&#x0D4D;&#x0D31;&#x0D4D;&#x0D2F; <br />
+sa ta ya &#x0D38;&#x0D4D;&#x0D24;&#x0D4D;&#x0D2F; <br />
+ka ta rra &#x0D15;&#x0D4D;&#x0D24;&#x0D4D;&#x0D31; <br />
+ta sa na &#x0D24;&#x0D4D;&#x0D38;&#x0D4D;&#x0D28; <br />
+-->
+ssa tta ra &#x0D37;&#x0D4D;&#x0D1F;&#x0D4D;&#x0D30; <br />
+sa ta ra &#x0D38;&#x0D4D;&#x0D24;&#x0D4D;&#x0D30; <br />
+da dha ya &#x0D26;&#x0D4D;&#x0D27;&#x0D4D;&#x0D2F; <br />
+na ta ya &#x0D28;&#x0D4D;&#x0D24;&#x0D4D;&#x0D2F; <br />
+na dha ya &#x0D28;&#x0D4D;&#x0D27;&#x0D4D;&#x0D2F; <br />
+ka ta ya &#x0D15;&#x0D4D;&#x0D24;&#x0D4D;&#x0D2F; <br />
+nna dda ra &#x0D23;&#x0D4D;&#x0D21;&#x0D4D;&#x0D30; <br />
+na dha ra &#x0D28;&#x0D4D;&#x0D27;&#x0D4D;&#x0D30; <br />
+ta ra ya &#x0D24;&#x0D4D;&#x0D30;&#x0D4D;&#x0D2F; <br />
+sa ta ya &#x0D38;&#x0D4D;&#x0D24;&#x0D4D;&#x0D2F; <br />
+ka ta ra &#x0D15;&#x0D4D;&#x0D24;&#x0D4D;&#x0D30; <br />
+</p>
+<h3>ZWNJ conjuncts</h3>
+<p lang="ml">
+<!-- these reflect the sequences in the image, which appear often
+to conflate rra and ra
+ssa tta rra &#x0D37;&#x200c;&#x0D4D;&#x0D1F;&#x0D4D;&#x0D31; <br />
+sa ta rra &#x0D38;&#x200c;&#x0D4D;&#x0D24;&#x0D4D;&#x0D31; <br />
+da dha ya &#x0D26;&#x200c;&#x0D4D;&#x0D27;&#x0D4D;&#x0D2F; <br />
+na ta ya &#x0D28;&#x200c;&#x0D4D;&#x0D24;&#x0D4D;&#x0D2F; <br />
+na dha ya &#x0D28;&#x200c;&#x0D4D;&#x0D27;&#x0D4D;&#x0D2F; <br />
+ka ta ya &#x0D15;&#x200c;&#x0D4D;&#x0D24;&#x0D4D;&#x0D2F; <br />
+nna dda ra &#x0D23;&#x200c;&#x0D4D;&#x0D21;&#x0D4D;&#x0D30; <br />
+na dha ra &#x0D28;&#x0D4D;&#x0D27;&#x0D4D;&#x0D30; <br />
+ta rra ya &#x0D24;&#x200c;&#x0D4D;&#x0D31;&#x0D4D;&#x0D2F; <br />
+sa ta ya &#x0D38;&#x200c;&#x0D4D;&#x0D24;&#x0D4D;&#x0D2F; <br />
+ka ta rra &#x0D15;&#x200c;&#x0D4D;&#x0D24;&#x0D4D;&#x0D31; <br />
+ta sa na &#x0D24;&#x200c;&#x0D4D;&#x0D38;&#x0D4D;&#x0D28; <br />
+-->
+ssa tta ra &#x0D37;&#x200c;&#x0D4D;&#x0D1F;&#x0D4D;&#x0D30; <br />
+sa ta ra &#x0D38;&#x200c;&#x0D4D;&#x0D24;&#x0D4D;&#x0D30; <br />
+da dha ya &#x0D26;&#x200c;&#x0D4D;&#x0D27;&#x0D4D;&#x0D2F; <br />
+na ta ya &#x0D28;&#x200c;&#x0D4D;&#x0D24;&#x0D4D;&#x0D2F; <br />
+na dha ya &#x0D28;&#x200c;&#x0D4D;&#x0D27;&#x0D4D;&#x0D2F; <br />
+ka ta ya &#x0D15;&#x200c;&#x0D4D;&#x0D24;&#x0D4D;&#x0D2F; <br />
+nna dda ra &#x0D23;&#x200c;&#x0D4D;&#x0D21;&#x0D4D;&#x0D30; <br />
+na dha ra &#x0D28;&#x0D4D;&#x0D27;&#x0D4D;&#x0D30; <br />
+ta ra ya &#x0D24;&#x200c;&#x0D4D;&#x0D30;&#x0D4D;&#x0D2F; <br />
+sa ta ya &#x0D38;&#x200c;&#x0D4D;&#x0D24;&#x0D4D;&#x0D2F; <br />
+ka ta ra &#x0D15;&#x200c;&#x0D4D;&#x0D24;&#x0D4D;&#x0D30; <br />
+ta sa na &#x0D24;&#x200c;&#x0D4D;&#x0D38;&#x0D4D;&#x0D28; <br />
+</p>
+
+<figure>
+<figcaption>
+from TDIL Grammar of Malayalam, sect. 6.3.3.2
+</figcaption>
+<img src="images/TDIL.CHCHC.png"
+alt="image of table in in TDIL Grammar" />
+</figure>
+
+<p>
+But even here there is an inconsistency.
+The nna^dda^ya is shown with a ligated nna^dda, which is not in the reformed
+canon of conjunct ligatures.  Likewise with the two conjuncts wiht na^dha.
+</p>
+<p>
+This document shows rra = U+0D31 behaving identically to ra = U+0D30 in
+every conjunct, except for the one with itself, rra^rra, where the glyph
+is stacked.
+</p>
+<p>
+But I find no fonts show rra with the ra-like behavior.  In fact almost all
+of them show it forming a chillu with na, as well as the stacked form with
+itself.
+</p>
+<p>
+The result is that I find no fonts that agree with 4 of the 12 conjuncts 
+mentioned here.  And 3 more seem to contradict the government standard.
+</p>
+
+</div> <!-- text -->
+</body>
+</html>

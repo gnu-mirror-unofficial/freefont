@@ -1,0 +1,140 @@
+:root {
+	--malayalam-reformed: "ss19";
+}
+p { margin-top: 0; margin-bottom: 0; line-height: 1.2; }
+div#text { padding-bottom: 0.5ex; }
+form {
+	width: 20ex;
+	text-align: left; top: 35px; right: 0.2ex;
+	background-color: rgba( 255, 255, 255, 0.8 );
+	padding-left: 1ex;
+	border: 0.6ex rgba( 255, 0, 255, 0.8 );
+}
+div#cover {
+}
+@media screen and (min-width: 480px) {
+	form { position: fixed; width: 20ex; float: right;
+		}
+	#text { overflow: auto; margin-right: 21ex;
+		border-right: solid olive;  }
+}
+@media screen and (max-width: 479px) {
+	h1 { margin-right: 35px; margin-top: 0; }
+	body { padding-top: 0; margin-top: 0; }
+}
+@media print {
+	option { display: inline; }
+}
+
+@font-face
+{
+	font-family: freeserif;
+	font-weight: normal;
+	font-style:  normal;
+	src: url("woff/FreeSerif.woff") format("woff");
+}
+@font-face
+{
+	font-family: freeserif;
+	font-weight: bold;
+	font-style:  normal;
+	src: url("woff/FreeSerifBold.woff") format("woff");
+}
+@font-face
+{
+	font-family: freeserif;
+	font-weight: normal;
+	font-style:  italic;
+	src: url("woff/FreeSerifItalic.woff") format("woff");
+}
+@font-face
+{
+	font-family: freeserif;
+	font-weight: bold;
+	font-style:  italic;
+	src: url("woff/FreeSerifBoldItalic.woff") format("woff");
+}
+@font-face
+{
+	font-family: FreeSans;
+	font-weight: normal;
+	font-style:  normal;
+	src: url("woff/FreeSans.woff") format("woff");
+}
+@font-face
+{
+	font-family: FreeSans;
+	font-weight: bold;
+	font-style:  normal;
+	src: url("woff/FreeSansBold.woff") format("woff");
+}
+@font-face
+{
+	font-family: FreeSans;
+	font-weight: normal;
+	font-style:  oblique;
+	src: url("woff/FreeSansOblique.woff") format("woff");
+}
+@font-face
+{
+	font-family: FreeSans;
+	font-weight: bold;
+	font-style:  oblique;
+	src: url("woff/FreeSansBoldOblique.woff") format("woff");
+}
+@font-face
+{
+	font-family: FreeSans;
+	font-weight: normal;
+	font-style:  italic;
+	src: url("woff/FreeSansOblique.woff") format("woff");
+}
+@font-face
+{
+	font-family: FreeSans;
+	font-weight: bold;
+	font-style:  italic;
+	src: url("woff/FreeSansBoldOblique.woff") format("woff");
+}
+@font-face
+{
+	font-family: freemono;
+	font-weight: normal;
+	font-style:  normal;
+	src: url("woff/FreeMono.woff") format("woff");
+}
+@font-face
+{
+	font-family: freemono;
+	font-weight: bold;
+	font-style:  normal;
+	src: url("woff/FreeMonoBold.woff") format("woff");
+}
+@font-face
+{
+	font-family: freemono;
+	font-weight: normal;
+	font-style:  italic;
+	src: url("woff/FreeMonoOblique.woff") format("woff");
+}
+@font-face
+{
+	font-family: freemono;
+	font-weight: bold;
+	font-style:  italic;
+	src: url("woff/FreeMonoBoldOblique.woff") format("woff");
+}
+@font-face
+{
+	font-family: freemono;
+	font-weight: normal;
+	font-style:  oblique;
+	src: url("woff/FreeMonoOblique.woff") format("woff");
+}
+@font-face
+{
+	font-family: freemono;
+	font-weight: bold;
+	font-style:  oblique;
+	src: url("woff/FreeMonoBoldOblique.woff") format("woff");
+}

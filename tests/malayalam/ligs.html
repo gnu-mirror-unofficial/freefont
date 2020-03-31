@@ -1,0 +1,169 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<title>ligatures in Malayalam
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+	@import url("style.css");
+	@import url("ctrl.css");
+	img { width: 12cm; max-width: 95%; }
+	figure, figcaption { text-align: center; }
+</style>
+<script>
+function setFont(selection)
+{
+	t = document.getElementById( "text" );
+	if( t && selection.value )
+	{
+		t.style.fontFamily = selection.value;
+        }
+}
+function setWeight(selection)
+{
+	t = document.getElementById( "text" );
+	if( t && selection.value )
+	{
+		t.style.fontWeight = selection.value;
+        }
+}
+function setFontFeature(selection)
+{
+	t = document.getElementById( "text" );
+	if( t && selection.value )
+	{
+		t.style.fontFeatureSettings = selection.value;
+        }
+}
+function getSelectedValue( id )
+{
+	var sel = document.getElementById( id );
+	var idx = sel.selectedIndex;
+	return sel[idx];
+}
+function init()
+{
+	setFont( getSelectedValue( "fontsel" ) );
+	setWeight( getSelectedValue( "weightsel" ) );
+	setFontFeature( getSelectedValue( "stylesetsel" ) );
+}
+</script>
+
+</head>
+<body onload="init()">
+<div id="cover" class="ctrls">
+<form id="ctrl" action="*">
+<label for="fontsel">face</label>
+<br />
+<select id="fontsel" onchange="setFont(options[selectedIndex])">
+        <option>FreeSerif</option>
+        <option>FreeSans</option>
+        <option>Gayathri</option>
+        <option>Rachana</option>
+        <option>Meera</option>
+        <option>AnjaliOldLipi</option>
+        <option value="Lohit Malayalam">Lohit</option>
+        <option value="Noto Serif Malayalam">Noto Serif</option>
+        <option value="Malayalam MN">Malayalam MN</option>
+        <option>Kartika</option>
+        <option>Manjari</option>
+        <option value="Samyak Malayalam new">Samyak new</option>
+</select>
+<br />
+<label for="weightsel">weight</label>
+<br />
+<select id="weightsel" onchange="setWeight(options[selectedIndex])">
+	<option selected>normal</option>
+	<option>bold</option>
+</select>
+<br />
+<label for="stylesetsel">styleset</label>
+<br />
+<select id="stylesetsel" onchange="setFontFeature(options[selectedIndex])">
+	<option selected value="normal">normal</option>
+	<option value="var(--malayalam-reformed)">reformed</option>
+</select>
+</form>
+<a id="close-icon" href="#"></a>
+</div> <!-- cover -->
+<div id="text">
+<div class="header">
+        <a id="menu-icon" href="#cover"></a>
+<h1>ligatures in Malayalam
+</h1>
+</div> <!-- header -->
+<h3>'akhn' cons pair in Malayalam 'mlm2'</h3>
+<table>
+<thead>
+<tr> <th> </th> <th> lig </th> <th> lig. req.+o </th> <th> atomic+o</th> </tr>
+</thead>
+<tbody lang="ml">
+<tr><td>kaka</td><td>&#x0D15;&#x0d4d;&#x0D15;</td><td>&#x0D15;&zwj;&#x0d4d;&#x0D15;&#x0d4b;</td><td>&#x0D15;&#x0d4d;&zwnj;&#x0D15;&#x0d4b;</td></tr>
+<tr><td>ngaka</td><td>&#x0D19;&#x0d4d;&#x0D15;</td><td>&#x0D19;&zwj;&#x0d4d;&#x0D15;&#x0d4b;</td><td>&#x0D19;&#x0d4d;&zwnj;&#x0D15;&#x0d4b;</td></tr>
+<tr><td>nganga</td><td>&#x0D19;&#x0d4d;&#x0D19;</td><td>&#x0D19;&zwj;&#x0d4d;&#x0D19;&#x0d4b;</td><td>&#x0D19;&#x0d4d;&zwnj;&#x0D19;&#x0d4b;</td></tr>
+<tr><td>caca</td><td>&#x0D1a;&#x0d4d;&#x0D1a;</td><td>&#x0D1a;&zwj;&#x0d4d;&#x0D1a;&#x0d4b;</td><td>&#x0D1a;&#x0d4d;&zwnj;&#x0D1a;&#x0d4b;</td></tr>
+<tr><td>nyaca</td><td>&#x0D1e;&#x0d4d;&#x0D1a;</td><td>&#x0D1e;&zwj;&#x0d4d;&#x0D1a;&#x0d4b;</td><td>&#x0D1e;&#x0d4d;&zwnj;&#x0D1a;&#x0d4b;</td></tr>
+<tr><td>nyanya</td><td>&#x0D1e;&#x0d4d;&#x0D1e;</td><td>&#x0D1e;&zwj;&#x0d4d;&#x0D1e;&#x0d4b;</td><td>&#x0D1e;&#x0d4d;&zwnj;&#x0D1e;&#x0d4b;</td></tr>
+<tr><td>ttatta</td><td>&#x0D1f;&#x0d4d;&#x0D1f;</td><td>&#x0D1f;&zwj;&#x0d4d;&#x0D1f;&#x0d4b;</td><td>&#x0D1f;&#x0d4d;&zwnj;&#x0D1f;&#x0d4b;</td></tr>
+<tr><td>nnatta</td><td>&#x0D23;&#x0d4d;&#x0D1f;</td><td>&#x0D23;&zwj;&#x0d4d;&#x0D1f;&#x0d4b;</td><td>&#x0D23;&#x0d4d;&zwnj;&#x0D1f;&#x0d4b;</td></tr>
+<tr><td>tata</td><td>&#x0D24;&#x0d4d;&#x0D24;</td><td>&#x0D24;&zwj;&#x0d4d;&#x0D24;&#x0d4b;</td><td>&#x0D24;&#x0d4d;&zwnj;&#x0D24;&#x0d4b;</td></tr>
+<tr><td>nata</td><td>&#x0D28;&#x0d4d;&#x0D24;</td><td>&#x0D28;&zwj;&#x0d4d;&#x0D24;&#x0d4b;</td><td>&#x0D28;&#x0d4d;&zwnj;&#x0D24;&#x0d4b;</td></tr>
+<tr><td>nana</td><td>&#x0D28;&#x0d4d;&#x0D28;</td><td>&#x0D28;&zwj;&#x0d4d;&#x0D28;&#x0d4b;</td><td>&#x0D28;&#x0d4d;&zwnj;&#x0D28;&#x0d4b;</td></tr>
+<tr><td>mama</td><td>&#x0D2e;&#x0d4d;&#x0D2e;</td><td>&#x0D2e;&zwj;&#x0d4d;&#x0D2e;&#x0d4b;</td><td>&#x0D2e;&#x0d4d;&zwnj;&#x0D2e;&#x0d4b;</td></tr>
+<tr><td>mapa</td><td>&#x0D2e;&#x0d4d;&#x0D2a;</td><td>&#x0D2e;&zwj;&#x0d4d;&#x0D2a;&#x0d4b;</td><td>&#x0D2e;&#x0d4d;&zwnj;&#x0D2a;&#x0d4b;</td></tr>
+<tr><td>yaya</td><td>&#x0D2f;&#x0d4d;&#x0D2f;</td><td>&#x0D2f;&zwj;&#x0d4d;&#x0D2f;&#x0d4b;</td><td>&#x0D2f;&#x0d4d;&zwnj;&#x0D2f;&#x0d4b;</td></tr>
+<tr><td>vava</td><td>&#x0D35;&#x0d4d;&#x0D35;</td><td>&#x0D35;&zwj;&#x0d4d;&#x0D35;&#x0d4b;</td><td>&#x0D35;&#x0d4d;&zwnj;&#x0D35;&#x0d4b;</td></tr>
+<tr><td>llalla</td><td>&#x0D33;&#x0d4d;&#x0D33;</td><td>&#x0D33;&zwj;&#x0d4d;&#x0D33;&#x0d4b;</td><td>&#x0D33;&#x0d4d;&zwnj;&#x0D33;&#x0d4b;</td></tr>
+<tr><td>
+</tbody>
+</table>
+
+<h3>'akhn' cons pair in Malayalam-clscl</h3>
+<table>
+<thead>
+<tr> <th> </th> <th> lig </th> <th> lig. req.+o </th> <th> atomic+o</th> </tr>
+</thead>
+<tbody lang="ml">
+<tr><td>kassa</td><td>&#x0D15;&#x0d4d;&#x0D37;</td><td>&#x0D15;&zwj;&#x0d4d;&#x0D37;&#x0d4b;</td><td>&#x0D15;&#x0d4d;&zwnj;&#x0D37;&#x0d4b;</td></tr>
+<tr><td>kata</td><td>&#x0D15;&#x0d4d;&#x0D24;</td><td>&#x0D15;&zwj;&#x0d4d;&#x0D24;&#x0d4b;</td><td>&#x0D15;&#x0d4d;&zwnj;&#x0D24;&#x0d4b;</td></tr>
+<tr><td>katha</td><td>&#x0D15;&#x0d4d;&#x0D25;</td><td>&#x0D15;&zwj;&#x0d4d;&#x0D25;&#x0d4b;</td><td>&#x0D15;&#x0d4d;&zwnj;&#x0D25;&#x0d4b;</td></tr>
+<tr><td>gagha</td><td>&#x0D17;&#x0d4d;&#x0D18;</td><td>&#x0D17;&zwj;&#x0d4d;&#x0D18;&#x0d4b;</td><td>&#x0D17;&#x0d4d;&zwnj;&#x0D18;&#x0d4b;</td></tr>
+<tr><td>gada</td><td>&#x0D17;&#x0d4d;&#x0D26;</td><td>&#x0D17;&zwj;&#x0d4d;&#x0D26;&#x0d4b;</td><td>&#x0D17;&#x0d4d;&zwnj;&#x0D26;&#x0d4b;</td></tr>
+<tr><td>gadha</td><td>&#x0D17;&#x0d4d;&#x0D27;</td><td>&#x0D17;&zwj;&#x0d4d;&#x0D27;&#x0d4b;</td><td>&#x0D17;&#x0d4d;&zwnj;&#x0D27;&#x0d4b;</td></tr>
+<tr><td>gana</td><td>&#x0D17;&#x0d4d;&#x0D28;</td><td>&#x0D17;&zwj;&#x0d4d;&#x0D28;&#x0d4b;</td><td>&#x0D17;&#x0d4d;&zwnj;&#x0D28;&#x0d4b;</td></tr>
+<tr><td>gama</td><td>&#x0D17;&#x0d4d;&#x0D2e;</td><td>&#x0D17;&zwj;&#x0d4d;&#x0D2e;&#x0d4b;</td><td>&#x0D17;&#x0d4d;&zwnj;&#x0D2e;&#x0d4b;</td></tr>
+<tr><td>jaja</td><td>&#x0D1c;&#x0d4d;&#x0D1c;</td><td>&#x0D1c;&zwj;&#x0d4d;&#x0D1c;&#x0d4b;</td><td>&#x0D1c;&#x0d4d;&zwnj;&#x0D1c;&#x0d4b;</td></tr>
+<tr><td>jajha</td><td>&#x0D1c;&#x0d4d;&#x0D1d;</td><td>&#x0D1c;&zwj;&#x0d4d;&#x0D1d;&#x0d4b;</td><td>&#x0D1c;&#x0d4d;&zwnj;&#x0D1d;&#x0d4b;</td></tr>
+<tr><td>janya</td><td>&#x0D1c;&#x0d4d;&#x0D1e;</td><td>&#x0D1c;&zwj;&#x0d4d;&#x0D1e;&#x0d4b;</td><td>&#x0D1c;&#x0d4d;&zwnj;&#x0D1e;&#x0d4b;</td></tr>
+<tr><td>nyacha</td><td>&#x0D1e;&#x0d4d;&#x0D1b;</td><td>&#x0D1e;&zwj;&#x0d4d;&#x0D1b;&#x0d4b;</td><td>&#x0D1e;&#x0d4d;&zwnj;&#x0D1b;&#x0d4b;</td></tr>
+<tr><td>nyaja</td><td>&#x0D1e;&#x0d4d;&#x0D1c;</td><td>&#x0D1e;&zwj;&#x0d4d;&#x0D1c;&#x0d4b;</td><td>&#x0D1e;&#x0d4d;&zwnj;&#x0D1c;&#x0d4b;</td></tr>
+<tr><td>nnadda</td><td>&#x0D23;&#x0d4d;&#x0D21;</td><td>&#x0D23;&zwj;&#x0d4d;&#x0D21;&#x0d4b;</td><td>&#x0D23;&#x0d4d;&zwnj;&#x0D21;&#x0d4b;</td></tr>
+<tr><td>nnaddha</td><td>&#x0D23;&#x0d4d;&#x0D22;</td><td>&#x0D23;&zwj;&#x0d4d;&#x0D22;&#x0d4b;</td><td>&#x0D23;&#x0d4d;&zwnj;&#x0D22;&#x0d4b;</td></tr>
+<tr><td>nnama</td><td>&#x0D23;&#x0d4d;&#x0D2e;</td><td>&#x0D23;&zwj;&#x0d4d;&#x0D2e;&#x0d4b;</td><td>&#x0D23;&#x0d4d;&zwnj;&#x0D2e;&#x0d4b;</td></tr>
+<tr><td>tatha</td><td>&#x0D24;&#x0d4d;&#x0D25;</td><td>&#x0D24;&zwj;&#x0d4d;&#x0D25;&#x0d4b;</td><td>&#x0D24;&#x0d4d;&zwnj;&#x0D25;&#x0d4b;</td></tr>
+<tr><td>tana</td><td>&#x0D24;&#x0d4d;&#x0D28;</td><td>&#x0D24;&zwj;&#x0d4d;&#x0D28;&#x0d4b;</td><td>&#x0D24;&#x0d4d;&zwnj;&#x0D28;&#x0d4b;</td></tr>
+<tr><td>tabha</td><td>&#x0D24;&#x0d4d;&#x0D2d;</td><td>&#x0D24;&zwj;&#x0d4d;&#x0D2d;&#x0d4b;</td><td>&#x0D24;&#x0d4d;&zwnj;&#x0D2d;&#x0d4b;</td></tr>
+<tr><td>tama</td><td>&#x0D24;&#x0d4d;&#x0D2e;</td><td>&#x0D24;&zwj;&#x0d4d;&#x0D2e;&#x0d4b;</td><td>&#x0D24;&#x0d4d;&zwnj;&#x0D2e;&#x0d4b;</td></tr>
+<tr><td>tasa</td><td>&#x0D24;&#x0d4d;&#x0D38;</td><td>&#x0D24;&zwj;&#x0d4d;&#x0D38;&#x0d4b;</td><td>&#x0D24;&#x0d4d;&zwnj;&#x0D38;&#x0d4b;</td></tr>
+<tr><td>dada</td><td>&#x0D26;&#x0d4d;&#x0D26;</td><td>&#x0D26;&zwj;&#x0d4d;&#x0D26;&#x0d4b;</td><td>&#x0D26;&#x0d4d;&zwnj;&#x0D26;&#x0d4b;</td></tr>
+<tr><td>dadha</td><td>&#x0D26;&#x0d4d;&#x0D27;</td><td>&#x0D26;&zwj;&#x0d4d;&#x0D27;&#x0d4b;</td><td>&#x0D26;&#x0d4d;&zwnj;&#x0D27;&#x0d4b;</td></tr>
+<tr><td>natha</td><td>&#x0D28;&#x0d4d;&#x0D25;</td><td>&#x0D28;&zwj;&#x0d4d;&#x0D25;&#x0d4b;</td><td>&#x0D28;&#x0d4d;&zwnj;&#x0D25;&#x0d4b;</td></tr>
+<tr><td>nada</td><td>&#x0D28;&#x0d4d;&#x0D26;</td><td>&#x0D28;&zwj;&#x0d4d;&#x0D26;&#x0d4b;</td><td>&#x0D28;&#x0d4d;&zwnj;&#x0D26;&#x0d4b;</td></tr>
+<tr><td>nadha</td><td>&#x0D28;&#x0d4d;&#x0D27;</td><td>&#x0D28;&zwj;&#x0d4d;&#x0D27;&#x0d4b;</td><td>&#x0D28;&#x0d4d;&zwnj;&#x0D27;&#x0d4b;</td></tr>
+<tr><td>nama</td><td>&#x0D28;&#x0d4d;&#x0D2e;</td><td>&#x0D28;&zwj;&#x0d4d;&#x0D2e;&#x0d4b;</td><td>&#x0D28;&#x0d4d;&zwnj;&#x0D2e;&#x0d4b;</td></tr>
+<tr><td>baba</td><td>&#x0D2c;&#x0d4d;&#x0D2c;</td><td>&#x0D2c;&zwj;&#x0d4d;&#x0D2c;&#x0d4b;</td><td>&#x0D2c;&#x0d4d;&zwnj;&#x0D2c;&#x0d4b;</td></tr>
+<tr><td>bhabha</td><td>&#x0D2d;&#x0d4d;&#x0D2d;</td><td>&#x0D2d;&zwj;&#x0d4d;&#x0D2d;&#x0d4b;</td><td>&#x0D2d;&#x0d4d;&zwnj;&#x0D2d;&#x0d4b;</td></tr>
+<tr><td>shaca</td><td>&#x0D36;&#x0d4d;&#x0D1a;</td><td>&#x0D36;&zwj;&#x0d4d;&#x0D1a;&#x0d4b;</td><td>&#x0D36;&#x0d4d;&zwnj;&#x0D1a;&#x0d4b;</td></tr>
+<tr><td>shacha</td><td>&#x0D36;&#x0d4d;&#x0D1b;</td><td>&#x0D36;&zwj;&#x0d4d;&#x0D1b;&#x0d4b;</td><td>&#x0D36;&#x0d4d;&zwnj;&#x0D1b;&#x0d4b;</td></tr>
+<tr><td>satha</td><td>&#x0D38;&#x0d4d;&#x0D25;</td><td>&#x0D38;&zwj;&#x0d4d;&#x0D25;&#x0d4b;</td><td>&#x0D38;&#x0d4d;&zwnj;&#x0D25;&#x0d4b;</td></tr>
+<tr><td>hana</td><td>&#x0D39;&#x0d4d;&#x0D28;</td><td>&#x0D39;&zwj;&#x0d4d;&#x0D28;&#x0d4b;</td><td>&#x0D39;&#x0d4d;&zwnj;&#x0D28;&#x0d4b;</td></tr>
+<tr><td>hama</td><td>&#x0D39;&#x0d4d;&#x0D2e;</td><td>&#x0D39;&zwj;&#x0d4d;&#x0D2e;&#x0d4b;</td><td>&#x0D39;&#x0d4d;&zwnj;&#x0D2e;&#x0d4b;</td></tr>
+<tr><td>ssassa</td><td>&#x0D37;&#x0d4d;&#x0D37;</td><td>&#x0D37;&zwj;&#x0d4d;&#x0D37;&#x0d4b;</td><td>&#x0D37;&#x0d4d;&zwnj;&#x0D37;&#x0d4b;</td></tr>
+<tr><td>rrarra</td><td>&#x0D31;&#x0d4d;&#x0D31;</td><td>&#x0D31;&zwj;&#x0d4d;&#x0D31;&#x0d4b;</td><td>&#x0D31;&#x0d4d;&zwnj;&#x0D31;&#x0d4b;</td></tr>
+</tbody>
+</table>
+
+</div> <!-- text -->
+</body>
+</html>

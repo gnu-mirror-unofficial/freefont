@@ -1,0 +1,175 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<title>Three representations of chillus in Malayalam
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+	@import url("style.css");
+	@import url("ctrl.css");
+	img { width: 12cm; max-width: 95%; }
+	figure, figcaption { text-align: center; }
+</style>
+<script>
+function setFont(selection)
+{
+	t = document.getElementById( "text" );
+	if( t && selection.value )
+	{
+		t.style.fontFamily = selection.value;
+        }
+}
+function setWeight(selection)
+{
+	t = document.getElementById( "text" );
+	if( t && selection.value )
+	{
+		t.style.fontWeight = selection.value;
+        }
+}
+function setFontFeature(selection)
+{
+	t = document.getElementById( "text" );
+	if( t && selection.value )
+	{
+		t.style.fontFeatureSettings = selection.value;
+        }
+}
+function getSelectedValue( id )
+{
+	var sel = document.getElementById( id );
+	var idx = sel.selectedIndex;
+	return sel[idx];
+}
+function init()
+{
+	setFont( getSelectedValue( "fontsel" ) );
+	setWeight( getSelectedValue( "weightsel" ) );
+	setFontFeature( getSelectedValue( "stylesetsel" ) );
+}
+</script>
+</head>
+<body onload="init()">
+
+<div id="cover" class="ctrls">
+<form id="ctrl" action="*">
+<label for="fontsel">face</label>
+<br />
+<select id="fontsel" onchange="setFont(options[selectedIndex])">
+        <option>FreeSerif</option>
+        <option>FreeSans</option>
+        <option>Gayathri</option>
+        <option>Rachana</option>
+        <option>Meera</option>
+        <option>AnjaliOldLipi</option>
+        <option value="Lohit Malayalam">Lohit</option>
+        <option value="Noto Serif Malayalam">Noto Serif</option>
+        <option value="Malayalam MN">Malayalam MN</option>
+        <option>Kartika</option>
+        <option>Karumbi</option>
+        <option>Suruma</option>
+        <option value="Samyak Malayalam new">Samyak new</option>
+</select>
+<br />
+<label for="weightsel">weight</label>
+<br />
+<select id="weightsel" onchange="setWeight(options[selectedIndex])">
+	<option selected>normal</option>
+	<option>bold</option>
+</select>
+<br />
+<label for="stylesetsel">styleset</label>
+<br />
+<select id="stylesetsel" onchange="setFontFeature(options[selectedIndex])">
+	<option selected value="normal">normal</option>
+	<option value="var(--malayalam-reformed)">reformed</option>
+</select>
+</form>
+<a id="close-icon" href="#"></a>
+</div> <!-- cover -->
+<div id="text">
+
+<div class="header">
+        <a id="menu-icon" href="#cover"></a>
+<!--
+0D7B chillu-n, 0D4D virama, 0D31 rra	recommended Unicode 5.1
+0D28 na, 0D4D virama, 0D31 rra	legacy
+0D28 na, 0D4D virama, 200D ZWJ, 0D31 rra legacy
+-->
+
+<h1>Three representations of chillus in Malayalam</h1>
+</div> <!-- header -->
+<p>
+Two encodings have been recognized as the Unicode standard for the combination 'ṉṯa'
+which appears as a letter chillu-n with a subscript letter rra:
+</p>
+<p>
+&#x0d28;&#x0d4d;&#x0d31;	&larr; legacy, U+0d28 U+0d4d U+0d31
+</p>
+<p>
+The modern encoding, adopted in Unicode 5.1 uses a special chillu character:
+</p>
+<p>
+&#x0D7b;&#x0d4d;&#x0d31;	&larr; modern, U+0d7b U+0d4d U+0d31
+</p>
+<p>
+(Note: the main Malayalam font in MS Windows, Kartika, does not display the
+modern form properly, although as of 2020 it is dated 2015.)
+</p>
+<p>
+Another encoding
+</p>
+<p>
+&#x0d28;&#x0d4d;&#x200d;&#x0d31;	&larr; U+0d28 U+0d4d U+200d U+0d31
+</p>
+<p>
+had often been used to represent the same conjunct, but it conflicts with an
+encoding of a different conjunct, 'nta', where two letters appear side-by-side;
+side-by-side form was the legacy Unicode interpretation of the encoding.
+As of Unicode 5.1 the preferred encoding of the side-by-side combination is:
+</p>
+<p>
+&#x0D7b;&#x0d31;	&larr; modern, U+0d7b U+0d31
+</p>
+<p>
+There were legacy encodings for five simple chillus, which were replaced
+by atomic code points:
+</p>
+<p>
+&#x0d23;&#x0d4d;&#x200d;	&larr; legacy, U+0d23 U+0d4d U+200d <br />
+&#x0d7a;	&larr; modern, U+0d7a <br />
+&#x0d28;&#x0d4d;&#x200d;	&larr; legacy, U+0d28 U+0d4d U+200d <br />
+&#x0d7b;	&larr; modern, U+0d7b <br />
+&#x0d30;&#x0d4d;&#x200d;	&larr; legacy, U+0d30 U+0d4d U+200d <br />
+&#x0d7c;	&larr; modern, U+0d7c <br />
+&#x0d32;&#x0d4d;&#x200d;	&larr; legacy, U+0d32 U+0d4d U+200d <br />
+&#x0d7d;	&larr; modern, U+0d7d <br />
+&#x0d33;&#x0d4d;&#x200d;	&larr; legacy, U+0d33 U+0d4d U+200d <br />
+&#x0d7e;	&larr; modern, U+0d7e <br />
+</p>
+<p>
+There was no legacy Unicode encoding for the ka-chillu (although many
+fonts support a non-standard encoding similar to those for the other chillus.)
+<p>
+&#x0d15;&#x0d4d;&#x200d;	&larr; non-standard U+0d15 U+0d4d U+200d <br />
+</p>
+<p>
+The modern encoding is the atomic code point:
+</p>
+<p>
+&#x0d7f;	&larr; modern, U+0d7f <br />
+</p>
+<p>
+Unicode 9.0 added three archaic chillus as atomic code points.  (Few
+fonts support these at the time of this writing.)
+</p>
+<p>
+&#x0d54;	&larr; rare, U+0d54 <br />
+&#x0d55;	&larr; rare, U+0d55 <br />
+&#x0d56;	&larr; rare, U+0d56 <br />
+</p>
+
+</div> <!-- text -->
+</body>
+</html>

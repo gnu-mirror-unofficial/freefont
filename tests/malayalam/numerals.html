@@ -1,0 +1,535 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<title>numerals in Indic scripts
+</title>
+<style>
+	@import url("style.css");
+	.tnum { font-variant-numeric: tabular-nums; }
+	.pnum { font-variant-numeric: proportional-nums; }
+	.lnum { font-variant-numeric: lining-nums; }
+</style>
+<script>
+function setFont(selection)
+{
+	t = document.getElementById( "text" );
+	t.style.fontFamily = selection.value;
+}
+function setWeight(selection)
+{
+	t = document.getElementById( "text" );
+	t.style.fontWeight = selection.value;
+}
+function setStyle(selection)
+{
+	t = document.getElementById( "text" );
+	t.style.fontStyle = selection.value;
+}
+function init()
+{
+	fontsel = document.getElementById( "fontsel" );
+	var fidx = fontsel.selectedIndex;
+	setFont( fontsel[fidx] );
+
+	weightsel = document.getElementById( "weightsel" );
+	var widx = weightsel.selectedIndex;
+	setWeight( weightsel[widx] );
+
+	stylesel = document.getElementById( "stylesel" );
+	var sidx = stylesel.selectedIndex;
+	setStyle( stylesel[sidx] );
+}
+</script>
+
+</head>
+<body onload="init()">
+<h1>numerals in Indic scripts
+</h1>
+<h3 lang="en">plain, tabular, proportional, lining</h3>
+
+<form id="ctrl" action="*">
+<label for="fontsel">face</label>
+<select id="fontsel" onchange="setFont(options[selectedIndex])">
+        <option selected=selected>FreeSerif</option>
+        <option>FreeSans</option>
+        <option value="Lohit Malayalam">Lohit</option>
+        <option value="Noto Serif Malayalam">Noto Serif</option>
+        <option value="Noto Sans Malayalam">Noto Sans</option>
+        <option>Kartika</option>
+</select>
+<br />
+<label for="weightsel">weight</label>
+<select id="weightsel" onchange="setWeight(options[selectedIndex])">
+        <option selected=selected>normal</option>
+        <option>bold</option>
+</select>
+<br />
+<label for="stylesel">style</label>
+<select id="stylesel" onchange="setStyle(options[selectedIndex])">
+        <option selected=selected>normal</option>
+        <option>italic</option>
+</select>
+</form>
+<div id="text">
+
+<h2>Malayalam </h2>
+<div lang="ml">
+
+<p>
+&#x0D66;&#x0D67;&#x0D68;&#x0D69;&#x0D6A;&#x0D6B;&#x0D6C;&#x0D6D;&#x0D6E;&#x0D6F;
+<br />
+&#x0D6A;&#x0D6B;&#x0D6C;&#x0D6D;&#x0D6E;&#x0D6F;&#x0D66;&#x0D67;&#x0D68;&#x0D69;
+<br />
+&#x0D6B;&#x0D6C;&#x0D6D;&#x0D6E;&#x0D6F;&#x0D66;&#x0D67;&#x0D68;&#x0D69;&#x0D6A;
+<br />
+&#x0D66;&#x0D66;&#x0D66;&#x0D66;&#x0D66;&#x0D66;&#x0D66;&#x0D66;&#x0D66;&#x0D66;
+<br />
+&#x0D6C;&#x0D6C;&#x0D6C;&#x0D6C;&#x0D6C;&#x0D6C;&#x0D6C;&#x0D6C;&#x0D6C;&#x0D6C;
+<br />
+</p>
+<hr />
+<p class="tnum">
+&#x0D66;&#x0D67;&#x0D68;&#x0D69;&#x0D6A;&#x0D6B;&#x0D6C;&#x0D6D;&#x0D6E;&#x0D6F;
+<br />
+&#x0D6A;&#x0D6B;&#x0D6C;&#x0D6D;&#x0D6E;&#x0D6F;&#x0D66;&#x0D67;&#x0D68;&#x0D69;
+<br />
+&#x0D6B;&#x0D6C;&#x0D6D;&#x0D6E;&#x0D6F;&#x0D66;&#x0D67;&#x0D68;&#x0D69;&#x0D6A;
+<br />
+&#x0D66;&#x0D66;&#x0D66;&#x0D66;&#x0D66;&#x0D66;&#x0D66;&#x0D66;&#x0D66;&#x0D66;
+<br />
+&#x0D6C;&#x0D6C;&#x0D6C;&#x0D6C;&#x0D6C;&#x0D6C;&#x0D6C;&#x0D6C;&#x0D6C;&#x0D6C;
+<br />
+</p>
+<hr />
+<p class="pnum">
+&#x0D66;&#x0D67;&#x0D68;&#x0D69;&#x0D6A;&#x0D6B;&#x0D6C;&#x0D6D;&#x0D6E;&#x0D6F;
+<br />
+&#x0D6A;&#x0D6B;&#x0D6C;&#x0D6D;&#x0D6E;&#x0D6F;&#x0D66;&#x0D67;&#x0D68;&#x0D69;
+<br />
+&#x0D6B;&#x0D6C;&#x0D6D;&#x0D6E;&#x0D6F;&#x0D66;&#x0D67;&#x0D68;&#x0D69;&#x0D6A;
+<br />
+&#x0D66;&#x0D66;&#x0D66;&#x0D66;&#x0D66;&#x0D66;&#x0D66;&#x0D66;&#x0D66;&#x0D66;
+<br />
+&#x0D6C;&#x0D6C;&#x0D6C;&#x0D6C;&#x0D6C;&#x0D6C;&#x0D6C;&#x0D6C;&#x0D6C;&#x0D6C;
+<br />
+</p>
+<hr />
+<p class="lnum">
+&#x0D66;&#x0D67;&#x0D68;&#x0D69;&#x0D6A;&#x0D6B;&#x0D6C;&#x0D6D;&#x0D6E;&#x0D6F;
+<br />
+&#x0D6B;&#x0D6C;&#x0D6D;&#x0D6E;&#x0D6F;&#x0D66;&#x0D67;&#x0D68;&#x0D69;&#x0D6A;
+<br />
+&#x0D66;&#x0D66;&#x0D66;&#x0D66;&#x0D66;&#x0D66;&#x0D66;&#x0D66;&#x0D66;&#x0D66;
+<br />
+&#x0D6C;&#x0D6C;&#x0D6C;&#x0D6C;&#x0D6C;&#x0D6C;&#x0D6C;&#x0D6C;&#x0D6C;&#x0D6C;
+<br />
+</p>
+
+</div> <!-- lang -->
+
+<h2>Bengali </h2>
+<div lang="ta">
+
+<p>
+&#x09E6;&#x09E7;&#x09E8;&#x09E9;&#x09EA;&#x09EB;&#x09EC;&#x09ED;&#x09EE;&#x09EF;
+<br />
+&#x09EA;&#x09EB;&#x09EC;&#x09ED;&#x09EE;&#x09EF;&#x09E6;&#x09E7;&#x09E8;&#x09E9;
+<br />
+&#x09EB;&#x09EC;&#x09ED;&#x09EE;&#x09EF;&#x09E6;&#x09E7;&#x09E8;&#x09E9;&#x09EA;
+<br />
+&#x09E7;&#x09E7;&#x09E7;&#x09E7;&#x09E7;&#x09E7;&#x09E7;&#x09E7;&#x09E7;&#x09E7;
+<br />
+&#x09EC;&#x09EC;&#x09EC;&#x09EC;&#x09EC;&#x09EC;&#x09EC;&#x09EC;&#x09EC;&#x09EC;
+<br />
+</p>
+<hr />
+<p class="tnum">
+&#x09E6;&#x09E7;&#x09E8;&#x09E9;&#x09EA;&#x09EB;&#x09EC;&#x09ED;&#x09EE;&#x09EF;
+<br />
+&#x09EA;&#x09EB;&#x09EC;&#x09ED;&#x09EE;&#x09EF;&#x09E6;&#x09E7;&#x09E8;&#x09E9;
+<br />
+&#x09EB;&#x09EC;&#x09ED;&#x09EE;&#x09EF;&#x09E6;&#x09E7;&#x09E8;&#x09E9;&#x09EA;
+<br />
+&#x09E7;&#x09E7;&#x09E7;&#x09E7;&#x09E7;&#x09E7;&#x09E7;&#x09E7;&#x09E7;&#x09E7;
+<br />
+&#x09EC;&#x09EC;&#x09EC;&#x09EC;&#x09EC;&#x09EC;&#x09EC;&#x09EC;&#x09EC;&#x09EC;
+<br />
+</p>
+<hr />
+<p class="pnum">
+&#x09E6;&#x09E7;&#x09E8;&#x09E9;&#x09EA;&#x09EB;&#x09EC;&#x09ED;&#x09EE;&#x09EF;
+<br />
+&#x09EA;&#x09EB;&#x09EC;&#x09ED;&#x09EE;&#x09EF;&#x09E6;&#x09E7;&#x09E8;&#x09E9;
+<br />
+&#x09EB;&#x09EC;&#x09ED;&#x09EE;&#x09EF;&#x09E6;&#x09E7;&#x09E8;&#x09E9;&#x09EA;
+<br />
+&#x09E7;&#x09E7;&#x09E7;&#x09E7;&#x09E7;&#x09E7;&#x09E7;&#x09E7;&#x09E7;&#x09E7;
+<br />
+&#x09EC;&#x09EC;&#x09EC;&#x09EC;&#x09EC;&#x09EC;&#x09EC;&#x09EC;&#x09EC;&#x09EC;
+<br />
+</p>
+<hr />
+<p class="lnum">
+&#x09E6;&#x09E7;&#x09E8;&#x09E9;&#x09EA;&#x09EB;&#x09EC;&#x09ED;&#x09EE;&#x09EF;
+<br />
+&#x09EA;&#x09EB;&#x09EC;&#x09ED;&#x09EE;&#x09EF;&#x09E6;&#x09E7;&#x09E8;&#x09E9;
+<br />
+&#x09EB;&#x09EC;&#x09ED;&#x09EE;&#x09EF;&#x09E6;&#x09E7;&#x09E8;&#x09E9;&#x09EA;
+<br />
+&#x09E7;&#x09E7;&#x09E7;&#x09E7;&#x09E7;&#x09E7;&#x09E7;&#x09E7;&#x09E7;&#x09E7;
+<br />
+&#x09EC;&#x09EC;&#x09EC;&#x09EC;&#x09EC;&#x09EC;&#x09EC;&#x09EC;&#x09EC;&#x09EC;
+<br />
+</p>
+
+</div> <!-- lang -->
+
+
+<h2>Tamil </h2>
+<div lang="ta">
+
+<p>
+&#x0BE6;&#x0BE7;&#x0BE8;&#x0BE9;&#x0BEA;&#x0BEB;&#x0BEC;&#x0BED;&#x0BEE;&#x0BEF;
+<br />
+&#x0BEA;&#x0BEB;&#x0BEC;&#x0BED;&#x0BEE;&#x0BEF;&#x0BE6;&#x0BE7;&#x0BE8;&#x0BE9;
+<br />
+&#x0BEB;&#x0BEC;&#x0BED;&#x0BEE;&#x0BEF;&#x0BE6;&#x0BE7;&#x0BE8;&#x0BE9;&#x0BEA;
+<br />
+&#x0BE6;&#x0BE6;&#x0BE6;&#x0BE6;&#x0BE6;&#x0BE6;&#x0BE6;&#x0BE6;&#x0BE6;&#x0BE6;
+<br />
+&#x0BEC;&#x0BEC;&#x0BEC;&#x0BEC;&#x0BEC;&#x0BEC;&#x0BEC;&#x0BEC;&#x0BEC;&#x0BEC;
+<br />
+</p>
+<hr />
+<p class="tnum">
+&#x0BE6;&#x0BE7;&#x0BE8;&#x0BE9;&#x0BEA;&#x0BEB;&#x0BEC;&#x0BED;&#x0BEE;&#x0BEF;
+<br />
+&#x0BEA;&#x0BEB;&#x0BEC;&#x0BED;&#x0BEE;&#x0BEF;&#x0BE6;&#x0BE7;&#x0BE8;&#x0BE9;
+<br />
+&#x0BEB;&#x0BEC;&#x0BED;&#x0BEE;&#x0BEF;&#x0BE6;&#x0BE7;&#x0BE8;&#x0BE9;&#x0BEA;
+<br />
+&#x0BE6;&#x0BE6;&#x0BE6;&#x0BE6;&#x0BE6;&#x0BE6;&#x0BE6;&#x0BE6;&#x0BE6;&#x0BE6;
+<br />
+&#x0BEC;&#x0BEC;&#x0BEC;&#x0BEC;&#x0BEC;&#x0BEC;&#x0BEC;&#x0BEC;&#x0BEC;&#x0BEC;
+<br />
+</p>
+<hr />
+<p class="pnum">
+&#x0BE6;&#x0BE7;&#x0BE8;&#x0BE9;&#x0BEA;&#x0BEB;&#x0BEC;&#x0BED;&#x0BEE;&#x0BEF;
+<br />
+&#x0BEA;&#x0BEB;&#x0BEC;&#x0BED;&#x0BEE;&#x0BEF;&#x0BE6;&#x0BE7;&#x0BE8;&#x0BE9;
+<br />
+&#x0BEB;&#x0BEC;&#x0BED;&#x0BEE;&#x0BEF;&#x0BE6;&#x0BE7;&#x0BE8;&#x0BE9;&#x0BEA;
+<br />
+&#x0BE6;&#x0BE6;&#x0BE6;&#x0BE6;&#x0BE6;&#x0BE6;&#x0BE6;&#x0BE6;&#x0BE6;&#x0BE6;
+<br />
+&#x0BEC;&#x0BEC;&#x0BEC;&#x0BEC;&#x0BEC;&#x0BEC;&#x0BEC;&#x0BEC;&#x0BEC;&#x0BEC;
+<br />
+</p>
+<hr />
+<p class="lnum">
+&#x0BE6;&#x0BE7;&#x0BE8;&#x0BE9;&#x0BEA;&#x0BEB;&#x0BEC;&#x0BED;&#x0BEE;&#x0BEF;
+<br />
+&#x0BEA;&#x0BEB;&#x0BEC;&#x0BED;&#x0BEE;&#x0BEF;&#x0BE6;&#x0BE7;&#x0BE8;&#x0BE9;
+<br />
+&#x0BEB;&#x0BEC;&#x0BED;&#x0BEE;&#x0BEF;&#x0BE6;&#x0BE7;&#x0BE8;&#x0BE9;&#x0BEA;
+<br />
+&#x0BE6;&#x0BE6;&#x0BE6;&#x0BE6;&#x0BE6;&#x0BE6;&#x0BE6;&#x0BE6;&#x0BE6;&#x0BE6;
+<br />
+&#x0BEC;&#x0BEC;&#x0BEC;&#x0BEC;&#x0BEC;&#x0BEC;&#x0BEC;&#x0BEC;&#x0BEC;&#x0BEC;
+<br />
+</p>
+
+</div> <!-- lang -->
+
+<h2>Hindi </h2>
+<div lang="hi">
+
+<p>
+&#x0966;&#x0967;&#x0968;&#x0969;&#x096A;&#x096B;&#x096C;&#x096D;&#x096E;&#x096F;
+<br />
+&#x096A;&#x096B;&#x096C;&#x096D;&#x096E;&#x096F;&#x0966;&#x0967;&#x0968;&#x0969;
+<br />
+&#x096B;&#x096C;&#x096D;&#x096E;&#x096F;&#x0966;&#x0967;&#x0968;&#x0969;&#x096A;
+<br />
+&#x0966;&#x0966;&#x0966;&#x0966;&#x0966;&#x0966;&#x0966;&#x0966;&#x0966;&#x0966;
+<br />
+&#x096C;&#x096C;&#x096C;&#x096C;&#x096C;&#x096C;&#x096C;&#x096C;&#x096C;&#x096C;
+<br />
+</p>
+<hr />
+<p class="tnum">
+&#x0966;&#x0967;&#x0968;&#x0969;&#x096A;&#x096B;&#x096C;&#x096D;&#x096E;&#x096F;
+<br />
+&#x096A;&#x096B;&#x096C;&#x096D;&#x096E;&#x096F;&#x0966;&#x0967;&#x0968;&#x0969;
+<br />
+&#x096B;&#x096C;&#x096D;&#x096E;&#x096F;&#x0966;&#x0967;&#x0968;&#x0969;&#x096A;
+<br />
+&#x0966;&#x0966;&#x0966;&#x0966;&#x0966;&#x0966;&#x0966;&#x0966;&#x0966;&#x0966;
+<br />
+&#x096C;&#x096C;&#x096C;&#x096C;&#x096C;&#x096C;&#x096C;&#x096C;&#x096C;&#x096C;
+<br />
+</p>
+<hr />
+<p class="pnum">
+&#x0966;&#x0967;&#x0968;&#x0969;&#x096A;&#x096B;&#x096C;&#x096D;&#x096E;&#x096F;
+<br />
+&#x096A;&#x096B;&#x096C;&#x096D;&#x096E;&#x096F;&#x0966;&#x0967;&#x0968;&#x0969;
+<br />
+&#x096B;&#x096C;&#x096D;&#x096E;&#x096F;&#x0966;&#x0967;&#x0968;&#x0969;&#x096A;
+<br />
+&#x0966;&#x0966;&#x0966;&#x0966;&#x0966;&#x0966;&#x0966;&#x0966;&#x0966;&#x0966;
+<br />
+&#x096C;&#x096C;&#x096C;&#x096C;&#x096C;&#x096C;&#x096C;&#x096C;&#x096C;&#x096C;
+<br />
+</p>
+<hr />
+<p class="lnum">
+&#x0966;&#x0967;&#x0968;&#x0969;&#x096A;&#x096B;&#x096C;&#x096D;&#x096E;&#x096F;
+<br />
+&#x096A;&#x096B;&#x096C;&#x096D;&#x096E;&#x096F;&#x0966;&#x0967;&#x0968;&#x0969;
+<br />
+&#x096B;&#x096C;&#x096D;&#x096E;&#x096F;&#x0966;&#x0967;&#x0968;&#x0969;&#x096A;
+<br />
+&#x0966;&#x0966;&#x0966;&#x0966;&#x0966;&#x0966;&#x0966;&#x0966;&#x0966;&#x0966;
+<br />
+&#x096C;&#x096C;&#x096C;&#x096C;&#x096C;&#x096C;&#x096C;&#x096C;&#x096C;&#x096C;
+<br />
+</p>
+
+</div> <!-- lang -->
+
+<h2>Gurmukhi </h2>
+<div lang="pa">
+
+<p>
+&#x0AE6;&#x0AE7;&#x0AE8;&#x0AE9;&#x0AEA;&#x0AEB;&#x0AEC;&#x0AED;&#x0AEE;&#x0AEF;
+<br />
+&#x0AEA;&#x0AEB;&#x0AEC;&#x0AED;&#x0AEE;&#x0AEF;&#x0AE6;&#x0AE7;&#x0AE8;&#x0AE9;
+<br />
+&#x0AEB;&#x0AEC;&#x0AED;&#x0AEE;&#x0AEF;&#x0AE6;&#x0AE7;&#x0AE8;&#x0AE9;&#x0AEA;
+<br />
+&#x0AE7;&#x0AE7;&#x0AE7;&#x0AE7;&#x0AE7;&#x0AE7;&#x0AE7;&#x0AE7;&#x0AE7;&#x0AE7;
+<br />
+&#x0AED;&#x0AED;&#x0AED;&#x0AED;&#x0AED;&#x0AED;&#x0AED;&#x0AED;&#x0AED;&#x0AED;
+<br />
+</p>
+<hr />
+<p class="tnum">
+&#x0AE6;&#x0AE7;&#x0AE8;&#x0AE9;&#x0AEA;&#x0AEB;&#x0AEC;&#x0AED;&#x0AEE;&#x0AEF;
+<br />
+&#x0AEA;&#x0AEB;&#x0AEC;&#x0AED;&#x0AEE;&#x0AEF;&#x0AE6;&#x0AE7;&#x0AE8;&#x0AE9;
+<br />
+&#x0AEB;&#x0AEC;&#x0AED;&#x0AEE;&#x0AEF;&#x0AE6;&#x0AE7;&#x0AE8;&#x0AE9;&#x0AEA;
+<br />
+&#x0AE7;&#x0AE7;&#x0AE7;&#x0AE7;&#x0AE7;&#x0AE7;&#x0AE7;&#x0AE7;&#x0AE7;&#x0AE7;
+<br />
+&#x0AED;&#x0AED;&#x0AED;&#x0AED;&#x0AED;&#x0AED;&#x0AED;&#x0AED;&#x0AED;&#x0AED;
+<br />
+</p>
+<hr />
+<p class="pnum">
+&#x0AE6;&#x0AE7;&#x0AE8;&#x0AE9;&#x0AEA;&#x0AEB;&#x0AEC;&#x0AED;&#x0AEE;&#x0AEF;
+<br />
+&#x0AEA;&#x0AEB;&#x0AEC;&#x0AED;&#x0AEE;&#x0AEF;&#x0AE6;&#x0AE7;&#x0AE8;&#x0AE9;
+<br />
+&#x0AEB;&#x0AEC;&#x0AED;&#x0AEE;&#x0AEF;&#x0AE6;&#x0AE7;&#x0AE8;&#x0AE9;&#x0AEA;
+<br />
+&#x0AE7;&#x0AE7;&#x0AE7;&#x0AE7;&#x0AE7;&#x0AE7;&#x0AE7;&#x0AE7;&#x0AE7;&#x0AE7;
+<br />
+&#x0AED;&#x0AED;&#x0AED;&#x0AED;&#x0AED;&#x0AED;&#x0AED;&#x0AED;&#x0AED;&#x0AED;
+<br />
+</p>
+<hr />
+<p class="lnum">
+&#x0AE6;&#x0AE7;&#x0AE8;&#x0AE9;&#x0AEA;&#x0AEB;&#x0AEC;&#x0AED;&#x0AEE;&#x0AEF;
+<br />
+&#x0AEA;&#x0AEB;&#x0AEC;&#x0AED;&#x0AEE;&#x0AEF;&#x0AE6;&#x0AE7;&#x0AE8;&#x0AE9;
+<br />
+&#x0AEB;&#x0AEC;&#x0AED;&#x0AEE;&#x0AEF;&#x0AE6;&#x0AE7;&#x0AE8;&#x0AE9;&#x0AEA;
+<br />
+&#x0AE7;&#x0AE7;&#x0AE7;&#x0AE7;&#x0AE7;&#x0AE7;&#x0AE7;&#x0AE7;&#x0AE7;&#x0AE7;
+<br />
+&#x0AED;&#x0AED;&#x0AED;&#x0AED;&#x0AED;&#x0AED;&#x0AED;&#x0AED;&#x0AED;&#x0AED;
+<br />
+</p>
+
+</div> <!-- lang -->
+
+
+<h2>Gujarati </h2>
+<div lang="gj">
+
+<p>
+&#x0A66;&#x0A67;&#x0A68;&#x0A69;&#x0A6A;&#x0A6B;&#x0A6C;&#x0A6D;&#x0A6E;&#x0A6F;
+<br />
+&#x0A6A;&#x0A6B;&#x0A6C;&#x0A6D;&#x0A6E;&#x0A6F;&#x0A66;&#x0A67;&#x0A68;&#x0A69;
+<br />
+&#x0A6B;&#x0A6C;&#x0A6D;&#x0A6E;&#x0A6F;&#x0A66;&#x0A67;&#x0A68;&#x0A69;&#x0A6A;
+<br />
+&#x0A67;&#x0A67;&#x0A67;&#x0A67;&#x0A67;&#x0A67;&#x0A67;&#x0A67;&#x0A67;&#x0A67;
+<br />
+&#x0A6D;&#x0A6D;&#x0A6D;&#x0A6D;&#x0A6D;&#x0A6D;&#x0A6D;&#x0A6D;&#x0A6D;&#x0A6D;
+<br />
+</p>
+<hr />
+<p class="tnum">
+&#x0A66;&#x0A67;&#x0A68;&#x0A69;&#x0A6A;&#x0A6B;&#x0A6C;&#x0A6D;&#x0A6E;&#x0A6F;
+<br />
+&#x0A6A;&#x0A6B;&#x0A6C;&#x0A6D;&#x0A6E;&#x0A6F;&#x0A66;&#x0A67;&#x0A68;&#x0A69;
+<br />
+&#x0A6B;&#x0A6C;&#x0A6D;&#x0A6E;&#x0A6F;&#x0A66;&#x0A67;&#x0A68;&#x0A69;&#x0A6A;
+<br />
+&#x0A67;&#x0A67;&#x0A67;&#x0A67;&#x0A67;&#x0A67;&#x0A67;&#x0A67;&#x0A67;&#x0A67;
+<br />
+&#x0A6D;&#x0A6D;&#x0A6D;&#x0A6D;&#x0A6D;&#x0A6D;&#x0A6D;&#x0A6D;&#x0A6D;&#x0A6D;
+<br />
+</p>
+<hr />
+<p class="pnum">
+&#x0A66;&#x0A67;&#x0A68;&#x0A69;&#x0A6A;&#x0A6B;&#x0A6C;&#x0A6D;&#x0A6E;&#x0A6F;
+<br />
+&#x0A6A;&#x0A6B;&#x0A6C;&#x0A6D;&#x0A6E;&#x0A6F;&#x0A66;&#x0A67;&#x0A68;&#x0A69;
+<br />
+&#x0A6B;&#x0A6C;&#x0A6D;&#x0A6E;&#x0A6F;&#x0A66;&#x0A67;&#x0A68;&#x0A69;&#x0A6A;
+<br />
+&#x0A67;&#x0A67;&#x0A67;&#x0A67;&#x0A67;&#x0A67;&#x0A67;&#x0A67;&#x0A67;&#x0A67;
+<br />
+&#x0A6D;&#x0A6D;&#x0A6D;&#x0A6D;&#x0A6D;&#x0A6D;&#x0A6D;&#x0A6D;&#x0A6D;&#x0A6D;
+<br />
+</p>
+<hr />
+<p class="lnum">
+&#x0A66;&#x0A67;&#x0A68;&#x0A69;&#x0A6A;&#x0A6B;&#x0A6C;&#x0A6D;&#x0A6E;&#x0A6F;
+<br />
+&#x0A6A;&#x0A6B;&#x0A6C;&#x0A6D;&#x0A6E;&#x0A6F;&#x0A66;&#x0A67;&#x0A68;&#x0A69;
+<br />
+&#x0A6B;&#x0A6C;&#x0A6D;&#x0A6E;&#x0A6F;&#x0A66;&#x0A67;&#x0A68;&#x0A69;&#x0A6A;
+<br />
+&#x0A67;&#x0A67;&#x0A67;&#x0A67;&#x0A67;&#x0A67;&#x0A67;&#x0A67;&#x0A67;&#x0A67;
+<br />
+&#x0A6D;&#x0A6D;&#x0A6D;&#x0A6D;&#x0A6D;&#x0A6D;&#x0A6D;&#x0A6D;&#x0A6D;&#x0A6D;
+<br />
+</p>
+
+</div> <!-- lang -->
+
+<h2>Oriya </h2>
+<div lang="or">
+
+<p>
+&#x0B66;&#x0B67;&#x0B68;&#x0B69;&#x0B6A;&#x0B6B;&#x0B6C;&#x0B6D;&#x0B6E;&#x0B6F;
+<br />
+&#x0B6A;&#x0B6B;&#x0B6C;&#x0B6D;&#x0B6E;&#x0B6F;&#x0B66;&#x0B67;&#x0B68;&#x0B69;
+<br />
+&#x0B6B;&#x0B6C;&#x0B6D;&#x0B6E;&#x0B6F;&#x0B66;&#x0B67;&#x0B68;&#x0B69;&#x0B6A;
+<br />
+&#x0B67;&#x0B67;&#x0B67;&#x0B67;&#x0B67;&#x0B67;&#x0B67;&#x0B67;&#x0B67;&#x0B67;
+<br />
+&#x0B6D;&#x0B6D;&#x0B6D;&#x0B6D;&#x0B6D;&#x0B6D;&#x0B6D;&#x0B6D;&#x0B6D;&#x0B6D;
+<br />
+</p>
+<hr />
+<p class="tnum">
+&#x0B66;&#x0B67;&#x0B68;&#x0B69;&#x0B6A;&#x0B6B;&#x0B6C;&#x0B6D;&#x0B6E;&#x0B6F;
+<br />
+&#x0B6A;&#x0B6B;&#x0B6C;&#x0B6D;&#x0B6E;&#x0B6F;&#x0B66;&#x0B67;&#x0B68;&#x0B69;
+<br />
+&#x0B6B;&#x0B6C;&#x0B6D;&#x0B6E;&#x0B6F;&#x0B66;&#x0B67;&#x0B68;&#x0B69;&#x0B6A;
+<br />
+&#x0B67;&#x0B67;&#x0B67;&#x0B67;&#x0B67;&#x0B67;&#x0B67;&#x0B67;&#x0B67;&#x0B67;
+<br />
+&#x0B6D;&#x0B6D;&#x0B6D;&#x0B6D;&#x0B6D;&#x0B6D;&#x0B6D;&#x0B6D;&#x0B6D;&#x0B6D;
+<br />
+</p>
+<hr />
+<p class="pnum">
+&#x0B66;&#x0B67;&#x0B68;&#x0B69;&#x0B6A;&#x0B6B;&#x0B6C;&#x0B6D;&#x0B6E;&#x0B6F;
+<br />
+&#x0B6A;&#x0B6B;&#x0B6C;&#x0B6D;&#x0B6E;&#x0B6F;&#x0B66;&#x0B67;&#x0B68;&#x0B69;
+<br />
+&#x0B6B;&#x0B6C;&#x0B6D;&#x0B6E;&#x0B6F;&#x0B66;&#x0B67;&#x0B68;&#x0B69;&#x0B6A;
+<br />
+&#x0B67;&#x0B67;&#x0B67;&#x0B67;&#x0B67;&#x0B67;&#x0B67;&#x0B67;&#x0B67;&#x0B67;
+<br />
+&#x0B6D;&#x0B6D;&#x0B6D;&#x0B6D;&#x0B6D;&#x0B6D;&#x0B6D;&#x0B6D;&#x0B6D;&#x0B6D;
+<br />
+</p>
+<hr />
+<p class="lnum">
+&#x0B66;&#x0B67;&#x0B68;&#x0B69;&#x0B6A;&#x0B6B;&#x0B6C;&#x0B6D;&#x0B6E;&#x0B6F;
+<br />
+&#x0B6A;&#x0B6B;&#x0B6C;&#x0B6D;&#x0B6E;&#x0B6F;&#x0B66;&#x0B67;&#x0B68;&#x0B69;
+<br />
+&#x0B6B;&#x0B6C;&#x0B6D;&#x0B6E;&#x0B6F;&#x0B66;&#x0B67;&#x0B68;&#x0B69;&#x0B6A;
+<br />
+&#x0B67;&#x0B67;&#x0B67;&#x0B67;&#x0B67;&#x0B67;&#x0B67;&#x0B67;&#x0B67;&#x0B67;
+<br />
+&#x0B6D;&#x0B6D;&#x0B6D;&#x0B6D;&#x0B6D;&#x0B6D;&#x0B6D;&#x0B6D;&#x0B6D;&#x0B6D;
+<br />
+</p>
+
+</div> <!-- lang -->
+
+<h2>Sihhala </h2>
+<div lang="si">
+
+<p>
+&#x0DE6;&#x0DE7;&#x0DE8;&#x0DE9;&#x0DEA;&#x0DEB;&#x0DEC;&#x0DED;&#x0DEE;&#x0DEF;
+<br />
+&#x0DEA;&#x0DEB;&#x0DEC;&#x0DED;&#x0DEE;&#x0DEF;&#x0DE6;&#x0DE7;&#x0DE8;&#x0DE9;
+<br />
+&#x0DEB;&#x0DEC;&#x0DED;&#x0DEE;&#x0DEF;&#x0DE6;&#x0DE7;&#x0DE8;&#x0DE9;&#x0DEA;
+<br />
+&#x0DE9;&#x0DE9;&#x0DE9;&#x0DE9;&#x0DE9;&#x0DE9;&#x0DE9;&#x0DE9;&#x0DE9;&#x0DE9;
+<br />
+&#x0DED;&#x0DED;&#x0DED;&#x0DED;&#x0DED;&#x0DED;&#x0DED;&#x0DED;&#x0DED;&#x0DED;
+<br />
+</p>
+<hr />
+<p class="tnum">
+&#x0DE6;&#x0DE7;&#x0DE8;&#x0DE9;&#x0DEA;&#x0DEB;&#x0DEC;&#x0DED;&#x0DEE;&#x0DEF;
+<br />
+&#x0DEA;&#x0DEB;&#x0DEC;&#x0DED;&#x0DEE;&#x0DEF;&#x0DE6;&#x0DE7;&#x0DE8;&#x0DE9;
+<br />
+&#x0DEB;&#x0DEC;&#x0DED;&#x0DEE;&#x0DEF;&#x0DE6;&#x0DE7;&#x0DE8;&#x0DE9;&#x0DEA;
+<br />
+&#x0DE9;&#x0DE9;&#x0DE9;&#x0DE9;&#x0DE9;&#x0DE9;&#x0DE9;&#x0DE9;&#x0DE9;&#x0DE9;
+<br />
+&#x0DED;&#x0DED;&#x0DED;&#x0DED;&#x0DED;&#x0DED;&#x0DED;&#x0DED;&#x0DED;&#x0DED;
+<br />
+</p>
+<hr />
+<p class="pnum">
+&#x0DE6;&#x0DE7;&#x0DE8;&#x0DE9;&#x0DEA;&#x0DEB;&#x0DEC;&#x0DED;&#x0DEE;&#x0DEF;
+<br />
+&#x0DEA;&#x0DEB;&#x0DEC;&#x0DED;&#x0DEE;&#x0DEF;&#x0DE6;&#x0DE7;&#x0DE8;&#x0DE9;
+<br />
+&#x0DEB;&#x0DEC;&#x0DED;&#x0DEE;&#x0DEF;&#x0DE6;&#x0DE7;&#x0DE8;&#x0DE9;&#x0DEA;
+<br />
+&#x0DE9;&#x0DE9;&#x0DE9;&#x0DE9;&#x0DE9;&#x0DE9;&#x0DE9;&#x0DE9;&#x0DE9;&#x0DE9;
+<br />
+&#x0DED;&#x0DED;&#x0DED;&#x0DED;&#x0DED;&#x0DED;&#x0DED;&#x0DED;&#x0DED;&#x0DED;
+<br />
+</p>
+<hr />
+<p class="lnum">
+&#x0DE6;&#x0DE7;&#x0DE8;&#x0DE9;&#x0DEA;&#x0DEB;&#x0DEC;&#x0DED;&#x0DEE;&#x0DEF;
+<br />
+&#x0DEA;&#x0DEB;&#x0DEC;&#x0DED;&#x0DEE;&#x0DEF;&#x0DE6;&#x0DE7;&#x0DE8;&#x0DE9;
+<br />
+&#x0DEB;&#x0DEC;&#x0DED;&#x0DEE;&#x0DEF;&#x0DE6;&#x0DE7;&#x0DE8;&#x0DE9;&#x0DEA;
+<br />
+&#x0DE9;&#x0DE9;&#x0DE9;&#x0DE9;&#x0DE9;&#x0DE9;&#x0DE9;&#x0DE9;&#x0DE9;&#x0DE9;
+<br />
+&#x0DED;&#x0DED;&#x0DED;&#x0DED;&#x0DED;&#x0DED;&#x0DED;&#x0DED;&#x0DED;&#x0DED;
+<br />
+</p>
+
+</div> <!-- lang -->
+
+</div> <!-- text -->
+
+</body>
+</html>
