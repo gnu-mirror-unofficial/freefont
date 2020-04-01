@@ -54,6 +54,7 @@ function init()
 
 <form id="ctrl" action="*">
 <label for="fontsel">face</label>
+<br />
 <select id="fontsel" onchange="setFont(options[selectedIndex])">
         <option value="">choose...</option>
         <option>FreeSerif</option>
@@ -75,12 +76,14 @@ function init()
 </select>
 <br />
 <label for="weightsel">weight</label>
+<br />
 <select id="weightsel" onchange="setWeight(options[selectedIndex])">
 	<option selected>normal</option>
 	<option>bold</option>
 </select>
 <br />
 <label for="stylesetsel">styleset</label>
+<br />
 <select id="stylesetsel" onchange="setFontFeature(options[selectedIndex])">
 	<option selected value="normal">normal</option>
 	<option value="var(--malayalam-reformed)">reformed</option>
