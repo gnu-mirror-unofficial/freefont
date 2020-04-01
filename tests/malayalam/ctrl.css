@@ -1,18 +1,16 @@
 /* ------------------- handheld screens ---------------------- */
 @media handheld, screen and (max-width: 480px) {
-	/*
-	http://blog.teamtreehouse.com/create-an-absolute-basic-mobile-css-responsive-navigation-menu
-	*/
 	div.header {
 	}
 	.ctrls { 
-		top: 50px;
-		position: fixed; right: 0; 
 		visibility: hidden;
+		padding: 0.25ex;
+		background-color: rgba( 255, 255, 255, 0.6 );
+		border: medium solid rgba( 200, 200, 200, 0.8 );
+		border-right: 0;
 	}
 	.ctrls:target { 
 		visibility: visible;
-		z-index: 0;
 	}
 	.ctrls form {
 	}
@@ -25,20 +23,20 @@
 		height: 35px; width: 35px;
 		padding-right: 5px;
 		position: fixed;
+		top: 0; right: 0;
 	}
 	#menu-icon {
-		top: 0; right: 0;
-		z-index: -1;
 	}
 	#close-icon {
-		top: 0; right: 0;
+	}
+	div#cover {
+		z-index: 2;
+	}
+	div#header {
+		z-index: 1;
 	}
 }
 /* ------------------- full-width screens ---------------------- */
 @media screen and (min-width: 481px) {
-	div#cover {
-		background-color: #AAF;  background-size: cover;
-		width: 22ex;
-	}
 	#menu-icon, #close-icon { display: none; }
 }

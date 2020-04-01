@@ -3,22 +3,23 @@
 }
 p { margin-top: 0; margin-bottom: 0; line-height: 1.2; }
 div#text { padding-bottom: 0.5ex; }
+.ctrls {
+		position: fixed;
+		right: 0; top: 40px;
+}
 form {
-	width: 20ex;
-	text-align: left; top: 35px; right: 0.2ex;
-	background-color: rgba( 255, 255, 255, 0.8 );
+	text-align: left;
 	padding-left: 1ex;
 	border: 0.6ex rgba( 255, 0, 255, 0.8 );
 }
 div#cover {
+	width: 20ex;
 }
-@media screen and (min-width: 480px) {
-	form { position: fixed; width: 20ex; float: right;
-		}
+@media screen and (min-width: 481px) {
 	#text { overflow: auto; margin-right: 21ex;
 		border-right: solid olive;  }
 }
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 480px) {
 	h1 { margin-right: 35px; margin-top: 0; }
 	body { padding-top: 0; margin-top: 0; }
 }
