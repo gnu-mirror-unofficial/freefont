@@ -9,10 +9,8 @@
 	@import url("style.css");
 	@import url("ctrl.css");
 	
-	td {font-family: inherit; font-weight: inherit;
-		font-feature-settings: inherit; }
-	td { width: 4em; text-align: center; }
-	td:first-child { width: auto; text-align: left; }
+	td { width: auto; text-align: left; padding-left: 3ex; }
+	td:last-child { width: 36ex; }
 </style>
 <script>
 function setFont(selection)
@@ -83,13 +81,6 @@ function init()
 	<option selected>normal</option>
 	<option>bold</option>
 </select>
-<br />
-<label for="stylesetsel">styleset</label>
-<br />
-<select id="stylesetsel" onchange="setFontFeature(options[selectedIndex])">
-	<option selected value="normal">normal</option>
-	<option value="var(--malayalam-reformed)">reformed</option>
-</select>
 </form>
 <a id="close-icon" href="#"></a>
 </div> <!-- cover -->
@@ -101,27 +92,37 @@ function init()
 
 <div id="text">
 
-<h3>candrakkala examples</h3>
-<p>
-Table 12-37 from Unicode Standard ch 12.
-</p>
-<div lang="ml">
-<p class="reformed">
-&#x0D2A;&#x0D3E;&#x0D32;&#x0D41;&#x0D4D;
-0D2A, 0D3E, 0D32, 0D41, 0D4D
-(&#x0D2A; &nbsp;&#x0D3E; &#x0D32; &nbsp;&#x0D41; ^)
-<br />
-&#x0D0E;&#x0D4D;&#x0D28;&#x0D4D;&#x0D28;&#x0D3E;
-0D0E, 0D4D, 0D28, 0D4D, 0D28, 0D3E
-(&#x0D0E; ^ &#x0D28; ^ &#x0D28; &nbsp;&#x0D3E;)
-<br />
-&#x0D10;&#x0D36;&#x0D40;&#x0D32;&#x0D4D;&#x0D02;
-0D10, 0D36, 0D40, 0D32, 0D4D, 0D02
-(&#x0D10; &#x0D36; ^ &#x0D32; ^ &nbsp;&#x0D02;)
-</p>
+<div class="center">
+<table>
+<caption>
+rendering of Table 12-37 from Unicode Standard ch 12.
+</caption>
+<tbody lang="ml" class="reformed">
+<tr><td>&#x0D2A;&#x0D3E;&#x0D32;&#x0D41;&#x0D4D;
+</td><td>/pālə/ milk
+</td><td>0D2A, 0D3E, 0D32, 0D41, 0D4D
+</td></tr>
+<tr><td>&#x0D0E;&#x0D4D;&#x0D28;&#x0D4D;&#x0D28;&#x0D3E;
+</td><td>/ənnā/ on which day?
+</td><td>0D0E, 0D4D, 0D28, 0D4D, 0D28, 0D3E
+</td></tr>
+<tr><td>&#x0D10;&#x0D36;&#x0D40;&#x0D32;&#x0D4D;&#x0D02;
+</td><td>/aischīləm/ than ice
+</td><td>0D10, 0D36, 0D40, 0D32, 0D4D, 0D02
+</td></tr>
+</tbody>
+</table>
 </div>
 
+<figure>
+<figcaption>
+Table 12-37 from Unicode Standard ch 12.
+</figcaption>
+<img src="images/Candrakkala_examples.png"
+alt="image of table in Standard" />
+</figure>
 
-</div> <!-- content -->
+
+</div> <!-- text -->
 </body>
 </html>
