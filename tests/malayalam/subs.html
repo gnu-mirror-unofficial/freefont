@@ -11,6 +11,9 @@
 	div { padding-bottom: 0.15em; }
 	img { width: 12cm; max-width: 95%; }
 	figure, figcaption { text-align: center; }
+	@media screen and (max-width: 480px) {
+		td:first-child, th:first-child { display: none; }
+	}
 </style>
 <script>
 function setFont(selection)

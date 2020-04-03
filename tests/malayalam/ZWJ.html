@@ -13,6 +13,9 @@
 	.vowels th { text-align: center; }
 	.vowels td, .vowels th { border-left: thin black solid; 
 			border-right: thin black solid; width: 6ex; }
+	@media screen and (max-width: 480px) {
+		td:first-child, th:first-child { display: none; }
+	}
 </style>
 <script>
 function setFont(selection)
