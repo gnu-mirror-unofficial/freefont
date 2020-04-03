@@ -4,6 +4,8 @@
 p { margin-top: 0; margin-bottom: 0; line-height: 1.2; }
 div:last-child { padding-bottom: 0.5ex; }
 div#text { padding-bottom: 0.5ex; }
+div.center { text-align: center; }
+.center table { margin: auto; }
 .ctrls {
 		position: fixed;
 		right: 0; top: 40px;
@@ -23,6 +25,9 @@ div#cover {
 @media screen and (max-width: 480px) {
 	h1 { margin-right: 35px; margin-top: 0; }
 	body { padding-top: 0; margin-top: 0; }
+	figure { margin: 0; margin-top: 0.5ex; }
+	img { margin: 0; max-width: 98%; }
+	table { max-width: 98%; }
 }
 @media print {
 	option { display: inline; }
