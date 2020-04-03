@@ -21,11 +21,12 @@ div#cover {
 @media screen and (min-width: 481px) {
 	#text { overflow: auto; margin-right: 21ex;
 		border-right: solid olive;  }
+	img { margin: 0; max-width: 80%; }
 }
 @media screen and (max-width: 480px) {
 	h1 { margin-right: 35px; margin-top: 0; }
 	body { padding-top: 0; margin-top: 0; }
-	figure { margin: 0; margin-top: 0.5ex; }
+	figure { margin: 0; margin-top: 0.5ex; padding: 0; }
 	img { margin: 0; max-width: 98%; }
 	table { max-width: 98%; }
 }

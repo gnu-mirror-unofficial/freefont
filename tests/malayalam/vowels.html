@@ -12,6 +12,9 @@
 		font-feature-settings: inherit; }
 	td { width: 4em; text-align: center; }
 	td:first-child { width: auto; text-align: left; }
+	@media screen and (max-width: 480px) {
+		td:first-child, th:first-child { display: none; }
+	}
 </style>
 <script>
 function setFont(selection)
