@@ -56,6 +56,7 @@ function init()
 
 </head>
 <body onload="init()">
+
 <div id="cover" class="ctrls">
 <form id="ctrl" action="*">
 <label for="fontsel">face</label>
@@ -98,30 +99,7 @@ function init()
 </div> <!-- header -->
 
 <div id="text">
-<h3>'blwf' subscript cons chain in Malayalam 'mlm2'</h3>
-<p lang="ml">
-s.rr.rra	&#x0D38;&#x0d4d;&#x0D31;&#x0d4d;&#x0D31;	<br />
-ph.rr.rra	&#x0D2b;&#x0d4d;&#x0D31;&#x0d4d;&#x0D31;	<br />
-</p>
-<hr />
-<p lang="ml">
-k.ss.nna	&#x0D15;&#x0d4d;&#x0D37;&#x0d4d;&#x0D23; <br />
-k.ss.ma	&#x0D15;&#x0d4d;&#x0D37;&#x0d4d;&#x0D2e; <br />
-t.s.ma	&#x0D24;&#x0d4d;&#x0D38;&#x0d4d;&#x0D2e; <br />
-d.dh.ma	&#x0D26;&#x0d4d;&#x0D27;&#x0d4d;&#x0D2e; <br />
-</p>
-<hr />
-<p lang="ml">
-l.k.ka	&#x0D32;&#x0d4d;&#x0D15;&#x0d4d;&#x0D15; <br />
-lll.k.ka	&#x0D34;&#x0d4d;&#x0D15;&#x0d4d;&#x0D15; <br />
-ss.k.ka	&#x0D37;&#x0d4d;&#x0D15;&#x0d4d;&#x0D15; <br />
-s.k.ka	&#x0D38;&#x0d4d;&#x0D15;&#x0d4d;&#x0D15; <br />
-y.t.ta	&#x0D2f;&#x0d4d;&#x0D24;&#x0d4d;&#x0D24; <br />
-l.t.ta	&#x0D32;&#x0d4d;&#x0D24;&#x0d4d;&#x0D24; <br />
-lll.t.ta	&#x0D34;&#x0d4d;&#x0D24;&#x0d4d;&#x0D24; <br />
-lll.n.na	&#x0D34;&#x0d4d;&#x0D28;&#x0d4d;&#x0D28; <br />
-</p>
-<hr />
+<h3>simple subscripted forms</h3>
 <table>
 <tbody lang="ml">
 <tr>
@@ -440,39 +418,9 @@ lll.n.na	&#x0D34;&#x0d4d;&#x0D28;&#x0d4d;&#x0D28; <br />
 </tbody>
 </table>
 
-<hr />
-<p>
-Many consonant clusters are not found in proper Malayalam words, but a
-need to display them as a conjunct may occasionally arise (e.g. in
-a person's name.)
-</p>
-<p>
-For a select subset of consonants, a subscripted form is available
-using the ZWJ joiner.  By default, it is better to display these
-in "atomic" form with visible candrakala.
-</p>
+<h3>complex subscripted forms</h3>
 <table>
-<tbody lang="ml">
-<tr>
-<th> </th>
-<th>conj. </th> <th> +oo </th>
-<th> ZWJ </th> <th> ZWNJ </th>
-</tr>
-<tr><td> nn.pa</td>
-<td>&#x0D23;&#x0d4d;&#x0D2a;</td><td>&#x0D23;&#x0d4d;&#x0D2a;&#x0d4b;</td>
-<td>&#x0D23;&zwj;&#x0d4d;&#x0D2a;</td><td>&#x0D23;&zwnj;&#x0d4d;&#x0D2a; </td>
-</tr>
-<tr><td> k.ss.ttha</td>
-<td>&#x0D15;&#x0d4d;&#x0D37;&#x0d4d;&#x0D20;</td>
-<td>&#x0D15;&#x0d4d;&#x0D37;&#x0d4d;&#x0D20;&#x0d4b;</td>
-<td>&#x0D15;&zwj;&#x0d4d;&#x0D37;&zwj;&#x0d4d;&#x0D20;</td>
-<td>&#x0D15;&zwnj;&#x0d4d;&#x0D37;&zwnj;&#x0d4d;&#x0D20; </td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<caption>3-consonant conjuncts
+<caption>3-consonant conjuncts: 2 subscripted
 </caption>
 <tbody lang="ml">
 <tr>
@@ -485,42 +433,6 @@ in "atomic" form with visible candrakala.
 <td>&#x0D15;&#x0d4d;&#x0D31;&#x0d4d;&#x0D31;&#x0d4b;</td>
 <td>&#x0D15;&zwj;&#x0d4d;&#x0D31;&zwj;&#x0d4d;&#x0D31;</td>
 <td>&#x0D15;&zwnj;&#x0d4d;&#x0D31;&zwnj;&#x0d4d;&#x0D31; </td>
-</tr>
-<tr><td> k.ss.nna</td>
-<td>&#x0D15;&#x0d4d;&#x0D37;&#x0d4d;&#x0D23;</td>
-<td>&#x0D15;&#x0d4d;&#x0D37;&#x0d4d;&#x0D23;&#x0d4b;</td>
-<td>&#x0D15;&zwj;&#x0d4d;&#x0D37;&zwj;&#x0d4d;&#x0D23;</td>
-<td>&#x0D15;&zwnj;&#x0d4d;&#x0D37;&zwnj;&#x0d4d;&#x0D23; </td>
-</tr>
-<tr><td> k.ss.ma</td>
-<td>&#x0D15;&#x0d4d;&#x0D37;&#x0d4d;&#x0D2e;</td>
-<td>&#x0D15;&#x0d4d;&#x0D37;&#x0d4d;&#x0D2e;&#x0d4b;</td>
-<td>&#x0D15;&zwj;&#x0d4d;&#x0D37;&zwj;&#x0d4d;&#x0D2e;</td>
-<td>&#x0D15;&zwnj;&#x0d4d;&#x0D37;&zwnj;&#x0d4d;&#x0D2e; </td>
-</tr>
-<tr><td> t.s.na</td>
-<td>&#x0D24;&#x0d4d;&#x0D38;&#x0d4d;&#x0D28;</td>
-<td>&#x0D24;&#x0d4d;&#x0D38;&#x0d4d;&#x0D28;&#x0d4b;</td>
-<td>&#x0D24;&zwj;&#x0d4d;&#x0D38;&zwj;&#x0d4d;&#x0D28;</td>
-<td>&#x0D24;&zwnj;&#x0d4d;&#x0D38;&zwnj;&#x0d4d;&#x0D28; </td>
-</tr>
-<tr><td> t.s.ma</td>
-<td>&#x0D24;&#x0d4d;&#x0D38;&#x0d4d;&#x0D2e;</td>
-<td>&#x0D24;&#x0d4d;&#x0D38;&#x0d4d;&#x0D2e;&#x0d4b;</td>
-<td>&#x0D24;&zwj;&#x0d4d;&#x0D38;&zwj;&#x0d4d;&#x0D2e;</td>
-<td>&#x0D24;&zwnj;&#x0d4d;&#x0D38;&zwnj;&#x0d4d;&#x0D2e; </td>
-</tr>
-<tr><td> d.dh.na</td>
-<td>&#x0D26;&#x0d4d;&#x0D27;&#x0d4d;&#x0D28;</td>
-<td>&#x0D26;&#x0d4d;&#x0D27;&#x0d4d;&#x0D28;&#x0d4b;</td>
-<td>&#x0D26;&zwj;&#x0d4d;&#x0D27;&zwj;&#x0d4d;&#x0D28;</td>
-<td>&#x0D26;&zwnj;&#x0d4d;&#x0D27;&zwnj;&#x0d4d;&#x0D28; </td>
-</tr>
-<tr><td> d.dh.ma</td>
-<td>&#x0D26;&#x0d4d;&#x0D27;&#x0d4d;&#x0D2e;</td>
-<td>&#x0D26;&#x0d4d;&#x0D27;&#x0d4d;&#x0D2e;&#x0d4b;</td>
-<td>&#x0D26;&zwj;&#x0d4d;&#x0D27;&zwj;&#x0d4d;&#x0D2e;</td>
-<td>&#x0D26;&zwnj;&#x0d4d;&#x0D27;&zwnj;&#x0d4d;&#x0D2e; </td>
 </tr>
 <tr><td> ph.rr.rra</td>
 <td>&#x0D2b;&#x0d4d;&#x0D31;&#x0d4d;&#x0D31;</td>
@@ -569,6 +481,79 @@ in "atomic" form with visible candrakala.
 <td>&#x0D38;&#x0d4d;&#x0D15;&#x0d4d;&#x0D15;&#x0d4b;</td>
 <td>&#x0D38;&zwj;&#x0d4d;&#x0D15;&zwj;&#x0d4d;&#x0D15;</td>
 <td>&#x0D38;&zwnj;&#x0d4d;&#x0D15;&zwnj;&#x0d4d;&#x0D15; </td>
+</tr>
+<tr><td> s.rr.rra</td>
+<td>&#x0D38;&#x0d4d;&#x0D31;&#x0d4d;&#x0D31;</td>
+<td>&#x0D38;&#x0d4d;&#x0D31;&#x0d4d;&#x0D31;&#x0d4b;</td>
+<td>&#x0D38;&zwj;&#x0d4d;&#x0D31;&zwj;&#x0d4d;&#x0D31;</td>
+<td>&#x0D38;&zwnj;&#x0d4d;&#x0D31;&zwnj;&#x0d4d;&#x0D31; </td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<caption>3-consonant conjuncts: 1 subscripted
+</caption>
+<tbody lang="ml">
+<tr>
+<th> </th>
+<th>conj. </th> <th> +oo </th>
+<th> ZWJ </th> <th> ZWNJ </th>
+</tr>
+<tr><td> k.ss.nna</td>
+<td>&#x0D15;&#x0d4d;&#x0D37;&#x0d4d;&#x0D23;</td>
+<td>&#x0D15;&#x0d4d;&#x0D37;&#x0d4d;&#x0D23;&#x0d4b;</td>
+<td>&#x0D15;&zwj;&#x0d4d;&#x0D37;&zwj;&#x0d4d;&#x0D23;</td>
+<td>&#x0D15;&zwnj;&#x0d4d;&#x0D37;&zwnj;&#x0d4d;&#x0D23; </td>
+</tr>
+<tr><td> k.ss.ma</td>
+<td>&#x0D15;&#x0d4d;&#x0D37;&#x0d4d;&#x0D2e;</td>
+<td>&#x0D15;&#x0d4d;&#x0D37;&#x0d4d;&#x0D2e;&#x0d4b;</td>
+<td>&#x0D15;&zwj;&#x0d4d;&#x0D37;&zwj;&#x0d4d;&#x0D2e;</td>
+<td>&#x0D15;&zwnj;&#x0d4d;&#x0D37;&zwnj;&#x0d4d;&#x0D2e; </td>
+</tr>
+<tr><td> t.s.na</td>
+<td>&#x0D24;&#x0d4d;&#x0D38;&#x0d4d;&#x0D28;</td>
+<td>&#x0D24;&#x0d4d;&#x0D38;&#x0d4d;&#x0D28;&#x0d4b;</td>
+<td>&#x0D24;&zwj;&#x0d4d;&#x0D38;&zwj;&#x0d4d;&#x0D28;</td>
+<td>&#x0D24;&zwnj;&#x0d4d;&#x0D38;&zwnj;&#x0d4d;&#x0D28; </td>
+</tr>
+<tr><td> t.s.ma</td>
+<td>&#x0D24;&#x0d4d;&#x0D38;&#x0d4d;&#x0D2e;</td>
+<td>&#x0D24;&#x0d4d;&#x0D38;&#x0d4d;&#x0D2e;&#x0d4b;</td>
+<td>&#x0D24;&zwj;&#x0d4d;&#x0D38;&zwj;&#x0d4d;&#x0D2e;</td>
+<td>&#x0D24;&zwnj;&#x0d4d;&#x0D38;&zwnj;&#x0d4d;&#x0D2e; </td>
+</tr>
+</tbody>
+</table>
+
+<h3>subscripted forms by request</h3>
+<p>
+Many consonant clusters are not found in proper Malayalam words, but a
+need to display them as a conjunct may occasionally arise (e.g. in
+a person's name.)
+</p>
+<p>
+For a select subset of consonants, a subscripted form is available
+using the ZWJ joiner.  By default, it is better to display these
+in "atomic" form with visible candrakala.
+</p>
+<table>
+<tbody lang="ml">
+<tr>
+<th> </th>
+<th>conj. </th> <th> +oo </th>
+<th> ZWJ </th> <th> ZWNJ </th>
+</tr>
+<tr><td> nn.pa</td>
+<td>&#x0D23;&#x0d4d;&#x0D2a;</td><td>&#x0D23;&#x0d4d;&#x0D2a;&#x0d4b;</td>
+<td>&#x0D23;&zwj;&#x0d4d;&#x0D2a;</td><td>&#x0D23;&zwnj;&#x0d4d;&#x0D2a; </td>
+</tr>
+<tr><td> k.ss.ttha</td>
+<td>&#x0D15;&#x0d4d;&#x0D37;&#x0d4d;&#x0D20;</td>
+<td>&#x0D15;&#x0d4d;&#x0D37;&#x0d4d;&#x0D20;&#x0d4b;</td>
+<td>&#x0D15;&zwj;&#x0d4d;&#x0D37;&zwj;&#x0d4d;&#x0D20;</td>
+<td>&#x0D15;&zwnj;&#x0d4d;&#x0D37;&zwnj;&#x0d4d;&#x0D20; </td>
 </tr>
 </tbody>
 </table>
